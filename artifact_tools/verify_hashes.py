@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,sys
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'SHA256SUMS.txt'
-EXCLUDED_ROOTS={'artifact_outputs'}
+EXCLUDED_ROOTS={'artifact_outputs','.venv','.venv-e2e','.git'}
 def sha(p):
     h=hashlib.sha256()
     with p.open('rb') as f:
@@ -26,6 +26,8 @@ for p in ROOT.rglob('*'):
     if not p.is_file() or p.is_symlink() or p==MANIFEST: continue
     rel=p.relative_to(ROOT)
     if rel.parts and rel.parts[0] in EXCLUDED_ROOTS: continue
+    if '__pycache__' in rel.parts or p.suffix.lower() in {'.pyc','.pyo'}: continue
+    if rel.parts and (rel.parts[0].startswith('USENIX27_RERUN_') or rel.parts[0].startswith('USENIX27_FIGURE_RERUN_')): continue
     actual.add(rel.as_posix())
 extra=sorted(actual-set(expected))
 if missing or changed or extra:

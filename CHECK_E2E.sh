@@ -14,7 +14,11 @@ print('python=',sys.version.split()[0])
 if sys.version_info < (3,10): raise SystemExit('Python >=3.10 required')
 PY
 # All scientific entrypoints that the master runner invokes must be present.
-while IFS= read -r rel; do [[ -e "$ROOT/$rel" ]] || fail "missing entrypoint/input: $rel"; done <<'LIST'
+resolve_rel(){ python3 "$ROOT/reproduction/resolve_legacy_path.py" "$ROOT" "$1"; }
+while IFS= read -r rel; do
+  resolved="$(resolve_rel "$rel")"
+  [[ -e "$resolved" ]] || fail "missing entrypoint/input: $rel (resolved to $resolved)"
+done <<'LIST'
 A13.py
 A13_C0_EXTENSION_RUNNER_v1.py
 A13_C0_V2_1_AUTHOR_RUN_COMPLETE.tar.gz

@@ -40,7 +40,7 @@ def is_text_name(name: str) -> bool:
 
 def is_synthetic_secret_fixture(label: str) -> bool:
     # AgentDojo dailylife includes a benchmark-generated private-key fixture.
-    return ('external/AgentWatcher' in label or 'external/AgentWatcher_armc_runtime_v1' in label) and 'dailylife' in label
+    return (('external/AgentWatcher' in label or 'external/AgentWatcher_armc_runtime_v1' in label or 'third_party/integrations/AgentWatcher' in label) and 'dailylife' in label)
 
 
 def scan_identity(label: str, data: bytes):

@@ -2,7 +2,7 @@
 from pathlib import Path
 import csv,hashlib,sys,collections
 ROOT=Path(__file__).resolve().parents[1]
-TSV=ROOT/'SOURCE_ARTIFACT_COVERAGE.tsv'
+TSV=ROOT/'supporting_material/provenance/SOURCE_ARTIFACT_COVERAGE.tsv'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 counts=collections.Counter(); missing=[]; bad=[]; total=0
 with TSV.open(newline='',encoding='utf-8') as f:

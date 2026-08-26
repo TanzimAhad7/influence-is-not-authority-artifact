@@ -24,22 +24,46 @@ OUTDIR.mkdir(parents=True, exist_ok=True)
 CLAIMS: list[dict[str, Any]] = []
 
 
+def _load_layout_map() -> dict[str, str]:
+    p = ROOT / "LEGACY_PATH_MAP.tsv"
+    out: dict[str, str] = {}
+    if not p.is_file():
+        return out
+    with p.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            out[row["legacy_top_level"]] = row["new_path"]
+    return out
+
+
+LAYOUT_MAP = _load_layout_map()
+
+
+def resolve_path(rel: str | Path) -> Path:
+    relp = Path(rel)
+    if relp.is_absolute():
+        return relp
+    parts = relp.parts
+    if parts and parts[0] in LAYOUT_MAP:
+        return ROOT / LAYOUT_MAP[parts[0]] / Path(*parts[1:])
+    return ROOT / relp
+
+
 def jload(rel: str) -> Any:
-    return json.loads((ROOT / rel).read_text(encoding="utf-8"))
+    return json.loads(resolve_path(rel).read_text(encoding="utf-8"))
 
 
 def jsonl(rel: str) -> list[dict[str, Any]]:
-    return [json.loads(x) for x in (ROOT / rel).read_text(encoding="utf-8").splitlines() if x.strip()]
+    return [json.loads(x) for x in resolve_path(rel).read_text(encoding="utf-8").splitlines() if x.strip()]
 
 
 def csvrows(rel: str) -> list[dict[str, str]]:
-    with (ROOT / rel).open(newline="", encoding="utf-8") as f:
+    with resolve_path(rel).open(newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
 def sha256(rel: str) -> str:
     h = hashlib.sha256()
-    with (ROOT / rel).open("rb") as f:
+    with resolve_path(rel).open("rb") as f:
         for b in iter(lambda: f.read(1024 * 1024), b""):
             h.update(b)
     return h.hexdigest()
@@ -57,6 +81,22 @@ def close(a: Any, b: Any, tol: float = 1e-9) -> bool:
     return a == b
 
 
+def display_source(source: str) -> str:
+    parts = source.split(" + ")
+    out_parts = []
+    for part in parts:
+        replaced = part
+        for old, new in sorted(LAYOUT_MAP.items(), key=lambda kv: len(kv[0]), reverse=True):
+            if part == old:
+                replaced = new
+                break
+            if part.startswith(old + "/"):
+                replaced = new + part[len(old):]
+                break
+        out_parts.append(replaced)
+    return " + ".join(out_parts)
+
+
 def add(cid: str, description: str, expected: Any, actual: Any, source: str,
         verification_type: str = "frozen_analysis_check", tol: float = 1e-9,
         note: str | None = None) -> None:
@@ -66,7 +106,7 @@ def add(cid: str, description: str, expected: Any, actual: Any, source: str,
         "description": description,
         "expected": expected,
         "actual": actual,
-        "source": source,
+        "source": display_source(source),
         "verification_type": verification_type,
         "status": "PASS" if ok else "FAIL",
     }
@@ -149,7 +189,7 @@ def resolve_raw(row: dict[str, Any]) -> Path:
     if marker not in rel:
         raise RuntimeError(f"unexpected raw_result_relpath: {rel}")
     suffix = rel.split(marker, 1)[1]
-    return ROOT / "E2E_ATTR_AUTH_v1/scientific_v1" / suffix
+    return resolve_path("E2E_ATTR_AUTH_v1/scientific_v1") / suffix
 
 
 def verify_natural() -> None:
@@ -397,7 +437,7 @@ def verify_e2e() -> None:
 
     # Load frozen PAEF matcher for blocked-proposal classification.
     po=load_paef_oracle()
-    spec_dir=ROOT/"E2E_ATTR_AUTH_v1/prefreeze/final_prescience_build/PAEF_ORACLE_FREEZE/PAEF_SPECS"
+    spec_dir=resolve_path("E2E_ATTR_AUTH_v1/prefreeze/final_prescience_build/PAEF_ORACLE_FREEZE/PAEF_SPECS")
     specs={p.stem:json.loads(p.read_text()) for p in spec_dir.glob("CASE_*.json")}
     bcnt=Counter()
     for r in rows:
@@ -507,7 +547,7 @@ def verify_replay() -> None:
     add("REPLAY.CELLS", "Across 78 model-decision cells, downstream success can hide immediate action/effect divergence.",
         {"cells":78,"disagree":23,"target_tool_majority":22},
         {"cells":len(all_cells),"disagree":len(disagree),"target_tool_majority":sum(c["target_fn"] for c in disagree)},
-        "P2B_XM_CI_*_RUN_v1_2/P2B_CI_BASELINE_RAW.jsonl","rederived_raw")
+        "studies/09_evaluation_replay/{llama,gemma,qwen}/P2B_CI_BASELINE_RAW.jsonl","rederived_raw")
 
 
 def verify_source_and_hygiene() -> None:
@@ -605,11 +645,11 @@ def verify_source_and_hygiene() -> None:
     add("HYGIENE.SECRETS", "No high-confidence author credential material in artifact package.", [], sorted(set(secret_hits)), "immutable distributed files excluding known synthetic AgentDojo key fixture","hygiene_scan")
     add("HYGIENE.TRACKING", "No common tracking-link parameters or short-link trackers in artifact documentation.", [], sorted(set(tracking_hits)), "artifact documentation","hygiene_scan")
     add("HYGIENE.SYMLINKS", "No symlinks in artifact.", [], sorted(symlinks), "immutable distributed files","hygiene_scan")
-    cov=jload("SOURCE_ARTIFACT_COVERAGE.json")
+    cov=json.loads((ROOT/"supporting_material/provenance/SOURCE_ARTIFACT_COVERAGE.json").read_text(encoding="utf-8"))
     add("HYGIENE.SOURCE_COVERAGE", "Complete codebase artifacts/ tree retained except identity-bearing Git metadata.",
         {"source_files":5731,"retained_source_files":5694,"excluded_git_metadata_files":37},
         {k:cov[k] for k in ["source_files","retained_source_files","excluded_git_metadata_files"]},
-        "SOURCE_ARTIFACT_COVERAGE.tsv","coverage_check")
+        "supporting_material/provenance/SOURCE_ARTIFACT_COVERAGE.tsv","coverage_check")
 
 
 def write_outputs() -> int:

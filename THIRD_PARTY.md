@@ -4,7 +4,7 @@ This artifact preserves third-party material that was present in the source proj
 
 ## AgentWatcher / AgentDojo material
 
-The artifact contains the tested AgentWatcher/AgentDojo source/runtime material under `external/`. License files distributed with the bundled third-party subprojects are retained at their original locations, including the AgentDojo/AgentDyn license files.
+The artifact contains the tested AgentWatcher/AgentDojo source/runtime material under `third_party/integrations/`. License files distributed with the bundled third-party subprojects are retained at their original locations, including the AgentDojo/AgentDyn license files.
 
 The current verifier hashes the tested AgentWatcher integration adapter so the implementation-bound claim can be tied to the exact distributed source.
 
@@ -13,10 +13,10 @@ The current verifier hashes the tested AgentWatcher integration adapter so the i
 The source project artifact tree contains an AttriGuard USENIX-artifact snapshot under:
 
 ```text
-external/attriguard_zenodo_v1/
+third_party/integrations/attriguard_zenodo_v1/
 ```
 
-The project provenance records bind this material to the archived AttriGuard artifact and exact tested `AttriGuard.py` source hash used by the implementation-bound analysis. The package is preserved because it was present in the supplied artifact artifact tree.
+The project provenance records bind this material to the archived AttriGuard artifact and exact tested `AttriGuard.py` source hash used by the implementation-bound analysis. The package is preserved because it was present in the supplied artifact tree.
 
 A clear standalone redistribution license was not found in the supplied AttriGuard archive during curation. Therefore this artifact does **not** make an independent claim about AttriGuard redistribution rights. The retained provenance/source hashes allow the tested implementation to be identified. If the final hosting venue or artifact policy requires separate redistribution permission, the AttriGuard source subtree should be handled according to that policy rather than silently relicensed here.
 

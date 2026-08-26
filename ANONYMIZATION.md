@@ -13,7 +13,7 @@ The source snapshot contained:
 
 No scientific input, result row, model output, analysis output, protocol, freeze record, log, or manuscript-bearing producer was removed as a curation choice.
 
-`SOURCE_ARTIFACT_COVERAGE.tsv` is the authoritative one-row-per-source-file map. It contains:
+`supporting_material/provenance/SOURCE_ARTIFACT_COVERAGE.tsv` is the authoritative one-row-per-source-file map. It contains:
 
 ```text
 source_path
@@ -23,7 +23,7 @@ final_path
 final_sha256
 ```
 
-`SOURCE_ARTIFACT_COVERAGE.json` provides the summary counts used by `VERIFY.sh`.
+`supporting_material/provenance/SOURCE_ARTIFACT_COVERAGE.json` provides the summary counts used by `VERIFY.sh`.
 
 ## What was changed
 
@@ -60,6 +60,6 @@ bash VERIFY.sh
 
 ## Added rerun dependencies outside the original artifact derivative
 
-Two A13-C0 author-run archives were required by the original extension runner but lived outside the codebase `artifacts/` derivative. They are included so the branch can be executed that branch. Their research copies contained author-local paths only in logs/audit metadata, so the distributed archives replace those identity strings and tar owner names. `reproduction/A13_C0_ANONYMIZATION_MAP.md` records both original and anonymous archive hashes and the modified members. The science-bearing prefreeze script/JSON members remain byte-identical.
+Two A13-C0 author-run archives were required by the original extension runner but lived outside the codebase `artifacts/` derivative. They are included so that branch can be rerun. Their research copies contained author-local paths only in logs/audit metadata, so the distributed archives replace those identity strings and tar owner names. `reproduction/A13_C0_ANONYMIZATION_MAP.md` records both original and anonymous archive hashes and the modified members. The science-bearing prefreeze script/JSON members remain byte-identical.
 
 At rerun time, `reproduction/patch_a13c0_runner_for_anonymous_archives.py` makes a temporary copy of the original extension runner and updates only the two whole-archive SHA constants to the anonymized archive hashes. The temporary runner then creates a fresh preflight freeze, and science mode verifies that same temporary runner/freeze. The original research runner remains distributed unchanged.

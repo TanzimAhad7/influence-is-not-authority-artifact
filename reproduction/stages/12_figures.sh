@@ -6,8 +6,12 @@ OUT="$RESULTS_ROOT/$STAGE"
 TMP="$RUN_ROOT/figure_work"
 PHASE="$TMP/phase0"
 rm -rf "$OUT" "$TMP"
-mkdir -p "$OUT" "$TMP" "$PHASE" "$RESULTS_ROOT/logs"
-ln -s "$ARTIFACT_ROOT" "$PHASE/artifacts"
+mkdir -p "$OUT" "$TMP" "$PHASE/artifacts" "$RESULTS_ROOT/logs"
+# Figure producers retain their frozen historical path expectations. Build a
+# tiny compatibility view in the temporary figure work directory only.
+ln -s "$ARTIFACT_ROOT/studies/02_controlled_source_relocation/frozen_results" "$PHASE/artifacts/a14_minimal_factorial"
+ln -s "$ARTIFACT_ROOT/studies/03_matched_unauthorized_comparison/frozen_results" "$PHASE/artifacts/N3_PREFREEZE_AUTHOR_v1_1"
+ln -s "$ARTIFACT_ROOT/studies/04_threshold_frontier/frozen_results" "$PHASE/artifacts/R2B_JTF_AUTHOR_v1"
 # Figure 1: the supplied final bundle contains a frozen PDF but no Python producer.
 cp -f "$ARTIFACT_ROOT/figures/figure1.pdf" "$OUT/figure1.pdf"
 
@@ -20,8 +24,10 @@ cp "$TMP/f3/figure3.pdf" "$OUT/figure3.pdf"
 cp "$TMP/f4/figure4.pdf" "$OUT/figure4.pdf"
 
 # Figure 5 expects AW-N3 and N6 directly below PHASE0_ROOT.
-d="$TMP/f5"; mkdir -p "$d"; cp "$ARTIFACT_ROOT/figures/Figure5.py" "$d/"
-(cd "$d" && PHASE0_ROOT="$ARTIFACT_ROOT" python3 Figure5.py) 2>&1 | tee "$RESULTS_ROOT/logs/${STAGE}_figure5.log"
+d="$TMP/f5"; compat="$TMP/f5root"; mkdir -p "$d" "$compat"; cp "$ARTIFACT_ROOT/figures/Figure5.py" "$d/"
+ln -s "$ARTIFACT_ROOT/studies/05_agentwatcher/paired_gate_study" "$compat/AW_N3_AUTHOR_v1"
+ln -s "$ARTIFACT_ROOT/studies/06_attriguard/route_and_block_study" "$compat/n6_attriguard_n3_v1"
+(cd "$d" && PHASE0_ROOT="$compat" python3 Figure5.py) 2>&1 | tee "$RESULTS_ROOT/logs/${STAGE}_figure5.log"
 cp "$d/figures/figure5.pdf" "$OUT/figure5.pdf"
 
 # The supplied Figure6.py retains pre-anonymization hash locks.  The artifact adapter lives

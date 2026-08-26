@@ -1,0 +1,16 @@
+# Local Python environments and caches
+.venv/
+.venv-e2e/
+__pycache__/
+*.py[cod]
+
+# Generated verification and rerun outputs
+artifact_outputs/
+USENIX27_RERUN_*/
+USENIX27_FIGURE_RERUN_*/
+
+# Local editor / OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

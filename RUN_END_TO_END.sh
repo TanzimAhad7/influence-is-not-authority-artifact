@@ -89,6 +89,9 @@ echo "[master] copying frozen artifact to disposable worktree..."
 mkdir -p "$WORK_ROOT"
 # The venv and generated verification outputs are not scientific inputs and can be large.
 ( cd "$ARTIFACT_ROOT" && tar --exclude='./.venv-e2e' --exclude='./artifact_outputs' --exclude='./reproduction_runs' -cf - . ) | ( cd "$WORK_ROOT" && tar -xf - )
+# Historical experiment scripts retain their frozen top-level identifiers.
+# Recreate that layout only inside this disposable worktree.
+python3 "$ARTIFACT_ROOT/reproduction/materialize_legacy_worktree.py" --work-root "$WORK_ROOT"
 export ARTIFACT_ROOT WORK_ROOT RUN_ROOT
 export PYTHONUNBUFFERED=1
 export TOKENIZERS_PARALLELISM=false

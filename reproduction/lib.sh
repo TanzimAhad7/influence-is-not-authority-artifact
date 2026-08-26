@@ -23,12 +23,16 @@ run_logged(){
 }
 
 clear_path(){ rm -rf "$WORK_ROOT/$1"; }
+resolve_ref(){
+  python3 "$ARTIFACT_ROOT/reproduction/resolve_legacy_path.py" "$ARTIFACT_ROOT" "$1"
+}
 restore_path(){
-  local rel="$1"
+  local rel="$1" src
+  src="$(resolve_ref "$rel")"
   rm -rf "$WORK_ROOT/$rel"
-  if [[ -e "$REF_ROOT/$rel" ]]; then
+  if [[ -e "$src" ]]; then
     mkdir -p "$(dirname "$WORK_ROOT/$rel")"
-    cp -a "$REF_ROOT/$rel" "$WORK_ROOT/$rel"
+    cp -a "$src" "$WORK_ROOT/$rel"
   fi
 }
 capture_path(){
