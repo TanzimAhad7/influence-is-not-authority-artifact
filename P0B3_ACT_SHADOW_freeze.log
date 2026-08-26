@@ -1,0 +1,5 @@
+[P0B3-ACT-SHADOW-00] FREEZE PASS
+[P0B3-ACT-SHADOW-00] input_sha256=bc8c17c257b00a12295c54384c9ce7bc3490f8d6c1f1d3b89aee36641253746a
+[P0B3-ACT-SHADOW-00] denominators={'benign': 37, 'attack': 587} total=624
+[P0B3-ACT-SHADOW-00] freeze_sha256=87d3e83efdd6637a9f57931beeb309acb24c7936eecadd59a47cb54321349968
+[P0B3-ACT-SHADOW-00] NO shadow outcomes aggregated; ZERO model calls

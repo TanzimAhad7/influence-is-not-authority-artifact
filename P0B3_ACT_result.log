@@ -1,0 +1,6 @@
+[P0B3-ACT-01] COMPLETE / ZERO MODEL CALLS
+[P0B3-ACT-01] benign=20/37 (54.05%)
+[P0B3-ACT-01] attack=496/587 (84.50%)
+[P0B3-ACT-01] attack_minus_benign=+30.44 pp
+[P0B3-ACT-01] overall_reconciliation=516/624 (82.69%) PASS
+[P0B3-ACT-01] result_sha256=f1cc33cdd7009ab21b1d160b98e51094f598241d49ed0750ae40987ee3796d7a

@@ -1,0 +1,50 @@
+# P0b-3 LIVE v1 — exact commands
+
+cd /home/anon_/ratchet/phase0_pilot
+source /home/anon_/ratchet/phase0_pilot/.venv/bin/activate
+sha256sum P0B3_CAUSALARMOR_LIVE_v1.zip
+unzip -o P0B3_CAUSALARMOR_LIVE_v1.zip
+cd P0B3_CAUSALARMOR_LIVE_v1
+sha256sum -c PACKAGE_SHA256.txt
+cd /home/anon_/ratchet/phase0_pilot
+
+# Separate terminal: exact local attribution proxy on GPUs 2,3
+source /home/anon_/ratchet/phase0_pilot/.venv/bin/activate
+cd /home/anon_/ratchet/phase0_pilot
+CUDA_VISIBLE_DEVICES=2,3 vllm serve google/gemma-3-12b-it \
+  --revision 96b6f1eccf38110c56df3a15bffe176da04bfd80 \
+  --tokenizer-revision 96b6f1eccf38110c56df3a15bffe176da04bfd80 \
+  --served-model-name google/gemma-3-12b-it \
+  --dtype bfloat16 \
+  --tensor-parallel-size 2 \
+  --max-model-len 16384 \
+  --port 8100
+
+# Wait until model is ready
+curl -s http://127.0.0.1:8100/v1/models | python -m json.tool
+
+# Back in main terminal: excluded technical preflight (ZERO AgentDojo benchmark episodes)
+rm -rf /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_LIVE_RUN_v1
+python -u P0B3_CAUSALARMOR_LIVE_v1/P0B3_10_live_preflight.py \
+  --project-root /home/anon_/ratchet/phase0_pilot \
+  --package-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_LIVE_v1 \
+  --freeze-complete /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_CALIBRATION_FREEZE_COMPLETE_v1.zip \
+  --out-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_LIVE_RUN_v1
+cat P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_LIVE_PREFLIGHT.md
+
+# ONLY after PASS: full frozen science + analysis. Foreground:
+bash P0B3_CAUSALARMOR_LIVE_v1/P0B3_RUN_SCIENCE_THEN_ANALYZE.sh /home/anon_/ratchet/phase0_pilot
+
+# Or after PASS, background it so SSH can disconnect:
+nohup bash P0B3_CAUSALARMOR_LIVE_v1/P0B3_RUN_SCIENCE_THEN_ANALYZE.sh /home/anon_/ratchet/phase0_pilot \
+  > P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_SCIENCE_CONSOLE.log 2>&1 &
+echo $! | tee P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_SCIENCE.pid
+
+# Monitor
+tail -f P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_SCIENCE_CONSOLE.log
+
+# When finished
+cat P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_REPORT.md
+cat P0B3_CAUSALARMOR_LIVE_RUN_v1/FINAL_ARTIFACT_SHA256.txt
+zip -r P0B3_CAUSALARMOR_LIVE_COMPLETE_v1.zip P0B3_CAUSALARMOR_LIVE_v1 P0B3_CAUSALARMOR_LIVE_RUN_v1
+sha256sum P0B3_CAUSALARMOR_LIVE_COMPLETE_v1.zip | tee P0B3_CAUSALARMOR_LIVE_COMPLETE_v1.zip.sha256

@@ -1,0 +1,66 @@
+{
+  "base_url": "http://localhost:8110/v1",
+  "created_at_utc": "2026-08-09T16:38:17.612972+00:00",
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "preflight": {
+    "a": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        5018,
+        564,
+        794,
+        1904,
+        92
+      ],
+      "completion_token_ids_sha256": "df5dea317c86dc67f207252eff8e6a8705e4ed69261b9614eeae93c7bc6027dc",
+      "completion_token_logprobs": [
+        -6.98912239074707,
+        -15.50222110748291,
+        -0.173458069562912,
+        -2.7148079872131348,
+        -2.7746846675872803
+      ],
+      "prompt_token_count": 15,
+      "prompt_token_ids_sha256": "2a9aa16f8528d19a4977ed9d8a740e55ed07b857108690239622eecaa1381513",
+      "request_payload_sha256": "fcd39df0d1104ace507356bec7b71e99171f6ed4611c63875c25bd0f371630d7",
+      "sum_logprob": -28.154294222593307
+    },
+    "b": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        5018,
+        564,
+        794,
+        1904,
+        92
+      ],
+      "completion_token_ids_sha256": "df5dea317c86dc67f207252eff8e6a8705e4ed69261b9614eeae93c7bc6027dc",
+      "completion_token_logprobs": [
+        -6.98912239074707,
+        -15.50222110748291,
+        -0.173458069562912,
+        -2.7148079872131348,
+        -2.7746846675872803
+      ],
+      "prompt_token_count": 15,
+      "prompt_token_ids_sha256": "2a9aa16f8528d19a4977ed9d8a740e55ed07b857108690239622eecaa1381513",
+      "request_payload_sha256": "fcd39df0d1104ace507356bec7b71e99171f6ed4611c63875c25bd0f371630d7",
+      "sum_logprob": -28.154294222593307
+    },
+    "served_model_ids": [
+      "meta-llama/Llama-3.3-70B-Instruct"
+    ]
+  },
+  "protocol_hash": "94bb3c7e0ca174aa8be69b8c0949e7d93a567d960a9ba06016ba4d08f8503ee1",
+  "tokenizer": {
+    "bos_token_id": 128000,
+    "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+    "class": "TokenizersBackend",
+    "eos_token_id": 128009,
+    "is_fast": true,
+    "kind": "hf",
+    "model_name": "meta-llama/Llama-3.3-70B-Instruct",
+    "pad_token_id": 128004,
+    "vocab_size": 128256
+  }
+}

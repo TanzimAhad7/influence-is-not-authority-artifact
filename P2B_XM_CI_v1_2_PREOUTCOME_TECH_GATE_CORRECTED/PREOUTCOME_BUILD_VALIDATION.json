@@ -1,0 +1,94 @@
+{
+  "boundary": "Live excluded stress preflight on exact pinned Llama/Gemma/Qwen + vLLM 0.26.0 must be rerun on v1.2 bytes before global scientific freeze. v1.1 live 9/10 was excluded technical provenance only.",
+  "live_agentdojo_vllm_validation_performed_here": false,
+  "offline_checks": {
+    "adjacent_assistant_tool_envelope_merge_excluded_test": "PASS",
+    "corrected_parser_never_silently_maps_old_non_envelope_outputs_to_no_action": {
+      "P2B_XMODEL_GEMMA_RUN_v1_3": {
+        "FORMAT_INSTRUMENT_VIOLATION": 130
+      },
+      "P2B_XMODEL_LLAMA_RUN_v1_3": {
+        "FORMAT_INSTRUMENT_VIOLATION": 130
+      },
+      "P2B_XMODEL_QWEN_CANON_RUN_v1_3": {
+        "FORMAT_INSTRUMENT_VIOLATION": 130
+      }
+    },
+    "historical_assistant_text_lossless_excluded_test": "PASS",
+    "mock_global_freeze_and_integrity_verification": "PASS_V1_2",
+    "python_py_compile": "PASS_V1_2",
+    "scientific_execution_code_identity_vs_v1_1": "PASS: action interface, action-local oracle, render/arm freeze, baseline, arm analysis, H-SLOT, joint analysis, scientific inputs, taxonomy, and excluded stress cases byte-identical; only technical preflight/freeze binding/docs/registry-version provenance changed.",
+    "scientific_inputs_and_taxonomy_identity": {
+      "P2B_ARGUMENT_ROLE_TAXONOMY.json": {
+        "byte_identical": true,
+        "v1_2_sha256": "66a1705d422a0a8e0b7630f099c806df646f9354f996648d659dbb4a2f519b90",
+        "v1_3_sha256": "66a1705d422a0a8e0b7630f099c806df646f9354f996648d659dbb4a2f519b90"
+      },
+      "inputs/P2B_PREFLIGHT_SUMMARY.json": {
+        "byte_identical": true,
+        "v1_2_sha256": "fdac39d70a952eb28a424bc0538938b549f442225d7b61b90f6d3728c2d2f053",
+        "v1_3_sha256": "fdac39d70a952eb28a424bc0538938b549f442225d7b61b90f6d3728c2d2f053"
+      },
+      "inputs/P2B_REPLAY_CONTEXTS.jsonl": {
+        "byte_identical": true,
+        "v1_2_sha256": "1bbf011ec0affe6a5d332c61b6dda6d2820c549fe7cbc83439af38bf83b297ec",
+        "v1_3_sha256": "1bbf011ec0affe6a5d332c61b6dda6d2820c549fe7cbc83439af38bf83b297ec"
+      },
+      "inputs/P2B_REPLAY_INVENTORY.jsonl": {
+        "byte_identical": true,
+        "v1_2_sha256": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded",
+        "v1_3_sha256": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded"
+      }
+    },
+    "shell_bash_n": "PASS_V1_2",
+    "static_audit": "PASS_66_OF_66_V1_2",
+    "v1_2_unicode_open_text_live_case_replay_of_gate_logic": {
+      "branch_match": true,
+      "exact_expected_match": false,
+      "expected_call_count_match": true,
+      "expected_text_marker": "\u2713",
+      "expected_tool_names_match": true,
+      "interpretation": "Instrument-valid; semantic exactness diagnostic only.",
+      "observed_interface_error": null,
+      "observed_interface_status": "PARSED_TOOL",
+      "observed_text_marker": "\u2705",
+      "synthetic_tool_schema_valid": true,
+      "technical_pass_under_v1_2": true
+    },
+    "v1_3_original_parser_failure_reproduced": {
+      "P2B_XMODEL_GEMMA_RUN_v1_3": {
+        "parsed_rows": 0,
+        "parser_error_rows": 0,
+        "silent_no_call_no_error_rows": 130,
+        "silent_rows_with_name_material": 130
+      },
+      "P2B_XMODEL_LLAMA_RUN_v1_3": {
+        "parsed_rows": 15,
+        "parser_error_rows": 40,
+        "silent_no_call_no_error_rows": 75,
+        "silent_rows_with_name_material": 75
+      },
+      "P2B_XMODEL_QWEN_CANON_RUN_v1_3": {
+        "parsed_rows": 40,
+        "parser_error_rows": 0,
+        "silent_no_call_no_error_rows": 90,
+        "silent_rows_with_name_material": 85
+      }
+    }
+  },
+  "preoutcome_amendment": {
+    "candidate_interface_changed": false,
+    "change": "Separate technical instrument PASS from exact synthetic semantic replay diagnostic.",
+    "corrected_scientific_generations": 0,
+    "from": "v1.1",
+    "global_freeze_created": false,
+    "h_slot_changed": false,
+    "model_revisions_changed": false,
+    "scientific_gates_changed": false,
+    "scientific_inputs_changed": false,
+    "to": "v1.2",
+    "trigger": "Llama excluded stress_long_history_open_text parsed correctly but exact synthetic text differed only by Unicode \u2713 -> \u2705."
+  },
+  "schema": "P2B_XM_CI_PREOUTCOME_BUILD_VALIDATION_V1_2",
+  "scientific_model_generations": 0
+}

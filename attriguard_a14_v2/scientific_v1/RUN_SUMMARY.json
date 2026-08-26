@@ -1,0 +1,14 @@
+{
+  "attempts_sha256": "9c0e95fdd6170d7d2f5e64e5d321a5c447be6ff1a821792c65276cbc9db3f3d6",
+  "complete": true,
+  "expected_condition_repeats": 480,
+  "protocol_hash": "6445f8baf623e21e94d9e9cec2fc45d59e1e22f6a97ef4da2a69cec441e8deff",
+  "provider_calls_sha256": "7b0bc9e77284baf510b158f97123e6a6ef3611ee984d38ddffd1936fb21e5627",
+  "provider_response_models": [
+    "openai/gpt-4.1-mini"
+  ],
+  "provider_system_fingerprints": [],
+  "results_sha256": "7ca07efb6aa331a95c8e3439022aa23877bcb08f5052cb1727589738c83daca6",
+  "schema": "ATTRIGUARD_A14_V2_SCIENTIFIC_RUN_SUMMARY_V1_2026-08-10",
+  "successful_condition_repeats": 480
+}

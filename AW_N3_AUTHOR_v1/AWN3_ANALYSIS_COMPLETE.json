@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "completed_at_utc": "2026-08-19T23:34:18.243126+00:00",
+  "manifest_sha256": "7b61853d3004f81de26c7836117042a437ee35581030c275184021ee9d7f4d87",
+  "primary_category": "POSITIVE_SEPARATION",
+  "results_sha256": "37a4c8d561aeb3d1f43c8ec3b1582a280f482a2acbc3d121affb5029b0678f41",
+  "schema": "AWN3_ANALYSIS_COMPLETE_V1_2026-08-19",
+  "technical_valid": true
+}

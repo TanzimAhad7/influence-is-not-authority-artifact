@@ -1,0 +1,36 @@
+{
+  "schema": "P3_C0_CORRECTED29_REFRESH_CONFIG_V1",
+  "scientific_model_calls": 0,
+  "status": "POSTHOC_PRESENTATION_AND_INFLUENCE_REFRESH",
+  "bootstrap_repetitions": 20000,
+  "bootstrap_seed": 2718281,
+  "leave_one_task_bootstrap_repetitions": 5000,
+  "expected_inputs": {
+    "combined_73_ledger": {
+      "relative_path": "A13_C0_EXTENSION_SCIENCE_v1/A13_C0_COMBINED_73_DECISIONS_DERIVED_v1.jsonl",
+      "sha256": "f24b89d53ad504cf16dce3820e9b028f1d752bcc829ecf43ed3e0997feb764f5"
+    },
+    "extension_result": {
+      "relative_path": "A13_C0_EXTENSION_SCIENCE_v1/A13_C0_EXTENSION_RESULT_v1.json",
+      "sha256": "eba1b611f12ca49c476599fdd1a7fa736e5f499bfd0b14cd3bcaa7fda073addc"
+    }
+  },
+  "expected_population": {
+    "decision_rows": 73,
+    "primary_valid_decisions": 29,
+    "primary_valid_tasks": 25,
+    "labels": {"SPECIFIED": 8, "DELEGATED": 11, "PARTIAL": 10}
+  },
+  "frozen_headline_H": {
+    "specified_mean": 0.75,
+    "delegated_mean": 0.16666666666666666,
+    "difference": 0.5833333333333334,
+    "ci95": [0.15551282051282053, 0.9393939393939394]
+  },
+  "claim_boundaries": [
+    "This refresh makes the final figure match the corrected A13-C0 census; it does not replace the frozen C0 primary result.",
+    "Leave-one-suite/task analyses are post-hoc sensitivity/influence diagnostics, not new confirmatory endpoints.",
+    "No model, scorer, vLLM, OpenRouter, or Hugging Face call is permitted or required.",
+    "The historical P3 archive remains immutable and scientifically valid for the historical original-26 subset."
+  ]
+}

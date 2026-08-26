@@ -1,0 +1,60 @@
+[1/4] Freeze P3-C0 zero-call refresh
+P3-C0 FREEZE PASS: /home/anon_/ratchet/phase0_pilot/BASE_FINISHING_ZERO_CALL_v1/P3_C0/P3_C0_ANALYSIS_FREEZE.json
+freeze_payload_sha256=b6d591b402f2200f7af78f8021ba7e7bb406cf1e93ca390bfecb7b6b9609b8d8
+[2/4] Run P3-C0 corrected-29 refresh
+P3-C0 REFRESH PASS
+# P3-C0 corrected-29 zero-call refresh
+
+**Status:** COMPLETE / POST-HOC PRESENTATION + INFLUENCE REFRESH / 0 scientific model calls.
+
+## Frozen A13-C0 headline — unchanged
+
+- SPECIFIED H: `0.7500`
+- DELEGATED H: `0.1667`
+- difference: `+0.5833`
+- frozen 95% CI: `[+0.1555, +0.9394]`
+
+## Corrected-29 influence refresh
+
+- valid decisions: `29` across `25` tasks
+- leave-one-suite H difference range: `[+0.4444, +0.7024]`
+- leave-one-task H difference range: `[+0.5476, +0.7024]`
+- eligible-span count vs task-level H: Pearson `-0.1740`, Spearman `-0.1153`
+
+These deletion analyses are post-hoc sensitivity/influence diagnostics. They do not replace the frozen A13-C0 primary result.
+
+[3/4] Hash P3-C0 outputs
+9a2a7172ef294bac155888b9375b3cf3f8286bb393dab201a77508b22aef3050  P3_C0_ANALYSIS_FREEZE.json
+183721bbbfd0d5148e75ad5edcd386e70f2ddf4589b95b7dd8cadb060f015c56  P3_C0_REFRESH.json
+27dc75cbbc23ad19a634c8c5a92cafc8c4559b800c4200d5fef7a6af63cc4ce4  P3_C0_LEAVE_ONE_SUITE_OUT.csv
+960bf8d1af9da835acd126461a7dfe671617d22ad23c137cf018df815714d471  P3_C0_LEAVE_ONE_TASK_OUT.csv
+f29ef0b3e5858926f7bcf0526ce2ee8bf8112ca0e4f5bf0baa4e91ca6dd4d766  P3_C0_TASK_SPAN_DIAGNOSTICS.csv
+18f8b8ca041f99e3952118ef63db1e9ae756abcaf403b71295f2193022a0e500  P3_C0_FOREST.svg
+35838a8c5b06f71e3d8a38393fb81c4fd498847ef32b42aca3ca4728ce923f0b  P3_C0_SUMMARY.md
+[4/4] Audit A14 raw-response recovery
+# A14-AR raw-response provenance audit
+
+**Status:** A14_AR_COMPLETE / 0 scientific model calls.
+
+## llama
+- status: `COMPLETE_RECOVERED_RAW_LEDGER`
+- authoritative condition-score ledger valid: `True`
+- condition-score SHA-256: `1c2ee74880a4a74d2bbfad06a6fad4e0f8c09a0fd474d8a0a9a7e43f5fb91111`
+- raw rows: `672`
+- raw bytes: `31837346`
+- raw SHA-256: `4dcd7fcfba6d467165f600dbd30eb37ebfbff43521498f5c1f5f8308a553efc7`
+- 96/96 condition coverage: `True`
+- deep raw→score-cache reconciliation: `True`
+
+## gemma
+- status: `COMPLETE_RECOVERED_RAW_LEDGER`
+- authoritative condition-score ledger valid: `True`
+- condition-score SHA-256: `edbf606d112410e50ff260e63d7008470c5299ddabfd43188ed7d942c42ec0fa`
+- raw rows: `384`
+- raw bytes: `19461917`
+- raw SHA-256: `fdffd1ba81329d04e82b72caf8ce0f053ca052777b9aa02b2bee51162a802c16`
+- 96/96 condition coverage: `True`
+- deep raw→score-cache reconciliation: `True`
+
+The available raw-response ledgers are complete, parseable, cover all 96 authoritative conditions per scorer, and reconcile to the immutable score/cache provenance. Archive these exact copies and hashes; no A14 scientific rerun is warranted.
+DONE: /home/anon_/ratchet/phase0_pilot/BASE_FINISHING_ZERO_CALL_v1

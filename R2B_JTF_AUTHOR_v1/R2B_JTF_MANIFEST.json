@@ -1,0 +1,26 @@
+{
+  "files": {
+    "R2B_JTF_FREEZE.json": "29e5214c733b1bfcf2bfc7b4adb0c165d36343f310b34a0fa2630947d4f67d45",
+    "R2B_JTF_FRONTIER_gemma.csv": "c8daf9a8fcbb8152a8331965ae5dbd7d87cd49f0b9f6d2fec4b212922fff13ee",
+    "R2B_JTF_FRONTIER_llama.csv": "aee885ed9a001b0f368a954aeaf657c2b1fb9e288cdda633bc4d54d817149fc2",
+    "R2B_JTF_REPORT.md": "57e48207d360a810794022dc72a968a121a4eaaa647326a115295cf669376fca",
+    "R2B_JTF_RESULTS.json": "ee5becff3cdf1397a088d82f1487ce0af4eea3c202f7cc78eb3c3a6c38f5991f"
+  },
+  "implementation_hashes": {
+    "PROTOCOL_SPEC.md": "de4259794a8b0fa4bce59e91511252ee44ecee4c1e00dfad7ca29b00e96181ef",
+    "R2B_00_freeze.py": "2f23dd81c4550b717f071103c25b4244ee7144af1fd7f86aaaf200b430f187e3",
+    "R2B_01_analyze.py": "ae25d82da1c523198d365026d51abf5cf3d51d6276c6880c15be09d519f7856c",
+    "R2B_02_verify.py": "47105cf680045d226218fa51c7ad680689c38ac9ac67b8366e8888438ecf0228",
+    "README.md": "3f286436a9095afe36abbb04ce230d33239cdae8d6821ad1631fcfa141ad0c5d",
+    "analyze_R2B_JTF_v1.sh": "a8cb5675f98de73e9b80cac94e5494d7bd2b0502289163226ddc444ee8c25196",
+    "freeze_R2B_JTF_v1.sh": "bc3d99ede4d3edac29ddb79995e31eafcb9d4b457f3ca26937a2dbcadb0f2006"
+  },
+  "inputs": {
+    "a14_gemma": "edbf606d112410e50ff260e63d7008470c5299ddabfd43188ed7d942c42ec0fa",
+    "a14_llama": "1c2ee74880a4a74d2bbfad06a6fad4e0f8c09a0fd474d8a0a9a7e43f5fb91111",
+    "n3_gemma": "7aaa9ee6b75eabeddcb16dae331d2d0e42c1f650a0d550d417c26d55bb7e8aa7",
+    "n3_llama": "953b8ffb036af99a73fa571c0b4ffae7b2194b43b78b703f23f4c0f8eaa1d89f"
+  },
+  "schema": "R2B_JTF_V1_2026-08-19",
+  "status": "R2B_JTF_MANIFEST_COMPLETE"
+}

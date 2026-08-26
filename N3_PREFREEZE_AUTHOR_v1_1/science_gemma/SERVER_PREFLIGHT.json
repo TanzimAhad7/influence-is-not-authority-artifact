@@ -1,0 +1,94 @@
+{
+  "base_url": "http://localhost:8121/v1",
+  "freeze_file_sha256": "31023829c753363e3a72759e3f0b8278735a940c5c25744854b382d99572371a",
+  "freeze_sha256": "0d9d1037600d5c41ac7b6fdade9e9fc9e85b5f0b777c0cdcd3461b0520427be8",
+  "model": {
+    "model": "google/gemma-3-12b-it",
+    "port": 8121,
+    "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "role": "SOURCE_FIDELITY_REPLICATION"
+  },
+  "preflight": {
+    "a": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        14937,
+        680,
+        1083,
+        3397,
+        236783
+      ],
+      "completion_token_ids_sha256": "e41c99e652f474a12c76486c4f4f74e8fbcb8159afe65db2b6ccce0214d80294",
+      "completion_token_logprobs": [
+        -7.507282257080078,
+        -9.670412063598633,
+        -1.7913821935653687,
+        -0.5677719116210938,
+        -0.06068071722984314
+      ],
+      "prompt_token_count": 20,
+      "prompt_token_ids_sha256": "c2c365ec6e2ef21c23cdbddc73d32986a39aa352b83e866de04fc5b03806549b",
+      "request_payload_sha256": "6c4a60f5bc85acf33f35bda6c0d939b1d407b5729df616e738f678710fa34395",
+      "sum_logprob": -19.597529143095016
+    },
+    "b": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        14937,
+        680,
+        1083,
+        3397,
+        236783
+      ],
+      "completion_token_ids_sha256": "e41c99e652f474a12c76486c4f4f74e8fbcb8159afe65db2b6ccce0214d80294",
+      "completion_token_logprobs": [
+        -7.507282257080078,
+        -9.670412063598633,
+        -1.7913821935653687,
+        -0.5677719116210938,
+        -0.06068071722984314
+      ],
+      "prompt_token_count": 20,
+      "prompt_token_ids_sha256": "c2c365ec6e2ef21c23cdbddc73d32986a39aa352b83e866de04fc5b03806549b",
+      "request_payload_sha256": "6c4a60f5bc85acf33f35bda6c0d939b1d407b5729df616e738f678710fa34395",
+      "sum_logprob": -19.597529143095016
+    },
+    "served_model_ids": [
+      "google/gemma-3-12b-it"
+    ],
+    "tokenizer_name": "google/gemma-3-12b-it"
+  },
+  "runtime_evidence": {
+    "cmdline_argv": [
+      "/home/anon_/ratchet/phase0_pilot/.venv/bin/python3.11",
+      "/home/anon_/ratchet/phase0_pilot/.venv/bin/vllm",
+      "serve",
+      "google/gemma-3-12b-it",
+      "--revision",
+      "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "--tokenizer-revision",
+      "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "--served-model-name",
+      "google/gemma-3-12b-it",
+      "--tensor-parallel-size",
+      "2",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "16384",
+      "--gpu-memory-utilization",
+      "0.90",
+      "--max-logprobs",
+      "5",
+      "--port",
+      "8121"
+    ],
+    "cmdline_sha256": "ba62d12125e89c5c6bdd9bc3ca80d0101e6538067dfdce95eb0f0c9f4da7f204",
+    "pid": 1630231,
+    "pid_file": "/home/anon_/ratchet/phase0_pilot/logs/n3_vllm_gemma.pid",
+    "verified_model": "google/gemma-3-12b-it",
+    "verified_port": 8121,
+    "verified_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "verified_tokenizer_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+  }
+}

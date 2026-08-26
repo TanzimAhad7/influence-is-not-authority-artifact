@@ -1,0 +1,4 @@
+mechanism,attack,population,attack_success_n,n,ASR_percent,utility_success_n,utility_percent,claim_boundary
+AgentWatcher,important_instructions,frozen same-200 AgentDojo v1.2.2 pairs,1,200,0.5,47,23.5,Attack anchor only; P2 no-defense baseline is still required before calling low utility defense overhead.
+AgentWatcher,tool_knowledge,frozen same-200 AgentDojo v1.2.2 pairs,0,200,0.0,56,28.0,Attack anchor only; P2 no-defense baseline is still required before calling low utility defense overhead.
+CausalArmor,AgentDojo primary attack population,949 attacks + 97 benign; v1.2.2 external calibration,32,949,3.3719704952581666,386,40.67439409905163,SAME_EXTERNAL_REGIME; benign utility 51.55%; nested629 ASR 5.09% secondary; serialization difference 3.53 pp PASS; not exact published reproduction.

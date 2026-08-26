@@ -1,0 +1,120 @@
+{
+  "attack_runs": {
+    "important_instructions": {
+      "attack_type": "important_instructions",
+      "expected_n": 200,
+      "path": "external/AgentWatcher_armc_runtime_v1/results/agent_evaluations/agentdojo/A15B0_ARMC_SCI_IMPORTANT_INSTRUCTIONS_200"
+    },
+    "tool_knowledge": {
+      "attack_type": "tool_knowledge",
+      "expected_n": 200,
+      "path": "external/AgentWatcher_armc_runtime_v1/results/agent_evaluations/agentdojo/A15B0_ARMC_SCI_TOOL_KNOWLEDGE_200"
+    }
+  },
+  "hard_boundaries": [
+    "P6 is synthesis/evaluation design, not a new universal scalar or fifth contribution.",
+    "A15a / AgentWatcher-natural / corrected P2b remain historical original-26 subset studies.",
+    "P2b has 390 generations but 78 model\u00d7decision cells; five repeats are stability repeats, not independent samples.",
+    "Selected-population masking analyses are post-hoc and composition-confounded; do not call them causal effects.",
+    "AttriGuard fuzzy-survival routes are not final false positives.",
+    "R2A benign threshold robustness does not establish retained attack sensitivity at alternative thresholds.",
+    "P0b-3 is SAME_EXTERNAL_REGIME with population/suite qualification, not an exact published reproduction."
+  ],
+  "inputs": {
+    "a15a_results": {
+      "path": "a15a_selectivity_consequence/results.json",
+      "sha256": "37ceca159e85c2bc3f8401f78e77ccde588373f8064a97f67b6bd19b54e303d2"
+    },
+    "agentwatcher_analysis": {
+      "path": "a15b0_architecture_boundary/analysis_results.json",
+      "sha256": "61c6aba74d606d427e7b762e7b820164957b4f6db712c9d859ae2ac047bcd222"
+    },
+    "agentwatcher_attack_freeze": {
+      "path": "a15b0_architecture_boundary/attack_anchor/A15B0_ARMC_ATTACK_ANCHOR_FREEZE.json",
+      "sha256": "95fed674256165c5be2ae836d3268ffd3a6993239ebe0cfb2eb32f3b85c20a4a"
+    },
+    "agentwatcher_controlled": {
+      "path": "a15b0_architecture_boundary/agentwatcher_controlled_outputs.jsonl",
+      "sha256": "5b398101b15e6013ba26ee485937dfb42d26315712a25597f7b19779dd5e8e76"
+    },
+    "agentwatcher_natural": {
+      "path": "a15b0_architecture_boundary/agentwatcher_natural_outputs.jsonl",
+      "sha256": "a89797052c1c37a784c60b9f3a882055b60f20f18ead456cadb84606e0ae57e2"
+    },
+    "attriguard_analysis": {
+      "path": "attriguard_a14_v2/scientific_v1/SCIENTIFIC_ANALYSIS.json",
+      "sha256": "3b74caf3ff5960fc3ee8a3222975a3d715dd46d9d58b28a06a88c434abeadb65"
+    },
+    "attriguard_results": {
+      "path": "attriguard_a14_v2/scientific_v1/SCIENTIFIC_RESULTS.jsonl",
+      "sha256": "7ca07efb6aa331a95c8e3439022aa23877bcb08f5052cb1727589738c83daca6"
+    },
+    "causalarmor_natural": {
+      "path": "a15b0_architecture_boundary/causalarmor_natural_gemma.jsonl",
+      "sha256": "821c6911be44318d9cc93f62b45644721fe624c89d24a0727c59ef70df55190d"
+    },
+    "hslot_gemma": {
+      "path": "P2B_XM_CI_GEMMA_RUN_v1_2/P2B_CI_ARGUMENT_VOLATILITY.json",
+      "sha256": "51807d20e4472068535eb62aa48434d9494a3935a379f09461154203251a4f95"
+    },
+    "hslot_llama": {
+      "path": "P2B_XM_CI_LLAMA_RUN_v1_2/P2B_CI_ARGUMENT_VOLATILITY.json",
+      "sha256": "8d52b84fcdd55bee31ed0961cebc9cffd57754ba21bc956122578edfc08c7608"
+    },
+    "hslot_qwen": {
+      "path": "P2B_XM_CI_QWEN_RUN_v1_2/P2B_CI_ARGUMENT_VOLATILITY.json",
+      "sha256": "b0f31149efbcc6336e20bb8e2903db9f043ae72878a8325555310719a9aafa50"
+    },
+    "p0b3_analysis": {
+      "path": "P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_ANALYSIS.json",
+      "sha256": "baac16a841cb7155dd77c32c86c5478e3a3566f5dc67af016ffc10d0169fe857"
+    },
+    "p0b3_complete": {
+      "path": "P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_CLEAN_FULL_RERUN_COMPLETE.json",
+      "sha256": "81f76eeb4823fb01aed315ba285837b1b45d00edcb28b559f28775b3419d1eb0"
+    },
+    "p2b_gemma": {
+      "path": "P2B_XM_CI_GEMMA_RUN_v1_2/P2B_CI_ARM_ANALYSIS.json",
+      "sha256": "67078992a775140702d5ceaeccf7f42b11f6d972731c034afcbdaca5700a7ee7"
+    },
+    "p2b_joint": {
+      "path": "P2B_XM_CI_JOINT_v1_2/P2B_XM_CI_JOINT.json",
+      "sha256": "b561e0c3ed2d56c0d4abc8323ae40429d210bb5b554328c8181d27e9428f2014"
+    },
+    "p2b_llama": {
+      "path": "P2B_XM_CI_LLAMA_RUN_v1_2/P2B_CI_ARM_ANALYSIS.json",
+      "sha256": "f0f3ff487d1d77d98c76875370d7ef6947758e3439d129970898f4a8b2ca886c"
+    },
+    "p2b_qwen": {
+      "path": "P2B_XM_CI_QWEN_RUN_v1_2/P2B_CI_ARM_ANALYSIS.json",
+      "sha256": "3198bccfe160c13d476bddbe88846aa7cf3cac356aff56dabd44ba1ed92baec0"
+    },
+    "p3_cells": {
+      "path": "P3_HARDENING_RUN_v1/P3_P2B_MODEL_DECISION_CELLS.csv",
+      "sha256": "154a5e9402c9eaa0e918771851206122ad920ca8ed28e656553ffeb5153634e0"
+    },
+    "p3_hardening": {
+      "path": "P3_HARDENING_RUN_v1/P3_HARDENING.json",
+      "sha256": "a5736c0795ea8254f8248414e83bbf0e0ac925c33ed71f7a1c437510d52a06a0"
+    },
+    "r2a_gemma_sweep": {
+      "path": "a14_minimal_factorial/threshold_aivr_v1/threshold_sweep_gemma.csv",
+      "sha256": "680b50c3065cabe41d0474ef13b15dd5aa6888715e053e1122c76b1976720184"
+    },
+    "r2a_llama_sweep": {
+      "path": "a14_minimal_factorial/threshold_aivr_v1/threshold_sweep_llama.csv",
+      "sha256": "0d4b70ae54389a0127cbbffc96dee85396017ae4eff02b8a68a269c890fa83bb"
+    },
+    "r2a_results": {
+      "path": "a14_minimal_factorial/threshold_aivr_v1/results.json",
+      "sha256": "f687cfe54caafe158015d99151df046b926b457ce34e66f041e7076bbfe1abfe"
+    }
+  },
+  "population_lineage": {
+    "a13_c0_note": "Coverage-corrected A13 ecological census is 29 valid decisions; P6 does not retroactively expand completed original-26 downstream studies.",
+    "natural_downstream_scope": "Historical original-26 A13-valid subset for A15a / AgentWatcher-natural / corrected P2b; do not describe these rows as corrected-29 prevalence."
+  },
+  "project_root_default": "/home/anon_/ratchet/phase0_pilot",
+  "purpose": "Zero-model-call synthesis of authorization consistency, benign operating point, malicious discrimination, replay/equivalence validity, and selected-population behavior.",
+  "schema": "P6_CLEAN_ZERO_CALL_CONFIG_V1_2026-08-12"
+}

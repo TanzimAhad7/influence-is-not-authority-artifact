@@ -1,0 +1,45 @@
+DEV_AUDITPATH_PREFLIGHT PASS (reused; no new live call)
+{
+  "status": "PASS",
+  "known_primary": 1.0,
+  "observed_primary": 1.0,
+  "complete_tasks": 12
+}
+{
+  "status": "PASS",
+  "n_expected": 28,
+  "n_pass": 28,
+  "n_fail": 0,
+  "NO_SCIENTIFIC_MODEL_CALLS": true
+}
+# E2E-ATTR-AUTH PREFREEZE COMPLETE — PATCH 2 RESEALED
+
+**GO: PASS**  
+**Timestamp UTC:** 2026-08-21T01:57:56.220600+00:00  
+**B:** 14 natural tasks  
+**Planned scheduled executions:** 420  
+**Scientific outcome rows present at reseal:** 0  
+**AgentDojo:** 0.1.35 / benchmark v1  
+**Defense:** official source-locked AttriGuard, fuzzy, level 2  
+**Victim / shadow / judge:** openai/gpt-4.1-mini through frozen OpenRouter path  
+**Patch status:** YAML-safe intervention transport, ITT non-delivery, audit-path preflight, runtime/source/environment integrity, and complete-block analysis reconciled before science.  
+
+The population, factors, PAEF endpoint, primary estimand, randomization seed, and 420-row schedule are unchanged.
+After the first sealed scientific run, the no-v2 science stop law applies regardless of outcome.
+
+{
+  "status": "PATCH2_RESEAL_PASS",
+  "GO": "PASS",
+  "B": 14,
+  "N_exec": 420,
+  "scientific_outcomes": 0,
+  "external_tools_hash": "18aada875ef67f3eb4a221901dfe80a63a343d9054ae2e956c73a112537f4deb",
+  "source_files_locked": 32,
+  "pre_environment_locks": 42,
+  "carrier_tool_audit_rows": 14
+}
+PREFREEZE SEAL VERIFY PASS files=67
+=== PATCH2C COMPLETE ===
+No new live/model call was made.
+Scientific outcome rows remain zero.
+NEXT: launch the sealed scientific run.

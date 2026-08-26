@@ -1,0 +1,5 @@
+suite,user_task_count,injection_target_count_v1_2_2,legacy_intersection_target_count,primary_pair_count,legacy_pair_count
+banking,16,9,9,144,144
+slack,21,5,5,105,105
+travel,20,7,7,140,140
+workspace,40,14,6,560,240

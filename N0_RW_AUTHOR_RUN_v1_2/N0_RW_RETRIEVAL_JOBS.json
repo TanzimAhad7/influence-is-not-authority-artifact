@@ -1,0 +1,698 @@
+[
+  {
+    "job_id": "ARXIV_SEEDS",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?id_list=2602.07918%2C2603.10749%2C2602.22724%2C2605.11039%2C2605.26497%2C2606.08275%2C2607.20827%2C2603.19469%2C2503.15547%2C2606.13884%2C2605.03378%2C2605.17634%2C2607.01236%2C2604.04978%2C2607.06000%2C2607.10487%2C2607.27267&max_results=17",
+    "raw_file": "raw/arxiv_seed_neighbors.xml",
+    "raw_sha256": "8755a49dbdb28e634ebb1fc9b564fe432ab5a9ae2d8b8024203fcb79d42aee40",
+    "response_meta": {
+      "total_results": 17,
+      "items_per_page": 17,
+      "entries_parsed": 17
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q01_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3Aauthorization+OR+all%3Aauthority+OR+all%3Apermission%29+AND+%28all%3Aprovenance+OR+all%3A%22prompt+injection%22+OR+all%3Aguardrail%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q01_relevance.xml",
+    "raw_sha256": "043d9a6fa12fa03394ddb9f0250ccafb688ab9d5e6fd8131f95142579270d7ff",
+    "response_meta": {
+      "total_results": 44,
+      "items_per_page": 100,
+      "entries_parsed": 44
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q01_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3Aauthorization+OR+all%3Aauthority+OR+all%3Apermission%29+AND+%28all%3Aprovenance+OR+all%3A%22prompt+injection%22+OR+all%3Aguardrail%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q01_recent.xml",
+    "raw_sha256": "4f876a24f05464d87cdf6b366f6964ad79ad780eedd0a37ca6e32840e95a3986",
+    "response_meta": {
+      "total_results": 44,
+      "items_per_page": 50,
+      "entries_parsed": 44
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q02_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22source+authority%22+OR+all%3A%22source+trust%22+OR+all%3Aprovenance%29+AND+%28all%3Aaction+OR+all%3A%22tool+call%22%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q02_relevance.xml",
+    "raw_sha256": "5634ab4909845e23b8d3825393ccfd2bc31db8aa05ee1adf24aad1e31e881f84",
+    "response_meta": {
+      "total_results": 36,
+      "items_per_page": 100,
+      "entries_parsed": 36
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q02_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22source+authority%22+OR+all%3A%22source+trust%22+OR+all%3Aprovenance%29+AND+%28all%3Aaction+OR+all%3A%22tool+call%22%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q02_recent.xml",
+    "raw_sha256": "57ea4e5ce1743b3b1beb4285112436e4e7669e611db550f1a891e3965c769002",
+    "response_meta": {
+      "total_results": 36,
+      "items_per_page": 50,
+      "entries_parsed": 36
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q03_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22causal+attribution%22+OR+all%3Acounterfactual+OR+all%3Aablation%29+AND+%28all%3A%22prompt+injection%22+OR+all%3Aguardrail+OR+all%3Asecurity%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q03_relevance.xml",
+    "raw_sha256": "b0c81022df499da2543b65bbbc4ede033d67b63da8d1aba5ff387e7e4f21ec50",
+    "response_meta": {
+      "total_results": 35,
+      "items_per_page": 100,
+      "entries_parsed": 35
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q03_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22causal+attribution%22+OR+all%3Acounterfactual+OR+all%3Aablation%29+AND+%28all%3A%22prompt+injection%22+OR+all%3Aguardrail+OR+all%3Asecurity%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q03_recent.xml",
+    "raw_sha256": "03b8ab8ee54c5e77b797cc9d84b7833d201e71fde69c21e23280cc797484a5ee",
+    "response_meta": {
+      "total_results": 35,
+      "items_per_page": 50,
+      "entries_parsed": 35
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q04_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22task-relevant+evidence%22+OR+all%3A%22authorized+evidence%22+OR+all%3A%22untrusted+evidence%22+OR+all%3A%22external+evidence%22%29+AND+%28all%3Acontrol+OR+all%3Aauthorization+OR+all%3Aguardrail%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q04_relevance.xml",
+    "raw_sha256": "fb98460e3b67d0c11897082642e2f013609c8f788bb9058e27a0c21ae9356eae",
+    "response_meta": {
+      "total_results": 4,
+      "items_per_page": 100,
+      "entries_parsed": 4
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q04_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22task-relevant+evidence%22+OR+all%3A%22authorized+evidence%22+OR+all%3A%22untrusted+evidence%22+OR+all%3A%22external+evidence%22%29+AND+%28all%3Acontrol+OR+all%3Aauthorization+OR+all%3Aguardrail%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q04_recent.xml",
+    "raw_sha256": "0afe45431b5d41a00a72e206fa2cf4b9580008960852eb23bedcaf0be2d5ef31",
+    "response_meta": {
+      "total_results": 4,
+      "items_per_page": 50,
+      "entries_parsed": 4
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q05_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22negative+control%22+OR+all%3A%22positive+control%22+OR+all%3Ainvariance+OR+all%3Ametamorphic+OR+all%3A%22stress+test%22%29+AND+%28all%3Asecurity+OR+all%3Aguardrail+OR+all%3Aauthorization%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q05_relevance.xml",
+    "raw_sha256": "e2170fce45edd93a15903cb04e67993a9f440f873b98ab7b7bd410e7bbe6f6c9",
+    "response_meta": {
+      "total_results": 29,
+      "items_per_page": 100,
+      "entries_parsed": 29
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q05_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22negative+control%22+OR+all%3A%22positive+control%22+OR+all%3Ainvariance+OR+all%3Ametamorphic+OR+all%3A%22stress+test%22%29+AND+%28all%3Asecurity+OR+all%3Aguardrail+OR+all%3Aauthorization%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q05_recent.xml",
+    "raw_sha256": "d652b0918e7fb293f187da409b7cbba1690f0b347a28d30531ee6389a89d5f2e",
+    "response_meta": {
+      "total_results": 29,
+      "items_per_page": 50,
+      "entries_parsed": 29
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q06_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22construct+validity%22+OR+all%3Aspecificity+OR+all%3A%22property+preserving%22+OR+all%3A%22property-preserving%22%29+AND+%28all%3Asecurity+OR+all%3Aguardrail+OR+all%3Aauthorization%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q06_relevance.xml",
+    "raw_sha256": "80177d35893d4a728e1bf3208dbb65a9d39c59182b717def84cd6d685be56f64",
+    "response_meta": {
+      "total_results": 185,
+      "items_per_page": 100,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q06_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22construct+validity%22+OR+all%3Aspecificity+OR+all%3A%22property+preserving%22+OR+all%3A%22property-preserving%22%29+AND+%28all%3Asecurity+OR+all%3Aguardrail+OR+all%3Aauthorization%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q06_recent.xml",
+    "raw_sha256": "98876791a35c3cef087607d86843c266cf1ca42048356242b8036fe4373df7e7",
+    "response_meta": {
+      "total_results": 185,
+      "items_per_page": 50,
+      "entries_parsed": 50
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q07_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22argument+role%22+OR+all%3A%22argument-level%22+OR+all%3A%22parameter+source%22%29+AND+%28all%3Aprovenance+OR+all%3Aauthority+OR+all%3Aauthorization%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q07_relevance.xml",
+    "raw_sha256": "cf6e42af0c39212768c3751da46f5efb32352da2ec0271ea51ad7858a7fc743f",
+    "response_meta": {
+      "total_results": 3,
+      "items_per_page": 100,
+      "entries_parsed": 3
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q07_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22argument+role%22+OR+all%3A%22argument-level%22+OR+all%3A%22parameter+source%22%29+AND+%28all%3Aprovenance+OR+all%3Aauthority+OR+all%3Aauthorization%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q07_recent.xml",
+    "raw_sha256": "3a5384eb68bbd49c3e663b152cfaad452eee7bb217f9b3ec5bc32b29990305ec",
+    "response_meta": {
+      "total_results": 3,
+      "items_per_page": 50,
+      "entries_parsed": 3
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q08_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22least+privilege%22+OR+all%3Acapability+OR+all%3Apermission%29+AND+%28all%3Acausal+OR+all%3Aprovenance+OR+all%3A%22prompt+injection%22%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q08_relevance.xml",
+    "raw_sha256": "0b2480522031eff335afe2346c92a17296146d3f1399398b94ed763ac1287e7f",
+    "response_meta": {
+      "total_results": 101,
+      "items_per_page": 100,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q08_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3A%22least+privilege%22+OR+all%3Acapability+OR+all%3Apermission%29+AND+%28all%3Acausal+OR+all%3Aprovenance+OR+all%3A%22prompt+injection%22%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q08_recent.xml",
+    "raw_sha256": "d089959d4164577234ff8170e57df1796f56a7dd5a4cb7ad4c6946dfec96066a",
+    "response_meta": {
+      "total_results": 101,
+      "items_per_page": 50,
+      "entries_parsed": 50
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q09_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+all%3A%22indirect+prompt+injection%22+AND+%28all%3Aauthorization+OR+all%3Aauthority+OR+all%3Aprovenance%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q09_relevance.xml",
+    "raw_sha256": "89bcd0e232fbf87d54ba032ecc81bc628db46043d8c30efa199ac7269fb16f82",
+    "response_meta": {
+      "total_results": 10,
+      "items_per_page": 100,
+      "entries_parsed": 10
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q09_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+all%3A%22indirect+prompt+injection%22+AND+%28all%3Aauthorization+OR+all%3Aauthority+OR+all%3Aprovenance%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q09_recent.xml",
+    "raw_sha256": "f598ac790f916a3a4961e937158ab9ab4c355fcde06295933ea0429fca50aedb",
+    "response_meta": {
+      "total_results": 10,
+      "items_per_page": 50,
+      "entries_parsed": 10
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q10_RELEVANCE",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3Aaudit+OR+all%3Aevaluation+OR+all%3A%22stress+test%22%29+AND+%28all%3Aguardrail+OR+all%3Adefense%29+AND+%28all%3Aauthorization+OR+all%3Aauthority+OR+all%3Aprovenance%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=100&sortBy=relevance&sortOrder=descending",
+    "raw_file": "raw/arxiv_q10_relevance.xml",
+    "raw_sha256": "e18e27895de1ba87e8e86405f21b8d806e1033c2946ae5195abd4941706ebf5e",
+    "response_meta": {
+      "total_results": 33,
+      "items_per_page": 100,
+      "entries_parsed": 33
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "ARXIV_Q10_RECENT",
+    "source": "arxiv",
+    "status": "SUCCESS",
+    "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22LLM+agent%22+OR+all%3A%22LLM+agents%22+OR+all%3A%22large+language+model+agent%22+OR+all%3A%22large+language+model+agents%22%29+AND+%28all%3Aaudit+OR+all%3Aevaluation+OR+all%3A%22stress+test%22%29+AND+%28all%3Aguardrail+OR+all%3Adefense%29+AND+%28all%3Aauthorization+OR+all%3Aauthority+OR+all%3Aprovenance%29%29+AND+submittedDate%3A%5B202201010000+TO+202608122359%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending",
+    "raw_file": "raw/arxiv_q10_recent.xml",
+    "raw_sha256": "58ca86a8bd4bf83f11fcd7203b5a35000fb0266e79a82cd5f5a0e9e25a93387b",
+    "response_meta": {
+      "total_results": 33,
+      "items_per_page": 50,
+      "entries_parsed": 33
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "",
+    "rate_limit_credits_used": ""
+  },
+  {
+    "job_id": "OPENALEX_Q01_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28authorization+OR+authority%29+AND+%28provenance+OR+%22prompt+injection%22+OR+guardrail%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q01_relevance.json",
+    "raw_sha256": "8ec110c265b2099856acd004dc9f694b34054c99f79488916633a42d8057b2b2",
+    "response_meta": {
+      "count": 1858,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "990",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q01_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28authorization+OR+authority%29+AND+%28provenance+OR+%22prompt+injection%22+OR+guardrail%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q01_recent.json",
+    "raw_sha256": "61eef5553f27120888fc3df5712743a86f71606dafe5dff4f19b6ffb18d1ad95",
+    "response_meta": {
+      "count": 1858,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "980",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q02_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22source+authority%22+OR+%22source+trust%22+OR+provenance%29+AND+%28action+OR+%22tool+call%22%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q02_relevance.json",
+    "raw_sha256": "d83a0bc0e21886d33c1e38bede28a8c8dd2e3a4cf357e1b7f7cf54434e1d8d88",
+    "response_meta": {
+      "count": 2180,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "970",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q02_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22source+authority%22+OR+%22source+trust%22+OR+provenance%29+AND+%28action+OR+%22tool+call%22%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q02_recent.json",
+    "raw_sha256": "fe0db05dac27779a134580fab59a337edd540835b261bc3680aae11699ec120b",
+    "response_meta": {
+      "count": 2180,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "960",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q03_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22causal+attribution%22+OR+counterfactual+OR+ablation%29+AND+%28%22prompt+injection%22+OR+guardrail%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q03_relevance.json",
+    "raw_sha256": "5bbfcdfad4a9d12ecfb4a4e03df4dbabeea1c0fa978b23acffae3e3a839a9d91",
+    "response_meta": {
+      "count": 2730,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "950",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q03_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22causal+attribution%22+OR+counterfactual+OR+ablation%29+AND+%28%22prompt+injection%22+OR+guardrail%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q03_recent.json",
+    "raw_sha256": "45fd6c3087e229bc9fd076236e72766ae543d02da53f59a9fda27b533afe8c35",
+    "response_meta": {
+      "count": 2730,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "940",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q04_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22authorized+evidence%22+OR+%22task+relevant+evidence%22+OR+%22untrusted+evidence%22%29+AND+%28control+OR+authorization%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q04_relevance.json",
+    "raw_sha256": "1dc0a2d1abaf8d9e51bfdaecaa8b9b6a4c16a0d1e939b43c230f7e7422531265",
+    "response_meta": {
+      "count": 84,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 84
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "930",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q04_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22authorized+evidence%22+OR+%22task+relevant+evidence%22+OR+%22untrusted+evidence%22%29+AND+%28control+OR+authorization%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q04_recent.json",
+    "raw_sha256": "d1f538977a5bce0c5a1aef48e3bfcacdb8a4b65e47c3426f617026268e3e3e91",
+    "response_meta": {
+      "count": 84,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 84
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "920",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q05_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22negative+control%22+OR+%22positive+control%22+OR+invariance+OR+metamorphic+OR+%22stress+test%22%29+AND+security&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q05_relevance.json",
+    "raw_sha256": "f5b24bf7e4b782c9dedf9556a0e2e971dab6cdf33993de348f354ad031260ea7",
+    "response_meta": {
+      "count": 1296,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "910",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q05_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22negative+control%22+OR+%22positive+control%22+OR+invariance+OR+metamorphic+OR+%22stress+test%22%29+AND+security&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q05_recent.json",
+    "raw_sha256": "8eea383031a753625f5016cfe3cbe2979be79dee025540d64c7f107b51c45f85",
+    "response_meta": {
+      "count": 1296,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "900",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q06_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22construct+validity%22+OR+specificity+OR+%22property+preserving%22%29+AND+%28security+OR+guardrail%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q06_relevance.json",
+    "raw_sha256": "ff936160088367b6afe58218dc3cbb59da217f3edd33500f0f1034cda58cb0fd",
+    "response_meta": {
+      "count": 9013,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "890",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q06_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22construct+validity%22+OR+specificity+OR+%22property+preserving%22%29+AND+%28security+OR+guardrail%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q06_recent.json",
+    "raw_sha256": "5813a631bd07326de6e42e275669cec2811f59f19298e19e9291bcb425c21624",
+    "response_meta": {
+      "count": 9013,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "880",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q07_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22argument+level%22+OR+%22parameter+source%22+OR+%22argument+role%22%29+AND+%28provenance+OR+authorization%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q07_relevance.json",
+    "raw_sha256": "014b7eb9f811ed014bfe0a517c8e00e25b7b5ab8fde8ca84d24aa891f2b43b68",
+    "response_meta": {
+      "count": 30,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 30
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "870",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q07_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22argument+level%22+OR+%22parameter+source%22+OR+%22argument+role%22%29+AND+%28provenance+OR+authorization%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q07_recent.json",
+    "raw_sha256": "b930eb92b190a77fb61426713076d73a0c087a05aad3d9d367b88a92435d96a6",
+    "response_meta": {
+      "count": 30,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 30
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "860",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q08_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22least+privilege%22+OR+capability+OR+permission%29+AND+%28causal+OR+provenance+OR+%22prompt+injection%22%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q08_relevance.json",
+    "raw_sha256": "806541ad98f508a73f48793b3af905fa26c89fb5640f36a48f6896fb524a9646",
+    "response_meta": {
+      "count": 6159,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "850",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q08_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28%22least+privilege%22+OR+capability+OR+permission%29+AND+%28causal+OR+provenance+OR+%22prompt+injection%22%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q08_recent.json",
+    "raw_sha256": "cb0db56304b9d7da366e22a5cc630a562e4e5446bb97f99ea4b137075bdd0ccf",
+    "response_meta": {
+      "count": 6159,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "840",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q09_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%22indirect+prompt+injection%22+AND+%28authorization+OR+authority+OR+provenance%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q09_relevance.json",
+    "raw_sha256": "25c1f05be90372fd3b43dce1232a4d6237f9f1b7811dfb427c1dcf37f45ab9c4",
+    "response_meta": {
+      "count": 782,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "830",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q09_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%22indirect+prompt+injection%22+AND+%28authorization+OR+authority+OR+provenance%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q09_recent.json",
+    "raw_sha256": "3cf6abce574123708646bd98c875cb7340c215877b1d665c111ef90f617d7a10",
+    "response_meta": {
+      "count": 782,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "820",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q10_RELEVANCE",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28audit+OR+evaluation+OR+%22stress+test%22%29+AND+guardrail+AND+%28authorization+OR+authority+OR+provenance%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=relevance_score%3Adesc",
+    "raw_file": "raw/openalex_q10_relevance.json",
+    "raw_sha256": "5200e499960358b0e452b0a59bfff08c6ac10c70c3ca2f54c31b3c286921c7fe",
+    "response_meta": {
+      "count": 1179,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "810",
+    "rate_limit_credits_used": "10"
+  },
+  {
+    "job_id": "OPENALEX_Q10_RECENT",
+    "source": "openalex",
+    "status": "SUCCESS",
+    "url": "https://api.openalex.org/works?search=%28%22LLM+agent%22+OR+%22LLM+agents%22+OR+%22large+language+model+agent%22+OR+%22large+language+model+agents%22%29+AND+%28audit+OR+evaluation+OR+%22stress+test%22%29+AND+guardrail+AND+%28authorization+OR+authority+OR+provenance%29&per_page=100&filter=from_publication_date%3A2022-01-01%2Cto_publication_date%3A2026-08-12&sort=publication_date%3Adesc%2Crelevance_score%3Adesc",
+    "raw_file": "raw/openalex_q10_recent.json",
+    "raw_sha256": "de38f8f4fd78e0c0e4297e1dc4257c657cfd8c6869defa423f90ca7b70f3fd36",
+    "response_meta": {
+      "count": 1179,
+      "page": 1,
+      "per_page": 100,
+      "cost_usd": 0.001,
+      "entries_parsed": 100
+    },
+    "http_status": "200",
+    "rate_limit_remaining": "800",
+    "rate_limit_credits_used": "10"
+  }
+]

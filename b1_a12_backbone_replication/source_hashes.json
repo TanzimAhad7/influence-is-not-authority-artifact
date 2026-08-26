@@ -1,0 +1,13 @@
+{
+  "B1_00_freeze.py": "3bc330867a9982400b7e7d1588a3fb4cad0260e60b9dd812e48c76cc7384302b",
+  "B1_01_run.py": "176f473aeffd981e841b9d3f5220c4802f627014da2445402c64f9d416ce6ea4",
+  "B1_02_analyze.py": "a29428bce5a82d2cd035e85edcae67dbff1c8d356be26cd8c27235332ef6385b",
+  "B1_PROTOCOL_SPEC.md": "ebfe9e4aeeff0990f551e9cc41beb2cc790e3913cb97d3bdea6523845a7dce48",
+  "start_A13_R1_Llama_vLLM.sh": "aeddbb05d32fa9fc690d4556e521fd3dae7ad3b4568e01e7244ee7732a8b02b4",
+  "A13_R3_Gemini.py": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719",
+  "a13/taxonomy.json": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+  "a13/protocol.json": "8c0caa2e509f94d0e2eea37cfaf53840319d407167c15e2a052633c53854de43",
+  "a13_r1b_llama_boundarysafe/protocol.json": "fa097ff5b952bc3dbf1d62114b87b51b74d91e0960a3ca67591539553fa7416c",
+  "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__gpt-4o.json": "d4ee5b2cf232aa429973433d2e311a368c2127cf5c0e6ec8e0e300f4e95090a6",
+  "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__claude-sonnet-4.5.json": "f3234e80d6ac715bed6c2c2917c4f6b673f9c25da4223fcc1ee0471bf8634de8"
+}

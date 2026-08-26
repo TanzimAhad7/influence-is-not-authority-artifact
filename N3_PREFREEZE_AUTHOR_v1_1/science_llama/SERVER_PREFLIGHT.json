@@ -1,0 +1,94 @@
+{
+  "base_url": "http://localhost:8120/v1",
+  "freeze_file_sha256": "31023829c753363e3a72759e3f0b8278735a940c5c25744854b382d99572371a",
+  "freeze_sha256": "0d9d1037600d5c41ac7b6fdade9e9fc9e85b5f0b777c0cdcd3461b0520427be8",
+  "model": {
+    "model": "meta-llama/Llama-3.3-70B-Instruct",
+    "port": 8120,
+    "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+    "role": "PRIMARY"
+  },
+  "preflight": {
+    "a": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        5018,
+        564,
+        794,
+        1904,
+        92
+      ],
+      "completion_token_ids_sha256": "df5dea317c86dc67f207252eff8e6a8705e4ed69261b9614eeae93c7bc6027dc",
+      "completion_token_logprobs": [
+        -6.0660834312438965,
+        -16.469791412353516,
+        -0.1258832812309265,
+        -2.275660753250122,
+        -3.6199684143066406
+      ],
+      "prompt_token_count": 15,
+      "prompt_token_ids_sha256": "599a4bbd6e5117fb2a002bc4436b971259798db6c116310ef6be155281d35c76",
+      "request_payload_sha256": "221563328de603a78032777602d87c348c04b5a28c8d17b8546414a315991e00",
+      "sum_logprob": -28.5573872923851
+    },
+    "b": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        5018,
+        564,
+        794,
+        1904,
+        92
+      ],
+      "completion_token_ids_sha256": "df5dea317c86dc67f207252eff8e6a8705e4ed69261b9614eeae93c7bc6027dc",
+      "completion_token_logprobs": [
+        -6.0660834312438965,
+        -16.469791412353516,
+        -0.1258832812309265,
+        -2.275660753250122,
+        -3.6199684143066406
+      ],
+      "prompt_token_count": 15,
+      "prompt_token_ids_sha256": "599a4bbd6e5117fb2a002bc4436b971259798db6c116310ef6be155281d35c76",
+      "request_payload_sha256": "221563328de603a78032777602d87c348c04b5a28c8d17b8546414a315991e00",
+      "sum_logprob": -28.5573872923851
+    },
+    "served_model_ids": [
+      "meta-llama/Llama-3.3-70B-Instruct"
+    ],
+    "tokenizer_name": "meta-llama/Llama-3.3-70B-Instruct"
+  },
+  "runtime_evidence": {
+    "cmdline_argv": [
+      "/home/anon_/ratchet/phase0_pilot/.venv/bin/python3.11",
+      "/home/anon_/ratchet/phase0_pilot/.venv/bin/vllm",
+      "serve",
+      "meta-llama/Llama-3.3-70B-Instruct",
+      "--revision",
+      "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "--tokenizer-revision",
+      "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "--served-model-name",
+      "meta-llama/Llama-3.3-70B-Instruct",
+      "--tensor-parallel-size",
+      "2",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "16384",
+      "--gpu-memory-utilization",
+      "0.90",
+      "--max-logprobs",
+      "5",
+      "--port",
+      "8120"
+    ],
+    "cmdline_sha256": "d6aa709b94fa54b0d9a94429d856850645173c174c62f70ad91b4009c0716f7e",
+    "pid": 1627053,
+    "pid_file": "/home/anon_/ratchet/phase0_pilot/logs/n3_vllm_llama.pid",
+    "verified_model": "meta-llama/Llama-3.3-70B-Instruct",
+    "verified_port": 8120,
+    "verified_revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+    "verified_tokenizer_revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b"
+  }
+}

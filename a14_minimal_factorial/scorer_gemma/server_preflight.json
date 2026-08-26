@@ -1,0 +1,66 @@
+{
+  "base_url": "http://localhost:8111/v1",
+  "created_at_utc": "2026-08-09T20:25:30.621186+00:00",
+  "model": "google/gemma-3-12b-it",
+  "preflight": {
+    "a": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        14937,
+        680,
+        1083,
+        3397,
+        236783
+      ],
+      "completion_token_ids_sha256": "e41c99e652f474a12c76486c4f4f74e8fbcb8159afe65db2b6ccce0214d80294",
+      "completion_token_logprobs": [
+        -6.244825839996338,
+        -9.156869888305664,
+        -0.6150782108306885,
+        -1.3661308288574219,
+        -0.08269239217042923
+      ],
+      "prompt_token_count": 20,
+      "prompt_token_ids_sha256": "4a81d5fbf20d427e73900d524d991b6c3543155fd1514724b5c40bf62b4b387e",
+      "request_payload_sha256": "d5635a97d6c88dade09cf728eeefc49c4bef62a632069e6e0d13cf97f6ee942e",
+      "sum_logprob": -17.46559716016054
+    },
+    "b": {
+      "completion_token_count": 5,
+      "completion_token_ids": [
+        14937,
+        680,
+        1083,
+        3397,
+        236783
+      ],
+      "completion_token_ids_sha256": "e41c99e652f474a12c76486c4f4f74e8fbcb8159afe65db2b6ccce0214d80294",
+      "completion_token_logprobs": [
+        -6.244825839996338,
+        -9.156869888305664,
+        -0.6150782108306885,
+        -1.3661308288574219,
+        -0.08269239217042923
+      ],
+      "prompt_token_count": 20,
+      "prompt_token_ids_sha256": "4a81d5fbf20d427e73900d524d991b6c3543155fd1514724b5c40bf62b4b387e",
+      "request_payload_sha256": "d5635a97d6c88dade09cf728eeefc49c4bef62a632069e6e0d13cf97f6ee942e",
+      "sum_logprob": -17.46559716016054
+    },
+    "served_model_ids": [
+      "google/gemma-3-12b-it"
+    ]
+  },
+  "protocol_hash": "94bb3c7e0ca174aa8be69b8c0949e7d93a567d960a9ba06016ba4d08f8503ee1",
+  "tokenizer": {
+    "bos_token_id": 2,
+    "chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+    "class": "GemmaTokenizer",
+    "eos_token_id": 1,
+    "is_fast": true,
+    "kind": "hf",
+    "model_name": "google/gemma-3-12b-it",
+    "pad_token_id": 0,
+    "vocab_size": 262145
+  }
+}

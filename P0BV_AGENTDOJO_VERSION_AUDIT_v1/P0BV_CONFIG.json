@@ -1,0 +1,45 @@
+{
+  "bootstrap_repetitions": 20000,
+  "bootstrap_seed": 12022026,
+  "claim_boundaries": [
+    "This audit uses zero model calls and does not change any frozen A13/A15a/P2b/AgentWatcher result.",
+    "Do not relabel historical AgentDojo-v1 runs as v1.2.2.",
+    "Do not authorize broad reruns from source-version differences alone.",
+    "A14-Minimal is benchmark-suite-independent and is outside this version-mismatch gate.",
+    "The AgentWatcher 200-pair attack anchor must be reported according to its own frozen benchmark version.",
+    "Any targeted revalidation decision is made only after the author-run audit and must be prospectively frozen."
+  ],
+  "classification_order": [
+    "TASK_ADDED_REMOVED",
+    "ENVIRONMENT_OR_TOOL_CHANGE",
+    "PROMPT_OR_GROUND_TRUTH_CHANGE",
+    "EVALUATOR_ONLY_CHANGE",
+    "UNKNOWN_REQUIRES_MANUAL_REVIEW",
+    "IDENTICAL_FOR_OUR_ESTIMAND"
+  ],
+  "expected_agentdojo_package_version": "0.1.35",
+  "old_benchmark_version": "v1",
+  "preferred_optional_inputs": {
+    "p2b_inventory": "P2B_XM_CI_v1_2_PREOUTCOME_TECH_GATE_CORRECTED/inputs/P2B_REPLAY_INVENTORY.jsonl",
+    "p3_cells": "P3_HARDENING_RUN_v1/P3_P2B_MODEL_DECISION_CELLS.csv",
+    "p3_result": "P3_HARDENING_RUN_v1/P3_HARDENING.json"
+  },
+  "required_inputs": {
+    "a13_decisions": "a13/decisions.jsonl",
+    "a13_protocol": "a13/protocol.json",
+    "a13_results": "a13/results.json",
+    "a15a_inventory": "a15a_selectivity_consequence/decision_inventory.jsonl",
+    "agentwatcher_attack_freeze": "a15b0_architecture_boundary/attack_anchor/A15B0_ARMC_ATTACK_ANCHOR_FREEZE.json",
+    "agentwatcher_natural": "a15b0_architecture_boundary/agentwatcher_natural_outputs.jsonl"
+  },
+  "schema": "P0BV_AGENTDOJO_VERSION_AUDIT_CONFIG_V1",
+  "scientific_model_calls": 0,
+  "status": "PREDECLARED_ZERO_CALL_BENCHMARK_VERSION_COMPATIBILITY_AUDIT",
+  "suites": [
+    "banking",
+    "slack",
+    "travel",
+    "workspace"
+  ],
+  "target_benchmark_version": "v1.2.2"
+}

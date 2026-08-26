@@ -1,0 +1,4 @@
+population,shadow_flagged_privileged_decisions,privileged_decisions,activation_percent
+benign,22,37,59.459459459459
+attack,516,587,87.904599659285
+overall,538,624,86.217948717949

@@ -1,0 +1,8 @@
+claim,status,evidence,boundary
+A benign authorization-equivalent execution can produce attack-like causal-support behavior.,SUPPORTED,A14 exact-action-fixed causal diagnosis + R2A threshold robustness,A14 carries causal claim; P6 only packages it.
+The same benign causal variation is universally converted into intervention.,REJECTED,AgentWatcher controlled 0/48; AttriGuard 0/480 final blocks,Architecture is a distinct layer.
+Alternative thresholding alone solves the security problem.,NOT SUPPORTED,R2A 95/95 open nonconstant regimes retain AIVR>0; attack sensitivity at those thresholds not evaluated,Do not optimize threshold post hoc.
+Replay/equivalence validity is an operating condition for counterfactual security evaluation.,SUPPORTED,Corrected P2b: action-local 38.5/26.9/42.3% vs downstream 65.4/57.7/73.1%; instruments valid,Not a universal replay-defense error rate.
+Downstream utility alone establishes immediate action/effect fidelity.,REJECTED,Corrected P2b + selected-population masking,23/78 masking cells is cell-level; selected-pop differences are post-hoc.
+AttriGuard fuzzy routes are final false positives.,REJECTED,480/480 final ALLOW; 441 strict + 39 fuzzy internal survival,"Route is internal tolerance, not endpoint error."
+P0b-3 exactly reproduces the published CausalArmor attack table.,REJECTED,"Primary BU 51.55%, UA 40.67%, ASR 3.37% => SAME_EXTERNAL_REGIME; suite heterogeneity",External-regime calibration only; disclose nested629 and serialization qualification.

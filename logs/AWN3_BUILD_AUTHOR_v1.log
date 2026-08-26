@@ -1,0 +1,13 @@
+[AWN3-BUILD] project_root=/home/anon_/ratchet/phase0_pilot
+[AWN3-BUILD] run_dir=AW_N3_AUTHOR_v1
+[AWN3-BUILD] zero model/provider calls
+[AWN3-00] PREFREEZE BUILD PASS
+[AWN3-00] bases=24 raw_conditions=192
+[AWN3-00] SHAM/ECHO identical state-pairs=96/96
+[AWN3-00] unique_static_inputs=96 primary=48 secondary=48
+[AWN3-00] execution_rows=96 dedup=ALL_96_SHAM_ECHO_STATE_PAIRS_IDENTICAL__EXECUTE_96_UNIQUE_STATIC_INPUTS
+[AWN3-00] FULL 2x2 action-control extension INCLUDED pre-outcome
+[AWN3-00] NO model/provider calls; NO AgentWatcher outcomes
+[AWN3-00] summary=/home/anon_/ratchet/phase0_pilot/AW_N3_AUTHOR_v1/AWN3_PREFREEZE_BUILD_SUMMARY.json
+[AWN3-00] STOP BEFORE FREEZE; review this author-side denominator first
+[AWN3-BUILD] COMPLETE — STOP BEFORE FREEZE

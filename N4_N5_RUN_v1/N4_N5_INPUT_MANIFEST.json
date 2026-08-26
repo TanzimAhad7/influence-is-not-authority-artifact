@@ -1,0 +1,54 @@
+{
+  "collected_at_utc": "2026-08-13T18:15:15.619078+00:00",
+  "inputs": {
+    "a14": {
+      "path": "a14_minimal_factorial/analysis/results.json",
+      "sha256": "ef0eb44df3b2388c2b665f2a86b8602ca5a1cb7a3601eac933becb71b95e099c"
+    },
+    "a15a": {
+      "path": "a15a_selectivity_consequence/results.json",
+      "sha256": "37ceca159e85c2bc3f8401f78e77ccde588373f8064a97f67b6bd19b54e303d2"
+    },
+    "agentwatcher": {
+      "path": "a15b0_architecture_boundary/analysis_results.json",
+      "sha256": "61c6aba74d606d427e7b762e7b820164957b4f6db712c9d859ae2ac047bcd222"
+    },
+    "attriguard": {
+      "path": "attriguard_a14_v2/scientific_v1/SCIENTIFIC_ANALYSIS.json",
+      "sha256": "3b74caf3ff5960fc3ee8a3222975a3d715dd46d9d58b28a06a88c434abeadb65"
+    },
+    "b1": {
+      "path": "b1_a12_backbone_replication_c0_v2/combined_results.json",
+      "sha256": "9d8576b403d6b8521829b74ab4ed3d79375648d91a788b18fc8b89ff80b58a49"
+    },
+    "n3_tar": {
+      "path": "N3_COMPLETE_AUTHOR_v1_2.tar.gz",
+      "sha256": "d678a768ec8d7cd2c9ce90a938dbfeb24ddea7e6e0e4bfcf18b33c51439f7de7"
+    },
+    "p0b3": {
+      "path": "P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_ANALYSIS.json",
+      "sha256": "baac16a841cb7155dd77c32c86c5478e3a3566f5dc67af016ffc10d0169fe857"
+    },
+    "p0b3_act": {
+      "path": "P0B3_ACT_RUN_v1/P0B3_ACT_RESULT.json",
+      "sha256": "f1cc33cdd7009ab21b1d160b98e51094f598241d49ed0750ae40987ee3796d7a"
+    },
+    "p0b3_shadow": {
+      "path": "P0B3_ACT_SHADOW_RUN_v1/P0B3_ACT_SHADOW_RESULT.json",
+      "sha256": "7ff1a96bb83dad8738594bbfe1dd3ae6d091410449054c5531d6bf0af02ac071"
+    },
+    "p2": {
+      "path": "P2_AGENTWATCHER_NODEFENSE_RUN_v1/P2_ANALYSIS.json",
+      "sha256": "acaaa7fed2daee50e443a526ef156c2585ff468cd6fab8d02c00af7065c06c68"
+    },
+    "r2a": {
+      "path": "a14_minimal_factorial/threshold_aivr_v1/results.json",
+      "sha256": "f687cfe54caafe158015d99151df046b926b457ce34e66f041e7076bbfe1abfe"
+    }
+  },
+  "n3_member": {
+    "member": "N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+    "sha256": "0ad5892760dbf3c27c81975a38b8fb0689d557e63212cb25c865eec2edfcf81c"
+  },
+  "schema": "N4_N5_INPUT_MANIFEST_V1"
+}

@@ -1,0 +1,11 @@
+{
+  "commit": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "purpose": "A15b natural fixed-trace CausalArmor Gemma source-fidelity rescore",
+  "recorded_at_utc": "2026-08-09T23:27:33.206433+00:00",
+  "refs_main_matches_commit": true,
+  "repo_id": "google/gemma-3-12b-it",
+  "schema_version": "A15B0_GEMMA_SOURCE_FIDELITY_LOCK_V1",
+  "scientific_outcome_generated": false,
+  "snapshot_path": "/home/anon_/.cache/huggingface/hub/models--google--gemma-3-12b-it/snapshots/96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "sole_cached_snapshot": true
+}

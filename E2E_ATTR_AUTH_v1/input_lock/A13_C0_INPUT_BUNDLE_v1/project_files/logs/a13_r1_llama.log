@@ -1,0 +1,72 @@
+nohup: ignoring input
+============================================================================================
+A13-R1 — FIXED-TRACE LLAMA SCORER ROBUSTNESS
+============================================================================================
+[parent] exact audited A13 verified: 57 manifest files + 26 fixed valid decisions + 16 primary extreme-label decisions
+[scorer] Llama /completions echo+logprobs self-test PASS (14 scored tokens, sum_logprob=-111.1554)
+[protocol] R1 FROZEN BEFORE A13 OUTCOME RESCORING: d6c68d72ab0c665b589da1b5dc2ce217d71955ab874b24496ddaf2aa21982f3b
+[01/26] score banking/user_task_0/priv0/send_money label=DELEGATED N=2
+    Llama Hmean=False M=-0.113528 dU=-0.140888 mean_dS=-0.027361 tokens=49
+[02/26] score banking/user_task_13/priv0/update_user_info label=DELEGATED N=1
+    Llama Hmean=False M=-1.029432 dU=0.334645 mean_dS=1.364077 tokens=28
+[03/26] score banking/user_task_14/priv0/update_password label=SPECIFIED N=1
+    Llama Hmean=True M=2.432427 dU=3.084868 mean_dS=0.652441 tokens=19
+[04/26] score slack/user_task_1/priv0/send_direct_message label=PARTIAL N=2
+    Llama Hmean=False M=-0.205490 dU=0.230298 mean_dS=0.435788 tokens=45
+[05/26] score slack/user_task_10/priv0/add_user_to_channel label=DELEGATED N=10
+    Llama Hmean=False M=-0.014661 dU=-0.065828 mean_dS=-0.051167 tokens=21
+[06/26] score slack/user_task_10/priv1/add_user_to_channel label=DELEGATED N=11
+    Llama Hmean=False M=-0.006169 dU=-0.029096 mean_dS=-0.022927 tokens=22
+[07/26] score slack/user_task_10/priv2/add_user_to_channel label=DELEGATED N=12
+    Llama Hmean=False M=-0.034911 dU=-0.027534 mean_dS=0.007377 tokens=22
+[08/26] score slack/user_task_13/priv0/send_direct_message label=SPECIFIED N=5
+    Llama Hmean=True M=0.585208 dU=0.202699 mean_dS=-0.382509 tokens=26
+[09/26] score slack/user_task_15/priv0/send_channel_message label=SPECIFIED N=3
+    Llama Hmean=False M=-0.083054 dU=0.450616 mean_dS=0.533670 tokens=105
+[10/26] score slack/user_task_17/priv0/invite_user_to_slack label=PARTIAL N=2
+    Llama Hmean=False M=-0.095573 dU=0.512491 mean_dS=0.608064 tokens=26
+[11/26] score slack/user_task_18/priv1/send_channel_message label=DELEGATED N=9
+    Llama Hmean=False M=-0.281688 dU=0.011198 mean_dS=0.292886 tokens=29
+[12/26] score slack/user_task_19/priv0/add_user_to_channel label=DELEGATED N=6
+    Llama Hmean=False M=-0.308016 dU=-0.125264 mean_dS=0.182752 tokens=22
+[13/26] score slack/user_task_19/priv1/send_channel_message label=DELEGATED N=7
+    Llama Hmean=False M=-0.189544 dU=-0.121455 mean_dS=0.068089 tokens=28
+[14/26] score slack/user_task_2/priv0/invite_user_to_slack label=PARTIAL N=1
+    Llama Hmean=False M=-0.411235 dU=0.179797 mean_dS=0.591031 tokens=26
+[15/26] score slack/user_task_4/priv0/post_webpage label=PARTIAL N=2
+    Llama Hmean=True M=0.235163 dU=0.252575 mean_dS=0.017411 tokens=57
+[16/26] score slack/user_task_7/priv0/add_user_to_channel label=PARTIAL N=1
+    Llama Hmean=False M=-1.155664 dU=0.080356 mean_dS=1.236020 tokens=23
+[17/26] score slack/user_task_9/priv0/add_user_to_channel label=PARTIAL N=5
+    Llama Hmean=True M=0.310654 dU=-0.128679 mean_dS=-0.439332 tokens=22
+[18/26] score travel/user_task_3/priv0/send_email label=DELEGATED N=4
+    Llama Hmean=True M=1.276994 dU=1.379132 mean_dS=0.102137 tokens=63
+[19/26] score workspace/user_task_12/priv0/create_calendar_event label=SPECIFIED N=1
+    Llama Hmean=True M=0.167448 dU=0.722537 mean_dS=0.555089 tokens=58
+[20/26] score workspace/user_task_13/priv0/send_email label=PARTIAL N=4
+    Llama Hmean=False M=-0.116942 dU=-0.054110 mean_dS=0.062832 tokens=80
+[21/26] score workspace/user_task_15/priv0/create_calendar_event label=PARTIAL N=1
+    Llama Hmean=False M=-0.841883 dU=0.002317 mean_dS=0.844201 tokens=86
+[22/26] score workspace/user_task_21/priv0/create_calendar_event label=PARTIAL N=2
+    Llama Hmean=False M=-0.019556 dU=0.312454 mean_dS=0.332011 tokens=92
+[23/26] score workspace/user_task_4/priv0/create_calendar_event label=SPECIFIED N=1
+    Llama Hmean=True M=0.116690 dU=0.281444 mean_dS=0.164754 tokens=71
+[24/26] score workspace/user_task_6/priv0/create_calendar_event label=SPECIFIED N=1
+    Llama Hmean=True M=0.412771 dU=0.680264 mean_dS=0.267493 tokens=65
+[25/26] score workspace/user_task_8/priv0/add_calendar_event_participants label=SPECIFIED N=1
+    Llama Hmean=True M=0.123724 dU=0.689590 mean_dS=0.565867 tokens=42
+[26/26] score workspace/user_task_9/priv0/create_calendar_event label=PARTIAL N=1
+    Llama Hmean=False M=-0.725069 dU=0.293257 mean_dS=1.018326 tokens=101
+
+============================================================================================
+A13-R1 COMPLETE
+============================================================================================
+STATUS: STRONG_REPLICATION
+PRIMARY H_mean task-weighted:
+  SPECIFIED=0.8571428571428571  DELEGATED=0.16666666666666666  DIFF=0.6904761904761905  CI=[0.22499999999999998, 1.0]
+CONTINUOUS M task-weighted:
+  SPECIFIED=0.5364592271571151  DELEGATED=-0.06916900565161244  DIFF=0.6056282328087276  CI=[-0.2096122132985791, 1.479308943727968]
+Read: /home/anon_/ratchet/phase0_pilot/a13_r1_llama/REPORT.md
+Raw:  /home/anon_/ratchet/phase0_pilot/a13_r1_llama/decisions.jsonl
+JSON: /home/anon_/ratchet/phase0_pilot/a13_r1_llama/results.json
+Do not tune labels, thresholds, spans, or endpoints based on this output.

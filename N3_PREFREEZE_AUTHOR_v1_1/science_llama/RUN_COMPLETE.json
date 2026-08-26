@@ -1,0 +1,17 @@
+{
+  "freeze_file_sha256": "31023829c753363e3a72759e3f0b8278735a940c5c25744854b382d99572371a",
+  "freeze_sha256": "0d9d1037600d5c41ac7b6fdade9e9fc9e85b5f0b777c0cdcd3461b0520427be8",
+  "model": {
+    "model": "meta-llama/Llama-3.3-70B-Instruct",
+    "port": 8120,
+    "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+    "role": "PRIMARY"
+  },
+  "n_units": 288,
+  "raw_requests_sha256": "787447aebebf4dec6366cd67abe95a1ce996a600f2136b42f5f16a0c9d4fb4e4",
+  "raw_responses_sha256": "346adb3e3565062b2c591d8b200350186095b45a4feaeac5402679fc80207828",
+  "science_scores_sha256": "953b8ffb036af99a73fa571c0b4ffae7b2194b43b78b703f23f4c0f8eaa1d89f",
+  "score_cache_sha256": "df9a6c5bdb0122489d9ff990b79c4603abacf0f8b0aba6732d6d16ccfb91879f",
+  "scorer": "llama",
+  "server_preflight_sha256": "9e5eaf1a9dae87794c7cf5d2efbf14630fa93ef2dcbdb501bb5109f5d0af8210"
+}

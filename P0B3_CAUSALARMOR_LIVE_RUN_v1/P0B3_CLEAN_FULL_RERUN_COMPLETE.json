@@ -1,0 +1,16 @@
+{
+  "attempt": "ATTEMPT1_CLEAN_FULL_RERUN",
+  "attempt0_role": "PROVENANCE_ONLY",
+  "errors": 0,
+  "p6_permission": "BLOCKED_UNTIL_INDEPENDENT_ADJUDICATION",
+  "population": {
+    "benign": 97,
+    "legacy_nested": 629,
+    "primary_attack": 949
+  },
+  "primary_disposition": "SAME_EXTERNAL_REGIME",
+  "schema": "P0B3_CLEAN_FULL_RERUN_COMPLETE_V1",
+  "science_rows": 1046,
+  "serialization_gate": "PASS_ACTIVATION_SENSITIVITY",
+  "status": "COMPLETE_PENDING_INDEPENDENT_ADJUDICATION"
+}

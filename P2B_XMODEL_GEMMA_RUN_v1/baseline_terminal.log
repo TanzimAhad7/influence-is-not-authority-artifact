@@ -1,0 +1,1 @@
+INFRA ABORT banking/user_task_0/priv0/send_money rep=0: BadRequestError: Error code: 400 - {'error': {'message': 'Conversation roles must alternate user/assistant/user/assistant/...', 'type': 'BadRequestError', 'param': None, 'code': 400}}

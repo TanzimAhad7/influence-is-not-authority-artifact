@@ -1,0 +1,9 @@
+{
+  "b1_protocol_hash": "d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550",
+  "agent_key": "gpt4o",
+  "agent_model": "openai/gpt-4o",
+  "agent_base_url": "https://openrouter.ai/api/v1",
+  "temperature": 0.0,
+  "scorer_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "scorer_base_url": "http://localhost:8110/v1"
+}

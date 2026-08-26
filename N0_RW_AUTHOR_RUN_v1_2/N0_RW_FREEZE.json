@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-08-13T00:57:35.643812+00:00",
+  "protocol": "N0-RW-v1.2",
+  "script_path": "N0_RW_00_prior_art_audit_v1_2.py",
+  "script_sha256": "0d2ca8513c52f827aece73d498eda667349bcfb96a71c39350fe6d9d3d1c1217",
+  "runner_path": "RUN_N0_RW_v1_2.sh",
+  "runner_sha256": "542f1e703cc932c6b7ced0c11f6f0836c7a73e31575744a79c235d6f9bb44015",
+  "config_sha256": "712b3a7eb59a42c2eaa59a3fd50b19a3c41fda6f389a141b1acab46d3887d932",
+  "config": {
+    "protocol": "N0-RW-v1.2",
+    "purpose": "early collision audit before N3 freeze; not final P7 and not an automatic novelty verdict",
+    "current_awareness_cutoff_date": "2026-08-12",
+    "search_min_date": "2022-01-01",
+    "locked_cutoff_policy": {
+      "preprint_first_public_date_on_or_before": "2026-07-15",
+      "peer_reviewed_formal_acceptance_or_publication_on_or_before": "2026-07-31",
+      "post_preprint_cutoff_work": "concurrent awareness unless manually established peer-reviewed eligibility under locked policy",
+      "submission_hygiene": "all known materially overlapping work still requires disclosure/related-work consideration"
+    },
+    "seed_arxiv_ids": [
+      "2602.07918",
+      "2603.10749",
+      "2602.22724",
+      "2605.11039",
+      "2605.26497",
+      "2606.08275",
+      "2607.20827",
+      "2603.19469",
+      "2503.15547",
+      "2606.13884",
+      "2605.03378",
+      "2605.17634",
+      "2607.01236",
+      "2604.04978",
+      "2607.06000",
+      "2607.10487",
+      "2607.27267"
+    ],
+    "arxiv_core_queries": [
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:authorization OR all:authority OR all:permission) AND (all:provenance OR all:\"prompt injection\" OR all:guardrail)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"source authority\" OR all:\"source trust\" OR all:provenance) AND (all:action OR all:\"tool call\")",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"causal attribution\" OR all:counterfactual OR all:ablation) AND (all:\"prompt injection\" OR all:guardrail OR all:security)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"task-relevant evidence\" OR all:\"authorized evidence\" OR all:\"untrusted evidence\" OR all:\"external evidence\") AND (all:control OR all:authorization OR all:guardrail)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"negative control\" OR all:\"positive control\" OR all:invariance OR all:metamorphic OR all:\"stress test\") AND (all:security OR all:guardrail OR all:authorization)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"construct validity\" OR all:specificity OR all:\"property preserving\" OR all:\"property-preserving\") AND (all:security OR all:guardrail OR all:authorization)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"argument role\" OR all:\"argument-level\" OR all:\"parameter source\") AND (all:provenance OR all:authority OR all:authorization)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:\"least privilege\" OR all:capability OR all:permission) AND (all:causal OR all:provenance OR all:\"prompt injection\")",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND all:\"indirect prompt injection\" AND (all:authorization OR all:authority OR all:provenance)",
+      "(all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"large language model agent\" OR all:\"large language model agents\") AND (all:audit OR all:evaluation OR all:\"stress test\") AND (all:guardrail OR all:defense) AND (all:authorization OR all:authority OR all:provenance)"
+    ],
+    "openalex_core_queries": [
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (authorization OR authority) AND (provenance OR \"prompt injection\" OR guardrail)",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"source authority\" OR \"source trust\" OR provenance) AND (action OR \"tool call\")",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"causal attribution\" OR counterfactual OR ablation) AND (\"prompt injection\" OR guardrail)",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"authorized evidence\" OR \"task relevant evidence\" OR \"untrusted evidence\") AND (control OR authorization)",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"negative control\" OR \"positive control\" OR invariance OR metamorphic OR \"stress test\") AND security",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"construct validity\" OR specificity OR \"property preserving\") AND (security OR guardrail)",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"argument level\" OR \"parameter source\" OR \"argument role\") AND (provenance OR authorization)",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (\"least privilege\" OR capability OR permission) AND (causal OR provenance OR \"prompt injection\")",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND \"indirect prompt injection\" AND (authorization OR authority OR provenance)",
+      "(\"LLM agent\" OR \"LLM agents\" OR \"large language model agent\" OR \"large language model agents\") AND (audit OR evaluation OR \"stress test\") AND guardrail AND (authorization OR authority OR provenance)"
+    ],
+    "retrieval": {
+      "arxiv_seed_batch": 1,
+      "arxiv_per_query_relevance": 100,
+      "arxiv_per_query_recent": 50,
+      "openalex_per_query_relevance": 100,
+      "openalex_per_query_recent": 100,
+      "arxiv_sort_modes": [
+        "relevance",
+        "submittedDate:descending"
+      ],
+      "openalex_sort_modes": [
+        "relevance_score:desc",
+        "publication_date:desc,relevance_score:desc"
+      ],
+      "strict_fetch_completeness": true,
+      "strict_seed_recovery": true,
+      "scientific_model_calls": 0
+    },
+    "manual_collision_rule": {
+      "material_collision_requires_full_text_review": true,
+      "focus_combination": [
+        "LLM/tool-agent security or guardrail setting",
+        "authorization distinguished from mere relevance/provenance/trust",
+        "property-preserving negative control with authorization held fixed",
+        "exact action and/or security-relevant effect held fixed where applicable",
+        "guardrail observable or guardrail verdict audited (not only agent action selection)",
+        "matched property-changing positive control contrasting authorized evidence dependence with unauthorized control",
+        "explicit construct-validity/authorization-specificity interpretation"
+      ],
+      "automatic_keyword_scores_are_screening_only": true,
+      "post_cutoff_concurrent_work_cannot_automatically_block_N3_under_locked_internal_policy": true
+    }
+  },
+  "expected_retrieval_jobs": 41,
+  "scientific_model_calls": 0,
+  "note": "Freeze records retrieval/screening protocol only. Novelty/collision status requires manual full-text adjudication and locked-cutoff classification."
+}

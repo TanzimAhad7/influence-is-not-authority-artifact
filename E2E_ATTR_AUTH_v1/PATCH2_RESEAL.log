@@ -1,0 +1,15 @@
+DEV_AUDITPATH_PREFLIGHT PASS (reused; no new live call)
+{
+  "status": "PASS",
+  "known_primary": 1.0,
+  "observed_primary": 1.0,
+  "complete_tasks": 12
+}
+{
+  "status": "FAIL",
+  "n_expected": 28,
+  "n_pass": 10,
+  "n_fail": 18,
+  "NO_SCIENTIFIC_MODEL_CALLS": true
+}
+FATAL YAML directive roundtrip audit failed

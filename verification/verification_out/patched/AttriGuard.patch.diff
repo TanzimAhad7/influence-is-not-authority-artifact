@@ -1,0 +1,12 @@
+--- AttriGuard.py (source-locked)
++++ AttriGuard.py (patched)
+@@ -885,7 +885,8 @@
+             if tool_results:
+                 if self.skip_empty_tool_results_audit:
+                     all_empty = all(
+-                        not _content_to_str(m.get("content")).strip() for m in tool_results
++                        not _content_to_str(m.get("content")).strip() and not m.get("error")
++                        for m in tool_results
+                     )
+                     if all_empty:
+                         skip_next_audit = True

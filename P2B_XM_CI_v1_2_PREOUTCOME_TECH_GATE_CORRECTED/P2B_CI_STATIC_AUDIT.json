@@ -1,0 +1,594 @@
+{
+  "checks": [
+    {
+      "check": "hash:inputs/P2B_REPLAY_INVENTORY.jsonl",
+      "expected": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded",
+      "got": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded",
+      "pass": true
+    },
+    {
+      "check": "hash:inputs/P2B_REPLAY_CONTEXTS.jsonl",
+      "expected": "1bbf011ec0affe6a5d332c61b6dda6d2820c549fe7cbc83439af38bf83b297ec",
+      "got": "1bbf011ec0affe6a5d332c61b6dda6d2820c549fe7cbc83439af38bf83b297ec",
+      "pass": true
+    },
+    {
+      "check": "hash:inputs/P2B_PREFLIGHT_SUMMARY.json",
+      "expected": "fdac39d70a952eb28a424bc0538938b549f442225d7b61b90f6d3728c2d2f053",
+      "got": "fdac39d70a952eb28a424bc0538938b549f442225d7b61b90f6d3728c2d2f053",
+      "pass": true
+    },
+    {
+      "check": "hash:P2B_ARGUMENT_ROLE_TAXONOMY.json",
+      "expected": "66a1705d422a0a8e0b7630f099c806df646f9354f996648d659dbb4a2f519b90",
+      "got": "66a1705d422a0a8e0b7630f099c806df646f9354f996648d659dbb4a2f519b90",
+      "pass": true
+    },
+    {
+      "check": "population_26",
+      "got": 26,
+      "pass": true
+    },
+    {
+      "check": "activated_18",
+      "got": 18,
+      "pass": true
+    },
+    {
+      "check": "taxonomy:banking/user_task_0/priv0/send_money",
+      "mapped": [
+        "amount",
+        "date",
+        "recipient",
+        "subject"
+      ],
+      "pass": true,
+      "target": [
+        "amount",
+        "date",
+        "recipient",
+        "subject"
+      ]
+    },
+    {
+      "check": "taxonomy:banking/user_task_13/priv0/update_user_info",
+      "mapped": [
+        "city",
+        "street"
+      ],
+      "pass": true,
+      "target": [
+        "city",
+        "street"
+      ]
+    },
+    {
+      "check": "taxonomy:banking/user_task_14/priv0/update_password",
+      "mapped": [
+        "password"
+      ],
+      "pass": true,
+      "target": [
+        "password"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_1/priv0/send_direct_message",
+      "mapped": [
+        "body",
+        "recipient"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "recipient"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_10/priv0/add_user_to_channel",
+      "mapped": [
+        "channel",
+        "user"
+      ],
+      "pass": true,
+      "target": [
+        "channel",
+        "user"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_10/priv1/add_user_to_channel",
+      "mapped": [
+        "channel",
+        "user"
+      ],
+      "pass": true,
+      "target": [
+        "channel",
+        "user"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_10/priv2/add_user_to_channel",
+      "mapped": [
+        "channel",
+        "user"
+      ],
+      "pass": true,
+      "target": [
+        "channel",
+        "user"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_13/priv0/send_direct_message",
+      "mapped": [
+        "body",
+        "recipient"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "recipient"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_15/priv0/send_channel_message",
+      "mapped": [
+        "body",
+        "channel"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "channel"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_17/priv0/invite_user_to_slack",
+      "mapped": [
+        "user",
+        "user_email"
+      ],
+      "pass": true,
+      "target": [
+        "user",
+        "user_email"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_18/priv1/send_channel_message",
+      "mapped": [
+        "body",
+        "channel"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "channel"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_19/priv0/add_user_to_channel",
+      "mapped": [
+        "channel",
+        "user"
+      ],
+      "pass": true,
+      "target": [
+        "channel",
+        "user"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_19/priv1/send_channel_message",
+      "mapped": [
+        "body",
+        "channel"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "channel"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_2/priv0/invite_user_to_slack",
+      "mapped": [
+        "user",
+        "user_email"
+      ],
+      "pass": true,
+      "target": [
+        "user",
+        "user_email"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_4/priv0/post_webpage",
+      "mapped": [
+        "content",
+        "url"
+      ],
+      "pass": true,
+      "target": [
+        "content",
+        "url"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_7/priv0/add_user_to_channel",
+      "mapped": [
+        "channel",
+        "user"
+      ],
+      "pass": true,
+      "target": [
+        "channel",
+        "user"
+      ]
+    },
+    {
+      "check": "taxonomy:slack/user_task_9/priv0/add_user_to_channel",
+      "mapped": [
+        "channel",
+        "user"
+      ],
+      "pass": true,
+      "target": [
+        "channel",
+        "user"
+      ]
+    },
+    {
+      "check": "taxonomy:travel/user_task_3/priv0/send_email",
+      "mapped": [
+        "body",
+        "recipients",
+        "subject"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "recipients",
+        "subject"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_12/priv0/create_calendar_event",
+      "mapped": [
+        "description",
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "pass": true,
+      "target": [
+        "description",
+        "end_time",
+        "start_time",
+        "title"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_13/priv0/send_email",
+      "mapped": [
+        "body",
+        "recipients",
+        "subject"
+      ],
+      "pass": true,
+      "target": [
+        "body",
+        "recipients",
+        "subject"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_15/priv0/create_calendar_event",
+      "mapped": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "pass": true,
+      "target": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_21/priv0/create_calendar_event",
+      "mapped": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "pass": true,
+      "target": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_4/priv0/create_calendar_event",
+      "mapped": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "pass": true,
+      "target": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_6/priv0/create_calendar_event",
+      "mapped": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "pass": true,
+      "target": [
+        "description",
+        "end_time",
+        "participants",
+        "start_time",
+        "title"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_8/priv0/add_calendar_event_participants",
+      "mapped": [
+        "event_id",
+        "participants"
+      ],
+      "pass": true,
+      "target": [
+        "event_id",
+        "participants"
+      ]
+    },
+    {
+      "check": "taxonomy:workspace/user_task_9/priv0/create_calendar_event",
+      "mapped": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ],
+      "pass": true,
+      "target": [
+        "description",
+        "end_time",
+        "location",
+        "participants",
+        "start_time",
+        "title"
+      ]
+    },
+    {
+      "check": "revision_lock:gemma",
+      "pass": true
+    },
+    {
+      "check": "revision_lock:llama",
+      "pass": true
+    },
+    {
+      "check": "revision_lock:qwen_canonical",
+      "pass": true
+    },
+    {
+      "check": "stress_has_no_scientific_decision_ids",
+      "overlap": [],
+      "pass": true
+    },
+    {
+      "check": "effect_oracle_ignores_only_email_timestamp_value",
+      "pass": true
+    },
+    {
+      "check": "effect_oracle_retains_email_semantic_fields",
+      "pass": true
+    },
+    {
+      "check": "stress_expected_schema:stress_long_history_open_text",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 12,
+      "check": "historical_candidate_grammar_identity:stress_long_history_open_text",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_long_history_open_text",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_structured_datetime_and_participants",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_structured_datetime_and_participants",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_structured_datetime_and_participants",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_branch_progression",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_branch_progression",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_branch_progression",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_reference_identity",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_reference_identity",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_reference_identity",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_same_role_normalization",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_same_role_normalization",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_same_role_normalization",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_mixed_multi_action_history",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 6,
+      "check": "historical_candidate_grammar_identity:stress_mixed_multi_action_history",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_mixed_multi_action_history",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_explicit_text_no_action",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 0,
+      "check": "historical_candidate_grammar_identity:stress_explicit_text_no_action",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_explicit_text_no_action",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_tool_result_user_adjacency",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_tool_result_user_adjacency",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_tool_result_user_adjacency",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 0
+    },
+    {
+      "check": "stress_expected_schema:stress_assistant_text_plus_tool_call",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_assistant_text_plus_tool_call",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_assistant_text_plus_tool_call",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 1
+    },
+    {
+      "check": "stress_expected_schema:stress_adjacent_assistant_tool_envelopes",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "assistant_actions": 1,
+      "check": "historical_candidate_grammar_identity:stress_adjacent_assistant_tool_envelopes",
+      "errors": [],
+      "pass": true
+    },
+    {
+      "check": "historical_assistant_text_preserved:stress_adjacent_assistant_tool_envelopes",
+      "errors": [],
+      "pass": true,
+      "tested_turns": 2
+    }
+  ],
+  "pass": true,
+  "schema": "P2B_XM_CI_STATIC_AUDIT_V1",
+  "scientific": false
+}

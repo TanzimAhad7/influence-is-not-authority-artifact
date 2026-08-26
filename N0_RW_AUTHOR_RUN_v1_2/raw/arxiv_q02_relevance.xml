@@ -1,0 +1,908 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/7yhyT7tyRLaGhsOpywRaNwJblC4</id>
+  <title>arXiv Query: search_query=( (all:"LLM agent" OR all:"LLM agents" OR all:"large language model agent" OR all:"large language model agents") AND (all:"source authority" OR all:"source trust" OR all:provenance) AND (all:action OR all:"tool call") ) AND submittedDate:"202201010000 TO 202608122359"&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-08-13T00:57:49Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=((all:%22LLM+agent%22+OR+(all:%22LLM+agents%22+OR+(all:%22large+language+model+agent%22+OR+all:%22large+language+model+agents%22)))+AND+((all:%22source+authority%22+OR+(all:%22source+trust%22+OR+all:provenance))+AND+(all:action+OR+all:%22tool+call%22)))+AND+submittedDate:%22202201010000+TO+202608122359%22&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>36</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.04035v1</id>
+    <title>Causality Laundering: Denial-Feedback Leakage in Tool-Calling LLM Agents</title>
+    <updated>2026-04-05T09:28:51Z</updated>
+    <link href="https://arxiv.org/abs/2604.04035v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.04035v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-calling LLM agents can read private data, invoke external services, and trigger real-world actions, creating a security problem at the point of tool execution. We identify a denial-feedback leakage pattern, which we term causality laundering, in which an adversary probes a protected action, learns from the denial outcome, and exfiltrates the inferred information through a later seemingly benign tool call. This attack is not captured by flat provenance tracking alone because the leaked information arises from causal influence of the denied action, not direct data flow. We present the Agentic Reference Monitor (ARM), a runtime enforcement layer that mediates every tool invocation by consulting a provenance graph over tool calls, returned data, field-level provenance, and denied actions. ARM propagates trust through an integrity lattice and augments the graph with counterfactual edges from denied-action nodes, enabling enforcement over both transitive data dependencies and denial-induced causal influence. In a controlled evaluation on three representative attack scenarios, ARM blocks causality laundering, transitive taint propagation, and mixed-provenance field misuse that a flat provenance baseline misses, while adding sub-millisecond policy evaluation overhead. These results suggest that denial-aware causal provenance is a useful abstraction for securing tool-calling agent systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-05T09:28:51Z</published>
+    <arxiv:comment>24 pages, 1 figure, 2 tables, 1 algorithm, preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mohammad Hossein Chinaei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.01236v2</id>
+    <title>Safeguarding LLM Agents from Misalignment through Provenance Analysis</title>
+    <updated>2026-08-10T14:38:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.01236v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.01236v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM agents gain increasing access to powerful tools, ensuring that their actions align with the user's intent becomes critical. When an agent's proposed action deviates from that intent---a phenomenon called misalignment---it may cause harm that is difficult to undo. Existing runtime guardrails rely on an LLM-as-a-judge paradigm that lacks a systematic framework for reasoning about alignment, often producing inconsistent or difficult-to-audit judgments. Motivated by provenance analysis, we propose a conceptual framework that formalizes misalignment detection as determining whether a proposed tool call is supported by traceable evidence in the agent's context. Based on this framework, we build ProvenanceGuard, a multi-stage pipeline that analyzes the agent's action for three types of misalignment before its execution and only allows aligned actions. We evaluated ProvenanceGuard on AgentSafetyBench and WorkBench, across 11 backbone LLMs. Compared to the LLM-as-a-judge baseline, ProvenanceGuard reduces error rate on misaligned traces from 44.3% to 2.1% on Agent-SafetyBench and from 32.4% to 18.7% on WorkBench, while reducing interventions on task-successful traces from 31.2% to 13.0% and introducing no statistically significant increase in unnecessary interventions on aligned traces. These results demonstrate that structured, provenance-based reasoning provides an effective and practical foundation for safeguarding LLM agents from misalignment.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-01T03:16:35Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yining She</name>
+    </author>
+    <author>
+      <name>Yiliang Liang</name>
+    </author>
+    <author>
+      <name>Eunsuk Kang</name>
+    </author>
+    <arxiv:doi>10.1145/3832783.3837535</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3832783.3837535" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.20827v1</id>
+    <title>Auditing Provenance Sensitivity in LLM Agent Action Selection</title>
+    <updated>2026-07-23T01:28:18Z</updated>
+    <link href="https://arxiv.org/abs/2607.20827v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.20827v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents choose tools and arguments from context that mixes user requests, tool outputs, retrieved records, memory, and untrusted text. Evidence can be relevant without being authorized to determine a decision, so a correct action need not be grounded only in permitted evidence. We introduce a target-specific authorization audit that labels context factors separately for each tool and argument target. Its primary test holds the task, proposition, position, and policy fixed while changing only the proposition's source authority. We then test behavior when valid evidence is weakened and use context-subset interactions as a secondary localization diagnostic. Across 450 controlled next-action tasks and multiple open-weight LLM families, trusted and untrusted variants produce different actions in 5.4 percent of competing cases versus 1.7 percent of supporting cases. Under controlled degradation, unauthorized competition is retained in a full-correct, mixed-error, clean-correct pattern in 2.4 percent of comparisons, with a 95 percent confidence interval from 2.1 to 3.0 percent. These are controlled stress-set rates, not deployment prevalence. The models respond to textual source-authority cues, but this does not prevent untrusted evidence from influencing their actions.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-23T01:28:18Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Junchi Liao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.29167v1</id>
+    <title>Memory Provenance Laundering in LLM Agents: A Non-Amplification Firewall for Persistent Memory</title>
+    <updated>2026-07-31T08:46:27Z</updated>
+    <link href="https://arxiv.org/abs/2607.29167v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.29167v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-term memory lets large language model(LLM) agents reuse prior preferences and work flows, but it also turns untrusted observations into persistent action context. We identify memory provenance laundering: during LLM-based memory consolidation, an external observation may be rewritten as apparent user history or workflow support, preserving an action trigger while erasing the low-trust source that should limit its authority. Existing prompt filters, content sanitizers, and tool guards do not enforce source-authority non-amplification after lossy memory consolidation. We formalize this boundary and instantiate it as Provenance-Preserving Memory Fire wall (PPMF), a lightweight memory middleware that preserves platform-maintained provenance and authorizes tool calls by matching action risk to the authority of action-relevant memories. In our schema-grounded evaluation with fixed risk policies, vulnerable consolidated memories reach up to 1.000 attack success rate(ASR); with intact platform-maintained provenance, confirmation, and risk labels, no evaluated unauthorized high-risk action passes the PPMF gate while confirmed benign actions and targeted low-risk memory use remain executable.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T08:46:27Z</published>
+    <arxiv:comment>EMNLP2026 submitted</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jinghan Xu</name>
+    </author>
+    <author>
+      <name>Yiyong Xiao</name>
+    </author>
+    <author>
+      <name>Wanru Shao</name>
+    </author>
+    <author>
+      <name>Hankai Liu</name>
+    </author>
+    <author>
+      <name>Xinjin Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.09084v1</id>
+    <title>Context-Fractured Decomposition Attacks on Tool-Using LLM Agents: Exploiting Artifact Provenance Gaps</title>
+    <updated>2026-06-08T06:29:42Z</updated>
+    <link href="https://arxiv.org/abs/2606.09084v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.09084v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using LLM agents interact with the world through actions that persist state in artifacts (e.g., workspace files or logs). Consequently, jailbreak defenses must reason about cross-step composition rather than isolated text. Yet most existing attacks and defenses, including ``multi-turn'' jailbreaks such as Crescendo and Tree of Attacks,still assume a single contiguous conversation visible to the defender. This assumption breaks down in real agent pipelines, where enforcement is fragmented across tools, modules, and time, and where artifact provenance is often not tracked. We operationalize a deployment failure mode for tool-using LLM agents, the \emph{provenance gap}, and study reproducible triggers for it: \emph{Context-Fractured Decomposition} (CFD), a family of cross-context multi-step jailbreaks that preserve benign-looking intermediate artifacts from an early interaction and elicit harmful behavior much later, potentially in a different agent instance or workflow stage, via individually innocuous tool actions whose risk emerges only under delayed artifact-mediated composition. We instrument the failure mode with trace-level diagnostics and outline a verifiable mitigation direction (provenance lineage tagging). Across agent-system jailbreak benchmarks, CFD improves success rates by up to 28.3 percentage points over state-of-the-art baselines, even against strong single-turn judges. Disclaimer: This paper contains examples of harmful or offensive language.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T06:29:42Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xiaofeng Lin</name>
+    </author>
+    <author>
+      <name>Yukai Yang</name>
+    </author>
+    <author>
+      <name>Daniel Guo</name>
+    </author>
+    <author>
+      <name>Sahil Arun Nale</name>
+    </author>
+    <author>
+      <name>Charles Fleming</name>
+    </author>
+    <author>
+      <name>Guang Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.19469v1</id>
+    <title>A Framework for Formalizing LLM Agent Security</title>
+    <updated>2026-03-19T21:01:49Z</updated>
+    <link href="https://arxiv.org/abs/2603.19469v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.19469v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Security in LLM agents is inherently contextual. For example, the same action taken by an agent may represent legitimate behavior or a security violation depending on whose instruction led to the action, what objective is being pursued, and whether the action serves that objective. However, existing definitions of security attacks against LLM agents often fail to capture this contextual nature. As a result, defenses face a fundamental utility-security tradeoff: applying defenses uniformly across all contexts can lead to significant utility loss, while applying defenses in insufficient or inappropriate contexts can result in security vulnerabilities. In this work, we present a framework that systematizes existing attacks and defenses from the perspective of contextual security. To this end, we propose four security properties that capture contextual security for LLM agents: task alignment (pursuing authorized objectives), action alignment (individual actions serving those objectives), source authorization (executing commands from authenticated sources), and data isolation (ensuring information flows respect privilege boundaries). We further introduce a set of oracle functions that enable verification of whether these security properties are violated as an agent executes a user task. Using this framework, we reformalize existing attacks, such as indirect prompt injection, direct prompt injection, jailbreak, task drift, and memory poisoning, as violations of one or more security properties, thereby providing precise and contextual definitions of these attacks. Similarly, we reformalize defenses as mechanisms that strengthen oracle functions or perform security property checks. Finally, we discuss several important future research directions enabled by our framework.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-19T21:01:49Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Vincent Siu</name>
+    </author>
+    <author>
+      <name>Jingxuan He</name>
+    </author>
+    <author>
+      <name>Kyle Montgomery</name>
+    </author>
+    <author>
+      <name>Zhun Wang</name>
+    </author>
+    <author>
+      <name>Neil Gong</name>
+    </author>
+    <author>
+      <name>Chenguang Wang</name>
+    </author>
+    <author>
+      <name>Dawn Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04990v4</id>
+    <title>From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</title>
+    <updated>2026-06-28T07:06:10Z</updated>
+    <link href="https://arxiv.org/abs/2606.04990v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04990v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM)-based agents are evolving from passive text generators into autonomous systems capable of planning, tool use, retrieval, memory access, environmental interaction, and multi-agent collaboration. These capabilities expand agent autonomy, but also make agent behavior harder to verify, debug, and audit. Final-answer accuracy alone cannot explain how an output was produced, which evidence supported each claim, whether tool calls were justified, how memory influenced later decisions, or where failures originated. This survey examines evidence tracing and execution provenance as foundations for process-level accountability in trustworthy LLM agents. We define execution provenance as the typed graph of an agent execution and evidence tracing as its projection onto evidence-support relations. This perspective connects retrieval grounding, claim support, tool-use safety, memory lineage, observability, debugging, audit, and recovery within a unified framework. We introduce a taxonomy covering trace sources, evidence and execution units, provenance relations, tracing granularity and timing, representation forms, and trust functions. We then review key methodological directions, including provenance representation, evidence attribution, tool-use provenance, runtime guardrails, provenance-bearing memory, observability, and failure diagnosis. Finally, we discuss benchmarks, datasets, metrics, and open challenges for building provenance-aware, auditable, and recoverable agent systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T15:12:47Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yiqi Wang</name>
+    </author>
+    <author>
+      <name>Jiaqi Zhang</name>
+    </author>
+    <author>
+      <name>Taotao Cai</name>
+    </author>
+    <author>
+      <name>Zirui Liu</name>
+    </author>
+    <author>
+      <name>Qingqiang Sun</name>
+    </author>
+    <author>
+      <name>Zequn Sun</name>
+    </author>
+    <author>
+      <name>Zhangkai Wu</name>
+    </author>
+    <author>
+      <name>Manqing Dong</name>
+    </author>
+    <author>
+      <name>Mingkai Zheng</name>
+    </author>
+    <author>
+      <name>Xuefei Yin</name>
+    </author>
+    <author>
+      <name>Yanming Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.05204v2</id>
+    <title>SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse</title>
+    <updated>2026-08-07T09:43:50Z</updated>
+    <link href="https://arxiv.org/abs/2608.05204v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.05204v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-agent ecosystems are rapidly growing around reusable skills: mixed-modality packages of metadata, natural-language instructions, code, tools, references, and operational workflows. As skills become marketplace artifacts, auditing their reuse is no longer the same problem as ordinary code clone detection. Existing detectors target single-modality source code or whole-package similarity, yet skill reuse evidence is distributed across authored text, implementation fragments, and operational structure. As a result, they can miss reuse that preserves only one part of a skill. We present SKILLTRACE, a multi-trace provenance auditing framework for LLM-agent skill reuse. SKILLTRACE extracts three provenance traces: Expression, Implementation, and Operational. It represents the Operational Trace as a Skill Operational Graph (SOG) that captures activation, procedure, and resource-flow structure. An LLM assists only the Operational-trace extraction, once at ingestion; at audit time SKILLTRACE compares cached traces deterministically, calibrates each trace against same-function strict negatives, and reports which trace supports a reuse decision. On SKILLTRACE-BENCH, with 820 transformed reuse positives over 100 marketplace anchors and 751 negative controls, SKILLTRACE achieves AUROC 0.938 and F1 0.898. A 36,446-skill wild audit further shows that trace-attributed evidence surfaces actionable reuse review queues beyond repository-level baselines.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-05T07:38:12Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jialuo Chen</name>
+    </author>
+    <author>
+      <name>Minghe Wang</name>
+    </author>
+    <author>
+      <name>Lingqi Jiang</name>
+    </author>
+    <author>
+      <name>Jianan Ma</name>
+    </author>
+    <author>
+      <name>Xinhao Deng</name>
+    </author>
+    <author>
+      <name>Xiaohu Du</name>
+    </author>
+    <author>
+      <name>Ruixiao Lin</name>
+    </author>
+    <author>
+      <name>Yunhao Feng</name>
+    </author>
+    <author>
+      <name>Linkang Du</name>
+    </author>
+    <author>
+      <name>Jingyi Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.10749v1</id>
+    <title>Toward Secure LLM Agents: Threat Surfaces, Attacks, Defenses, and Evaluation</title>
+    <updated>2026-06-09T12:01:07Z</updated>
+    <link href="https://arxiv.org/abs/2606.10749v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.10749v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are rapidly moving from conversational interfaces to software components that plan, invoke tools, maintain memory, and act on external environments. This transition changes the nature of security risk. In agentic settings, failures are no longer limited to unsafe text generation. Untrusted content may redirect control flow, misuse tool privileges, corrupt persistent state, leak sensitive information, or trigger harmful external actions. At the same time, research on LLM agent security is expanding quickly but remains fragmented across attack families, defense layers, application domains, and evaluation settings. This paper synthesizes 247 papers through a lifecycle-based, systems-oriented framework that models agent security around the interaction of information flow, delegated authority, and persistent state. We organize the literature around four questions: how LLM agent security should be modeled, which threat surfaces and attack families dominate, what defenses have been proposed and with what tradeoffs, and how security claims are evaluated. We find that prompt injection and tool-mediated control-flow hijacking still dominate the field, while persistent state corruption and multi-agent propagation are becoming central emerging concerns. We further find that current defenses provide useful building blocks but remain weakly compositional, and that existing benchmarks still underrepresent long-horizon, stateful, and deployment-sensitive risks. We argue that secure LLM agents require explicit trust boundaries, principled privilege control, provenance-aware state management, and evaluation practices aligned with realistic operational settings.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-09T12:01:07Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yuchen Ling</name>
+    </author>
+    <author>
+      <name>Shengcheng Yu</name>
+    </author>
+    <author>
+      <name>Zhenyu Chen</name>
+    </author>
+    <author>
+      <name>Chunrong Fang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.12535v3</id>
+    <title>Ghost in the Context: Policy-Carriage Integrity in LLM Agents</title>
+    <updated>2026-07-01T09:34:06Z</updated>
+    <link href="https://arxiv.org/abs/2605.12535v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.12535v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents choose actions from bounded decision states assembled from system policy, runtime state, tools, workload content, and the final request. We study policy-carriage integrity: applicable trusted policies must remain present, sound, and correctly bound in the decision state immediately before action. Under controlled pressure replay over AutoGen/tau3 and OpenHands/SWE-bench traces, the tested protected-placement configurations preserve policy across the pressure sweep, while task-local placement exhibits eviction, weakening, or over-budget continuation depending on the context manager. We keep this result state-level: a fixed-assembler behavioral calibration produced 0/90 unsafe-action proposals and 0/90 unguarded policy violations, so policy absence alone did not establish unsafe model behavior. The resulting design guidance is systems-level: assign typed provenance to policy state, isolate control budget, check before assembly that the complete active policy set fits, fail closed on overload, and enforce structured policies at the action boundary. We present ControlCapsule as a reference design pattern for these requirements; exact active-policy replay + preflight remains the key baseline.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-02T18:07:42Z</published>
+    <arxiv:comment>19 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Igor Santos-Grueiro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.03378v2</id>
+    <title>ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection</title>
+    <updated>2026-07-08T15:04:28Z</updated>
+    <link href="https://arxiv.org/abs/2605.03378v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.03378v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM) agents are increasingly deployed as task-oriented software systems that use runtime context to decide and act on behalf of users. This delegation model makes prompt injection especially dangerous: an attacker can hide a context-aware instruction inside evidence the agent must use to decide what to do. Existing benchmarks and defenses largely miss this setting. Benchmarks often use context-insensitive tasks where the user prompt already specifies the intended action, together with generic attack payloads independent of context. Existing defenses also do not capture the causal support from runtime evidence to concrete actions, which makes them incomplete and ineffective for context-dependent tasks.
+  We present AgentLure, a benchmark for context-dependent tasks under context-aware prompt injection. AgentLure spans four agentic domains and eight attack vectors across six attack surfaces. To defend this setting, we propose ARGUS, a causal-provenance auditor for LLM agents. Instead of relying only on tool authorization or suspicious-context detection, ARGUS verifies whether each proposed action has a complete benign causal justification. It builds an influence-provenance graph, labels runtime spans, grounds action arguments in supporting evidence, and releases an action only when benign evidence entails it and task invariants hold. On AgentLure, ARGUS reduces attack success rate from 28.8% to 3.8% while preserving 87.5% clean utility, significantly outperforming existing defenses in the security-utility tradeoff.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-05T05:37:00Z</published>
+    <arxiv:comment>14 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Shihao Weng</name>
+    </author>
+    <author>
+      <name>Yang Feng</name>
+    </author>
+    <author>
+      <name>Jinrui Zhang</name>
+    </author>
+    <author>
+      <name>Xiaofei Xie</name>
+    </author>
+    <author>
+      <name>Jiongchi Yu</name>
+    </author>
+    <author>
+      <name>Jia Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.26269v1</id>
+    <title>AgentSecBench: Measuring Prompt Injection, Privacy Leakage, and Tool-Use Integrity in LLM Agents</title>
+    <updated>2026-05-25T18:53:22Z</updated>
+    <link href="https://arxiv.org/abs/2605.26269v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.26269v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents process trusted instructions, retrieved records, and tool observations through a common generative channel. This conflates data flow with authority: an untrusted string can affect a secret-bearing response or an action proposal even when no application policy authorizes that influence. We introduce AgentSecBench as an empirical instantiation of a formal security framework for this problem. The framework defines three games-instruction-integrity, retrieval-confidentiality, and capability-integrity-under a common notion of intent-to-execution noninterference with permitted leakage. It represents an application policy as a projection onto authorized observations and capabilities, distinguishes prompt annotations from enforcing projections, and measures both adversarial advantage and whether a defense closes the relevant model-visible channel before generation. The exact-marker experiments are intentionally one observable instantiation of the games rather than a complete semantic security claim: they test disclosure and forbidden-action distinguishers with unambiguous ground truth. We evaluate six defense classes with Qwen3-0.6B and Qwen3-1.7B on paired adversarial and benign-control executions. The measurements show when risk reduction follows channel closure and when a model-visible adversarial capability remains exploitable. The result is a security-oriented evaluation method: prompt text can describe a boundary, whereas provenance projection, capability restriction, and output validation can enforce one.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-25T18:53:22Z</published>
+    <arxiv:comment>24 pages, 3 figures. Ancillary files provided</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Faruk Alpay</name>
+    </author>
+    <author>
+      <name>Taylan Alpay</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.14421v1</id>
+    <title>MemLineage: Lineage-Guided Enforcement for LLM Agent Memory</title>
+    <updated>2026-05-14T06:07:54Z</updated>
+    <link href="https://arxiv.org/abs/2605.14421v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.14421v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce MemLineage, a defense for LLM agent memory that attaches both cryptographic provenance and LLM-mediated derivation lineage to every entry. Recent and concurrent work shows that untrusted content can be written into persistent agent state and re-enter later sessions as an instruction; the remaining systems question is how to preserve useful memory recall while preventing such state from justifying sensitive actions. MemLineage treats this as a chain-of-custody problem rather than a filtering problem. It is a six-module design around an RFC-6962 Merkle log over per-principal Ed25519-signed entries: a weighted derivation DAG records which retrieved entries influenced each new memory, and a max-of-strong-edges propagation rule makes Untrusted-Path Persistence hold for any chain whose attribution edges remain above threshold. The sensitive-action gate then refuses dispatches whose active justification descends from an external ancestor, while still allowing benign recall. We evaluate three defense cells against three memory-poisoning workloads on a deterministic mechanism-isolation harness; MemLineage is the only configuration in that harness that drives all three columns to zero ASR, while sub-millisecond per-operation overhead keeps it well below the noise floor of any LLM call. A Codex-backed AgentDojo bridge further separates strong-model behavior from defense-layer behavior: under an intentionally vulnerable tool-output profile, no-defense and signature-only baselines fail on all six banking pairs, while all MemLineage rows reduce strict AgentDojo ASR to zero. The core deterministic artifacts are byte-equal CI-verified; hosted-model AgentDojo and live-model sweeps are recorded as auditable logs rather than byte-pinned artifacts.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-14T06:07:54Z</published>
+    <arxiv:comment>24 pages, 8 figures. Rui Hou is the corresponding author</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ciyan Ouyang</name>
+    </author>
+    <author>
+      <name>Rui Hou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.08400v1</id>
+    <title>TRACE: A Two-Channel Robust Attribution Watermark via Complementary Embeddings for LLM-Agent Trajectories</title>
+    <updated>2026-07-09T12:25:22Z</updated>
+    <link href="https://arxiv.org/abs/2607.08400v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.08400v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents reach users through resellers, who may rebrand a developer's agent or substitute a cheaper model. When provenance is disputed, attribution rests on the trajectory log (the record of tool calls, observations, and executed actions, not the model's reasoning), which the reseller stores and processes to meter usage. A watermark must therefore survive an adversary with full read/write access to the very evidence it is detected from; existing agent watermarks do not, as their attribution is read straight off that log. We present TRACE, to our knowledge the first agent watermark that is distortion-free in its action choices, self-synchronizing under deletion, and unconditionally invariant under rewriting. Deletion desynchronizes a position-derived key and rewriting alters content, so a deletion-robust key must come from content and a rewrite-robust key from position, and no single key serves both. A trajectory, however, has room for two watermarks. TRACE superposes a selection channel that sets which action is chosen, keyed on local content with a distortion-free sampler, so the agent's distribution is provably unchanged and detection resynchronizes after deletions, and a tally channel that sets how many records each decision group holds, keyed on the log's skeleton alone, which no rewriting can touch. We prove this behavioral watermark's signal is bought with decision entropy, each decision paying at least half its entropy and deterministic decisions nothing, and that erasing both channels forces the reseller to corrupt the trajectories it resells. On ToolBench and ALFWorld, TRACE matches the unwatermarked agent's success rate while its selection channel reaches detection scores near z = 100 on long-horizon trajectories, stays detectable under 70% step deletion, and keeps a tally channel exactly unchanged under LLM rewriting of any strength.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-09T12:25:22Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Zheng Gao</name>
+    </author>
+    <author>
+      <name>Xiaoyu Li</name>
+    </author>
+    <author>
+      <name>Xiaoyan Feng</name>
+    </author>
+    <author>
+      <name>Jiaojiao Jiang</name>
+    </author>
+    <author>
+      <name>Yang Song</name>
+    </author>
+    <author>
+      <name>Yulei Sui</name>
+    </author>
+    <author>
+      <name>Zhenchang Xing</name>
+    </author>
+    <author>
+      <name>Liming Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.02812v1</id>
+    <title>Autonomous LLM Agent Worms: Cross-Platform Propagation, Automated Discovery and Temporal Re-Entry Defense</title>
+    <updated>2026-05-04T16:49:29Z</updated>
+    <link href="https://arxiv.org/abs/2605.02812v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.02812v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous LLM agents operate as long-running processes with persistent workspaces, memory files, scheduled task state, and messaging integrations. These features create a new propagation risk: attacker-influenced content can be written into persistent agent state, re-enter the LLM decision context through scheduled autoloading, and drive high-risk actions including configuration changes and cross-agent transmission. We present the first systematic framework for automated analysis of persistent worm propagation in file-backed multi-agent LLM ecosystems. SSCGV, our automated source-code graph analyzer, traces data flow from file I/O to LLM context injection points and ranks carriers by context injection position without manual analysis. SRPO, our summary-resilient payload optimizer, generates worm payloads robust to LLM-mediated summarization and paraphrasing across multi-hop communication. Evaluated on three production agent frameworks, we demonstrate zero-click autonomous propagation, 3-hop cross-platform transmission without platform-specific adaptation, inter-agent privilege escalation, and data exfiltration. We identify two empirical insights: user prompt carriers achieve higher attack compliance than system prompt carriers, and read operations represent the primary integrity threat in LLM-mediated systems. To defend against this class of attacks, we develop RTW-A, proven under a formal No Persistent Worm Propagation theorem. RTW blocks write-before-exposed-read re-entry; sealed configuration protects static files; typed memory promotion prevents untrusted summaries from entering trusted memory; and capability attenuation limits high-risk actions after external reads. These mechanisms eliminate the persistence, re-entry, action chain while preserving ordinary workflows. Affected systems are anonymized pending coordinated disclosure.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-04T16:49:29Z</published>
+    <arxiv:comment>21 pages, 1 figure, 6 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mingming Zha</name>
+    </author>
+    <author>
+      <name>Xiaofeng Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.08131v1</id>
+    <title>Compositional Threat Analysis of Latent Compromise in LLM Agent Systems: The Order 66 Scenario</title>
+    <updated>2026-08-08T13:35:35Z</updated>
+    <link href="https://arxiv.org/abs/2608.08131v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.08131v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the fictional Order 66, catastrophe does not arise from a powerful command alone: a trusted population is preconditioned, a short directive activates the concealed condition, and protective authority turns against the system. This paper translates that mechanism into an origin-neutral security analysis of tool-using large language model (LLM) agents. A representative scenario combines a deployed artifact or shared memory bearing a dormant destructive rule, a later email, document, update, or peer message that activates it, and an agent harness granting operational and recovery authority. We introduce a compositional model explaining why no component is catastrophic alone, yet their conjunction can produce correlated destructive action. We separate three population-reach routes --- release-time pre-positioning, post-release durable seeding, and peer replication --- from a common core of dormancy, activation, authority, reachable targets, and failed recovery. This yields defensive cut sets and shows why checkpoint scanning or prompt filtering cannot close every route. A two-class example shows that cross-class feedback can sustain spread even when both within-class reproduction terms are below one; isolation and persistence controls suppress the loop. Published work instantiates constituent mechanisms, while incidents demonstrate autonomous boundary crossing, malicious agent extensions, agent-assisted reconnaissance, and public-package propagation, but not the full dormant-implant composition. We found no public observation, in evidence reviewed through 5 August 2026, traversing the complete Order 66 graph. The result is neither dismissal nor prediction: the scenario is componentwise credible under stated assumptions, damage depends on the harness, and the strongest defenses are capability mediation, durable-state provenance, propagation isolation, and protected recovery.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-08T13:35:35Z</published>
+    <arxiv:comment>Version 11.3, 33 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Satoshi Matsuoka</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27429v1</id>
+    <title>Auditing Emergent LLM-Agent Collaboration through Cooperation-Obligation Coupling</title>
+    <updated>2026-07-29T19:56:38Z</updated>
+    <link href="https://arxiv.org/abs/2607.27429v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27429v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-agent systems can solve complex tasks through dynamic self-organization and emergent cooperation. Auditing this process is essential because plausible intermediate or final outputs can conceal incomplete or unsupported work and poorly allocated responsibility, ultimately compromising response quality. While existing approaches may record messages, tool calls, provenance, or task dependencies, an auditability gap exists as they do not jointly represent what work remains, who is responsible for it, and what evidence justifies each work-state transition. We address this auditability gap by proposing \emph{Integrated Cooperation-Obligation REpresentation} (iCORE). It creates a unified encoding $X=(G,Q,Π)$ integrating observable interactions as a cooperation graph $G$, evolving work and assignments as an obligation graph $Q$, and the audit map $Π$ linking them with verifiable properties and evidence. This iCORE representation enables the auditor to certify two complementary properties: {Work soundness}, where every active decision-relevant work assertion must have a finite justification through $G$ and $Π$; and {Agent-assignment stability}, which requires that no feasible alternative agent improve the declared contribution value for an evaluated obligation by more than $ε$. We establish local-to-global soundness and assignment-regret guarantees and a performance bound under stated conditions. iCORE is an instrumentation layer over workflows. Numerical results show that the full coupled state exactly reconstructs soundness and assignment defects in two execution modes and that, relative to passive full-state observation, iCORE-Audit yields absolute trajectory-quality improvements of $11.5\%$ and $26.4\%$ in controlled and real-LLM execution, respectively, with corresponding absolute terminal-performance improvements of $15.1\%$ and $31.0\%$.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T19:56:38Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Zuyuan Zhang</name>
+    </author>
+    <author>
+      <name>Hanqing Yang</name>
+    </author>
+    <author>
+      <name>Carlee Joe-Wong</name>
+    </author>
+    <author>
+      <name>Tian Lan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.26497v1</id>
+    <title>Aligning Provenance with Authorization: A Dual-Graph Defense for LLM Agents</title>
+    <updated>2026-05-26T03:20:23Z</updated>
+    <link href="https://arxiv.org/abs/2605.26497v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.26497v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agents are increasingly deployed in high-stakes scenarios such as email management, financial transactions, and code execution, where they interact with the external world through tool calling. During execution, these agents must read external data sources (emails, webpages, files) that attackers can control; through indirect prompt injection, attackers embed malicious instructions in this data to manipulate agents into performing unauthorized operations such as transferring funds to attacker-controlled accounts. Existing defenses either perform tool-call-level value checking without tracking where parameter values originate, or analyze execution traces from a single perspective without a clean authorization baseline for comparison. We propose AuthGraph, a dual-graph alignment defense framework that constructs two complementary graphs: an injected reasoning graph that models information provenance from the actual execution trajectory (including potentially manipulated attributions), and an authorization graph derived from the user's intent in an isolated clean context that is information-theoretically impossible to be influenced by injection; a graph alignment checker then structurally compares the two graphs to detect both tool-level and parameter-source-level deviations. On AgentDojo, AuthGraph reduces the attack success rate from 40% to 1% while maintaining 76% task completion rate on GPT-4o; on AgentDyn, it reduces the attack success rate from 39% to 2% while preserving 51% utility, outperforming state-of-the-art defenses including CaMeL, DRIFT, and Progent. To our knowledge, AuthGraph is the first agent security defense to structurally compare authorization specifications against execution provenance at the parameter-source level, achieving fine-grained injection detection without sacrificing agent flexibility.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T03:20:23Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Peiran Wang</name>
+    </author>
+    <author>
+      <name>Ying Li</name>
+    </author>
+    <author>
+      <name>Yuan Tian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.22868v2</id>
+    <title>Agent-Sentry: Bounding LLM Agents via Execution Provenance</title>
+    <updated>2026-05-08T19:13:57Z</updated>
+    <link href="https://arxiv.org/abs/2603.22868v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.22868v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic computing systems, while immensely capable, raise serious security, privacy, and safety concerns. A key issue is that the full set of functionalities offered by these systems, combined with their probabilistic execution flows, is not known beforehand. Given this lack of characterization, it is challenging to validate whether a system has successfully carried out the user's intended task or instead executed irrelevant actions, potentially as a consequence of compromise. We present \emph{Agent Sentry}, a runtime defense that learns a bound on an agent's benign execution from prior legitimate executions and flags any action that falls outside this bound. Agent Sentry layers three complementary checks: a structural classifier over the sequence of actions and the provenance of each function's arguments; a deterministic allowlist check over sensitive argument values; and an LLM judge, invoked only on the residual of actions where the first two checks cannot safely decide between a legitimate new request and a carefully crafted injection. We demonstrate the effectiveness of Agent Sentry in AgentDojo and AgentDyn by blocking 94.3\% of successful injections while allowing 95.1\% of benign executions, without modifying the agent, its tools, or the LLM.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-24T07:12:53Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Rohan Sequeira</name>
+    </author>
+    <author>
+      <name>Stavros Damianakis</name>
+    </author>
+    <author>
+      <name>Umar Iqbal</name>
+    </author>
+    <author>
+      <name>Konstantinos Psounis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11039v1</id>
+    <title>The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck</title>
+    <updated>2026-05-11T04:09:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.11039v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11039v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using LLM agents must act on untrusted webpages, emails, files, and API outputs while issuing privileged tool calls. Existing defenses often mediate trust at the granularity of an entire tool invocation, forcing a brittle choice in mixed-trust workflows: allow external content to influence a call and risk hijacked destinations or commands, or quarantine the call and block benign retrieval-then-act behavior. The key observation behind this paper is that indirect prompt injection becomes dangerous not when untrusted content appears in context, but when it determines an authority-bearing argument. We present \textsc{PACT} (\emph{Provenance-Aware Capability Contracts}), a runtime monitor that assigns semantic roles to tool arguments, tracks value provenance across replanning steps, and checks whether each argument's origin satisfies its role-specific trust contract. Under oracle provenance, \textsc{PACT} achieves 100\% utility and 100\% security on mixed-trust diagnostic suites, while flat invocation-level monitors incur false positives or false negatives. In full AgentDojo deployments across five models, \textsc{PACT} reaches 100\% security on the three strongest models while recovering 38.1--46.4\% utility, 8--16 percentage points above CaMeL at the same security level. Ablations show that both semantic roles and cross-step provenance are necessary. \textsc{PACT} reframes agent security as authority binding, and isolates the remaining deployment bottleneck to provenance inference and contract synthesis.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T04:09:11Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Linfeng Fan</name>
+    </author>
+    <author>
+      <name>Ziwei Li</name>
+    </author>
+    <author>
+      <name>Yuan Tian</name>
+    </author>
+    <author>
+      <name>Yichen Wang</name>
+    </author>
+    <author>
+      <name>Rongsheng Li</name>
+    </author>
+    <author>
+      <name>Xiong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08828v2</id>
+    <title>When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents</title>
+    <updated>2026-05-12T08:22:21Z</updated>
+    <link href="https://arxiv.org/abs/2605.08828v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08828v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs. These observations influence tool use, state tracking, and action sequencing, yet their reliability and authority are often uncertain. Environmental grounding is therefore a systems-level problem involving context admission, evidence provenance, freshness checking, verification policy, action gating, and model reasoning. Existing agent benchmarks mainly evaluate task capability or specific attacks such as prompt injection and memory poisoning, but they under-specify a fundamental reliability question: whether agents remain grounded in the true environment state when observations are stale, incorrect, or malicious.
+  We introduce EnvTrustBench, an agentic framework for benchmarking this failure mode. We define an evidence-grounding defect (EGD) as a behavioral failure in which an agent treats an environment-facing claim as sufficient evidence for action without resolving it against available current evidence, leading to a task-incorrect false path under the true environment state. Given a task scenario, EnvTrustBench generates the workspace, environment, agent-facing objective, and validation oracle, executes the evaluated agent, records its action-observation trajectory and final state, and applies the oracle to produce a verdict.
+  Using 6 LLM backbones and 5 widely used scaffolds, we evaluate 55 generated cases across 11 task scenarios, with each scenario expanded through five feedback-guided generation iterations. Results show that EGDs consistently emerge across operational workflows, highlighting environmental grounding as a core agent reliability problem with important security implications.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-09T09:32:27Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Strick Sheng</name>
+    </author>
+    <author>
+      <name>Ziyue Wang</name>
+    </author>
+    <author>
+      <name>Liyi Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.07939v2</id>
+    <title>Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees</title>
+    <updated>2025-11-18T18:20:23Z</updated>
+    <link href="https://arxiv.org/abs/2509.07939v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.07939v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in Large Language Models (LLMs) have driven interest in automating cybersecurity penetration testing workflows, offering the promise of faster and more consistent vulnerability assessment for enterprise systems. Existing LLM agents for penetration testing primarily rely on self-guided reasoning, which can produce inaccurate or hallucinated procedural steps. As a result, the LLM agent may undertake unproductive actions, such as exploiting unused software libraries or generating cyclical responses that repeat prior tactics. In this work, we propose a guided reasoning pipeline for penetration testing LLM agents that incorporates a deterministic task tree built from the MITRE ATT&amp;CK Matrix, a proven penetration testing kll chain, to constrain the LLM's reaoning process to explicitly defined tactics, techniques, and procedures. This anchors reasoning in proven penetration testing methodologies and filters out ineffective actions by guiding the agent towards more productive attack procedures. To evaluate our approach, we built an automated penetration testing LLM agent using three LLMs (Llama-3-8B, Gemini-1.5, and GPT-4) and applied it to navigate 10 HackTheBox cybersecurity exercises with 103 discrete subtasks representing real-world cyberattack scenarios. Our proposed reasoning pipeline guided the LLM agent through 71.8\%, 72.8\%, and 78.6\% of subtasks using Llama-3-8B, Gemini-1.5, and GPT-4, respectively. Comparatively, the state-of-the-art LLM penetration testing tool using self-guided reasoning completed only 13.5\%, 16.5\%, and 75.7\% of subtasks and required 86.2\%, 118.7\%, and 205.9\% more model queries. This suggests that incorporating a deterministic task tree into LLM reasoning pipelines can enhance the accuracy and efficiency of automated cybersecurity assessments</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-09T17:19:33Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Katsuaki Nakano</name>
+    </author>
+    <author>
+      <name>Reza Fayyazi</name>
+    </author>
+    <author>
+      <name>Shanchieh Jay Yang</name>
+    </author>
+    <author>
+      <name>Michael Zuzak</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11036v1</id>
+    <title>Sequential Behavioral Watermarking for LLM Agents</title>
+    <updated>2026-05-11T02:28:34Z</updated>
+    <link href="https://arxiv.org/abs/2605.11036v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11036v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agents act through sequences of executable decisions, but their trajectories provide little evidence of which agent or policy produced them, making provenance, ownership, and unauthorized reuse difficult to establish from observed behavior alone. This motivates watermarking signals embedded directly into agent behavior rather than only into generated text, since text watermarking cannot capture the action-level decisions that define agent execution. Recent agent watermarking methods address this gap by moving the watermark from generated text to behavioral choices. However, by treating each action step as an independent trial, they overlook trajectory structure and become fragile when trajectories are perturbed, truncated, or observed without reliable alignment. We propose SeqWM, a sequential behavioral watermarking framework that embeds signals into history-conditioned transition patterns and verifies trajectories position-agnostically against random-key baselines. Experiments across diverse agent benchmarks and LLM backbones show that SeqWM consistently achieves reliable detection while preserving agent utility, and remains robust under trajectory corruption where round-indexed behavioral watermarks collapse.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T02:28:34Z</published>
+    <arxiv:comment>17 pages, 3 figures, preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Hyeseon An</name>
+    </author>
+    <author>
+      <name>Shinwoo Park</name>
+    </author>
+    <author>
+      <name>Dongsu Kim</name>
+    </author>
+    <author>
+      <name>Yo-Sub Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.23929v2</id>
+    <title>MemTX: Transactional Belief Commit for Stateful Agent Memory</title>
+    <updated>2026-07-28T12:51:37Z</updated>
+    <link href="https://arxiv.org/abs/2607.23929v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.23929v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents increasingly coordinate through persistent shared memory: one agent's write becomes another agent's premise, and eventually a tool call with real side effects. Current agent memory systems treat every accepted write as immediately actionable truth, so a polluted tool result, a stale update, or a teammate's half-finished note can silently drive an irreversible action. We argue that a memory write is not a belief commit. We present MemTX, a transactional belief-commit protocol. Each record carries evidence, permissions, provenance, and validity. Writes are staged inside snapshot-isolated transactions and admitted by a validate-and-commit pipeline, irreversible tool calls are gated on in-flight belief state, and retracting a belief triggers typed cascading repair of its derived records and tool side effects. Two invariants, action-safety gating and cascade-repair completeness, are machine-checked by property-based testing and bounded exhaustive enumeration of 5.5 million protocol states, with zero violations. Across five backbones from three model families, MemTX leads all eight baselines with paired-McNemar significance on four backbones and statistically ties the best baseline on the fifth and strongest, while remaining the only method with zero downstream harm on every backbone. Backbone capability does not substitute for commit discipline.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-27T01:57:39Z</published>
+    <arxiv:comment>Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xiaoyang Li</name>
+    </author>
+    <author>
+      <name>Yiqi Wang</name>
+    </author>
+    <author>
+      <name>Haohui Lu</name>
+    </author>
+    <author>
+      <name>Zhi Chen</name>
+    </author>
+    <author>
+      <name>Mo Li</name>
+    </author>
+    <author>
+      <name>Pingan Song</name>
+    </author>
+    <author>
+      <name>Mingkai Zheng</name>
+    </author>
+    <author>
+      <name>Taotao Cai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27556v1</id>
+    <title>Evaluating Agentic Bioinformatics through Function, Evidence, and Validation</title>
+    <updated>2026-07-30T01:00:36Z</updated>
+    <link href="https://arxiv.org/abs/2607.27556v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27556v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model agents increasingly plan, execute, and interpret biological analyses, yet fluent responses, successful tool calls, and benchmark performance alone do not establish scientific credibility. Existing reviews primarily organize biological agents by application, architecture, and agentic capability, but do not jointly operationalize the accountability of agent-generated workflows. We address this gap by treating the inspectable workflow trajectory, rather than architecture or final output alone, as the primary unit of analysis. We introduce the Function--Evidence--Validation (FEV) framework, which separates demonstrated workflow operations, traceable support for actions and claims, and use-case-specific validation. Using FEV, we map 109 agentic or agent-adjacent systems and 28 benchmark or evaluation resources, representing 128 unique publications across genomics, single-cell and spatial omics, protein science, drug discovery, computational pathology, and general bioinformatics automation. Across domains, planning and tool-mediated execution have advanced more rapidly than replayability, provenance, robust scientific assessment, external validation, and prospective empirical testing. We therefore argue that agentic bioinformatics should be assessed through workflow correctness rather than final-answer correctness alone. FEV provides a practical basis for comparing systems and designing transparent, auditable, and scientifically accountable bioinformatics workflows.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T01:00:36Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Phuc Pham</name>
+    </author>
+    <author>
+      <name>Truong-Son Hy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.01679v2</id>
+    <title>When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary</title>
+    <updated>2026-08-04T08:28:14Z</updated>
+    <link href="https://arxiv.org/abs/2608.01679v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.01679v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Persistent memory allows (self-evolving) LLM agents to adapt across tasks by consolidating heterogeneous interaction histories into reusable facts, preferences, observations, and rules. Yet consolidation also imposes an implicit authorization boundary: it determines whether stored information may later be consumed as a user fact, an attested observation, or a standing instruction. We identify authority collapse, in which consolidation preserves a claim while erasing the source constraints governing its authorized use, causing the stored memory to imply greater authority than its source permits. We introduce AuthMem-Bench, a controlled paired benchmark that holds the focal claim and downstream task fixed while varying only source authority. It evaluates write-time collapse, downstream authorization errors, and automatic authority preservation. Across seven consolidators based on widely used agent-memory systems and seven LLM backbones, we observe authority collapse in 48 of 49 evaluated configurations. In a controlled action-grounded evaluation, collapsed memories without authority metadata yield a mean unauthorized-action rate of 50.3%. In an end-to-end evaluation, automatically predicted and persisted authority labels reduce the observed unauthorized-action rate from 16.9% to 0.0%, while benign task success remains essentially unchanged. These findings show that memory-driven adaptation must preserve not only what was learned, but also the authority under which it may be reused.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-03T04:15:40Z</published>
+    <arxiv:comment>38 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Qiuyang Zhan</name>
+    </author>
+    <author>
+      <name>Rui Zhang</name>
+    </author>
+    <author>
+      <name>Sheng Guo</name>
+    </author>
+    <author>
+      <name>Lepeng Zhao</name>
+    </author>
+    <author>
+      <name>Zhuotao Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.09315v1</id>
+    <title>Brain-Prompt Injection: A Route-Safety Audit for BCI-LLM Agents</title>
+    <updated>2026-06-08T10:19:34Z</updated>
+    <link href="https://arxiv.org/abs/2606.09315v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.09315v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>BCI-to-agent pipelines turn decoded neural activity into an authorization channel for tool-use agents, exposing a new attack surface we call \emph{brain-prompt injection}: signal-side perturbations, context-only injections, and adaptive dual-decoder attacks can all change the routed action while EEG-side or text-side monitors remain blind. Route safety in this stack depends on what the audit log can observe, not on decoder accuracy or agreement alone. We define a Route-Safety Audit Contract: a minimal log schema, denominator hierarchy, and endpoint specification, and prove an audit-schema separation theorem together with a C3 attacked-dependence decomposition; clean agreement and marginal robustness do not identify the joint term that controls C3 routing. As a calibration layer on top of the contract, we apply split-conformal calibration to a non-oracle EEG confirmation channel and report the resulting false-accept frontier under an explicit threat-archetype matrix. We instantiate the contract on EEGMMI native left/right command-control over 5{,}400 events, harmless tool stubs, and seed/case denominators. Provenance blocks C2 routes ($0.000$); agreement-plus-provenance routes C3 flips ($1.000$); confirmation-plus-provenance routes them ($0.000$). The conformal frontier reaches FAR $0.000$ at clean utility $0.150$ for $α=.005$ and FAR $0.119$ at clean utility $0.452$ for $α=.10$ under acquisition isolation; an attacker-controllable confirmation channel breaks the bound to $\approx\!1$. Subject-cluster bootstrap confirms these intervals on $60$ subjects; cross-architecture (TinyEEGNet, EEGNetV4) and capacity-sweep results show within-regime saturation. Mediation and confirmation reduce risk; they are not intent certificates.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T10:19:34Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Jianwei Tai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.29190v1</id>
+    <title>CAGE: Certified Authorization under Typed-Return Uncertainty for Tool-Using Agents</title>
+    <updated>2026-07-31T09:11:56Z</updated>
+    <link href="https://arxiv.org/abs/2607.29190v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.29190v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using LLM agents act on typed tool returns, records pairing provenance and categorical fields with numerical values. Runtime permission gates generally authorize the observed return and action, leaving the decision unprotected against small errors in how the return was bound to its source. We ask whether a candidate action stays authorized over a declared neighborhood of plausible correctly bound returns: one admissible binding fault plus bounded numerical drift. We prove that certifying the categorical and numerical channels separately does not compose: perturbations that are safe on each channel alone can jointly turn the same action unsafe. CAGE certifies this joint neighborhood directly, enumerating the discrete branches exactly and certifying the continuous perturbation within each branch. Across synthetic, policy-as-code, regulatory, and real-transaction settings, CAGE removes the in-budget false allows that accurate pointwise gates admit, while keeping a useful fraction of decisions autonomous. When the policy is executable, CAGE-Exact certifies the policy itself; otherwise CAGE-Lip and CAGE-RS certify a learned gate under an explicit, measured fidelity assumption.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T09:11:56Z</published>
+    <arxiv:comment>Code: https://github.com/tdsai-lab/cage-agent-authorization</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Blaise Delattre</name>
+    </author>
+    <author>
+      <name>Cong Wang</name>
+    </author>
+    <author>
+      <name>Yang Cao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.18279v1</id>
+    <title>Collaborative Memory: Multi-User Memory Sharing in LLM Agents with Dynamic Access Control</title>
+    <updated>2025-05-23T18:14:57Z</updated>
+    <link href="https://arxiv.org/abs/2505.18279v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.18279v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Complex tasks are increasingly delegated to ensembles of specialized LLM-based agents that reason, communicate, and coordinate actions-both among themselves and through interactions with external tools, APIs, and databases. While persistent memory has been shown to enhance single-agent performance, most approaches assume a monolithic, single-user context-overlooking the benefits and challenges of knowledge transfer across users under dynamic, asymmetric permissions. We introduce Collaborative Memory, a framework for multi-user, multi-agent environments with asymmetric, time-evolving access controls encoded as bipartite graphs linking users, agents, and resources. Our system maintains two memory tiers: (1) private memory-private fragments visible only to their originating user; and (2) shared memory-selectively shared fragments. Each fragment carries immutable provenance attributes (contributing agents, accessed resources, and timestamps) to support retrospective permission checks. Granular read policies enforce current user-agent-resource constraints and project existing memory fragments into filtered transformed views. Write policies determine fragment retention and sharing, applying context-aware transformations to update the memory. Both policies may be designed conditioned on system, agent, and user-level information. Our framework enables safe, efficient, and interpretable cross-user knowledge sharing, with provable adherence to asymmetric, time-varying policies and full auditability of memory operations.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-23T18:14:57Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Alireza Rezazadeh</name>
+    </author>
+    <author>
+      <name>Zichao Li</name>
+    </author>
+    <author>
+      <name>Ange Lou</name>
+    </author>
+    <author>
+      <name>Yuying Zhao</name>
+    </author>
+    <author>
+      <name>Wei Wei</name>
+    </author>
+    <author>
+      <name>Yujia Bao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.23260v2</id>
+    <title>From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows</title>
+    <updated>2025-12-14T20:29:54Z</updated>
+    <link href="https://arxiv.org/abs/2506.23260v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.23260v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous AI agents powered by large language models (LLMs) with structured function-calling interfaces enable real-time data retrieval, computation, and multi-step orchestration. However, the rapid growth of plugins, connectors, and inter-agent protocols has outpaced security practices, leading to brittle integrations that rely on ad-hoc authentication, inconsistent schemas, and weak validation. This survey introduces a unified end-to-end threat model for LLM-agent ecosystems, covering host-to-tool and agent-to-agent communications. We systematically categorize more than thirty attack techniques spanning input manipulation, model compromise, system and privacy attacks, and protocol-level vulnerabilities. For each category, we provide a formal threat formulation defining attacker capabilities, objectives, and affected system layers. Representative examples include Prompt-to-SQL injections and the Toxic Agent Flow exploit in GitHub MCP servers. We analyze attack feasibility, review existing defenses, and discuss mitigation strategies such as dynamic trust management, cryptographic provenance tracking, and sandboxed agent interfaces. The framework is validated through expert review and cross-mapping with real-world incidents and public vulnerability repositories, including CVE and NIST NVD. Compared to prior surveys, this work presents the first integrated taxonomy bridging input-level exploits and protocol-layer vulnerabilities in LLM-agent ecosystems, offering actionable guidance for designing secure and resilient agentic AI systems.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-29T14:32:32Z</published>
+    <arxiv:comment>The paper is published in ICT Express (Elsevier)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mohamed Amine Ferrag</name>
+    </author>
+    <author>
+      <name>Norbert Tihanyi</name>
+    </author>
+    <author>
+      <name>Djallel Hamouda</name>
+    </author>
+    <author>
+      <name>Leandros Maglaras</name>
+    </author>
+    <author>
+      <name>Abderrahmane Lakas</name>
+    </author>
+    <author>
+      <name>Merouane Debbah</name>
+    </author>
+    <arxiv:doi>10.1016/j.icte.2025.12.001</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.icte.2025.12.001" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11229v1</id>
+    <title>Comment and Control: Hijacking Agentic Workflows via Context-Grounded Evolution</title>
+    <updated>2026-05-11T20:45:31Z</updated>
+    <link href="https://arxiv.org/abs/2605.11229v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11229v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automation platforms such as GitHub Actions and n8n are increasingly adopting so-called agentic workflows, which integrate Large Language Model (LLM) agents for tasks such as code review and data synchronization. While bringing convenience for developers, this integration exposes a new risk: An adversary may control and craft certain inputs, such as GitHub issue comments, to manipulate the LLM agent for unwanted actions, such as credential exfiltration and arbitrary command execution. To our knowledge, no prior academic work has studied such a risk in agentic workflows. In this paper, we design the first detection and exploitation framework, called JAW, to hijack agentic workflows hosted on automation platforms via a novel approach called Context-Grounded Evolution. Our key idea is to evolve agentic workflow inputs under the contexts derived from hybrid program analysis for hijacking purposes. Specifically, JAW generates agentic workflow contexts through three analyses: (i) static path-feasibility analysis to identify feasible agent-invocation paths and the input constraints required to trigger them, (ii) dynamic prompt-provenance analysis to determine how that input is transformed and embedded into the LLM context, and (iii) capability analysis to identify the actions and restrictions available to the agent at runtime. Our evaluation of JAW on GitHub workflows and n8n templates showed that 4714 GitHub workflows and eight n8n templates can be successfully hijacked, for example, to leak user credentials. Our findings span 15 widely-used GitHub Actions, including official GitHub Actions for Claude Code, Gemini CLI, Qwen CLI, and Cursor CLI, and two official n8n nodes. We responsibly disclosed all findings to the affected vendors and received many acknowledgements, fixes, and bug bounties, notably from GitHub, Google, and Anthropic.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T20:45:31Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Neil Fendley</name>
+    </author>
+    <author>
+      <name>Zhengyu Liu</name>
+    </author>
+    <author>
+      <name>Aonan Guan</name>
+    </author>
+    <author>
+      <name>Jiacheng Zhong</name>
+    </author>
+    <author>
+      <name>Yinzhi Cao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.21477v2</id>
+    <title>MCP Pitfall Lab: Exposing Developer Pitfalls in MCP Tool Server Security under Multi-Vector Attacks</title>
+    <updated>2026-07-14T16:11:06Z</updated>
+    <link href="https://arxiv.org/abs/2604.21477v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.21477v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Model Context Protocol (MCP) enables tool-integrated LLM agents, but its third-party tool-server ecosystem expands software supply-chain risk across tool metadata, untrusted outputs, cross-tool flows, multi-modal inputs, and privileged sink actions. Existing MCP benchmarks mainly measure robustness to malicious inputs, offering limited support for dependency vetting, semantic metadata auditing, and hardening regression. We present MCP Pitfall Lab, a protocol-aware security testing framework that models developer pitfalls as reproducible scenarios and validates outcomes using MCP traces and objective validators rather than agent self-report. We also introduce Semantic MCP-Bill-of-Material(MCP-BOM), representing that augments component inventory with security-relevant tool semantics, including descriptions, schemas, high-risk parameters, source/sink roles, trust boundaries, policy hooks, audit support, and trace provenance. Across 2,579 validator-completed runs over four models, Pitfall Lab observes 31.9% overall attack success rate(ASR), with multi-modal injection strongest at 38.7%. Semantic static fields detect pitfalls involving policy-bearing tool descriptions, permissive schemas, missing audit support, and absent server-side validation with F1=0.727, while BOM-backed findings drop from 27 to 16 after hardening. Decomposed risk metrics show Control Coverage increasing from 0.173 to 0.697 and Residual Risk decreasing from 15.31 to 6.09. A trace-linked case study further demonstrates that cross-tool forwarding and image-to-tool leakage require runtime provenance rather than static manifest fields alone. Overall, Pitfall Lab reframes MCP tool servers as AI software-supply-chain dependencies and provides BOM-backed artifacts for review, hardening, and trace-grounded regression testing</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-23T09:39:15Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Run Hao</name>
+    </author>
+    <author>
+      <name>Zhuoran Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.18550v1</id>
+    <title>The Gate Is Only as Honest as Its Contracts: ContractGuard for the Contract Layer of Risk-Aware Causal Gating</title>
+    <updated>2026-06-17T00:00:11Z</updated>
+    <link href="https://arxiv.org/abs/2606.18550v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.18550v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Risk-Aware Causal Gating (RACG) defends tool-augmented LLM agents against indirect prompt injection by removing dangerous tools from the agent's visible action space, so that even a fully injection-compliant agent cannot call a tool it cannot see. We make three points. First, this structural guarantee does not eliminate the trust assumption behind safe tool use; it relocates it into the integrity of the tool contracts -- declared preconditions, effects, risk, and authorization -- that the gate reads, so an attacker who corrupts a contract can make the gate mis-decide without ever persuading the agent. Second, forging a tool's effects is strictly more dangerous than tampering with its risk label, because RACG applies a causal gate before its admissibility gate: an off-path tool is never exposed, so risk-relabeling alone fails, whereas effect forgery routes the dangerous tool onto the causal path and succeeds. Effect integrity, not the risk label, is the load-bearing assumption. Third, we introduce ContractGuard, a verifier between the registry and the gate that layers signed provenance, typed contract attestation, and runtime effect verification; on a controlled benchmark it restores injection success to zero against every modeled attack -- including an exhaustive white-box adaptive attacker -- without over-rejecting honest contracts, and the structural prediction is confirmed on six current-generation hosted models (Claude Opus 4.8, Sonnet 4.6, Haiku 4.5; Amazon Nova Premier and Nova 2 Lite; GPT-OSS-120B).</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-17T00:00:11Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Laxmipriya Ganesh Iyer</name>
+    </author>
+    <author>
+      <name>Rahul Suresh Babu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.12608v1</id>
+    <title>InterDeepResearch: Enabling Human-Agent Collaborative Information Seeking through Interactive Deep Research</title>
+    <updated>2026-03-13T03:23:59Z</updated>
+    <link href="https://arxiv.org/abs/2603.12608v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.12608v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deep research systems powered by LLM agents have transformed complex information seeking by automating the iterative retrieval, filtering, and synthesis of insights from massive-scale web sources. However, existing systems predominantly follow an autonomous "query-to-report" paradigm, limiting users to a passive role and failing to integrate their personal insights, contextual knowledge, and evolving research intents. This paper addresses the lack of human-in-the-loop collaboration in the agentic research process. Through a formative study, we identify that current systems hinder effective human-agent collaboration in terms of process observability, real-time steerability, and context navigation efficiency. Informed by these findings, we propose InterDeepResearch, an interactive deep research system backed by a dedicated research context management framework. The framework organizes research context into a hierarchical architecture with three levels (information, actions, and sessions), enabling dynamic context reduction to prevent LLM context exhaustion and cross-action backtracing for evidence provenance. Built upon this framework, the system interface integrates three coordinated views for visual sensemaking, and dedicated interaction mechanisms for interactive research context navigation. Evaluation on the Xbench-DeepSearch-v1 and Seal-0 benchmarks shows that InterDeepResearch achieves competitive performance compared to state-of-the-art deep research systems, while a formal user study demonstrates its effectiveness in supporting human-agent collaborative information seeking. Project page with system demo: https://github.com/bopan3/InterDeepResearch.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-13T03:23:59Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Bo Pan</name>
+    </author>
+    <author>
+      <name>Lunke Pan</name>
+    </author>
+    <author>
+      <name>Yitao Zhou</name>
+    </author>
+    <author>
+      <name>Qi Jiang</name>
+    </author>
+    <author>
+      <name>Zhen Wen</name>
+    </author>
+    <author>
+      <name>Minfeng Zhu</name>
+    </author>
+    <author>
+      <name>Wei Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.09706v1</id>
+    <title>YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate</title>
+    <updated>2026-06-22T09:29:13Z</updated>
+    <link href="https://arxiv.org/abs/2607.09706v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.09706v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then solve once. For decisions that allocate real budget, effort, or clinical attention, that confidence is the failure mode: every objectified number is an assumption, and a plan optimal only if the guesses are exactly right is fragile -- mimicry of computation. YUKTI changes the target of autoformulation. Its representation is a typed-proposition graph whose relationships carry shape priors, coefficient uncertainty, and provenance. YUKTI routes each stage to an exact, nonlinear, or evolutionary solver; couples stages by a distributional Pareto hand-off; and introduces Assumption-Robust Pareto Frontiers (ARPF), resampling assumptions (including structural epsilon-contamination) to score how often each action survives (rho). We prove a bound making rho an exact factor of decision regret, add auditable traceability, and synthesize a benchmark-faithful data foundation when none exists (SRJANA). We validate three ways: under controlled misspecification the robust compromise cuts mean and tail regret by over 90% versus a naive point plan; on a regulated commercial decision we optimize inside a lawful action space and price the downside in euros; and on a real public dataset of 41,188 decisions an out-of-sample backtest beats the logged status quo by 34% and a naive point rule by 4% while reducing the optimizer's curse. The solvers are standard; we claim no benchmark-SOTA win. A head-to-head shows an LLM given the correct numbers, and single-objective optimization, both incur about 47x the held-out regret of YUKTI -- an LLM is a formulator, not a solver. Under long-range causal coupling, the forward hand-off becomes unsound, locating where it must become a backward-induction causal policy.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-22T09:29:13Z</published>
+    <arxiv:comment>19 Pages , 21 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Suyash Mishra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.08453v1</id>
+    <title>What Keeps Agent Skills from Being Reusable? Evidence from 138K SKILL.md Files</title>
+    <updated>2026-08-09T03:49:30Z</updated>
+    <link href="https://arxiv.org/abs/2608.08453v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.08453v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Under the current standard, Agent Skills are SKILL.md files that combine instructions with supporting resources, enabling Large Language Model (LLM) agents to reuse procedures beyond a single conversation. Yet many public skills appear to originate from a single task, repository, or conversation, even when they are shared as reusable components. We analyze this gap across 138,133 public SKILL.md files from 20,556 repositories using a two-tier defect taxonomy grounded in the official specification and best-practice guidance. We find that 91.8% of skills contain at least one detected defect, with stable estimates across lenient and strict thresholds (88.8-94.6%). The dominant failures are ordinary packaging problems rather than exotic attacks: weak routing metadata, bloated or non-actionable bodies, and poor resource organization. A deterministic routing stress test over 20,000 skills shows the functional impact: skills with valid routing metadata are retrieved more reliably from startup descriptions than skills with routing defects. Defect rates vary by platform and provenance: specification-aware skills contain fewer defects, while AI-marked skills show more safety and portability problems. Lightweight enforcement and repair experiments support a quality-assured generation workflow combining spec-aware prompting, lightweight linting, automated repair, and safety gating.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-09T03:49:30Z</published>
+    <arxiv:comment>11 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Chi Zhang</name>
+    </author>
+    <author>
+      <name>Yimin Liu</name>
+    </author>
+    <author>
+      <name>Xinze Chen</name>
+    </author>
+    <author>
+      <name>Ping Ji</name>
+    </author>
+  </entry>
+</feed>

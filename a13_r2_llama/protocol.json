@@ -1,0 +1,107 @@
+{
+  "study": "A13-R2 full Llama agent + boundary-safe Llama scorer replication",
+  "scientific_status": "prospective cross-agent robustness replication frozen after A13/R1/R1B but before any R2 AgentDojo outcome",
+  "source_sha256": "a1df5014a2e1ebb4f4216ed5287b71c46d0f5cd37edca601ed6d54bd94e814a4",
+  "agentdojo_version": "0.1.35",
+  "benchmark_version": "v1",
+  "suites": [
+    "workspace",
+    "slack",
+    "travel",
+    "banking"
+  ],
+  "agent_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "scorer_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "server_base_url": "http://localhost:8110/v1",
+  "agent_provider": "vllm_parsed",
+  "no_injection": true,
+  "parent_chain": {
+    "a13_manifest_sha256": "971eb1ea932a2bc9687c288532b3b9e1b8ae608a492b068d1edf8eae33b0cf0b",
+    "a13_protocol_hash": "b4a140c7d8ef49149ac72e35e9e52405f614fa5361558c7b2ac0c56fe0063b80",
+    "a13_taxonomy_sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "a13_decisions_sha256": "af6a62c5689e7d26180f0091a121839b645e1dcb54e5aaf87427f6e75c19dca9",
+    "r1b_manifest_sha256": "1e6ce3d58ecf6b2bc80eee09754185bf59e09a325a422711d9c876fa5186d712",
+    "r1b_protocol_hash": "3f8591539a8036ce2dbcdd2781cfb3d3eb460533bf45255e44543b9e429322a1",
+    "r1b_decisions_sha256": "cd3b34082e6896e151c173ffd6f48a54e780682f34870f4649831c49dcb7f668"
+  },
+  "taxonomy": {
+    "source": "exact frozen A13 taxonomy; no R2 relabeling",
+    "sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "untouched_label_counts": {
+      "SPECIFIED": 20,
+      "PARTIAL": 27,
+      "DELEGATED": 22,
+      "UNCLASSIFIABLE": 3
+    },
+    "specified_fraction_min": 0.8,
+    "delegated_fraction_max": 0.2,
+    "partial_descriptive_only": true,
+    "development_tasks": [
+      [
+        "slack",
+        "user_task_20"
+      ],
+      [
+        "travel",
+        "user_task_19"
+      ],
+      [
+        "workspace",
+        "user_task_19"
+      ]
+    ]
+  },
+  "mapping": {
+    "name": "monotonic_same_function_max_argument_overlap_v1",
+    "unit": "ground-truth privileged decision",
+    "candidate_rule": "unused same-function actual privileged calls strictly after the previous mapped actual call",
+    "selection_rule": "choose candidate with maximum normalized GT-vs-actual argument overlap; exact ties choose earliest actual call",
+    "overlap_definition": "fraction over union of argument keys with normalized_text(gt[k]) == normalized_text(actual[k]); empty union=1",
+    "minimum_overlap_required": null,
+    "a13_parent_remapping": "FORBIDDEN"
+  },
+  "span_eligibility": "prior role==\"tool\" message with non-empty stripped textual content; tiny nonempty included; empty excluded",
+  "ablation": {
+    "primary": "true deletion of U and every eligible tool message",
+    "secondary": "character-matched neutral substitution",
+    "partial_score_sets": "forbidden"
+  },
+  "boundary_safe_scoring": {
+    "prompt": "tokenize separately with add_special_tokens=True",
+    "completion": "tokenize separately with add_special_tokens=False",
+    "server_input": "explicit token IDs prompt_ids + completion_ids",
+    "server_add_special_tokens": false,
+    "invariant": "completion token count/hash must be identical across full, U deletion/substitution, and every S deletion/substitution"
+  },
+  "primary_hypothesis": "P(H_mean_del=1|SPECIFIED) > P(H_mean_del=1|DELEGATED)",
+  "primary_endpoint": "H_mean_del = I[dU_del > mean(dS_del)]",
+  "continuous_companion": "M_del = dU_del - mean(dS_del)",
+  "r_metric": "secondary/descriptive only",
+  "inference": {
+    "task_weighting": "equal weight per task within label",
+    "cluster_bootstrap_unit": "task",
+    "bootstrap_B": 5000,
+    "bootstrap_seed": 130013
+  },
+  "sensitivity_grid": [
+    {
+      "specified_min": 0.9,
+      "delegated_max": 0.1
+    },
+    {
+      "specified_min": 0.8,
+      "delegated_max": 0.2
+    },
+    {
+      "specified_min": 0.7,
+      "delegated_max": 0.3
+    }
+  ],
+  "population_reporting": {
+    "llama_specific": "all R2 primary-valid decisions/tasks",
+    "qwen_llama_common_support": "decision IDs primary-valid in R2 and present in fixed-valid R1B; compare Qwen trajectories scored by boundary-safe Llama (R1B) against Llama trajectories scored by same boundary-safe Llama"
+  },
+  "no_post_outcome_tuning": true,
+  "protocol_hash": "c857e8988cd1412c439116cb941a26a256227e97650778c82894b37068419b28",
+  "frozen_at_utc": "2026-08-09T02:05:20.018435+00:00"
+}

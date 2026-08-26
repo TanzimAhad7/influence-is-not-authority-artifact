@@ -1,0 +1,13 @@
+{
+  "attribution_checked": true,
+  "attribution_resolution": "exact source_lock HF revision via snapshot_download",
+  "attribution_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "completed_at_utc": "2026-08-09T22:27:22.232585+00:00",
+  "monitor_base_url": "http://localhost:8120/v1",
+  "monitor_model": "SecureLLMSys/AgentWatcher-Qwen3-4B-Instruct-2507",
+  "monitor_synthetic_output_sha256": "610e52b4325726dd2fa07d6fbebf1ecbb4f30a678ebc505fcac00ccc5e0c9299",
+  "no_scientific_inputs_used": true,
+  "no_scientific_outcomes_generated": true,
+  "protocol_hash": "806dd4a8bae4723b38ecdd47ce4341ee3fe73debef354bd60e35ff7d038999b0",
+  "schema_version": "A15B0_PREFLIGHT_V1"
+}

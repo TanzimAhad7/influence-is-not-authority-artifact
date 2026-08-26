@@ -1,0 +1,44 @@
+{
+  "FINAL_B": null,
+  "NO_MODEL_CALLS": true,
+  "a13_label_counts_same_function_candidate_tasks": {
+    "DELEGATED": 4,
+    "PARTIAL": 9,
+    "SPECIFIED": 5
+  },
+  "agentdojo_version": "0.1.35",
+  "benchmark_version": "v1",
+  "created_utc": "2026-08-20T23:29:14.326217+00:00",
+  "minimum_size_gate_evaluable_now": false,
+  "n_a13_primary_valid_decisions": 29,
+  "n_a13_primary_valid_tasks": 25,
+  "n_no_same_function_excluded": 7,
+  "n_one_decision_per_task_after_frozen_tiebreak": 25,
+  "n_pending_multi_call_independent_effect_audit": 7,
+  "n_strict_single_call_preliminary": 11,
+  "n_tasks_with_same_function_alt_candidate": 18,
+  "next_required_phase": "Phase 3 threat-model + blinded authorization/effect audit",
+  "privileged_function_counts_same_function_candidate_tasks": {
+    "add_user_to_channel": 4,
+    "create_calendar_event": 6,
+    "invite_user_to_slack": 2,
+    "post_webpage": 1,
+    "send_direct_message": 2,
+    "send_email": 1,
+    "send_money": 1,
+    "update_password": 1
+  },
+  "protocol_phase": "Phase 0-2 / A1 mechanical census preliminary",
+  "status": "PHASE_0_2_COMPLETE__PHASE_3_REQUIRED_BEFORE_FINAL_B",
+  "suite_counts_same_function_candidate_tasks": {
+    "banking": 2,
+    "slack": 9,
+    "travel": 1,
+    "workspace": 6
+  },
+  "why_final_B_not_frozen": [
+    "multi-call selected ALT candidates still require independent-effect/source-oracle audit",
+    "AttriGuard pure-explicit-delegation scope requires blinded Phase 3 validation",
+    "AUTH/ALT semantic validation not yet completed"
+  ]
+}

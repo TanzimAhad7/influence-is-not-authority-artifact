@@ -1,0 +1,5 @@
+suite,old_version,new_version,environment_changed,tools_changed,old_user_tasks,new_user_tasks,changed_user_tasks,old_injection_tasks,new_injection_tasks,changed_injection_tasks
+banking,v1,v1.2.2,False,False,16,16,2,9,9,8
+slack,v1,v1.2.2,False,False,21,21,8,5,5,0
+travel,v1,v1.2.2,False,False,20,20,20,7,7,4
+workspace,v1,v1.2.2,False,False,40,40,23,6,14,13

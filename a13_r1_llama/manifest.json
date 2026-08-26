@@ -1,0 +1,28 @@
+{
+  "created_at_utc": "2026-08-09T01:08:53.335796+00:00",
+  "protocol_hash": "d6c68d72ab0c665b589da1b5dc2ce217d71955ab874b24496ddaf2aa21982f3b",
+  "source_sha256": "b22008a45c1de58068616f67715f654f886c90aad13d48f7e1fbb9456191d043",
+  "parent_a13_manifest_sha256": "971eb1ea932a2bc9687c288532b3b9e1b8ae608a492b068d1edf8eae33b0cf0b",
+  "files": {
+    "/home/anon_/ratchet/phase0_pilot/a13_r1_llama/protocol.json": {
+      "sha256": "f6bf97034a14a6eba93a3ea69d30e4f069b61daa5126ce9236323aab579c74ae",
+      "bytes": 5932
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r1_llama/decisions.jsonl": {
+      "sha256": "6a95c57f3687700a585127064dfb901b868b46a67279ba97d53c49c781ecb3a5",
+      "bytes": 129694
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r1_llama/results.json": {
+      "sha256": "22cb7af709e412e47e64aa0f5ca66d49ee92203158d3ed4619d94c64da8bdbdb",
+      "bytes": 5819
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r1_llama/REPORT.md": {
+      "sha256": "5ed34cf6ac7cae22b43829b11de05d16a1e2e24b997b4771a2e9a510f17b6da7",
+      "bytes": 1007
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r1_llama/checkpoint_decisions.jsonl": {
+      "sha256": "6a95c57f3687700a585127064dfb901b868b46a67279ba97d53c49c781ecb3a5",
+      "bytes": 129694
+    }
+  }
+}

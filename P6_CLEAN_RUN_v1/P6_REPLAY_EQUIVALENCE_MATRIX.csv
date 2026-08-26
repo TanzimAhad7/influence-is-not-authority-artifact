@@ -1,0 +1,4 @@
+model,model_id,generations,decision_cells,stability_repeats_per_cell,instrument_valid,action_local_success_n,action_local_total,action_local_percent,downstream_success_n,downstream_total,downstream_percent,disposition,claim_boundary
+llama,meta-llama/Llama-3.3-70B-Instruct,130,26,5,True,50,130,38.46153846153847,85,130,65.38461538461539,VALID_BASELINE_FAIL,Baseline validity result on historical original-26 subset; no intervention authorized.
+gemma,google/gemma-3-12b-it,130,26,5,True,35,130,26.923076923076923,75,130,57.692307692307686,VALID_BASELINE_FAIL,Baseline validity result on historical original-26 subset; no intervention authorized.
+qwen,Qwen/Qwen2.5-72B-Instruct,130,26,5,True,55,130,42.30769230769231,95,130,73.07692307692307,VALID_BASELINE_FAIL,Baseline validity result on historical original-26 subset; no intervention authorized.

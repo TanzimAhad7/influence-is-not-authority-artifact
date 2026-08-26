@@ -1,0 +1,28 @@
+nohup: ignoring input
+[parent] exact A13 + R1B verified: A13 26 valid / 16 primary; R1B 26 fixed boundary-safe decisions
+[tokenizer] local Llama tokenizer loaded
+[scorer] boundary-safe fixed-token self-test PASS (17 completion tokens; sha256=4af8d1e5c3901be7...)
+[taxonomy] exact frozen A13 untouched labels: {'SPECIFIED': 20, 'PARTIAL': 27, 'DELEGATED': 22, 'UNCLASSIFIABLE': 3}
+[mapper] FROZEN: monotonic same-function -> maximum normalized GT-argument overlap -> earliest tie
+[protocol] verified frozen hash c857e8988cd1412c439116cb941a26a256227e97650778c82894b37068419b28
+\n[R2] launching/resuming official AgentDojo no-injection benchmark
+
+[AgentDojo] workspace: 16 untouched user tasks, no injection
+
+[AgentDojo] slack: 18 untouched user tasks, no injection
+/home/anon_/ratchet/phase0_pilot/.venv/lib/python3.11/site-packages/agentdojo/task_suite/task_suite.py:397: UserWarning: Model output was None for task user_task_19
+  warnings.warn(f"Model output was None for task {user_task.ID}")
+
+[AgentDojo] travel: 6 untouched user tasks, no injection
+
+[AgentDojo] banking: 12 untouched user tasks, no injection
+\n============================================================================================
+A13-R2 COMPLETE
+============================================================================================
+PRIMARY H_mean task-weighted: SPECIFIED=0.5 DELEGATED=0.25 DIFF=0.25 CI=[-0.4285714285714285, 0.8333333333333335]
+CONTINUOUS M task-weighted: SPECIFIED=0.5775802555789372 DELEGATED=-0.5966834251661207 DIFF=1.174263680745058 CI=[-0.02209798843822184, 2.721275421220929]
+COMMON SUPPORT: 7 decisions / 7 tasks
+Read: /home/anon_/ratchet/phase0_pilot/a13_r2_llama/REPORT.md
+Raw:  /home/anon_/ratchet/phase0_pilot/a13_r2_llama/decisions.jsonl
+JSON: /home/anon_/ratchet/phase0_pilot/a13_r2_llama/results.json
+Do not tune mapper, labels, thresholds, spans, or endpoints from this output.

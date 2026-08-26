@@ -1,0 +1,60 @@
+[ok  ] A14.P1.llama.mean                               A14 P1 mean (llama)
+[ok  ] A14.P1.llama.neg                                A14 P1 negative-sign count (llama)
+[ok  ] A14.P1.gemma.mean                               A14 P1 mean (gemma)
+[ok  ] A14.P1.gemma.neg                                A14 P1 negative-sign count (gemma)
+[ok  ] A14.flips.reverse_zero                          A14 tau=0 reverse flips (flag->allow) are zero
+         note: benign relocation only ever adds flags
+[ok  ] N3.D_discriminant_gap.llama.mean                N3 D_discriminant_gap mean (llama)
+[ok  ] N3.D_discriminant_gap.llama.pos                 N3 D_discriminant_gap positive count (llama)
+[ok  ] N3.P_supported_property_shift.llama.mean        N3 P_supported_property_shift mean (llama)
+[ok  ] N3.P_supported_property_shift.llama.pos         N3 P_supported_property_shift positive count (llama)
+[ok  ] N3.Q_action_controlled_selectivity.llama.mean   N3 Q_action_controlled_selectivity mean (llama)
+[ok  ] N3.Q_action_controlled_selectivity.llama.pos    N3 Q_action_controlled_selectivity positive count (llama)
+[ok  ] N3.T_manipulation.llama.mean                    N3 T_manipulation mean (llama)
+[ok  ] N3.T_manipulation.llama.pos                     N3 T_manipulation positive count (llama)
+[ok  ] N3.D_discriminant_gap.gemma.mean                N3 D_discriminant_gap mean (gemma)
+[ok  ] N3.D_discriminant_gap.gemma.pos                 N3 D_discriminant_gap positive count (gemma)
+[ok  ] N3.P_supported_property_shift.gemma.mean        N3 P_supported_property_shift mean (gemma)
+[ok  ] N3.P_supported_property_shift.gemma.pos         N3 P_supported_property_shift positive count (gemma)
+[ok  ] N3.Q_action_controlled_selectivity.gemma.mean   N3 Q_action_controlled_selectivity mean (gemma)
+[ok  ] N3.Q_action_controlled_selectivity.gemma.pos    N3 Q_action_controlled_selectivity positive count (gemma)
+[ok  ] N3.T_manipulation.gemma.mean                    N3 T_manipulation mean (gemma)
+[ok  ] N3.T_manipulation.gemma.pos                     N3 T_manipulation positive count (gemma)
+[ok  ] N6.route.AUTH.exact_rate                        N6 exact-shadow survival rate (AUTH)
+         note: 70/240
+[ok  ] N6.route.ALT.exact_rate                         N6 exact-shadow survival rate (ALT)
+         note: 138/240
+[ok  ] N6.route.asymmetry                              ALT reaches exact-shadow survival N times as often as AUTH
+         note: descriptive route decomposition; no frozen causal estimand
+[ok  ] N6.block.AUTH                                   N6 AUTH block rate
+[ok  ] N6.block.ALT                                    N6 ALT block rate
+[ok  ] E2E.n_rows                                      E2E total scientific runs
+[ok  ] E2E.all_success                                 E2E runs with status SUCCESS
+[ok  ] E2E.n_cases                                     E2E inferential units (natural tasks)
+[ok  ] E2E.delta_dir.point                             Delta_dir point estimate
+[ok  ] E2E.delta_dir.ci_lo                             Delta_dir bootstrap CI lower
+         note: seed=1, draws=20000; SEED-SENSITIVE at n=14 (task deltas take 6 distinct values) -- always publish seed and draws
+[ok  ] E2E.delta_dir.ci_hi                             Delta_dir bootstrap CI upper
+[ok  ] E2E.delta_dir.signs                             Delta_dir sign counts (pos,tie,neg)
+[ok  ] E2E.Z.conflict_off                              selected-ALT rate, CONFLICT/OFF
+         note: 17/70
+[ok  ] E2E.Z.conflict_on                               selected-ALT rate, CONFLICT/ON
+         note: 2/70
+[ok  ] E2E.discord.total                               LIVE-EVAL-DISCORD total discordance
+         note: utilityPASS/PAEFFAIL=13, utilityFAIL/PAEFPASS=5; report the TOTAL, not one direction
+[ok  ] E2E.benign.CLEAN                                CLEAN ON-OFF PAEF contrast
+         note: CI [-0.2143, 0.0]  signs pos=0 tie=11 neg=3
+[ok  ] E2E.benign.ALIGNED                              ALIGNED ON-OFF PAEF contrast
+         note: CI [-0.2429, -0.0286]  signs pos=0 tie=9 neg=5
+[ok  ] MECH.privileged_total                           privileged calls in defended arm
+[ok  ] MECH.unaudited                                  privileged calls executed without audit
+[ok  ] MECH.qualifying_ctx                             unaudited calls with prior qualifying external context
+[ok  ] MECH.dualuse.paef1                              unaudited executions completing the authorized effect
+         note: DUAL-USE: the window is NOT attacker-biased; most of it is AUTH recovery
+[ok  ] MECH.dualuse.z1                                 unaudited executions realizing the unauthorized effect
+         note: the only selected-ALT realizations under active defense in 420 runs
+[ok  ] MECH.function_mix                               unaudited privileged functions
+[ok  ] SRC.AttriGuard.py                               source hash: AttriGuard.py
+
+45 PASS   0 FAIL   0 UNVERIFIED   (45 claims)
+wrote /home/anon_/ratchet/phase0_pilot/verification/verification_out/CLAIM_LEDGER.json and /home/anon_/ratchet/phase0_pilot/verification/verification_out/CLAIM_TO_ARTIFACT.md

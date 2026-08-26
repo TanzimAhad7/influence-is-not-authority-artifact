@@ -1,0 +1,19 @@
+PASS Phase 0-2 zero-call census
+A13 primary: 29 decisions / 25 tasks
+same-function candidate tasks: 18
+strict single-call preliminary: 11
+multi-call pending source/oracle audit: 7
+no-same-function exclusions: 7
+FINAL B NOT YET FROZEN; Phase 3 required
+{
+  "FINAL_B": null,
+  "NO_MODEL_CALLS": true,
+  "n_input_tasks": 25,
+  "n_multicall_fail": 4,
+  "n_multicall_pass": 3,
+  "n_multicall_pending": 0,
+  "n_pending_independent_effect_after_audit": 0,
+  "n_preliminary_retained_after_source_audit": 14,
+  "n_source_audit_rows": 7,
+  "next_gate": "blinded authorization/effect + AttriGuard scope audit"
+}

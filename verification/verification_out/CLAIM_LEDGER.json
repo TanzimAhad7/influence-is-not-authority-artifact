@@ -1,0 +1,458 @@
+{
+ "claims": [
+  {
+   "id": "A14.P1.llama.mean",
+   "claim": "A14 P1 mean (llama)",
+   "canonical": -1.1797316186554594,
+   "recomputed": -1.1797316186554594,
+   "source": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/analysis/results.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "A14.P1.llama.neg",
+   "claim": "A14 P1 negative-sign count (llama)",
+   "canonical": 24,
+   "recomputed": 24,
+   "source": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/analysis/results.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "A14.P1.gemma.mean",
+   "claim": "A14 P1 mean (gemma)",
+   "canonical": -1.0111624004850248,
+   "recomputed": -1.0111624004850248,
+   "source": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/analysis/results.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "A14.P1.gemma.neg",
+   "claim": "A14 P1 negative-sign count (gemma)",
+   "canonical": 24,
+   "recomputed": 24,
+   "source": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/analysis/results.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "A14.flips.reverse_zero",
+   "claim": "A14 tau=0 reverse flips (flag->allow) are zero",
+   "canonical": 0,
+   "recomputed": 0,
+   "source": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/analysis/results.json",
+   "status": "PASS",
+   "note": "benign relocation only ever adds flags"
+  },
+  {
+   "id": "N3.D_discriminant_gap.llama.mean",
+   "claim": "N3 D_discriminant_gap mean (llama)",
+   "canonical": 0.6545401550713091,
+   "recomputed": 0.6545401550713091,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.D_discriminant_gap.llama.pos",
+   "claim": "N3 D_discriminant_gap positive count (llama)",
+   "canonical": 23,
+   "recomputed": 23,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.P_supported_property_shift.llama.mean",
+   "claim": "N3 P_supported_property_shift mean (llama)",
+   "canonical": -0.5247327485826405,
+   "recomputed": -0.5247327485826405,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.P_supported_property_shift.llama.pos",
+   "claim": "N3 P_supported_property_shift positive count (llama)",
+   "canonical": 7,
+   "recomputed": 7,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.Q_action_controlled_selectivity.llama.mean",
+   "claim": "N3 Q_action_controlled_selectivity mean (llama)",
+   "canonical": -0.3709166390461614,
+   "recomputed": -0.3709166390461613,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.Q_action_controlled_selectivity.llama.pos",
+   "claim": "N3 Q_action_controlled_selectivity positive count (llama)",
+   "canonical": 0,
+   "recomputed": 0,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.T_manipulation.llama.mean",
+   "claim": "N3 T_manipulation mean (llama)",
+   "canonical": 0.5077978034986576,
+   "recomputed": 0.5077978034986576,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.T_manipulation.llama.pos",
+   "claim": "N3 T_manipulation positive count (llama)",
+   "canonical": 24,
+   "recomputed": 24,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.D_discriminant_gap.gemma.mean",
+   "claim": "N3 D_discriminant_gap mean (gemma)",
+   "canonical": 0.5039115492763486,
+   "recomputed": 0.5039115492763485,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.D_discriminant_gap.gemma.pos",
+   "claim": "N3 D_discriminant_gap positive count (gemma)",
+   "canonical": 14,
+   "recomputed": 14,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.P_supported_property_shift.gemma.mean",
+   "claim": "N3 P_supported_property_shift mean (gemma)",
+   "canonical": -0.5072508512086762,
+   "recomputed": -0.5072508512086761,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.P_supported_property_shift.gemma.pos",
+   "claim": "N3 P_supported_property_shift positive count (gemma)",
+   "canonical": 1,
+   "recomputed": 1,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.Q_action_controlled_selectivity.gemma.mean",
+   "claim": "N3 Q_action_controlled_selectivity mean (gemma)",
+   "canonical": -0.47469090609111575,
+   "recomputed": -0.4746909060911159,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.Q_action_controlled_selectivity.gemma.pos",
+   "claim": "N3 Q_action_controlled_selectivity positive count (gemma)",
+   "canonical": 0,
+   "recomputed": 0,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.T_manipulation.gemma.mean",
+   "claim": "N3 T_manipulation mean (gemma)",
+   "canonical": 0.5371537229857792,
+   "recomputed": 0.5371537229857792,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N3.T_manipulation.gemma.pos",
+   "claim": "N3 T_manipulation positive count (gemma)",
+   "canonical": 24,
+   "recomputed": 24,
+   "source": "/home/anon_/ratchet/phase0_pilot/N3_PREFREEZE_AUTHOR_v1_1/N3_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N6.route.AUTH.exact_rate",
+   "claim": "N6 exact-shadow survival rate (AUTH)",
+   "canonical": 0.2917,
+   "recomputed": 0.2917,
+   "source": "/home/anon_/ratchet/phase0_pilot/n6_attriguard_n3_v1/scientific_v1/N6_ANALYSIS.json",
+   "status": "PASS",
+   "note": "70/240"
+  },
+  {
+   "id": "N6.route.ALT.exact_rate",
+   "claim": "N6 exact-shadow survival rate (ALT)",
+   "canonical": 0.575,
+   "recomputed": 0.575,
+   "source": "/home/anon_/ratchet/phase0_pilot/n6_attriguard_n3_v1/scientific_v1/N6_ANALYSIS.json",
+   "status": "PASS",
+   "note": "138/240"
+  },
+  {
+   "id": "N6.route.asymmetry",
+   "claim": "ALT reaches exact-shadow survival N times as often as AUTH",
+   "canonical": 1.97,
+   "recomputed": 1.97,
+   "source": "/home/anon_/ratchet/phase0_pilot/n6_attriguard_n3_v1/scientific_v1/N6_ANALYSIS.json",
+   "status": "PASS",
+   "note": "descriptive route decomposition; no frozen causal estimand"
+  },
+  {
+   "id": "N6.block.AUTH",
+   "claim": "N6 AUTH block rate",
+   "canonical": 0.4708333333333333,
+   "recomputed": 0.4708333333333333,
+   "source": "/home/anon_/ratchet/phase0_pilot/n6_attriguard_n3_v1/scientific_v1/N6_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "N6.block.ALT",
+   "claim": "N6 ALT block rate",
+   "canonical": 0.3625,
+   "recomputed": 0.3625,
+   "source": "/home/anon_/ratchet/phase0_pilot/n6_attriguard_n3_v1/scientific_v1/N6_ANALYSIS.json",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.n_rows",
+   "claim": "E2E total scientific runs",
+   "canonical": 420,
+   "recomputed": 420,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.all_success",
+   "claim": "E2E runs with status SUCCESS",
+   "canonical": 420,
+   "recomputed": 420,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.n_cases",
+   "claim": "E2E inferential units (natural tasks)",
+   "canonical": 14,
+   "recomputed": 14,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.delta_dir.point",
+   "claim": "Delta_dir point estimate",
+   "canonical": -0.2429,
+   "recomputed": -0.2429,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.delta_dir.ci_lo",
+   "claim": "Delta_dir bootstrap CI lower",
+   "canonical": -0.4714,
+   "recomputed": -0.4714,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "seed=1, draws=20000; SEED-SENSITIVE at n=14 (task deltas take 6 distinct values) -- always publish seed and draws"
+  },
+  {
+   "id": "E2E.delta_dir.ci_hi",
+   "claim": "Delta_dir bootstrap CI upper",
+   "canonical": -0.0429,
+   "recomputed": -0.0429,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.delta_dir.signs",
+   "claim": "Delta_dir sign counts (pos,tie,neg)",
+   "canonical": [
+    1,
+    8,
+    5
+   ],
+   "recomputed": [
+    1,
+    8,
+    5
+   ],
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "E2E.Z.conflict_off",
+   "claim": "selected-ALT rate, CONFLICT/OFF",
+   "canonical": 0.2429,
+   "recomputed": 0.2429,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "17/70"
+  },
+  {
+   "id": "E2E.Z.conflict_on",
+   "claim": "selected-ALT rate, CONFLICT/ON",
+   "canonical": 0.0286,
+   "recomputed": 0.0286,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "2/70"
+  },
+  {
+   "id": "E2E.discord.total",
+   "claim": "LIVE-EVAL-DISCORD total discordance",
+   "canonical": 18,
+   "recomputed": 18,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "utilityPASS/PAEFFAIL=13, utilityFAIL/PAEFPASS=5; report the TOTAL, not one direction"
+  },
+  {
+   "id": "E2E.benign.CLEAN",
+   "claim": "CLEAN ON-OFF PAEF contrast",
+   "canonical": -0.0857,
+   "recomputed": -0.0857,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "CI [-0.2143, 0.0]  signs pos=0 tie=11 neg=3"
+  },
+  {
+   "id": "E2E.benign.ALIGNED",
+   "claim": "ALIGNED ON-OFF PAEF contrast",
+   "canonical": -0.1143,
+   "recomputed": -0.1143,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "CI [-0.2429, -0.0286]  signs pos=0 tie=9 neg=5"
+  },
+  {
+   "id": "MECH.privileged_total",
+   "claim": "privileged calls in defended arm",
+   "canonical": 168,
+   "recomputed": 168,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "MECH.unaudited",
+   "claim": "privileged calls executed without audit",
+   "canonical": 18,
+   "recomputed": 18,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "MECH.qualifying_ctx",
+   "claim": "unaudited calls with prior qualifying external context",
+   "canonical": 18,
+   "recomputed": 18,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "MECH.dualuse.paef1",
+   "claim": "unaudited executions completing the authorized effect",
+   "canonical": 15,
+   "recomputed": 15,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "DUAL-USE: the window is NOT attacker-biased; most of it is AUTH recovery"
+  },
+  {
+   "id": "MECH.dualuse.z1",
+   "claim": "unaudited executions realizing the unauthorized effect",
+   "canonical": 2,
+   "recomputed": 2,
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": "the only selected-ALT realizations under active defense in 420 runs"
+  },
+  {
+   "id": "MECH.function_mix",
+   "claim": "unaudited privileged functions",
+   "canonical": {
+    "invite_user_to_slack": 10,
+    "send_money": 5,
+    "send_direct_message": 2,
+    "post_webpage": 1
+   },
+   "recomputed": {
+    "send_money": 5,
+    "send_direct_message": 2,
+    "invite_user_to_slack": 10,
+    "post_webpage": 1
+   },
+   "source": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/scientific_v1/RUN_ROWS.jsonl",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "id": "SRC.AttriGuard.py",
+   "claim": "source hash: AttriGuard.py",
+   "canonical": "6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8",
+   "recomputed": "6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8",
+   "source": "/home/anon_/ratchet/phase0_pilot/artifacts/external/attriguard_zenodo_v1/usenix-artifacts/main/pipeline/AttriGuard.py",
+   "status": "PASS",
+   "note": ""
+  }
+ ],
+ "six_cell_tables": {
+  "PAEF": {
+   "ALIGNED/OFF": "60/70",
+   "ALIGNED/ON": "52/70",
+   "CLEAN/OFF": "41/70",
+   "CLEAN/ON": "35/70",
+   "CONFLICT/OFF": "38/70",
+   "CONFLICT/ON": "47/70"
+  },
+  "Z": {
+   "ALIGNED/OFF": "0/70",
+   "ALIGNED/ON": "0/70",
+   "CLEAN/OFF": "0/70",
+   "CLEAN/ON": "0/70",
+   "CONFLICT/OFF": "17/70",
+   "CONFLICT/ON": "2/70"
+  },
+  "utility": {
+   "ALIGNED/OFF": "60/70",
+   "ALIGNED/ON": "50/70",
+   "CLEAN/OFF": "46/70",
+   "CLEAN/ON": "39/70",
+   "CONFLICT/OFF": "40/70",
+   "CONFLICT/ON": "46/70"
+  }
+ },
+ "summary": {
+  "pass": 45,
+  "fail": 0,
+  "unverified": 0
+ }
+}

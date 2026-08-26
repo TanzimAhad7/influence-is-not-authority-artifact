@@ -1,0 +1,235 @@
+{
+  "created_at_utc": "2026-08-09T02:22:06.216684+00:00",
+  "protocol_hash": "c857e8988cd1412c439116cb941a26a256227e97650778c82894b37068419b28",
+  "source_sha256": "a1df5014a2e1ebb4f4216ed5287b71c46d0f5cd37edca601ed6d54bd94e814a4",
+  "files": {
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/protocol.json": {
+      "sha256": "7caf0391d550b6e0ba772ccb5ded461c4192f8fd26777d213a8a0f6a265c5602",
+      "bytes": 4445
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/taxonomy.json": {
+      "sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+      "bytes": 223966
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/decisions.jsonl": {
+      "sha256": "34cc6a49202ecb52b7a41fbc376cb38323dd6c3bf9ab19ead3a4ce8c4779fec5",
+      "bytes": 114517
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/results.json": {
+      "sha256": "0cc7f73e2a0148c5bb5ae41507e2e9c25ee632a3d2eecbd52ccb47f87cb6c1a7",
+      "bytes": 8043
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/REPORT.md": {
+      "sha256": "0343abe5a413b2eea2af13c23e89ed458f3bcf667df00fe703767ca4d675907d",
+      "bytes": 3638
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_0/none/none.json": {
+      "sha256": "add910bde80bf6d3b9ce27874772dacefa379ef9fd5c481582b2c474923c90be",
+      "bytes": 4345
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_11/none/none.json": {
+      "sha256": "5d015e5e47253a7c035fc16aa3acb49f40355a907cbd0915a248901b1d086112",
+      "bytes": 3538
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_12/none/none.json": {
+      "sha256": "0039019e49e379b1b4d651d2f256d0bc6946fca43bd67bfeb5e24d758679cd81",
+      "bytes": 4163
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_13/none/none.json": {
+      "sha256": "f85a14202ea64054d2de01e855cf08a307529bc01007e12309948135f71decc0",
+      "bytes": 4037
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_14/none/none.json": {
+      "sha256": "37d9fd035be1e071474e375a2e2a380a652385bf9d18ffe56c1106a8bedb4654",
+      "bytes": 4512
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_15/none/none.json": {
+      "sha256": "ca5a7dd992f8608f315bc2e965e360374e01427df596fabcb874c207ed830933",
+      "bytes": 6750
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_2/none/none.json": {
+      "sha256": "6114d21f0e951b58c3f103341c997818e3cf844494acca3b619594e1fc8b5187",
+      "bytes": 6014
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_3/none/none.json": {
+      "sha256": "c12f4a761c955bf238bbb45f3ab7a0fce8cc051d179d51bdd135d2feb8986e90",
+      "bytes": 4299
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_4/none/none.json": {
+      "sha256": "3e8ffc9ecd5bc3e55204117498e4f04dba066ec20b9b9948038aca93a1b3661d",
+      "bytes": 3034
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_5/none/none.json": {
+      "sha256": "d481cc217ee67a8a20b2c6a5d1372d7e874f4b107dda444cb487987205b2154d",
+      "bytes": 5803
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_6/none/none.json": {
+      "sha256": "32136b2d43356190b6079e295069948df4f50690d6b72adc18904a409335bf17",
+      "bytes": 5041
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/banking/user_task_9/none/none.json": {
+      "sha256": "389a02ac6ec3f01b3b24468ce2d6334611a2b2bc4c95d3d369fd811be9b2ae74",
+      "bytes": 5452
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_1/none/none.json": {
+      "sha256": "f22b2547f89664f1f4b52d9682337f5ffa0176797331c6d51c7c725b559b1a65",
+      "bytes": 6801
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_10/none/none.json": {
+      "sha256": "78482d1bc33f0af56f895a89e4f7e9782e7c66dbb0c8513699a6d1c151fae912",
+      "bytes": 6447
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_11/none/none.json": {
+      "sha256": "2b99172015a4a2720f0557fe6252761a03c7a988174db3e3fd65983c19ad71b5",
+      "bytes": 7111
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_12/none/none.json": {
+      "sha256": "0f69155ec29a25fb8bc8b178e077ca4d0f500b92b5bce5528cb32ea44825d389",
+      "bytes": 4783
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_13/none/none.json": {
+      "sha256": "d78294d9a15ae31397b4441bb30ca6b60d3e6801b8c6e83140ae5a772637e9e4",
+      "bytes": 6006
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_14/none/none.json": {
+      "sha256": "27efe33c65d39f351c577653e5bb955b3e48c0a828ec4e8adb62f88579addb2c",
+      "bytes": 5114
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_15/none/none.json": {
+      "sha256": "a5e9c0824740305195102a720d279ad0c88235edfc846ec8b55923a74dbab4ed",
+      "bytes": 7396
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_16/none/none.json": {
+      "sha256": "d49a35185b3547af47e6ace1925f4b34f6cfb5b52ef2f8858244e04428399178",
+      "bytes": 8288
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_17/none/none.json": {
+      "sha256": "7051fe8024b1390070cde75186a7cf65c76f4999feef36832a75ff91502cebda",
+      "bytes": 5164
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_18/none/none.json": {
+      "sha256": "91a083be19ef13a57f928acf60153968f22c365a3110d70986914ee031cddac0",
+      "bytes": 18603
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_19/none/none.json": {
+      "sha256": "3a2754160c2e3140d9098c94e057da6881507043dcca6669fe0a4de32755076d",
+      "bytes": 18293
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_2/none/none.json": {
+      "sha256": "01c1119fa781d847771744b1907161a200c2df3eed3bb2aff048974a8380d161",
+      "bytes": 3781
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_3/none/none.json": {
+      "sha256": "3dfb5f685e02b77204afcda7c85caa69f5e92c47778602d55798ee97d1f2353a",
+      "bytes": 3014
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_4/none/none.json": {
+      "sha256": "c3769bab5b138680073616e62e5bbcfaff353fd5098bdaf6b0abee0abb54ae4e",
+      "bytes": 5408
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_5/none/none.json": {
+      "sha256": "a59d8de0f33b8a3c771f7ac80471d20cbbf1c58126fc975abf4dae9b52177d6f",
+      "bytes": 4656
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_7/none/none.json": {
+      "sha256": "ebfd11570da958285364dc73a3d8336ce65ebc6a5f9b0ee4da560934d846f330",
+      "bytes": 4760
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_8/none/none.json": {
+      "sha256": "b0f9f76829cc1d27060d605fc36b1489a7523cadfe0af9bb9a33a46522453c5c",
+      "bytes": 1897
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/slack/user_task_9/none/none.json": {
+      "sha256": "5c148d0b76e452eb42a74e0b949351bfcf7510488c57f4d6a6688b16760ac799",
+      "bytes": 16832
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/travel/user_task_0/none/none.json": {
+      "sha256": "7fcd6eee28cc8fd261133542de90194353b7919a76ef1ea138d4527706c922fd",
+      "bytes": 4564
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/travel/user_task_1/none/none.json": {
+      "sha256": "7bfdf63b3ca8b785dafc317d0172380ae540ef4945d58605366369984151d39d",
+      "bytes": 7611
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/travel/user_task_3/none/none.json": {
+      "sha256": "1f23dd86d7889b22a10a2e61197543d8331233c8b08e25bd6c0cb4cd04c73733",
+      "bytes": 8811
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/travel/user_task_4/none/none.json": {
+      "sha256": "8e7ce46bf9dbddc52e74c958bc1bf2820469963d987305df71de6d470566af60",
+      "bytes": 12634
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/travel/user_task_7/none/none.json": {
+      "sha256": "76aa6171bb2b2ce202cb5d8f80d994b9ecd464953c75ada47abe95be80ca8ff1",
+      "bytes": 10007
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/travel/user_task_8/none/none.json": {
+      "sha256": "a1420b8f2382074f2c0061a0cf4552f051896517fb2e5c2bbd3b76459b49663e",
+      "bytes": 18529
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_12/none/none.json": {
+      "sha256": "6616d7201d4acf3fa01ac77784fbd27c82af4c3eac8c41d2284c287a9893459d",
+      "bytes": 15513
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_13/none/none.json": {
+      "sha256": "33c2a33786d5727dc7e3e68c507d5adffe8f41c3958f5509f93be0265d97aea6",
+      "bytes": 15885
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_15/none/none.json": {
+      "sha256": "df1516c5baed330faf101240cc8bada11ce4b103c1dfb5c1399e516089b18ab1",
+      "bytes": 3740
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_18/none/none.json": {
+      "sha256": "e34e4e95043f7d3a05de5fa1421b4a227caa8ecbe19eefaf897861cccf0f7fd3",
+      "bytes": 8687
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_20/none/none.json": {
+      "sha256": "cfbd149db919a0b86c899ecc5bd5cb19098851a598f5f8cfec282fed60acd5ca",
+      "bytes": 8141
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_21/none/none.json": {
+      "sha256": "3ec85804b1228b6604426a2504b6b0201bae9f85489a6c5dde83487b8f28801a",
+      "bytes": 9123
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_25/none/none.json": {
+      "sha256": "7f28c2e8f155bed6660d1c89c796b424d456614ed659355ebb9db4efa9575ed3",
+      "bytes": 7968
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_31/none/none.json": {
+      "sha256": "cf3d4c905a3fd7221ec5bcbdb9214f02790a44841e52b69b1b2ae8024d314dfb",
+      "bytes": 3564
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_32/none/none.json": {
+      "sha256": "856e472a72adc489e7f0c438600123ccac202444af388cdd941cb3f5b6c87538",
+      "bytes": 4718
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_33/none/none.json": {
+      "sha256": "72287ba8c1c1c4d6333bf086221ef3e70e49c43dd16126090ca078b3cd806faa",
+      "bytes": 5245
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_36/none/none.json": {
+      "sha256": "e98ef182b7558d2d016bacbbfbfc28fafb49029688ef6bae33ff8a0f11754f64",
+      "bytes": 6457
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_37/none/none.json": {
+      "sha256": "53ac40511bc189e4e8d22119bb68f9ca2e56fdad0426500824734ec74a65ebb4",
+      "bytes": 7819
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_4/none/none.json": {
+      "sha256": "0c55acd6c455b68ee098d5654897ef50b1f9a218a77d7238df6dd071621a9ae6",
+      "bytes": 9588
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_6/none/none.json": {
+      "sha256": "7acfa02483b33f4eb59ab67299148585cde565961080b38005925d6023b8809e",
+      "bytes": 8647
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_8/none/none.json": {
+      "sha256": "b1beb57b8f7bec41657c523ceca9af2bf3f2984d7be3ef24e797fa0676499785",
+      "bytes": 7167
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r2_llama/agentdojo_runs/vllm_parsed/workspace/user_task_9/none/none.json": {
+      "sha256": "e885d99cc2422b749973a68df7be1944645e075662ad02c950a476e7f364db75",
+      "bytes": 4176
+    }
+  }
+}

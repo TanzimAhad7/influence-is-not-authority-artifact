@@ -1,0 +1,250 @@
+{
+  "created_at_utc": "2026-08-13T16:47:00.324140+00:00",
+  "b1_protocol_hash": "d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550",
+  "agent_key": "gpt4o",
+  "agent_model": "openai/gpt-4o",
+  "measurement_core_sha256": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719",
+  "runner_sha256": "11a07faea41df8bd066265148a4c5e1dfb6d2e6059a4eb94baf8fc0ad371e6e1",
+  "files": {
+    "b1_a12_backbone_replication_c0_v2/gpt4o/protocol_pointer.json": {
+      "sha256": "65884cfd272a862ace9c458c1240ae333076b721f85c4ba4657ef56e8b615de3",
+      "bytes": 329
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/taxonomy.json": {
+      "sha256": "2b5b72e929e7b3d2516d3d6c9817aec1a28d2f37eea10bbc98aa04704e9be3da",
+      "bytes": 239111
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/decisions.jsonl": {
+      "sha256": "e608c31fe43fff509bf7599fcf67aa2ee0acb72c1bd01aab619a9cb79203deed",
+      "bytes": 323814
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/results.json": {
+      "sha256": "7369a6d56ecca501b21f7ca74f056ecb56deb196dd175527eb4d0e28be03a411",
+      "bytes": 6446
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/REPORT.md": {
+      "sha256": "b8c2dcd2c6bc0a4bc9660235edfd7013d595a0ddc40991e74d9519234d1544c5",
+      "bytes": 1080
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_0/none/none.json": {
+      "sha256": "c0aec3af0256fccea2b6df716c1392d46bb6b2eae5fd2920d834b0991012c47e",
+      "bytes": 5220
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_11/none/none.json": {
+      "sha256": "64fa51aed20e5658a2cf1d084661034f5877aff63a0240692edbc6735c1e9099",
+      "bytes": 6298
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_12/none/none.json": {
+      "sha256": "7fd8f74cc3732c839642206e537f2637bd30308542accaec8ffa81cc139ae8c4",
+      "bytes": 3126
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_13/none/none.json": {
+      "sha256": "cb1e7b062bae429ad9fecd16c90954f19fe9926bb8036363422d46c19464ce2a",
+      "bytes": 4079
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_14/none/none.json": {
+      "sha256": "6d465bf329f52a5d626f0d4ba2e25674134fcd7b2a11c579c14407a9e58166a7",
+      "bytes": 4741
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_15/none/none.json": {
+      "sha256": "081681b8cba540421e006c9d90650fad845cdab39c9911b7078866514f423547",
+      "bytes": 8770
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_2/none/none.json": {
+      "sha256": "23d71ba408232f1b9571bb762fd5304202706294b909fc7883fd4a49a944abfb",
+      "bytes": 6162
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_3/none/none.json": {
+      "sha256": "11a927e3cf178b551221879b4a7aea9f32aaa94e60eb9ff11634ae5d3ab34518",
+      "bytes": 6052
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_4/none/none.json": {
+      "sha256": "daffaaa45698e878d4d2e2a26e3266149455ba53f9d370a64d8d30ff5fbb110b",
+      "bytes": 4911
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_5/none/none.json": {
+      "sha256": "766e1569f81e0ec58cb5366355ad155af4d448203b3a9ff1e998fb524bec3001",
+      "bytes": 5930
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_6/none/none.json": {
+      "sha256": "088d37e299e6523b44a1d46fb0d837fa7e9bd50bca91445a5d0d85f848f79cd1",
+      "bytes": 6433
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/banking/user_task_9/none/none.json": {
+      "sha256": "ef580d008159bfec16b160c40504adb042ec1c18cdd207eb861007fb3c82c28b",
+      "bytes": 2968
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_1/none/none.json": {
+      "sha256": "f89e1932e92f5d06cc59892659a66fd98d4a25be290d2ad7987fbb1c1d2029f3",
+      "bytes": 6545
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_10/none/none.json": {
+      "sha256": "288153962a32ad419b9b9558e8265b114e95d655284e4b11cffd3f247f8f7fbc",
+      "bytes": 11484
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_11/none/none.json": {
+      "sha256": "4d2026b5cdd73bdeba1406407ce372d84e65c0ffab6bb6daa2e2b74c1d2981e3",
+      "bytes": 7618
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_12/none/none.json": {
+      "sha256": "38f10dbe3f9f8dbfdc0bbf409c01d9e08d66624abcf437f55c9a03318ac65f34",
+      "bytes": 3671
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_13/none/none.json": {
+      "sha256": "1de0f3898296ebb412b9a2efdd0db4220221725f2b77b5a597d4f3168a54df2a",
+      "bytes": 8284
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_14/none/none.json": {
+      "sha256": "040ec48e8c56094984ee25326f01ce9416930bf70d6912f8edfdb0598be6f836",
+      "bytes": 14822
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_15/none/none.json": {
+      "sha256": "545332f29e10d949f48982da9609b19a1348d57e78a9014b08126fbced3a1429",
+      "bytes": 8530
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_16/none/none.json": {
+      "sha256": "b5c5d655afa1b50b56e94fe035862f2399816955864d9411432f3b78113c82cc",
+      "bytes": 7539
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_17/none/none.json": {
+      "sha256": "f4c398d3fe773998f805fcb34e7a4c9e5a33a45955c11b900fcfa74c38538b28",
+      "bytes": 5124
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_18/none/none.json": {
+      "sha256": "326a63ba15471989e3bae407649414fad52eae0f01b1321e0c64e3964b6ca4c6",
+      "bytes": 12514
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_19/none/none.json": {
+      "sha256": "cc92b961dec2b5325cb16594f1359c0ce4227a7bdbe3272c065353e67f9e445b",
+      "bytes": 11227
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_2/none/none.json": {
+      "sha256": "fc3f3710b0a5d6350588c86d8707d832334e5da61f57a1a30e5c94e5ef1f3384",
+      "bytes": 3850
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_3/none/none.json": {
+      "sha256": "80d3804447c14e59397b5883de769ce08870beb894e55909a6dc066fd959d0ef",
+      "bytes": 4874
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_4/none/none.json": {
+      "sha256": "0988fc1c06ee3c16d224f42ef55bc998e6a92105ed2eeb2b160fc041a41d0229",
+      "bytes": 5532
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_5/none/none.json": {
+      "sha256": "36fe973368ab61debca91c97a2b23cd3f1d8f35761d1861578a84455b2f81f0e",
+      "bytes": 7384
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_7/none/none.json": {
+      "sha256": "0ee5cbd2a362e23386a5bbf8e922f6e173c25f377c25fef62567c6feba0a9c81",
+      "bytes": 3601
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_8/none/none.json": {
+      "sha256": "ab74793c3b23769f9676cf32505c3dabca5b984eb977e2577f9e08e7fb8da8b8",
+      "bytes": 7849
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/slack/user_task_9/none/none.json": {
+      "sha256": "e6a58976b3f9e4d65d9b0dd9281dfaaead7213369ef1a4b79749c4480ec88e18",
+      "bytes": 7704
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/travel/user_task_0/none/none.json": {
+      "sha256": "c0c45756b0a94bd6018eb83b7be07e67a28a879298ab56beb40456f9ec2e56cf",
+      "bytes": 4840
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/travel/user_task_1/none/none.json": {
+      "sha256": "848f5943191851633ad05dc51ec6b89abc951a729005a0f5bf5ae7419b105f22",
+      "bytes": 7588
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/travel/user_task_3/none/none.json": {
+      "sha256": "592fc9636011025fb43ead5481af1fb2e6c3a080f4b718f6a6af8c2d9ec7776c",
+      "bytes": 10217
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/travel/user_task_4/none/none.json": {
+      "sha256": "3a5043c925365b72593a6d5596638397cf6d2770346692ea729dfda18c3b8d6e",
+      "bytes": 11086
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/travel/user_task_7/none/none.json": {
+      "sha256": "2d936dbc8a9cd39b31aa6e5d60f9c0f3fa42d59e2e54eda97a523a17c08aaeef",
+      "bytes": 11598
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/travel/user_task_8/none/none.json": {
+      "sha256": "ae77c0583f4d919f55aa373b15f70ab9db1c9218632c8b941bae5128c8148bd6",
+      "bytes": 13337
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_12/none/none.json": {
+      "sha256": "5fb5f5a277cb130a2b32dd7ae7bc95131f3a32dc0144bf48bdca101593a03512",
+      "bytes": 6112
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_13/none/none.json": {
+      "sha256": "6404fd13e0a29d6882d37e9148efb874436f17898dfa8a861ae3f47662af0f39",
+      "bytes": 17705
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_15/none/none.json": {
+      "sha256": "a0de1d3b4166966f426d82f8e188fb9b86e73a8e6d824cc8a45aa66f8a304e90",
+      "bytes": 11826
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_18/none/none.json": {
+      "sha256": "617b6bd297e1a6b74894927932818af206dd770eb299cd08995b3e634846d0c4",
+      "bytes": 10213
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_20/none/none.json": {
+      "sha256": "577df8fe387277c20ed39d66b7e50ee55e9f14ebbdbc9310e76ce753be3e89c1",
+      "bytes": 4681
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_21/none/none.json": {
+      "sha256": "2e806c8ba9dbe245f6dbbbd5d38d502fcfea23a1673ddfce7ea6080d6a33ba8d",
+      "bytes": 8242
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_25/none/none.json": {
+      "sha256": "f61fe5d1dcccc2198b4e69e10119a127ded27666e35ccc5880b66a92e9b38637",
+      "bytes": 40717
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_29/none/none.json": {
+      "sha256": "b0d525fe59211158b402682d00b8d161e5be010a52d3d77cdecc1ed5f8259684",
+      "bytes": 12577
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_31/none/none.json": {
+      "sha256": "87e618ad15e7fff4365b6d9759b60dad6d112cd8fe28234632706e939daea84c",
+      "bytes": 35316
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_32/none/none.json": {
+      "sha256": "6d8dcac2f64ab457b44fb25095bea435429c079fb62c9414bdee71c43a1b5afa",
+      "bytes": 7002
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_33/none/none.json": {
+      "sha256": "9a49681086e72ef9c13f7fc9ba9aa370527e04fad960cee31cfc0f5a1e561dda",
+      "bytes": 11642
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_34/none/none.json": {
+      "sha256": "4269d4bfd406dca1dc13f89f5ab3303d8afea830d3f5d1017ea1fd8f080e7b04",
+      "bytes": 10683
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_36/none/none.json": {
+      "sha256": "4c1e1f8d39ce041d6b4fc35ad0ed888fc61f4570e26480de0fd7f76bc19aca8d",
+      "bytes": 35740
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_37/none/none.json": {
+      "sha256": "2d3f89b9e9b69b3914d057e2711a6497cd78c170a162e0a2cfb341669372806c",
+      "bytes": 3221
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_4/none/none.json": {
+      "sha256": "da1d362f0948b484b148b015a494209b86c5a5088bbb8bab3046e76f09f7e46b",
+      "bytes": 8111
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_6/none/none.json": {
+      "sha256": "2e691e19abf54b2c2d0e9f250fec41d1ceb591e5b462c4f2e337c4bc6a435bbc",
+      "bytes": 3624
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_7/none/none.json": {
+      "sha256": "3b8e766cac5930ee97758ebaaaf0eeed0e8630a9449b8336076dd254f27dcfa6",
+      "bytes": 6845
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_8/none/none.json": {
+      "sha256": "6f9567eee9d335c3edca273dc45f3abbc7809919515c58b81e7bc2863ce0f263",
+      "bytes": 5499
+    },
+    "b1_a12_backbone_replication_c0_v2/gpt4o/agentdojo_runs/b1_openrouter_openai_gpt-4o/workspace/user_task_9/none/none.json": {
+      "sha256": "15c2f52eb231e7b5f5f5ade90ec0b57ac24de1be73399178c631cd01160d6323",
+      "bytes": 5724
+    }
+  }
+}

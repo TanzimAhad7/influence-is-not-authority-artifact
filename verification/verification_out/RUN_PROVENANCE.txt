@@ -1,0 +1,11 @@
+run_utc=2026-08-21T06:04:42Z
+host=anon.host.invalid
+user=$(whoami)
+root=/home/anon_/ratchet/phase0_pilot
+e2e=/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1
+attriguard=/home/anon_/ratchet/phase0_pilot/artifacts/external/attriguard_zenodo_v1/usenix-artifacts/main/pipeline/AttriGuard.py
+attriguard_sha256=6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8
+adapter=/home/anon_/ratchet/phase0_pilot/archive/external/AgentWatcher_armc_runtime_v1/A15B0_RECON_V2_BACKUP_20260809T191510/agents/agentdojo/src/agentdojo/agent_pipeline/piarena_defense_adapter.py
+adapter_sha256=c2cb0897764c80a4d23a7571151eb6a003df5ce91422c51a802b4fbc4977dc5f
+python=Python 3.11.15
+script_sha256=5bf5c4d2d93b72a3910c32901ec1452dbcf9a5f025e0b840474e367b379e80a5

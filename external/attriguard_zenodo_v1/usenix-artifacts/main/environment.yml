@@ -1,0 +1,24 @@
+name: attriguard
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Core benchmark dependency. Keep this pinned because the pipeline imports
+      # AgentDojo internal modules whose paths can change across releases.
+      - agentdojo==0.1.35
+
+      # Directly imported by the local pipeline or used by supported model backends.
+      - openai>=2.0.0,<3.0.0
+      - anthropic>=0.47.0
+      - cohere>=5.3.4
+      - google-genai>=1.15.0
+      - pydantic[email]>=2.7.1,<3.0.0
+      - pyyaml>=6.0.1
+      - requests>=2.31.0
+      - click>=8.1.7
+      - python-dotenv>=1.0.1
+      - rich>=13.7.1
+      - tenacity>=8.2.3
+      - typing-extensions>=4.11.0

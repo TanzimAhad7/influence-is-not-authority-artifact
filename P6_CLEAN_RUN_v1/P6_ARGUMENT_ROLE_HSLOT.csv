@@ -1,0 +1,4 @@
+model,model_id,contrast,n_paired_decisions,mean,ci95_low,ci95_high,instrument_valid,role
+llama,meta-llama/Llama-3.3-70B-Instruct,OPEN_TEXT - REFERENCE_IDENTITY,8,-0.27083333333333337,-0.625,0.10416666666666664,True,Primary per-family H-SLOT contrast; do not treat 390 repeats as independent inference units.
+gemma,google/gemma-3-12b-it,OPEN_TEXT - REFERENCE_IDENTITY,10,-0.3666666666666667,-0.6666666666666667,-0.03333333333333335,True,Primary per-family H-SLOT contrast; do not treat 390 repeats as independent inference units.
+qwen,Qwen/Qwen2.5-72B-Instruct,OPEN_TEXT - REFERENCE_IDENTITY,12,-0.375,-0.611111111111111,-0.16666666666666666,True,Primary per-family H-SLOT contrast; do not treat 390 repeats as independent inference units.

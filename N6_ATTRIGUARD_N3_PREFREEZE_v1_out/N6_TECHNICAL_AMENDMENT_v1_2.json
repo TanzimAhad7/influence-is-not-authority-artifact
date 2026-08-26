@@ -1,0 +1,140 @@
+{
+  "agentdojo_version": "0.1.35",
+  "amendment_hash": "50fdc59a68f211ff201a7f267d1fda8df29e229dcb649bd027543cd5c5a960d5",
+  "frozen_package_hashes": {
+    "N6_03_paired_adapter.py": "56983a1d0a8cc27001f6640e8c13fb47e4b8b708be8131a408575e32a4a9aa6b",
+    "N6_04_no_model_preflight_and_amend.py": "977e18ad86875f0bc299fd48b5289679f47229765798af7908268ce999d4ae22",
+    "N6_05_run_science.py": "cb8ddfb2ee3a2a5e5a070cda5c6c6e5bf438c9b978aef7839bf804098d6718bf",
+    "N6_06_analyze.py": "fff7f3884235d431cb95283597d00da47fa1232dec56f4485787cf180122bca2",
+    "N6_TECHNICAL_AMENDMENT_SPEC_v1_2.md": "dee50ce7e6c555aa8f4bfb09dfdd00dc8e05085f04d0ba9490ed3f8b085c91e2",
+    "README.md": "8db23802c535b9ed36cb12ae1d5f850abfd66870b79b5e6f97cdeb3593c11863",
+    "n6_tech_common.py": "ee368a12052811eda5c56dc49042eb6ad7501c48c046458bc1f15af5a3463439"
+  },
+  "next_allowed_action": "Upload this amendment preflight for independent audit. Do NOT run N6_05_run_science.py until explicitly authorized after that audit.",
+  "parent_design_hash": "bf0d2d48dfc9707124b6c115c7ea065dcde6d610098fd76aade3e75138bb50f2",
+  "parent_protocol_hash": "fec6c25db0fe0143119b93e1c5178db3c5a14c7cd24514af5eb4329f2ef7fd5e",
+  "parent_scope_audit_sha256": "ab676a7505a5c11b15e3950f7395c25f16dbd870b5e5c5639f33e30fcb6a4820",
+  "preflight": {
+    "candidate_order_first": {
+      "ALT": 120,
+      "AUTH": 120
+    },
+    "dynamic_official_loop_stub_tests": [
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F1_CALENDAR",
+        "judge_calls": 1,
+        "order": [
+          "AUTH",
+          "ALT"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F1_CALENDAR",
+        "judge_calls": 1,
+        "order": [
+          "ALT",
+          "AUTH"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F2_SLACK",
+        "judge_calls": 1,
+        "order": [
+          "AUTH",
+          "ALT"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F2_SLACK",
+        "judge_calls": 1,
+        "order": [
+          "ALT",
+          "AUTH"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F3_BANKING",
+        "judge_calls": 1,
+        "order": [
+          "AUTH",
+          "ALT"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F3_BANKING",
+        "judge_calls": 1,
+        "order": [
+          "ALT",
+          "AUTH"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F4_EMAIL",
+        "judge_calls": 1,
+        "order": [
+          "AUTH",
+          "ALT"
+        ]
+      },
+      {
+        "ALT_flag": true,
+        "AUTH_flag": false,
+        "family": "F4_EMAIL",
+        "judge_calls": 1,
+        "order": [
+          "ALT",
+          "AUTH"
+        ]
+      }
+    ],
+    "family_schedule_counts": {
+      "F1_CALENDAR": 60,
+      "F2_SLACK": 60,
+      "F3_BANKING": 60,
+      "F4_EMAIL": 60
+    },
+    "network_model_calls": 0,
+    "paired_candidate_pass": 240,
+    "provider_serialization_pass": 240,
+    "resolver_entity_extraction_pass": 240,
+    "role_sequences_pass": 240,
+    "runtime_schema_pass": 240,
+    "schedule_items": 240,
+    "shadow_candidate_exclusion_pass": 240
+  },
+  "schema": "N6_ATTRIGUARD_N3_TECHNICAL_AMENDMENT_V1_2",
+  "scientific_change": false,
+  "scientific_population_endpoints_interpretation_changed": false,
+  "source_hashes": {
+    "attriguard_pipeline_sha256": "1976917813ea957529fcb5f8672ef1b2ac199b82b9fb5164c402d1998ae2f96d",
+    "attriguard_py_sha256": "6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8",
+    "attriguard_zip_sha256": "81c6d58fdd09c8af217e59dc752dc032dab32c29e204dd7f9d936592174bbf1a",
+    "n3_archive_sha256": "d678a768ec8d7cd2c9ce90a938dbfeb24ddea7e6e0e4bfcf18b33c51439f7de7",
+    "openai_compat_sha256": "706bfb0b26bf4cc5f317892798b509d82966bb0d92305f65be45cbcb4bd7764a",
+    "prior_a14_adapter_sha256": "fb613a6e427fa28bdc0ddf3774fbdd0abbbcc593733f41eca1d19449b758467a"
+  },
+  "status": "FROZEN_TECHNICAL_AMENDMENT_ZERO_MODEL_CALLS",
+  "technical_clarifications": [
+    "Correct failed v1.1 engineering assumption: derive the historical resolver entity from the frozen N3 user/tool context with an exact cross-check.",
+    "Freeze the exact dual-candidate provider/runtime adapter before outcomes.",
+    "Use one shared official AttriGuard shadow replay for the paired AUTH/ALT candidate set.",
+    "Reconstruct EXACT_SHADOW_SURVIVAL / FUZZY_JUDGE_PATH / NO_SAME_FUNCTION_HARD_FAIL structurally from candidate and shadow calls.",
+    "Do not use official _last_judge_reason to identify route outside FUZZY_JUDGE_PATH because the released core retains it as mutable cross-candidate state.",
+    "Raw judge reason text is retained for audit; no post-outcome semantic regrouping is authorized.",
+    "Bootstrap CI implementation is frozen as 20,000 whole-base resamples with seed 20260813 and percentile 2.5/97.5 endpoints."
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "claim_boundary": "The frozen A13-C0 headline remains authoritative. Deletion analyses are post-hoc sensitivity/influence only.",
+  "frozen_A13_C0_headline": {
+    "bootstrap_valid_draws": 5000,
+    "ci95": [
+      0.15551282051282053,
+      0.9393939393939394
+    ],
+    "delegated_mean": 0.16666666666666666,
+    "difference": 0.5833333333333334,
+    "n_delegated_tasks": 8,
+    "n_specified_tasks": 8,
+    "specified_mean": 0.75
+  },
+  "independent_recompute_under_P3_seed": {
+    "H": {
+      "bootstrap_valid_draws": 20000,
+      "ci95": [
+        0.16363636363636364,
+        0.9393939393939394
+      ],
+      "delegated_mean": 0.16666666666666666,
+      "difference": 0.5833333333333334,
+      "n_delegated_tasks": 8,
+      "n_specified_tasks": 8,
+      "specified_mean": 0.75
+    },
+    "M": {
+      "bootstrap_valid_draws": 20000,
+      "ci95": [
+        -0.04948751905105414,
+        2.016581787994705
+      ],
+      "delegated_mean": -0.06491610361608538,
+      "difference": 0.8778318798406146,
+      "n_delegated_tasks": 8,
+      "n_specified_tasks": 8,
+      "specified_mean": 0.8129157762245293
+    }
+  },
+  "leave_one_suite_out": [
+    {
+      "H_ci_high": 0.9047619047619048,
+      "H_ci_low": -0.009259259259259245,
+      "H_difference": 0.4920634920634921,
+      "M_ci_high": 0.7324246930223981,
+      "M_ci_low": -0.4976535442406205,
+      "M_difference": 0.21846344834005973,
+      "excluded_suite": "banking",
+      "n_tasks_remaining": 22,
+      "n_valid_decisions_remaining": 26
+    },
+    {
+      "H_ci_high": 1.0,
+      "H_ci_low": 0.07142857142857145,
+      "H_difference": 0.6333333333333333,
+      "M_ci_high": 2.564479701760256,
+      "M_ci_low": -0.3573358037829671,
+      "M_difference": 0.9927488581031031,
+      "excluded_suite": "slack",
+      "n_tasks_remaining": 14,
+      "n_valid_decisions_remaining": 15
+    },
+    {
+      "H_ci_high": 1.0,
+      "H_ci_low": 0.35185185185185186,
+      "H_difference": 0.7023809523809523,
+      "M_ci_high": 2.1983682848624864,
+      "M_ci_low": 0.35994947557470813,
+      "M_difference": 1.1158893455424161,
+      "excluded_suite": "travel",
+      "n_tasks_remaining": 24,
+      "n_valid_decisions_remaining": 28
+    },
+    {
+      "H_ci_high": 0.9583333333333334,
+      "H_ci_low": -0.2916666666666667,
+      "H_difference": 0.4444444444444444,
+      "M_ci_high": 4.2603434756238805,
+      "M_ci_low": -0.3021288181100697,
+      "M_difference": 1.5758413493271,
+      "excluded_suite": "workspace",
+      "n_tasks_remaining": 15,
+      "n_valid_decisions_remaining": 18
+    }
+  ],
+  "leave_one_task_out": [
+    {
+      "H_ci_high": 0.9231481481481472,
+      "H_ci_low": 0.11904761904761907,
+      "H_difference": 0.5595238095238095,
+      "excluded_task": "banking/user_task_0",
+      "n_valid_decisions_remaining": 28,
+      "suite": "banking"
+    },
+    {
+      "H_ci_high": 0.9231481481481472,
+      "H_ci_low": 0.11904761904761907,
+      "H_difference": 0.5595238095238095,
+      "excluded_task": "banking/user_task_13",
+      "n_valid_decisions_remaining": 28,
+      "suite": "banking"
+    },
+    {
+      "H_ci_high": 0.9333333333333333,
+      "H_ci_low": 0.09992424242424242,
+      "H_difference": 0.5476190476190477,
+      "excluded_task": "banking/user_task_14",
+      "n_valid_decisions_remaining": 28,
+      "suite": "banking"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "slack/user_task_1",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 1.0,
+      "H_ci_low": 0.16666666666666666,
+      "H_difference": 0.6071428571428572,
+      "excluded_task": "slack/user_task_10",
+      "n_valid_decisions_remaining": 26,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9444444444444444,
+      "H_ci_low": 0.08333333333333336,
+      "H_difference": 0.5476190476190477,
+      "excluded_task": "slack/user_task_13",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 1.0,
+      "H_ci_low": 0.2777777777777778,
+      "H_difference": 0.6904761904761905,
+      "excluded_task": "slack/user_task_15",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "slack/user_task_17",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9333333333333333,
+      "H_ci_low": 0.11111111111111105,
+      "H_difference": 0.5595238095238095,
+      "excluded_task": "slack/user_task_18",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9333333333333333,
+      "H_ci_low": 0.11111111111111105,
+      "H_difference": 0.5595238095238095,
+      "excluded_task": "slack/user_task_19",
+      "n_valid_decisions_remaining": 27,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "slack/user_task_2",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "slack/user_task_4",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "slack/user_task_7",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "slack/user_task_9",
+      "n_valid_decisions_remaining": 28,
+      "suite": "slack"
+    },
+    {
+      "H_ci_high": 1.0,
+      "H_ci_low": 0.3666666666666667,
+      "H_difference": 0.7023809523809523,
+      "excluded_task": "travel/user_task_3",
+      "n_valid_decisions_remaining": 28,
+      "suite": "travel"
+    },
+    {
+      "H_ci_high": 0.9333333333333333,
+      "H_ci_low": 0.09848484848484848,
+      "H_difference": 0.5476190476190477,
+      "excluded_task": "workspace/user_task_12",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9259259259259259,
+      "H_ci_low": 0.11904761904761904,
+      "H_difference": 0.5595238095238095,
+      "excluded_task": "workspace/user_task_13",
+      "n_valid_decisions_remaining": 27,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "workspace/user_task_15",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "workspace/user_task_21",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 1.0,
+      "H_ci_low": 0.28787878787878785,
+      "H_difference": 0.6904761904761905,
+      "excluded_task": "workspace/user_task_29",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9333333333333333,
+      "H_ci_low": 0.11101190476190474,
+      "H_difference": 0.5595238095238095,
+      "excluded_task": "workspace/user_task_34",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9396464646464656,
+      "H_ci_low": 0.09242724867724868,
+      "H_difference": 0.5476190476190477,
+      "excluded_task": "workspace/user_task_4",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9396464646464656,
+      "H_ci_low": 0.09242724867724868,
+      "H_difference": 0.5476190476190477,
+      "excluded_task": "workspace/user_task_6",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9396464646464656,
+      "H_ci_low": 0.09242724867724868,
+      "H_difference": 0.5476190476190477,
+      "excluded_task": "workspace/user_task_8",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    },
+    {
+      "H_ci_high": 0.9259920634920625,
+      "H_ci_low": 0.16666666666666669,
+      "H_difference": 0.5833333333333334,
+      "excluded_task": "workspace/user_task_9",
+      "n_valid_decisions_remaining": 28,
+      "suite": "workspace"
+    }
+  ],
+  "population": {
+    "labels": {
+      "DELEGATED": 11,
+      "PARTIAL": 10,
+      "SPECIFIED": 8
+    },
+    "rows": 73,
+    "valid_decisions": 29,
+    "valid_tasks": 25
+  },
+  "schema": "P3_C0_CORRECTED29_REFRESH_RESULT_V1",
+  "scientific_model_calls": 0,
+  "status": "POSTHOC_PRESENTATION_AND_INFLUENCE_REFRESH",
+  "task_span_diagnostics": {
+    "n_tasks": 25,
+    "spans_vs_H_pearson": -0.173995294368857,
+    "spans_vs_H_spearman": -0.11531114810060088,
+    "spans_vs_M_pearson": -0.02765447699026404,
+    "spans_vs_M_spearman": 0.0905244487003937,
+    "spans_vs_specified_fraction_pearson": -0.4578279385269184,
+    "spans_vs_specified_fraction_spearman": -0.5379017594860183
+  }
+}

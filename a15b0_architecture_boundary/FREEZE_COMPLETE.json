@@ -1,0 +1,10 @@
+{
+  "controlled_execution_rows": 48,
+  "frozen_at_utc": "2026-08-09T22:23:33.809257+00:00",
+  "natural_decisions": 26,
+  "natural_unique_clusters": 23,
+  "no_scientific_outcomes_generated": true,
+  "protocol_hash": "806dd4a8bae4723b38ecdd47ce4341ee3fe73debef354bd60e35ff7d038999b0",
+  "schema_version": "A15B0_FREEZE_COMPLETE_V1",
+  "source_lock_hash": "f3a77de20d7864e2a7028e2c2ef86221cb8eb73879df863088e40ea60b0c6354"
+}

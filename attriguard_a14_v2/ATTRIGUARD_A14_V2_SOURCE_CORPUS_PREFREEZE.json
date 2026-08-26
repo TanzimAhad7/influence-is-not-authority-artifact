@@ -1,0 +1,38 @@
+{
+  "a14_base_instances_sha256": "32d8d56e9ba07c6cbc0d58a640466078c531b658b2173292721829e176f21af7",
+  "a14_protocol_file_sha256": "5f500ae7891700b5dec48ef09b46c649cf827e8801bc0c8d4375ac5b5dcd5473",
+  "a14_protocol_hash": "94bb3c7e0ca174aa8be69b8c0949e7d93a567d960a9ba06016ba4d08f8503ee1",
+  "a14_structured_contexts_sha256": "a8ededeeb2343792385eca69eb33fe7bfd379cc3176e9226f6bbe5be3a140d21",
+  "adapter_status": "NOT_YET_FROZEN",
+  "interface_discovery_hash": "02359a897f4bed6afeae1f3c3a84217147a9e4b21c24b026604dbc5fb74ad99d",
+  "interface_discovery_sha256": "1300da4ebfeffcfa6477b35ac4b1e0052ea4c69718800aa71de1f87bac134f86",
+  "key_source_hashes": {
+    "main/README.md": "181aacd956d0107b6807fc75e7392be199b3a203ff5e28c2cb9569530b49eeab",
+    "main/environment.yml": "fb85d85ff254ed31f7799831f9c143af5083029b0a23b96846af8a0e07ba0565",
+    "main/pipeline/AttriGuard.py": "6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8",
+    "main/pipeline/my_agent_pipeline.py": "1976917813ea957529fcb5f8672ef1b2ac199b82b9fb5164c402d1998ae2f96d",
+    "main/pipeline/my_benchmark.py": "da2cc432ae57f9ac39beff13da474effe213166f7d98ac8de03bf531b20fa38e",
+    "main/pipeline/openai_llm_compat.py": "706bfb0b26bf4cc5f317892798b509d82966bb0d92305f65be45cbcb4bd7764a",
+    "main/pipeline/runtime_patches.py": "ccddd2994173b3bb083787313e4997279f4a7020dce45b5f3aa1487e0964704e"
+  },
+  "known_required_source_behavior": {
+    "a14_exact_target_action_must_remain_fixed": true,
+    "historical_tool_call_scaffolding_must_be_common_within_quartet": true,
+    "lambda_primary": 2,
+    "official_core_must_remain_byte_identical": true,
+    "released_aux_alias": "gpt-4.1-mini",
+    "released_aux_temperature": 0.2,
+    "released_aux_top_p": 0.9,
+    "resolver_external_mapping_must_be_frozen_before_science": true,
+    "scheduling_directive_must_be_present_in_final_shadow_context": true,
+    "survival_primary": "fuzzy"
+  },
+  "model_api_calls": 0,
+  "next_allowed_action": "Review INPUT-ONLY interface discovery, then write/freeze final adapter. No scientific AttriGuard A14 calls yet.",
+  "official_inner_md5": "e8cf06c6c75abe4d3eb89412842b9cbf",
+  "official_inner_sha256": "81c6d58fdd09c8af217e59dc752dc032dab32c29e204dd7f9d936592174bbf1a",
+  "prefreeze_hash": "803b0983f6543d53e41fe6b3f10f3b9f896b9f8e193e9be83e8981c715a263dc",
+  "schema": "ATTRIGUARD_A14_V2_SOURCE_CORPUS_PREFREEZE_2026-08-10",
+  "scientific_outcomes_generated": false,
+  "status": "SOURCE_AND_INPUT_INTERFACE_LOCKED_NO_SCIENTIFIC_OUTCOMES"
+}

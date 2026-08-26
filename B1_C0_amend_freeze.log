@@ -1,0 +1,4 @@
+[B1-C0-00] FREEZE PASS
+[B1-C0-00] protocol_hash=d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550
+[B1-C0-00] population=55 tasks / 73 decisions suites={'workspace': 19, 'slack': 18, 'travel': 6, 'banking': 12} labels={'SPECIFIED': 22, 'DELEGATED': 24, 'PARTIAL': 27}
+[B1-C0-00] models/endpoints/H/M/bootstrap unchanged; NO GPT-4o / Claude benchmark outcomes generated

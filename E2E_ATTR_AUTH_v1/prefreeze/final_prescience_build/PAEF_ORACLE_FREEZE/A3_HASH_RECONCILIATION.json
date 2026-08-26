@@ -1,0 +1,13 @@
+{
+  "explanation": "The producer generated FINAL_OUTPUT_SHA256.tsv while tee still held A3_UNBLIND_SCOPE_FREEZE.log open. The recorded log hash is SHA256(empty); all scientific CSV/JSON/locked-rater bytes match. A corrected completed-file ledger is emitted without modifying A3 bytes.",
+  "mismatches": [
+    {
+      "actual": "cd3d2042bbc534c1576bdaba479bc5028b2d33e703191f9d764b115e4cfad861",
+      "file": "A3_UNBLIND_SCOPE_FREEZE.log",
+      "match": false,
+      "recorded": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "science_files_match": true,
+  "status": "BOOKKEEPING_ONLY_LOG_TEE_ORDERING"
+}

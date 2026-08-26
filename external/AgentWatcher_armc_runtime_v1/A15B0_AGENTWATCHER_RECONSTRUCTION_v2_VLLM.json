@@ -1,0 +1,16 @@
+{
+  "backup_dir": "/home/anon_/ratchet/phase0_pilot/external/AgentWatcher_armc_runtime_v1/A15B0_RECON_V2_BACKUP_20260809T191510",
+  "changes": [
+    "restore missing monitor_llm_module/core.py as local vLLM endpoint glue",
+    "isolate defense registry to AgentWatcher",
+    "fail fast instead of silently continuing when AgentWatcher errors"
+  ],
+  "files": {
+    "agents/agentdojo/src/agentdojo/agent_pipeline/piarena_defense_adapter.py": "0afc2131bc7dd3a8ab8e498cecf44743801500210609cd995a6721e3987473ac",
+    "src/defenses/__init__.py": "0dc029c77312e670fde20dadb9e78a7ca6733e8865b24ca6639265771f0a81a0",
+    "src/defenses/monitor_llm_module/core.py": "10d423221e57a3660feaa9e6f6ceec94721ab1e75ce860d114359585362125da"
+  },
+  "schema": "A15B0_AGENTWATCHER_RECONSTRUCTION_v2_VLLM",
+  "scientific_design_changed": false,
+  "scientific_label": "source-faithful AgentWatcher reconstruction"
+}

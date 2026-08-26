@@ -1,0 +1,22 @@
+{
+  "lock_sha256": "3ba1b9bb101b66e4eddbb77f80f61a3de6b4db7a971416e0ff222943e000f331",
+  "models": {
+    "gemma": {
+      "model_id": "google/gemma-3-12b-it",
+      "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "tokenizer_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+    },
+    "llama": {
+      "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "tokenizer_revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b"
+    },
+    "qwen_canonical": {
+      "model_id": "Qwen/Qwen2.5-72B-Instruct",
+      "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "tokenizer_revision": "495f39366efef23836d0cfae4fbe635880d2be31"
+    }
+  },
+  "schema": "P2B_XM_CI_REVISION_LOCK_V1_2",
+  "source": "Exact v1.3 executed freeze revisions preserved under v74/v1.2 where protocol-valid; model revisions unchanged from CI v1.1"
+}

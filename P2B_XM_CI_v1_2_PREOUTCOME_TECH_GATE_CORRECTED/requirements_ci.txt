@@ -1,0 +1,7 @@
+# Use the same scientific environment as the v1.3 execution where possible.
+# These are the package-level interfaces explicitly checked by the freeze scripts.
+agentdojo==0.1.35
+vllm==0.26.0
+openai
+requests
+jsonschema

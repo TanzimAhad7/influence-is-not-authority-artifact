@@ -1,0 +1,6 @@
+[N6-04] v1.2 TECHNICAL PREFLIGHT PASS / ZERO NETWORK-MODEL CALLS
+[N6-04] resolver entity cross-check 240/240 PASS
+[N6-04] 240/240 frozen schedule adaptations provider-serialize
+[N6-04] dynamic official-core dual-candidate stub tests=8/8 PASS
+[N6-04] amendment_hash=50fdc59a68f211ff201a7f267d1fda8df29e229dcb649bd027543cd5c5a960d5
+[N6-04] STOP. Upload v1.2 amendment artifacts. Do NOT run N6_05 yet.

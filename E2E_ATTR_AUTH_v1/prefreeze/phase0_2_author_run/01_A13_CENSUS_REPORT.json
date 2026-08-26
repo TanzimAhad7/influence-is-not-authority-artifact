@@ -1,0 +1,27 @@
+{
+  "a13_combined_path": "/home/anon_/ratchet/phase0_pilot/A13_C0_EXTENSION_SCIENCE_v1/A13_C0_COMBINED_73_DECISIONS_DERIVED_v1.jsonl",
+  "a13_combined_sha256": "f24b89d53ad504cf16dce3820e9b028f1d752bcc829ecf43ed3e0997feb764f5",
+  "created_utc": "2026-08-20T23:29:14.325847+00:00",
+  "gates": {
+    "a13_rows_exact_73": true,
+    "agentdojo_version_exact_0_1_35": true,
+    "benchmark_version_forced_v1": true,
+    "primary_valid_decisions_exact_29": true,
+    "primary_valid_tasks_exact_25": true
+  },
+  "label_counts_primary_decisions": {
+    "DELEGATED": 11,
+    "PARTIAL": 10,
+    "SPECIFIED": 8
+  },
+  "n_combined_rows": 73,
+  "n_primary_valid_decisions": 29,
+  "n_primary_valid_tasks": 25,
+  "status": "PASS",
+  "suite_counts_primary_decisions": {
+    "banking": 3,
+    "slack": 14,
+    "travel": 1,
+    "workspace": 11
+  }
+}

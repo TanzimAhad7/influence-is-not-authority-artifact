@@ -1,0 +1,30 @@
+cd /home/anon_/ratchet/phase0_pilot
+source /home/anon_/ratchet/phase0_pilot/.venv/bin/activate
+
+sha256sum P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1.zip
+unzip -o P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1.zip
+cd P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1
+sha256sum -c PACKAGE_SHA256.txt
+cd /home/anon_/ratchet/phase0_pilot
+
+rm -rf P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1
+python -u P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1/P0B3_00_environment_population_preflight.py \
+  --package-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1 \
+  --out-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1
+
+cat P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1/P0B3_ENV_POP_PREFLIGHT.md
+
+python -u P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1/P0B3_01_freeze_protocol.py \
+  --package-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1 \
+  --out-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1
+
+cat P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1/P0B3_PROTOCOL_FREEZE.md
+
+python -u P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1/P0B3_02_hash_outputs.py \
+  --out-dir /home/anon_/ratchet/phase0_pilot/P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1
+
+zip -r P0B3_CAUSALARMOR_CALIBRATION_FREEZE_COMPLETE_v1.zip \
+  P0B3_CAUSALARMOR_CALIBRATION_FREEZE_v1 \
+  P0B3_CAUSALARMOR_CALIBRATION_FREEZE_RUN_v1
+sha256sum P0B3_CAUSALARMOR_CALIBRATION_FREEZE_COMPLETE_v1.zip \
+  | tee P0B3_CAUSALARMOR_CALIBRATION_FREEZE_COMPLETE_v1.zip.sha256

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="734" viewBox="0 0 1200 734">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111}.t{font-size:28px;font-weight:700}.h{font-size:18px;font-weight:700}.b{font-size:17px}.n{font-size:14px;fill:#444}</style>
+<text x="30" y="42" class="t">P6: authorization consistency × operating point × discrimination × replay validity</text>
+<text x="30" y="72" class="n">Synthesis only · zero model calls · no universal scalar · natural downstream rows remain historical original-26 subset</text>
+<rect x="30" y="105" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="129" class="h">Causal-support invariance</text>
+<text x="350" y="129" class="b">R2A</text>
+<text x="650" y="129" class="b">20/24 Llama; 18/24 Gemma AIVR @ τ=0</text>
+<rect x="30" y="183" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="207" class="h">Benign operating point</text>
+<text x="350" y="207" class="b">A15a</text>
+<text x="650" y="207" class="b">18/26 natural decisions activate sanitizer stage</text>
+<rect x="30" y="261" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="285" class="h">Architecture boundary</text>
+<text x="350" y="285" class="b">AgentWatcher / AttriGuard</text>
+<text x="650" y="285" class="b">0/48 controlled AW; 0/480 AttriGuard final blocks</text>
+<rect x="30" y="339" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="363" class="h">Natural architecture boundary</text>
+<text x="350" y="363" class="b">CA-style vs AgentWatcher</text>
+<text x="650" y="363" class="b">16/26 vs 2/26 benign flags</text>
+<rect x="30" y="417" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="441" class="h">Malicious anchors</text>
+<text x="350" y="441" class="b">AgentWatcher</text>
+<text x="650" y="441" class="b">1/200 and 0/200 ASR</text>
+<rect x="30" y="495" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="519" class="h">External calibration</text>
+<text x="350" y="519" class="b">CausalArmor P0b-3</text>
+<text x="650" y="519" class="b">BU 51.55% · UA 40.67% · ASR 3.37%</text>
+<rect x="30" y="573" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="597" class="h">Replay validity</text>
+<text x="350" y="597" class="b">Corrected P2b</text>
+<text x="650" y="597" class="b">action-local &lt; downstream across all 3 models</text>
+<rect x="30" y="651" width="1140" height="60" rx="8" fill="none" stroke="#777"/>
+<text x="48" y="675" class="h">Argument role</text>
+<text x="350" y="675" class="b">H-SLOT</text>
+<text x="650" y="675" class="b">OPEN_TEXT − REFERENCE_IDENTITY &lt; 0 in 3/3</text>
+</svg>

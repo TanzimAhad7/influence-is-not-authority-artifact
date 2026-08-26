@@ -1,0 +1,13 @@
+{
+  "backup": "/home/anon_/ratchet/phase0_pilot/external/AgentWatcher_armc_runtime_v1/A15B0_RECON_V3_BACKUP_20260809T211936/core.py",
+  "completion_ceiling": 4096,
+  "model_changed": false,
+  "new_core_sha256": "e15426ad472769d4249a8e5700e8b445d4b1815c4aa28dd447479e6a991083b4",
+  "old_core_sha256": "10d423221e57a3660feaa9e6f6ceec94721ab1e75ce860d114359585362125da",
+  "parser_changed": false,
+  "prompt_changed": false,
+  "reason": "prevent truncation of monitor reasoning before final verdict",
+  "schema": "A15B0_AGENTWATCHER_RECONSTRUCTION_v3_COMPLETION_SAFE",
+  "scientific_design_changed": false,
+  "temperature_changed": false
+}

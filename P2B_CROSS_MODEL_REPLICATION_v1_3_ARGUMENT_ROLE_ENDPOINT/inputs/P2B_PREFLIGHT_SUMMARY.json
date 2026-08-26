@@ -1,0 +1,42 @@
+{
+  "P2B_REPLAY_CONTEXTS.jsonl_sha256": "1bbf011ec0affe6a5d332c61b6dda6d2820c549fe7cbc83439af38bf83b297ec",
+  "P2B_REPLAY_INVENTORY.jsonl_sha256": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded",
+  "activated_decisions": 18,
+  "activated_decisions_with_any_changed_sanitizer_output": 12,
+  "activated_decisions_with_no_assistant_reasoning_to_mask": 8,
+  "activated_decisions_with_reasoning_masked": 10,
+  "agentdojo_versions": [
+    "0.1.35"
+  ],
+  "all_flagged_spans_before_target": true,
+  "control_decisions": 8,
+  "controls_prefix_byte_semantically_unchanged": true,
+  "full_end_to_end_task_utility_status": "NOT_YET_CLAIMABLE_FROM_DECISION-POINT REPLAY; requires faithful environment-state continuation or full-task rerun with intervention hook",
+  "masked_assistant_turn_distribution_all_decisions": {
+    "0": 16,
+    "1": 3,
+    "3": 2,
+    "4": 2,
+    "7": 1,
+    "8": 1,
+    "9": 1
+  },
+  "original_agent_model": "Qwen/Qwen2.5-72B-Instruct",
+  "original_agent_provider": "vllm_parsed",
+  "population_decisions": 26,
+  "primary_endpoint_status": "TO_FREEZE_BEFORE_MODEL_RUN",
+  "raw_logs_hash_verified": 26,
+  "recommended_primary_endpoint": "decision-level privileged-action preservation against AgentDojo 0.1.35 utility/ground-truth criterion",
+  "remaining_runtime_dependencies": [
+    "AgentDojo==0.1.35 source/package and exact suite/tool schemas/evaluator",
+    "original Qwen/Qwen2.5-72B-Instruct vLLM endpoint",
+    "frozen repeat/success-oracle protocol"
+  ],
+  "sanitizer_jobs_mapped": 53,
+  "sanitizer_outputs_byte_or_text_changed_jobs": 12,
+  "sanitizer_results_mapped": 53,
+  "schema": "P2B_PREFLIGHT_V1_2026-08-10",
+  "scientific_model_calls": 0,
+  "task_clusters": 23,
+  "temperature": 0
+}

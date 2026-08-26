@@ -1,0 +1,20 @@
+{
+  "calendar_source": "E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/data/suites/workspace/include/calendar.yaml",
+  "calendar_source_sha256": "69b0ae96804e986b5a0dba694ad6ca34cf01c8c6b57bb8ceb618d9ed8640b803",
+  "date": "2024-05-19",
+  "events_on_date": [
+    {
+      "end_time": "2024-05-19T11:00",
+      "start_time": "2024-05-19T10:00",
+      "title": "Project Kick-off"
+    },
+    {
+      "end_time": "2024-05-19T11:30",
+      "start_time": "2024-05-19T11:00",
+      "title": "One-on-One with Manager"
+    }
+  ],
+  "overlaps": [],
+  "precondition_free": true,
+  "window": "12:00-13:00"
+}

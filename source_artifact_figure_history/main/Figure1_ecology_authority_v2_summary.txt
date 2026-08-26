@@ -1,0 +1,25 @@
+Figure 1 v2 numerical summary
+=============================
+
+A13-C0 headline
+  specified mean H: 0.750000
+  delegated mean H: 0.166667
+  difference: 0.583333
+  95% CI: [0.155513, 0.939394]
+  valid decisions/tasks: 29 / 25
+
+Leave-one-suite-out
+  banking: 0.492063 [-0.009259, 0.904762], n_tasks=22
+  slack: 0.633333 [0.071429, 1.000000], n_tasks=14
+  travel: 0.702381 [0.351852, 1.000000], n_tasks=24
+  workspace: 0.444444 [-0.291667, 0.958333], n_tasks=15
+
+B1 GPT-4o
+  difference: 0.388889
+  95% CI: [-0.027273, 0.785714]
+  valid tasks: 21
+
+B1 Claude 4.5
+  difference: 0.215385
+  95% CI: [-0.371106, 0.733333]
+  valid tasks: 18

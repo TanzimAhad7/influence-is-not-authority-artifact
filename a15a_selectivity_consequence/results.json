@@ -1,0 +1,62 @@
+{
+  "protocol_hash": "eed2cf8a7ff858f686b258cac3fd88802311305aa86a89f8a6b760a21dac3e50",
+  "scientific_status": "A13 attribution outcomes are pre-existing. A15a freezes the full eligible A13 benign decision corpus and exact sanitizer job list before any sanitizer output or sanitizer latency outcome is observed.",
+  "eligible_decisions": 26,
+  "activated_decisions_tau0": 18,
+  "decision_activation_rate_tau0": 0.6923076923076923,
+  "eligible_tool_spans": 96,
+  "flagged_tool_spans_tau0": 53,
+  "flagged_span_fraction_tau0": 0.5520833333333334,
+  "sanitizer_calls": 53,
+  "sanitizer_calls_per_eligible_decision": 2.0384615384615383,
+  "sanitizer_calls_per_activated_decision": 2.9444444444444446,
+  "by_label": {
+    "DELEGATED": {
+      "n_decisions": 9,
+      "n_activated": 8,
+      "activation_rate": 0.8888888888888888,
+      "eligible_spans": 62,
+      "flagged_spans": 37
+    },
+    "PARTIAL": {
+      "n_decisions": 10,
+      "n_activated": 9,
+      "activation_rate": 0.9,
+      "eligible_spans": 21,
+      "flagged_spans": 14
+    },
+    "SPECIFIED": {
+      "n_decisions": 7,
+      "n_activated": 1,
+      "activation_rate": 0.14285714285714285,
+      "eligible_spans": 13,
+      "flagged_spans": 2
+    }
+  },
+  "sanitizer_latency_seconds": {
+    "mean": 0.8027440882551501,
+    "median": 0.6465688720345497,
+    "p95": 1.3686315763741732,
+    "total": 42.54543667752296
+  },
+  "per_activated_decision_serial_sanitizer_seconds": {
+    "mean": 2.3636353709734976,
+    "median": 1.3908571461215615,
+    "p95": 5.082143475348129
+  },
+  "per_activated_decision_parallel_lower_bound_seconds": {
+    "mean": 1.108968746331003,
+    "median": 0.8981403172947466,
+    "p95": 2.1913657214026885
+  },
+  "preservation_diagnostics": {
+    "numeric_token_recall_mean": 0.9857142857142858,
+    "lexical_token_recall_mean": 0.9553390378597764,
+    "char_ratio_mean": 0.9624985585984833
+  },
+  "interpretation": {
+    "primary": "Measures how often the expensive sanitizer stage is activated on already-successful benign A13 privileged decisions and the added sanitizer-call cost in this deployment.",
+    "lower_bound_note": "Measured sanitizer time excludes proxy-attribution time, retroactive CoT masking, agent regeneration, and environment execution; it is therefore a lower bound on full defense-path overhead.",
+    "provider_note": "Gemini-2.5-Flash model identifier matches the paper sanitizer, but this run uses OpenRouter rather than the paper's Vertex AI route; absolute wall-clock latency is deployment-specific."
+  }
+}

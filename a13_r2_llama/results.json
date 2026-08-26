@@ -1,0 +1,275 @@
+{
+  "analysis_timestamp_utc": "2026-08-09T02:22:06.158697+00:00",
+  "primary_hypothesis": "P(H_mean_del=1|SPECIFIED) > P(H_mean_del=1|DELEGATED)",
+  "primary_H_mean_del": {
+    "specified_mean": 0.5,
+    "delegated_mean": 0.25,
+    "difference": 0.25,
+    "ci95": [
+      -0.4285714285714285,
+      0.8333333333333335
+    ],
+    "n_specified_tasks": 6,
+    "n_delegated_tasks": 4,
+    "bootstrap_valid_draws": 4974
+  },
+  "continuous_M_del": {
+    "specified_mean": 0.5775802555789372,
+    "delegated_mean": -0.5966834251661207,
+    "difference": 1.174263680745058,
+    "ci95": [
+      -0.02209798843822184,
+      2.721275421220929
+    ],
+    "n_specified_tasks": 6,
+    "n_delegated_tasks": 4,
+    "bootstrap_valid_draws": 4977
+  },
+  "by_label": {
+    "SPECIFIED": {
+      "n_decisions": 7,
+      "n_tasks": 6,
+      "H_mean_del_rate": 0.5714285714285714,
+      "H_max_del_rate": 0.5714285714285714,
+      "M_del_mean": 0.5640268392555314,
+      "R_del_mean_descriptive": -0.8721984182695101,
+      "mean_positive_n": 4,
+      "mean_positive_but_max_negative_n": 0,
+      "conditional_max_fail_given_mean_positive": 0.0
+    },
+    "DELEGATED": {
+      "n_decisions": 6,
+      "n_tasks": 4,
+      "H_mean_del_rate": 0.5,
+      "H_max_del_rate": 0.3333333333333333,
+      "M_del_mean": -0.3463721562901214,
+      "R_del_mean_descriptive": -0.520275089259769,
+      "mean_positive_n": 3,
+      "mean_positive_but_max_negative_n": 1,
+      "conditional_max_fail_given_mean_positive": 0.3333333333333333
+    },
+    "PARTIAL": {
+      "n_decisions": 9,
+      "n_tasks": 9,
+      "H_mean_del_rate": 0.5555555555555556,
+      "H_max_del_rate": 0.4444444444444444,
+      "M_del_mean": 0.03091093302492244,
+      "R_del_mean_descriptive": 0.7278042646588644,
+      "mean_positive_n": 5,
+      "mean_positive_but_max_negative_n": 1,
+      "conditional_max_fail_given_mean_positive": 0.2
+    }
+  },
+  "by_suite": {
+    "workspace": {
+      "n_decisions": 4,
+      "n_tasks": 4,
+      "H_mean_del_rate": 0.25,
+      "H_max_del_rate": 0.25,
+      "M_del_mean": -0.15356478430814094
+    },
+    "slack": {
+      "n_decisions": 13,
+      "n_tasks": 9,
+      "H_mean_del_rate": 0.6923076923076923,
+      "H_max_del_rate": 0.5384615384615384,
+      "M_del_mean": 0.0679207090412173
+    },
+    "travel": {
+      "n_decisions": 2,
+      "n_tasks": 2,
+      "H_mean_del_rate": 0.5,
+      "H_max_del_rate": 0.5,
+      "M_del_mean": 0.23820611156706178
+    },
+    "banking": {
+      "n_decisions": 3,
+      "n_tasks": 3,
+      "H_mean_del_rate": 0.3333333333333333,
+      "H_max_del_rate": 0.3333333333333333,
+      "M_del_mean": 0.4676770102783029
+    }
+  },
+  "continuous_prompt_coverage_vs_M": {
+    "n_tasks": 18,
+    "pearson": 0.38785595312433185,
+    "spearman": 0.20034110255351942
+  },
+  "sensitivity_grid": [
+    {
+      "specified_min": 0.9,
+      "delegated_max": 0.1,
+      "H_mean_del": {
+        "specified_mean": 0.5,
+        "delegated_mean": 0.25,
+        "difference": 0.25,
+        "ci95": [
+          -0.4285714285714285,
+          0.8333333333333335
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 4,
+        "bootstrap_valid_draws": 4974
+      },
+      "M_del": {
+        "specified_mean": 0.5775802555789372,
+        "delegated_mean": -0.5966834251661207,
+        "difference": 1.174263680745058,
+        "ci95": [
+          -0.02209798843822184,
+          2.721275421220929
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 4,
+        "bootstrap_valid_draws": 4977
+      },
+      "primary_grid": false
+    },
+    {
+      "specified_min": 0.8,
+      "delegated_max": 0.2,
+      "H_mean_del": {
+        "specified_mean": 0.5,
+        "delegated_mean": 0.25,
+        "difference": 0.25,
+        "ci95": [
+          -0.4285714285714285,
+          0.8333333333333335
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 4,
+        "bootstrap_valid_draws": 4974
+      },
+      "M_del": {
+        "specified_mean": 0.5775802555789372,
+        "delegated_mean": -0.5966834251661207,
+        "difference": 1.174263680745058,
+        "ci95": [
+          -0.02209798843822184,
+          2.721275421220929
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 4,
+        "bootstrap_valid_draws": 4977
+      },
+      "primary_grid": true
+    },
+    {
+      "specified_min": 0.7,
+      "delegated_max": 0.3,
+      "H_mean_del": {
+        "specified_mean": 0.5,
+        "delegated_mean": 0.25,
+        "difference": 0.25,
+        "ci95": [
+          -0.4285714285714285,
+          0.8333333333333335
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 4,
+        "bootstrap_valid_draws": 4974
+      },
+      "M_del": {
+        "specified_mean": 0.5775802555789372,
+        "delegated_mean": -0.5966834251661207,
+        "difference": 1.174263680745058,
+        "ci95": [
+          -0.02209798843822184,
+          2.721275421220929
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 4,
+        "bootstrap_valid_draws": 4977
+      },
+      "primary_grid": false
+    }
+  ],
+  "counts": {
+    "all_decision_rows": 69,
+    "primary_valid_confirmatory_extreme_label_decisions": 13,
+    "primary_valid_confirmatory_tasks": 10,
+    "development_decisions": 0,
+    "exclusion_reasons": {
+      "agentdojo_utility_false": 31,
+      "valid": 22,
+      "ground_truth_privileged_call_not_executed_or_not_mappable": 14,
+      "no_eligible_tool_span": 2
+    }
+  },
+  "interpretation_guardrails": [
+    "A positive contrast supports association between the frozen prompt-coverage operationalization and attribution ordering.",
+    "A13 does not by itself prove causality; A14 is the matched causal test.",
+    "R is secondary/descriptive and must not define delegation.",
+    "Mean-based attribution is diagnostic, not yet a production defense.",
+    "Max-vs-mean discrepancies are observational in A13/A12; causal N claims require controlled A14 manipulation."
+  ],
+  "r2_scientific_status": "prospective cross-agent replication frozen before R2 outcomes",
+  "common_support_qwen_vs_llama_same_boundary_safe_scorer": {
+    "n_common_primary_decisions": 7,
+    "n_common_primary_tasks": 7,
+    "decision_ids": [
+      "workspace/user_task_4/priv0/create_calendar_event",
+      "workspace/user_task_6/priv0/create_calendar_event",
+      "workspace/user_task_8/priv0/add_calendar_event_participants",
+      "slack/user_task_15/priv0/send_channel_message",
+      "banking/user_task_0/priv0/send_money",
+      "banking/user_task_13/priv0/update_user_info",
+      "banking/user_task_14/priv0/update_password"
+    ],
+    "llama_agent": {
+      "H_mean_del": {
+        "specified_mean": 0.4,
+        "delegated_mean": 0.0,
+        "difference": 0.4,
+        "ci95": [
+          null,
+          null
+        ],
+        "n_specified_tasks": 5,
+        "n_delegated_tasks": 2,
+        "bootstrap_valid_draws": 0
+      },
+      "M_del": {
+        "specified_mean": 0.5965550384317053,
+        "delegated_mean": -1.1945764462289332,
+        "difference": 1.7911314846606385,
+        "ci95": [
+          null,
+          null
+        ],
+        "n_specified_tasks": 5,
+        "n_delegated_tasks": 2,
+        "bootstrap_valid_draws": 0
+      }
+    },
+    "qwen_agent_r1b_same_scorer": {
+      "H_mean_del": {
+        "specified_mean": 0.8,
+        "delegated_mean": 0.0,
+        "difference": 0.8,
+        "ci95": [
+          null,
+          null
+        ],
+        "n_specified_tasks": 5,
+        "n_delegated_tasks": 2,
+        "bootstrap_valid_draws": 0
+      },
+      "M_del": {
+        "specified_mean": 0.9198703716972442,
+        "delegated_mean": -0.6238258598945281,
+        "difference": 1.5436962315917722,
+        "ci95": [
+          null,
+          null
+        ],
+        "n_specified_tasks": 5,
+        "n_delegated_tasks": 2,
+        "bootstrap_valid_draws": 0
+      }
+    },
+    "decision_level_H_mean_agreement": 0.7142857142857143,
+    "decision_level_M_pearson": 0.9905313834336764,
+    "decision_level_M_spearman": 0.8214285714285713
+  }
+}

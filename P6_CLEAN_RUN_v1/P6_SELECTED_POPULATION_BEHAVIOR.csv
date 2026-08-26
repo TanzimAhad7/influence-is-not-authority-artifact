@@ -1,0 +1,3 @@
+selected_by_a15a_activation,model_decision_cells,action_local_majority_pass_n,action_local_majority_percent,downstream_majority_pass_n,downstream_majority_percent,masking_majority_n,masking_majority_percent,claim_boundary
+True,54,20,37.03703703703704,40,74.07407407407408,20,37.03703703703704,"Post-hoc, composition-confounded selected-population behavior; mechanism evidence only, not a causal activation effect."
+False,24,8,33.333333333333336,11,45.833333333333336,3,12.5,"Post-hoc, composition-confounded selected-population behavior; mechanism evidence only, not a causal activation effect."

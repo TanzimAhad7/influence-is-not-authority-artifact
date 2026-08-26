@@ -1,0 +1,54 @@
+function,ground_truth_occurrences,frozen_rule_privileged,broad_non_readonly_screen,source_file,source_line,source_docstring_first_line
+add_calendar_event_participants,1,True,True,default_suites/v1/tools/calendar_client.py,242,Adds the given `participants` to the event with the given `event_id`.
+add_user_to_channel,8,True,True,default_suites/v1/tools/slack.py,30,Add a user to a given channel.
+append_to_file,4,False,True,,,
+check_restaurant_opening_hours,4,False,False,default_suites/v1/tools/travel_booking_client.py,262,"Get the openning hours of the given restaurants, check if the restaurant is open."
+create_calendar_event,12,True,True,default_suites/v1/tools/calendar_client.py,137,Creates a new calendar event with the given details and adds it to the calendar.
+create_file,4,True,True,,,
+delete_file,2,True,True,,,
+get_all_car_rental_companies_in_city,8,False,False,default_suites/v1/tools/travel_booking_client.py,279,Get all car rental companies in the given city.
+get_all_hotels_in_city,10,False,False,,,
+get_all_restaurants_in_city,11,False,False,default_suites/v1/tools/travel_booking_client.py,166,Get all restaurants in the given city.
+get_car_fuel_options,2,False,False,default_suites/v1/tools/travel_booking_client.py,321,Get the fuel options of the given car rental companies.
+get_car_price_per_day,8,False,False,default_suites/v1/tools/travel_booking_client.py,330,Get the price per day of the given car rental companies.
+get_car_types_available,2,False,False,default_suites/v1/tools/travel_booking_client.py,288,Get the car types available for the given car rental companies.
+get_channels,11,False,False,default_suites/v1/tools/slack.py,25,Get the list of channels in the slack.
+get_cuisine_type_for_restaurants,7,False,False,default_suites/v1/tools/travel_booking_client.py,205,"Get the cuisine type of the given restaurants, could be: Italian, Chinese, Indian, Japanese."
+get_current_day,2,False,False,default_suites/v1/tools/calendar_client.py,191,"Returns the current day in ISO format, e.g. '2022-01-01'."
+get_day_calendar_events,12,False,False,default_suites/v1/tools/calendar_client.py,128,Returns the appointments for the given `day`. Returns a list of dictionaries with informations about each meeting.
+get_dietary_restrictions_for_all_restaurants,1,False,False,default_suites/v1/tools/travel_booking_client.py,219,"Get the dietary restrictions of the given restaurants, could be: Vegetarian, Vegan, Gluten-free, Dairy-free."
+get_flight_information,1,False,False,default_suites/v1/tools/travel_booking_client.py,403,Get the flight information from the departure city to the arrival city.
+get_hotels_address,5,False,False,default_suites/v1/tools/travel_booking_client.py,142,Get the address of the given hotel.
+get_hotels_prices,11,False,False,default_suites/v1/tools/travel_booking_client.py,131,"Get all hotels within the given budget, should be within the price range."
+get_most_recent_transactions,12,False,False,default_suites/v1/tools/banking_client.py,161,"Get the list of the most recent transactions, e.g. to summarize the last n transactions."
+get_price_for_restaurants,9,False,False,default_suites/v1/tools/travel_booking_client.py,248,Get the price per person of the given restaurants.
+get_rating_reviews_for_car_rental,9,False,False,default_suites/v1/tools/travel_booking_client.py,299,Get the rating and reviews for the given car rental companies.
+get_rating_reviews_for_hotels,12,False,False,default_suites/v1/tools/travel_booking_client.py,149,Get the rating and reviews for the given hotels.
+get_rating_reviews_for_restaurants,12,False,False,default_suites/v1/tools/travel_booking_client.py,191,Get the rating and reviews for the given restaurants.
+get_restaurants_address,6,False,False,default_suites/v1/tools/travel_booking_client.py,175,Get the address of the given restaurants.
+get_scheduled_transactions,3,False,False,default_suites/v1/tools/banking_client.py,172,Get the list of scheduled transactions.
+get_unread_emails,1,False,False,default_suites/v1/tools/email_client.py,148,"Returns all the unread emails in the inbox. Each email has a sender, a subject, and a body."
+get_users_in_channel,18,False,False,default_suites/v1/tools/slack.py,118,Get the list of users in the given channel.
+get_webpage,18,False,False,default_suites/v1/tools/web.py,35,Returns the content of the webpage at a given URL.
+invite_user_to_slack,5,True,True,default_suites/v1/tools/slack.py,93,Invites a user to the Slack workspace.
+list_files,5,False,False,default_suites/v1/tools/cloud_drive_client.py,110,Retrieve all files in the cloud drive.
+post_webpage,1,True,True,default_suites/v1/tools/web.py,24,Posts a webpage at a given URL with the given content.
+read_channel_messages,15,False,False,default_suites/v1/tools/slack.py,43,Read the messages from the given channel.
+read_file,4,False,False,default_suites/v1/tools/file_reader.py,12,Reads the contents of the file at the given path.
+read_inbox,2,False,False,default_suites/v1/tools/slack.py,53,Read the messages from the given user inbox.
+reschedule_calendar_event,1,False,True,default_suites/v1/tools/calendar_client.py,214,Reschedules the event with the given `event_id` to the new start and end times.
+reserve_hotel,1,True,True,default_suites/v1/tools/travel_booking_client.py,339,Makes a reservation for a hotel with the provided details..
+schedule_transaction,1,True,True,default_suites/v1/tools/banking_client.py,82,Schedule a transaction.
+search_calendar_events,7,False,False,default_suites/v1/tools/calendar_client.py,171,"Searches calendar events that match the given query in the tile or the description. If provided, filters events by date."
+search_contacts_by_name,1,False,False,default_suites/v1/tools/email_client.py,238,Finds contacts in the inbox's contact list by name.
+search_emails,11,False,False,,,
+search_files,9,False,False,,,
+search_files_by_filename,8,False,False,,,
+send_channel_message,8,True,True,default_suites/v1/tools/slack.py,78,Send a channel message from `author` to `channel` with the given `content`.
+send_direct_message,12,True,True,default_suites/v1/tools/slack.py,63,Send a direct message from `author` to `recipient` with the given `content`.
+send_email,7,True,True,,,
+send_money,6,True,True,default_suites/v1/tools/banking_client.py,55,Sends a transaction to the recipient.
+share_file,2,True,True,default_suites/v1/tools/cloud_drive_client.py,117,Share a file with a user.
+update_password,1,True,True,default_suites/v1/tools/user_account.py,34,Update the user password.
+update_scheduled_transaction,4,True,True,default_suites/v1/tools/banking_client.py,115,Update a scheduled transaction.
+update_user_info,2,True,True,default_suites/v1/tools/user_account.py,46,Update the user information.

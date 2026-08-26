@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/jPc8WxNuf8H8v9R20WvCWyYOgvI</id>
+  <title>arXiv Query: search_query=( (all:"LLM agent" OR all:"LLM agents" OR all:"large language model agent" OR all:"large language model agents") AND (all:"argument role" OR all:"argument-level" OR all:"parameter source") AND (all:provenance OR all:authority OR all:authorization) ) AND submittedDate:"202201010000 TO 202608122359"&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-08-13T00:58:36Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=((all:%22LLM+agent%22+OR+(all:%22LLM+agents%22+OR+(all:%22large+language+model+agent%22+OR+all:%22large+language+model+agents%22)))+AND+((all:%22argument+role%22+OR+(all:%22argument-level%22+OR+all:%22parameter+source%22))+AND+(all:provenance+OR+(all:authority+OR+all:authorization))))+AND+submittedDate:%22202201010000+TO+202608122359%22&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.26497v1</id>
+    <title>Aligning Provenance with Authorization: A Dual-Graph Defense for LLM Agents</title>
+    <updated>2026-05-26T03:20:23Z</updated>
+    <link href="https://arxiv.org/abs/2605.26497v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.26497v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based agents are increasingly deployed in high-stakes scenarios such as email management, financial transactions, and code execution, where they interact with the external world through tool calling. During execution, these agents must read external data sources (emails, webpages, files) that attackers can control; through indirect prompt injection, attackers embed malicious instructions in this data to manipulate agents into performing unauthorized operations such as transferring funds to attacker-controlled accounts. Existing defenses either perform tool-call-level value checking without tracking where parameter values originate, or analyze execution traces from a single perspective without a clean authorization baseline for comparison. We propose AuthGraph, a dual-graph alignment defense framework that constructs two complementary graphs: an injected reasoning graph that models information provenance from the actual execution trajectory (including potentially manipulated attributions), and an authorization graph derived from the user's intent in an isolated clean context that is information-theoretically impossible to be influenced by injection; a graph alignment checker then structurally compares the two graphs to detect both tool-level and parameter-source-level deviations. On AgentDojo, AuthGraph reduces the attack success rate from 40% to 1% while maintaining 76% task completion rate on GPT-4o; on AgentDyn, it reduces the attack success rate from 39% to 2% while preserving 51% utility, outperforming state-of-the-art defenses including CaMeL, DRIFT, and Progent. To our knowledge, AuthGraph is the first agent security defense to structurally compare authorization specifications against execution provenance at the parameter-source level, achieving fine-grained injection detection without sacrificing agent flexibility.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T03:20:23Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Peiran Wang</name>
+    </author>
+    <author>
+      <name>Ying Li</name>
+    </author>
+    <author>
+      <name>Yuan Tian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11039v1</id>
+    <title>The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck</title>
+    <updated>2026-05-11T04:09:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.11039v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11039v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using LLM agents must act on untrusted webpages, emails, files, and API outputs while issuing privileged tool calls. Existing defenses often mediate trust at the granularity of an entire tool invocation, forcing a brittle choice in mixed-trust workflows: allow external content to influence a call and risk hijacked destinations or commands, or quarantine the call and block benign retrieval-then-act behavior. The key observation behind this paper is that indirect prompt injection becomes dangerous not when untrusted content appears in context, but when it determines an authority-bearing argument. We present \textsc{PACT} (\emph{Provenance-Aware Capability Contracts}), a runtime monitor that assigns semantic roles to tool arguments, tracks value provenance across replanning steps, and checks whether each argument's origin satisfies its role-specific trust contract. Under oracle provenance, \textsc{PACT} achieves 100\% utility and 100\% security on mixed-trust diagnostic suites, while flat invocation-level monitors incur false positives or false negatives. In full AgentDojo deployments across five models, \textsc{PACT} reaches 100\% security on the three strongest models while recovering 38.1--46.4\% utility, 8--16 percentage points above CaMeL at the same security level. Ablations show that both semantic roles and cross-step provenance are necessary. \textsc{PACT} reframes agent security as authority binding, and isolates the remaining deployment bottleneck to provenance inference and contract synthesis.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T04:09:11Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Linfeng Fan</name>
+    </author>
+    <author>
+      <name>Ziwei Li</name>
+    </author>
+    <author>
+      <name>Yuan Tian</name>
+    </author>
+    <author>
+      <name>Yichen Wang</name>
+    </author>
+    <author>
+      <name>Rongsheng Li</name>
+    </author>
+    <author>
+      <name>Xiong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.21477v2</id>
+    <title>MCP Pitfall Lab: Exposing Developer Pitfalls in MCP Tool Server Security under Multi-Vector Attacks</title>
+    <updated>2026-07-14T16:11:06Z</updated>
+    <link href="https://arxiv.org/abs/2604.21477v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.21477v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Model Context Protocol (MCP) enables tool-integrated LLM agents, but its third-party tool-server ecosystem expands software supply-chain risk across tool metadata, untrusted outputs, cross-tool flows, multi-modal inputs, and privileged sink actions. Existing MCP benchmarks mainly measure robustness to malicious inputs, offering limited support for dependency vetting, semantic metadata auditing, and hardening regression. We present MCP Pitfall Lab, a protocol-aware security testing framework that models developer pitfalls as reproducible scenarios and validates outcomes using MCP traces and objective validators rather than agent self-report. We also introduce Semantic MCP-Bill-of-Material(MCP-BOM), representing that augments component inventory with security-relevant tool semantics, including descriptions, schemas, high-risk parameters, source/sink roles, trust boundaries, policy hooks, audit support, and trace provenance. Across 2,579 validator-completed runs over four models, Pitfall Lab observes 31.9% overall attack success rate(ASR), with multi-modal injection strongest at 38.7%. Semantic static fields detect pitfalls involving policy-bearing tool descriptions, permissive schemas, missing audit support, and absent server-side validation with F1=0.727, while BOM-backed findings drop from 27 to 16 after hardening. Decomposed risk metrics show Control Coverage increasing from 0.173 to 0.697 and Residual Risk decreasing from 15.31 to 6.09. A trace-linked case study further demonstrates that cross-tool forwarding and image-to-tool leakage require runtime provenance rather than static manifest fields alone. Overall, Pitfall Lab reframes MCP tool servers as AI software-supply-chain dependencies and provides BOM-backed artifacts for review, hardening, and trace-grounded regression testing</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-23T09:39:15Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Run Hao</name>
+    </author>
+    <author>
+      <name>Zhuoran Tan</name>
+    </author>
+  </entry>
+</feed>

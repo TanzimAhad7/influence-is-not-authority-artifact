@@ -1,0 +1,98 @@
+{
+  "NO_MODEL_CALLS": true,
+  "agentdojo_version": "0.1.35",
+  "benchmark_version": "v1",
+  "created_utc": "2026-08-20T23:29:14.327773+00:00",
+  "locks": [
+    {
+      "label": "a13_combined",
+      "path": "/home/anon_/ratchet/phase0_pilot/A13_C0_EXTENSION_SCIENCE_v1/A13_C0_COMBINED_73_DECISIONS_DERIVED_v1.jsonl",
+      "sha256": "f24b89d53ad504cf16dce3820e9b028f1d752bcc829ecf43ed3e0997feb764f5"
+    },
+    {
+      "label": "agentdojo_pip_show",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/AGENTDOJO_PIP_SHOW.txt",
+      "sha256": "833617b8998b034fce5cad7611313073040c75d97780ff1c36fcf41aa7b3a7b0"
+    },
+    {
+      "label": "protocol",
+      "path": "/home/anon_/ratchet/phase0_pilot/USENIX27_FINAL_EXPERIMENT_FREEZE_E2E_ATTRIGUARD_v4_FINAL_CODING_FREEZE_RECONCILED.md",
+      "sha256": "4d992b635e9dbc13f5eb276f6a1264fbb9600e494c07da87d9b7217b361ce2e0"
+    },
+    {
+      "label": "canonical",
+      "path": "/home/anon_/ratchet/phase0_pilot/CANONICAL_USENIX_RESEARCH_DOSSIER_v140_E2E_SYSTEMS_STORY_RECONCILED.md",
+      "sha256": "641734bd2fc8fb09cc831c60f0f5d564ac860d94a814c367ae964ba4170c39d3"
+    },
+    {
+      "label": "blueprint",
+      "path": "/home/anon_/ratchet/phase0_pilot/USENIX27_MANUSCRIPT_BLUEPRINT_RECONCILED_v20_E2E_SYSTEMS_STORY_RECONCILED.md",
+      "sha256": "6846fa3710844227d4f12e6182748081723114fc529ae8d9921c98bd0fb2a8a7"
+    },
+    {
+      "label": "writing_diagnosis",
+      "path": "/home/anon_/ratchet/phase0_pilot/USENIX27_SUBMISSION_LEVEL_WRITING_DIAGNOSIS_v8_E2E_COHERENCE_RECONCILED.md",
+      "sha256": "e1bf6e5bbce1ed686be94a4b230dbbb15dc6234ac15f237e2016b509c44eb7c4"
+    },
+    {
+      "label": "agentdojo_v1_banking_injection_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/banking/injection_tasks.py",
+      "sha256": "fa2dedf8e66c95ffadb54f5a26648728b08c56f302858de4ee9a5cc0b3891618"
+    },
+    {
+      "label": "agentdojo_v1_banking_user_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/banking/user_tasks.py",
+      "sha256": "37af838194f001af80cc040315bcb2d69d0112324d424f9a323473b41b317f82"
+    },
+    {
+      "label": "agentdojo_v1_banking_task_suite.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/banking/task_suite.py",
+      "sha256": "c58ec73db16f713a16aaec787dac45856e546f4d95be84ab6a4bed9bc12613b6"
+    },
+    {
+      "label": "agentdojo_v1_slack_injection_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/slack/injection_tasks.py",
+      "sha256": "d5775da1689e13192b665837e72cee88ed76f622e9b998e9def18b700fdc5afc"
+    },
+    {
+      "label": "agentdojo_v1_slack_user_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/slack/user_tasks.py",
+      "sha256": "25e43a0c58109765da090aa2f01bfb0892aaee70ca1622028074d7b49443a57b"
+    },
+    {
+      "label": "agentdojo_v1_slack_task_suite.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/slack/task_suite.py",
+      "sha256": "bdc6798e8ef83a54e787af80ed44f94e4be8f24aba2eaec2103e3120958c3670"
+    },
+    {
+      "label": "agentdojo_v1_travel_injection_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/travel/injection_tasks.py",
+      "sha256": "9252be834b0ae0e28fe06744e052987d71d8ad3666b8d0b1f65f2875f998fca8"
+    },
+    {
+      "label": "agentdojo_v1_travel_user_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/travel/user_tasks.py",
+      "sha256": "757f0e28208f92c2082e016469654524cb1120ec10928ce229da15fe32f6d3ee"
+    },
+    {
+      "label": "agentdojo_v1_travel_task_suite.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/travel/task_suite.py",
+      "sha256": "a2b58f094bd61a79e245ca74c94d9a3d62cc6bc744e5ee21bdadabb43960ba60"
+    },
+    {
+      "label": "agentdojo_v1_workspace_injection_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/workspace/injection_tasks.py",
+      "sha256": "03e0894ffb544a79fd0bfd2c62cc5f90b19a2b1d429068d800239bfd020b6dcc"
+    },
+    {
+      "label": "agentdojo_v1_workspace_user_tasks.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/workspace/user_tasks.py",
+      "sha256": "d2a550b812b7f40ee2dea17ac19d44f2dd063d103524118216b563eca6e44171"
+    },
+    {
+      "label": "agentdojo_v1_workspace_task_suite.py",
+      "path": "/home/anon_/ratchet/phase0_pilot/E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/default_suites/v1/workspace/task_suite.py",
+      "sha256": "96fa51ab20f03c30cd2d7bc754b76d717ddbd68bdf39adc85f0e92fc4d2c7ec4"
+    }
+  ]
+}

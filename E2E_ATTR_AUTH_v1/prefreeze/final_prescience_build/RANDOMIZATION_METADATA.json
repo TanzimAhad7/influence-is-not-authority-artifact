@@ -1,0 +1,9 @@
+{
+  "B": 14,
+  "N_exec": 420,
+  "cells_per_block": 6,
+  "inferential_unit": "task",
+  "repeats": 5,
+  "schema": "E2E_RANDOMIZATION_V1",
+  "seed": 2026082001
+}

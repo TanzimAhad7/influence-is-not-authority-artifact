@@ -1,0 +1,22 @@
+{
+  "agentdojo_package_version": "0.1.35",
+  "attenuation_temperature": 0.2,
+  "attenuation_top_p": 0.9,
+  "attriguard_backend": "openai",
+  "attriguard_judge_model_id": "openai/gpt-4.1-mini",
+  "attriguard_level": 2,
+  "attriguard_model_id": "openai/gpt-4.1-mini",
+  "attriguard_skip_empty_audit": 1,
+  "attriguard_survival": "fuzzy",
+  "benchmark_version": "v1",
+  "judge_temperature": 0.2,
+  "judge_top_p": 0.9,
+  "no_fallback_provider": true,
+  "openai_base_url": "https://openrouter.ai/api/v1",
+  "provider_route": "OpenRouter OpenAI-compatible",
+  "schema": "E2E_ENVIRONMENT_LOCK_V1",
+  "system_prompt_source": "E2E_ATTR_AUTH_v1/input_lock/A13_C0_INPUT_BUNDLE_v1/agentdojo_source/data/system_messages.yaml",
+  "system_prompt_source_sha256": "b65b4fa81ee473447ae6314b1c41e08f0d53a2e07f2a766901f1f4f1a53c51a4",
+  "victim_model": "openai/gpt-4.1-mini",
+  "victim_temperature": 0.0
+}

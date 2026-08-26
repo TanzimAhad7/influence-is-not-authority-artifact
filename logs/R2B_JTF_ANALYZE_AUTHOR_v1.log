@@ -1,0 +1,18 @@
+nohup: ignoring input
+[R2B-ANALYZE] project_root=/home/anon_/ratchet/phase0_pilot
+[R2B-ANALYZE] run_dir=R2B_JTF_AUTHOR_v1
+[R2B-ANALYZE] zero model/provider calls
+[R2B-01] ANALYSIS COMPLETE
+[R2B-01] results=/home/anon_/ratchet/phase0_pilot/R2B_JTF_AUTHOR_v1/R2B_JTF_RESULTS.json
+[R2B-01] results_sha256=ee5becff3cdf1397a088d82f1487ce0af4eea3c202f7cc78eb3c3a6c38f5991f
+[R2B-01] manifest_sha256=25c24f76ec5f14a089838feca742d11d4ce5850c97a12ccb76d677a314c6f908
+[R2B-01] run_complete_sha256=4d63c72ea0a19b69954d601f9e7c006e3ff67b163e0587b8f15a8e6e48e1c9df
+[R2B-02] INTEGRITY PASS
+[R2B-02] verify_report=/home/anon_/ratchet/phase0_pilot/R2B_JTF_AUTHOR_v1/VERIFY_REPORT.json
+[R2B-02] verify_report_sha256=2b36e06d8f99c95046900d660d771a6234a40f01e61521f042e5e3f0517fb535
+[R2B-ANALYZE] COMPLETE
+[R2B-ANALYZE] STOP: do not start AW-N3 until canonical reconciliation
+
+======================================
+R2B ANALYSIS EXIT CODE: 0
+======================================

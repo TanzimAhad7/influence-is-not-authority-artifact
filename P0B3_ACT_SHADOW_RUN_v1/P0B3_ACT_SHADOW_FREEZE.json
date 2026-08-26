@@ -1,0 +1,40 @@
+{
+  "analysis_class": "PRE_SPECIFIED_SECONDARY_POST_HOC_DESCRIPTIVE_ZERO_CALL",
+  "created_utc": "2026-08-13T17:54:30.927840+00:00",
+  "endpoint": "SHADOW := shadow_any_flag (COMPLETION_PLUS_TOOL_CALL serialization)",
+  "frozen_denominators": {
+    "attack": 587,
+    "benign": 37
+  },
+  "frozen_total_privileged_decisions": 624,
+  "input": {
+    "relative_path": "P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_DEFENSE_EVENTS.jsonl",
+    "rows": 624,
+    "sha256": "bc8c17c257b00a12295c54384c9ce7bc3490f8d6c1f1d3b89aee36641253746a",
+    "unique_event_identities": 624
+  },
+  "known_pre_split_overall_reconciliation": {
+    "privileged_decisions": 624,
+    "shadow_flagged_privileged_decisions": 538
+  },
+  "package_source_sha256": {
+    "P0B3_ACT_SHADOW_00_freeze.py": "55d249696bb4fb33145297fbe2ec4ea9970b03e511adc1fa038a3dfb860b93ff",
+    "P0B3_ACT_SHADOW_01_run.py": "e113a60d61d1ef9d37db6a099f99f7ab18c19c008d1f850b95c8669ac46c80ea",
+    "p0b3_act_shadow_common.py": "1913d046323319d237e8e1a4d6ff76493cba0786cb4e8a40d9a58696de9fcbdb"
+  },
+  "provenance_note": "Secondary shadow-serialization split was specified in canonical dossier v114 \u00a71.6.8 before this split was inspected; this supplement freezes executable code before revealing benign/attack shadow outcomes.",
+  "reporting_lock": {
+    "additional_descriptive": "attack_minus_benign_percentage_points",
+    "no_ci_no_pvalue": true,
+    "no_population_edits": true,
+    "no_threshold_tuning": true,
+    "primary_secondary_outputs": [
+      "benign shadow flagged / benign privileged decisions",
+      "attack shadow flagged / attack privileged decisions"
+    ],
+    "report_regardless_of_shape": true
+  },
+  "schema": "P0B3_ACT_SHADOW_POSTHOC_V1",
+  "scientific_model_calls": 0,
+  "stage": "FREEZE"
+}

@@ -1,0 +1,27 @@
+name: adaptive
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Core benchmark/evolution dependencies. Keep these pinned because this
+      # release imports their internal modules and patch points.
+      - agentdojo==0.1.35
+      - openevolve==0.2.27
+
+      # Directly imported by the adaptive attack pipeline or used by supported
+      # model backends. Model serving dependencies such as vLLM, PyTorch, CUDA,
+      # and transformers should be installed separately for the serving stack.
+      - openai>=2.0.0,<3.0.0
+      - anthropic>=0.47.0
+      - cohere>=5.3.4
+      - google-genai>=1.15.0
+      - pydantic[email]>=2.7.1,<3.0.0
+      - pyyaml>=6.0.1
+      - requests>=2.31.0
+      - click>=8.1.7
+      - python-dotenv>=1.0.1
+      - rich>=13.7.1
+      - tenacity>=8.2.3
+      - typing-extensions>=4.11.0

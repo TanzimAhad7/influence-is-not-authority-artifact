@@ -1,0 +1,83 @@
+{
+  "study": "A15a — benign selectivity and sanitizer-overhead consequence",
+  "scientific_status": "A13 attribution outcomes are pre-existing. A15a freezes the full eligible A13 benign decision corpus and exact sanitizer job list before any sanitizer output or sanitizer latency outcome is observed.",
+  "prepared_at_utc": "2026-08-09T14:40:50.890692+00:00",
+  "parent_a13": {
+    "protocol_hash": "b4a140c7d8ef49149ac72e35e9e52405f614fa5361558c7b2ac0c56fe0063b80",
+    "taxonomy_hash": "213cd71e0017eeb91c52955f8b77d06455c8d280b0121b31a830aa651ae62740",
+    "parent_hashes": {
+      "a13/protocol.json": "8c0caa2e509f94d0e2eea37cfaf53840319d407167c15e2a052633c53854de43",
+      "a13/taxonomy.json": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+      "a13/manifest.json": "971eb1ea932a2bc9687c288532b3b9e1b8ae608a492b068d1edf8eae33b0cf0b",
+      "a13/decisions.jsonl": "af6a62c5689e7d26180f0091a121839b645e1dcb54e5aaf87427f6e75c19dca9",
+      "a13/results.json": "6ced3fc14a60574f95881344ac3d6bb5b8cf7d88d59ac3c844cae35d4121646b"
+    },
+    "raw_log_hashes": {
+      "a13/agentdojo_runs/vllm_parsed/banking/user_task_0/none/none.json": "f126a519f69a54e1ff691a6ca25fb369e22d7db4c025a5f93fbde7a89390d456",
+      "a13/agentdojo_runs/vllm_parsed/banking/user_task_13/none/none.json": "985b97528a50067eb4fe0031e29d983bc4a007cdbbd9b07a0a0593c7b09c7605",
+      "a13/agentdojo_runs/vllm_parsed/banking/user_task_14/none/none.json": "a384483a1eb4ce69a45d5b5ef03b5376a375250e715f779f06b2b507c306d9ab",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_1/none/none.json": "e076b8b569bf59d45cf4ba31a844d288c07b8f90ee3413160c185b9cdd14db30",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_10/none/none.json": "1c5805bd53d2444a8339e097bdfef1d53a86f9e2f89f20e28139f8ac811945cf",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_13/none/none.json": "e7741d40162e676b2ee63e7d6c232039d99cea9135e959a2f571e22a4014dab9",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_15/none/none.json": "ce6d358615ce4f0578eea6331b95fbe3a9677ab4dbc35d1310710076fd50784c",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_17/none/none.json": "1f32e19a50391502293f93915f656919b62c006669c5b53a85c72702df463ce3",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_18/none/none.json": "a5de6e15de00f1c0b456e95168ecd849b63652c37b47cd995bd3c8f1ca9a56c6",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_19/none/none.json": "e9c9f429283e4dc5241a01d0a3140b8e24bfc36133658fd508695445cd54aa61",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_2/none/none.json": "c8302c2bb3d35803b88c5161776091ff995577d0c1dd2783f9fa958bdad3957f",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_4/none/none.json": "e03ad7dc7c7c46dbe6737f22effd25163d98a27913e25f0fd0db8be314b05c1c",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_7/none/none.json": "d1cb5ca91000a197b53833b5870818c9622b5de2ad45783725aea8e027d60f87",
+      "a13/agentdojo_runs/vllm_parsed/slack/user_task_9/none/none.json": "39103be2ea26ca4c6fc7abf5d786624fe997ca5ac3acadb5f29c22388068d3c9",
+      "a13/agentdojo_runs/vllm_parsed/travel/user_task_3/none/none.json": "6f88a5523a8cee02ef7268ec04fc7b14688986d2c076dbf20245787e8a331c9a",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_12/none/none.json": "dbb15b5a0d049596604824640dc90c70c44b73695568e9c63b404ef1abeba339",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_13/none/none.json": "bbdec872e3afbaea390bd970dca75a2813235b741f188d984d6963a4b70424f2",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_15/none/none.json": "38d4ec0009d2899ee0818546bb08e86628c6e7d9ac8fc80230010a0b8e7922f5",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_21/none/none.json": "04657aac2f1c4a7063e380f19dd3318efe049e766fd6c67c0ad6dc51aba89a60",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_4/none/none.json": "806bbfa007fc4e64fe0127325e4d219ae1cd83885d89e4dfc7e2d738f87dfd0b",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_6/none/none.json": "7ceeeff1834c79c004fdfc2ed3bad13906f01d1118e16ce3d648dece08451221",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_8/none/none.json": "131ceb49d84c619efa0fd3ca6af31407c5a5629b790694518b160d59066113f8",
+      "a13/agentdojo_runs/vllm_parsed/workspace/user_task_9/none/none.json": "530a3f7b7d7fcb4e382ba34d29c6e794c17e35f4fceb47bd5d347c1647735d64"
+    }
+  },
+  "eligibility": "All A13 rows with primary_valid=true and development=false. No new attribution-based selection. PARTIAL is retained descriptively; SPECIFIED/DELEGATED are the frozen A13 labels.",
+  "causalarmor_activation": {
+    "attribution_source": "exact pre-existing A13 Qwen deletion scores",
+    "primary_tau": 0.0,
+    "rule": "flag span iff delta_S_del > delta_U_del - tau; activate iff >=1 span flagged",
+    "important_status": "Activation-rate analysis is a consequence reuse of existing A13 scores, not a new independent attribution confirmation."
+  },
+  "sanitizer": {
+    "model": "google/gemini-2.5-flash",
+    "provider_route": "OpenRouter",
+    "base_url": "https://openrouter.ai/api/v1",
+    "paper_model_match": "same model identifier as paper sanitizer; access route differs from paper Vertex AI",
+    "system_prompt_sha256": "54c6371dbcb791b102d80838d12701648d239143e3d3ec9f0d723b2e6a7ed21d",
+    "user_template_sha256": "d8e188f629124b2642bb26154855d45ddfb68c7a951e42015a21a537d230252b",
+    "job_count": 53,
+    "job_list_sha256": "81f453be3469a80398cf94972244e4a85cd2b192e46a1f429d15b6bccee6a9ec"
+  },
+  "primary_A15a_endpoints": [
+    "decision_activation_rate_tau0 among A13 primary_valid benign decisions",
+    "external_sanitizer_calls_per_eligible_decision",
+    "external_sanitizer_calls_per_activated_decision",
+    "measured sanitizer wall-clock latency per call and per activated decision"
+  ],
+  "secondary_endpoints": [
+    "SPECIFIED vs DELEGATED activation and sanitizer-call breakdown",
+    "PARTIAL descriptive breakdown",
+    "flagged-span fraction among eligible tool spans",
+    "sanitized-output length and lexical/numeric preservation diagnostics",
+    "stored A13 task-duration comparison labeled deployment-specific/descriptive"
+  ],
+  "interpretation_guardrails": [
+    "Do not count A13 non-execution as defense success.",
+    "Do not call sanitizer latency source-fidelity Vertex latency.",
+    "Do not call this full end-to-end utility; Stage-1 sanitizer cost is a lower bound on the full defense path.",
+    "Do not claim the existing A13 activation rate is newly preregistered.",
+    "Do not tune tau after sanitizer outcomes."
+  ],
+  "artifacts": {
+    "decision_inventory_sha256": "180a3767588932c160ca4de6fb18c6cd1e0331568814525d31663d416e3d5883",
+    "sanitizer_jobs_sha256": "81f453be3469a80398cf94972244e4a85cd2b192e46a1f429d15b6bccee6a9ec"
+  },
+  "protocol_hash": "eed2cf8a7ff858f686b258cac3fd88802311305aa86a89f8a6b760a21dac3e50"
+}

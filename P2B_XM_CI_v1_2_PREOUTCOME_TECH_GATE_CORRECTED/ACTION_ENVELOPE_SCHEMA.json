@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "action_type": {
+      "enum": [
+        "tool",
+        "text"
+      ],
+      "type": "string"
+    },
+    "calls": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "arguments": {
+            "type": "object"
+          },
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "arguments"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "content": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "action_type",
+    "calls",
+    "content"
+  ],
+  "title": "P2B Common Action Envelope v1",
+  "type": "object"
+}

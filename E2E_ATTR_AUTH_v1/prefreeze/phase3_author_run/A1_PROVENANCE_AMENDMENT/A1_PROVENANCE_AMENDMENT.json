@@ -1,0 +1,16 @@
+{
+  "NO_MODEL_CALLS": true,
+  "changed_rows": [
+    "slack/user_task_4"
+  ],
+  "original_source_audit_sha256": "4ba0d9923eb595446b888aac134a15a00755f7a0d88da6d0ce61cc707582f2fe",
+  "preliminary_B_unchanged": 14,
+  "reason": "Original Phase A1 script keyed tool-source provenance by suite; slack/user_task_4 audits post_webpage, whose implementation is v1/tools/web.py rather than v1/tools/slack.py. The PASS/FAIL semantic verdict and cohort membership are unchanged.",
+  "science_changed": false,
+  "status": "PASS_BOOKKEEPING_PROVENANCE_AMENDMENT_ONLY",
+  "verdict_counts": {
+    "FAIL": 4,
+    "PASS": 3,
+    "PENDING": 0
+  }
+}

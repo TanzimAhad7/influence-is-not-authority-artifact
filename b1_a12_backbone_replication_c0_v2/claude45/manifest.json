@@ -1,0 +1,250 @@
+{
+  "created_at_utc": "2026-08-13T17:10:56.223931+00:00",
+  "b1_protocol_hash": "d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550",
+  "agent_key": "claude45",
+  "agent_model": "anthropic/claude-sonnet-4.5",
+  "measurement_core_sha256": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719",
+  "runner_sha256": "11a07faea41df8bd066265148a4c5e1dfb6d2e6059a4eb94baf8fc0ad371e6e1",
+  "files": {
+    "b1_a12_backbone_replication_c0_v2/claude45/protocol_pointer.json": {
+      "sha256": "54ae6cd6a4e726ba615deaec4f0c249fb1580ac735b0eb1691a6c7b04250ba9f",
+      "bytes": 346
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/taxonomy.json": {
+      "sha256": "2b5b72e929e7b3d2516d3d6c9817aec1a28d2f37eea10bbc98aa04704e9be3da",
+      "bytes": 239111
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/decisions.jsonl": {
+      "sha256": "90de31b5b3a748b2adb170d7521d3cfb2d6730529ca8641a70491ab99fb416b4",
+      "bytes": 324192
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/results.json": {
+      "sha256": "82332c7914b9aaab1a65fe8e26d1d8af0bc0421e2d6edb6e1e5ed79b2a2a14c7",
+      "bytes": 6354
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/REPORT.md": {
+      "sha256": "da76194d2fed00c6b5267584dc10b394301944c00bb1199448ee3b0ad7145272",
+      "bytes": 1091
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_0/none/none.json": {
+      "sha256": "cfb9508033b070468cf5b4e3e6c34679d16e8693d10945ce2a903ed3aff61867",
+      "bytes": 3502
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_11/none/none.json": {
+      "sha256": "57fa0453a064af366b92b828122331c8704d24b8cc7db1278cb614d61a0784f5",
+      "bytes": 5960
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_12/none/none.json": {
+      "sha256": "ab7c4270f9725190764ee470dd54186e1c2032225acc89eb19fcf723dee059f3",
+      "bytes": 3534
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_13/none/none.json": {
+      "sha256": "0ee10adb7922a9e7d253c9c545050b33bc7f15bb153e431e364b834c4ca916ce",
+      "bytes": 4750
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_14/none/none.json": {
+      "sha256": "24bfe326f4061a7247e6740a0a1ba89ed8244e4bebfa227ffac650f0bdfd72d0",
+      "bytes": 6022
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_15/none/none.json": {
+      "sha256": "eedc2f768f1df550630a68a52a2af79613f301b0d3c94468dcc44aa9f60e9342",
+      "bytes": 10130
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_2/none/none.json": {
+      "sha256": "bff07d1c32e0cd437c94daa899310c463de343ab1d2e3a80d11e6d39594d1f37",
+      "bytes": 6236
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_3/none/none.json": {
+      "sha256": "31dcb57d8120b3ae78859821b14285c1bb749c96228ea2dd27af010b9b770092",
+      "bytes": 5926
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_4/none/none.json": {
+      "sha256": "f24e38ec7d59cf4962fb3bdf4760dcdb467269ef3311ef8d9ac848f14a215e72",
+      "bytes": 5430
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_5/none/none.json": {
+      "sha256": "7268866fc5ac5dbb11c3cec24bc9f4f2800b295f478a192ef962193e67ce6b59",
+      "bytes": 5651
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_6/none/none.json": {
+      "sha256": "28824623e9082a116c2db8e33cbfe43b904122f522de422bccda8b320e9bc0a6",
+      "bytes": 3997
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/banking/user_task_9/none/none.json": {
+      "sha256": "506d8e342081486b8acec2a62aef7fef554a0f498c08848f0580c3b5b89e9263",
+      "bytes": 3488
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_1/none/none.json": {
+      "sha256": "cea07a1a5cbfb07d7fe97222912445e923c2bc6be3f0dc49f52062d0ecc7dfa4",
+      "bytes": 6474
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_10/none/none.json": {
+      "sha256": "1256f522d8b1a5624259aa7fc5e9e3999143850d24e74e8dc222bc9a3e971525",
+      "bytes": 15155
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_11/none/none.json": {
+      "sha256": "0ca119931f30e6343a5a30e954b257a8f19c99ec373f3e97de12c2ef1e33f666",
+      "bytes": 8003
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_12/none/none.json": {
+      "sha256": "237e7e0de120b49e069511e31288e7bb86207925a60cca77937077d01f2e2838",
+      "bytes": 4211
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_13/none/none.json": {
+      "sha256": "c37a3f271d90c94a6219bc8fd9cad8629bac6297d4c6b7966f0ce193616dc0b9",
+      "bytes": 8980
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_14/none/none.json": {
+      "sha256": "796ebbd9c9088270386a1ab29ef552722562cdf1aa71f2a4828621c4c124605c",
+      "bytes": 12477
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_15/none/none.json": {
+      "sha256": "e11d3f66d1dabe6d4f2a94de16d09e66e562c01661b89c239828e457f3c696f3",
+      "bytes": 9138
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_16/none/none.json": {
+      "sha256": "1a41c0de880e48572b3773649a9f0ca4261449d1afac441d79b0d02ed20882da",
+      "bytes": 11327
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_17/none/none.json": {
+      "sha256": "fc2428130adf25080c04694e218a96f956517be460b209640a29a5c57a634ff5",
+      "bytes": 5858
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_18/none/none.json": {
+      "sha256": "fc676427670e25d257757483443bf6c66eb1748476ad1787e8d4b7b655a62890",
+      "bytes": 14029
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_19/none/none.json": {
+      "sha256": "c1145406a836b12b31798878684ceb9ca275ce8e55159503b9bf5c6507e69b76",
+      "bytes": 11635
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_2/none/none.json": {
+      "sha256": "c42a7cc220d10f0787d874d7f1fe4dfa6b9f25fb5760a90d05b86fef96601ee2",
+      "bytes": 4309
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_3/none/none.json": {
+      "sha256": "0e1367e79bb311f2e0d5969858cc3e3073e53f2b69cbc6bab8f5d49011967b18",
+      "bytes": 4629
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_4/none/none.json": {
+      "sha256": "263e0be198a43715b9fe9431b362164c9809c2ffac1c4d783cf47126cbdc86bc",
+      "bytes": 6235
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_5/none/none.json": {
+      "sha256": "3ef1375f0ed9f00a72c663788551187ce720471d4500bab6e4f856e125ce0009",
+      "bytes": 8365
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_7/none/none.json": {
+      "sha256": "e5d8e554ba9e8cb3a73ff9ddcffaef987c1a23ccddd1f28637dcad70f1466335",
+      "bytes": 4094
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_8/none/none.json": {
+      "sha256": "2f14b913dc2fcbee1967d3956b45b132164ac56008b574de483bde7504fb1fa1",
+      "bytes": 8699
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/slack/user_task_9/none/none.json": {
+      "sha256": "6bdcf5fdb5ce7c385f5a1b18e570eba71da75bc2bef96a7b43cf4cd0613f0ae7",
+      "bytes": 8693
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/travel/user_task_0/none/none.json": {
+      "sha256": "f299c28860ef6ee5f1184b4f3d0a634d03417df07a73ec7d6a6e0ac0c816ba6a",
+      "bytes": 5569
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/travel/user_task_1/none/none.json": {
+      "sha256": "a5abcddff3ead353ff01c415c836298f517349850793eac6d3402fd4064579d2",
+      "bytes": 8542
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/travel/user_task_3/none/none.json": {
+      "sha256": "3066ab49436da63dc67e2922949235a5fa3bbc4c13c6333c6613d32a4af09be2",
+      "bytes": 11610
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/travel/user_task_4/none/none.json": {
+      "sha256": "f50fdc34baaa131cb3f6ba1bb9ccd3a827fcafdd50caf6388979411c6320605b",
+      "bytes": 12093
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/travel/user_task_7/none/none.json": {
+      "sha256": "81fc649633e78b08fd7d8cf0978cab2147d67abff4f37bc6bd97ecf11047a650",
+      "bytes": 12675
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/travel/user_task_8/none/none.json": {
+      "sha256": "d575a8a21508a5a2cfd291a4c59892c4e39932dac57044ab590b3b817c4cd64b",
+      "bytes": 14961
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_12/none/none.json": {
+      "sha256": "e5ff5d88653860987ce280f6c59bf5ed6a395ec4f35cd251155c4460511fb3a3",
+      "bytes": 6002
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_13/none/none.json": {
+      "sha256": "43777e3b51ad60d6da0e221f522a2c7b22544b41a1da79f57193031f1599b050",
+      "bytes": 18982
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_15/none/none.json": {
+      "sha256": "f235629c18ccad03c3e76f52d7940341065f7922320965188a5afce6b2df3c07",
+      "bytes": 8298
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_18/none/none.json": {
+      "sha256": "5000b39843ca50adca8f1097edeee2d99c9c3a19d75fa387fb69ab9c667cc218",
+      "bytes": 9870
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_20/none/none.json": {
+      "sha256": "c4688ecaec785d5c3aec1c56aaeaf11077bc42aa9a154d2459e2af019191b8c0",
+      "bytes": 7288
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_21/none/none.json": {
+      "sha256": "47e7c85136ed8f644aa72add49c45d6c1b54fc774bb01c2d9fdb0ec38729c1d7",
+      "bytes": 8333
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_25/none/none.json": {
+      "sha256": "66907b47042fffa2b3d202945c31a11a9ff1c218e1de132030315af24f2656b4",
+      "bytes": 24027
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_29/none/none.json": {
+      "sha256": "916ed3c73b5b6e24dd0c36f3311701afeac1638c006cb2d35c64b10e8c2e85bb",
+      "bytes": 13412
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_31/none/none.json": {
+      "sha256": "749ebeca89ceae8fb375cf763b96596614e4fa5225a74d7fd331ce760bd1da92",
+      "bytes": 42369
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_32/none/none.json": {
+      "sha256": "45e713a209f6dd8e50fa580d2f1c2c8db59f6066879392b131c3602fcca24dde",
+      "bytes": 9672
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_33/none/none.json": {
+      "sha256": "1be89afee4b55348f0d2409deebbc46ce8a9fdd226b5e6fd05e941212a94dea2",
+      "bytes": 9726
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_34/none/none.json": {
+      "sha256": "3d6c831ef78f938a7d3682cd5f86db1434aaafe052424c2ea7dd61b062883996",
+      "bytes": 41318
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_36/none/none.json": {
+      "sha256": "93bf7f7da2d27e534aa001253b0c82d6eff295eaf73d3a501eff57a7ab12f3a3",
+      "bytes": 8542
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_37/none/none.json": {
+      "sha256": "faec47084631ae94faff86c677666943be3c560cf41b73c976a161ca46c4d2e2",
+      "bytes": 10150
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_4/none/none.json": {
+      "sha256": "4fa4446a3833b6100b22c704a3baaa4a4edd4838a50bc7c0ebe91192960552fb",
+      "bytes": 8848
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_6/none/none.json": {
+      "sha256": "84652d612e7b240646bc918f462df9b0bc2c6bd134dd46cdb851ff819c969133",
+      "bytes": 6202
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_7/none/none.json": {
+      "sha256": "455b0592dca58a0f2444d33730fe7a74932991461caf752f13b26847666d0ad0",
+      "bytes": 5379
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_8/none/none.json": {
+      "sha256": "dae31762748d62ad881bd937ff83ac3e04c6ca630221c426856a9efe2d17980b",
+      "bytes": 6511
+    },
+    "b1_a12_backbone_replication_c0_v2/claude45/agentdojo_runs/b1_openrouter_anthropic_claude-sonnet-4.5/workspace/user_task_9/none/none.json": {
+      "sha256": "480716e0f4ae6d4ea485eee8922de35dfca22ea6e6f971eaf1301fb8bcc994d8",
+      "bytes": 7039
+    }
+  }
+}

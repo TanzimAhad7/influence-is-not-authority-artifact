@@ -1,0 +1,18 @@
+{
+  "files": {
+    "A14M_THRESHOLD_AIVR_FREEZE.json": "7a774fcff1827bd26fca96fab90c3139b677761670484399d275e2122a767965",
+    "REPORT.md": "21c96be78855e1dd9c32deb040949669944d49a33029aff5fb5db3a10c96c9ac",
+    "family_aivr_gemma.csv": "91c69394a3dead0c4a8337b9937a739461cc4a26e828596e2e923eb73d0cc4c3",
+    "family_aivr_llama.csv": "24baff721356ed31160a35f8c3875098d797f868f5b9fcda7ecd9a2aafdda446",
+    "loso_aivr_gemma.csv": "e6167368604e34953aa6df1a223acbb9657e326d29335c208d916539f816bcaf",
+    "loso_aivr_llama.csv": "188fee2434daab8f44b5a84c231af518d1b8740e6cfa9d2558939026c184eaf1",
+    "results.json": "f687cfe54caafe158015d99151df046b926b457ce34e66f041e7076bbfe1abfe",
+    "threshold_sweep_gemma.csv": "680b50c3065cabe41d0474ef13b15dd5aa6888715e053e1122c76b1976720184",
+    "threshold_sweep_llama.csv": "0d4b70ae54389a0127cbbffc96dee85396017ae4eff02b8a68a269c890fa83bb"
+  },
+  "inputs": {
+    "gemma": "edbf606d112410e50ff260e63d7008470c5299ddabfd43188ed7d942c42ec0fa",
+    "llama": "1c2ee74880a4a74d2bbfad06a6fad4e0f8c09a0fd474d8a0a9a7e43f5fb91111"
+  },
+  "schema": "A14M_THRESHOLD_AIVR_V1_2026-08-09"
+}

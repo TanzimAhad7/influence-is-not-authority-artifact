@@ -1,0 +1,73 @@
+{
+  "adapter_sha256": "55a44b620a7824a860ce6121e29112ab182472998aef4f8555ea036777efba76",
+  "adapter_smoke_model_calls": 3,
+  "adapter_smoke_sha256": "38f1bb7f5306941398e2982c75c5bd094385d974ac0f99a80d376e6d2d6634a1",
+  "created_utc": "2026-08-11T01:15:22.736961+00:00",
+  "cross_model_protocol_sha256": "4ff9f2a91b59f990af02932b27addde4eea1a93df30d3aecc38febee7b7af9b1",
+  "cross_model_registry_sha256": "2e17ffc7f3c405714e653f4ba04b4ef83bc8183e5ea77f5d17052238504185a8",
+  "freeze_sha256": "eb66d583a7827ac58ec1df9cb07bcb55612615edb26dc193f14792eac73f132b",
+  "gates": {
+    "majority_decisions_min": 23,
+    "majority_definition": ">=3/5",
+    "overall_utility_min": 0.9
+  },
+  "input_hashes": {
+    "P2B_PREFLIGHT_SUMMARY.json": "fdac39d70a952eb28a424bc0538938b549f442225d7b61b90f6d3728c2d2f053",
+    "P2B_REPLAY_CONTEXTS.jsonl": "1bbf011ec0affe6a5d332c61b6dda6d2820c549fe7cbc83439af38bf83b297ec",
+    "P2B_REPLAY_INVENTORY.jsonl": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded"
+  },
+  "model": {
+    "adapter": "canonical_json_adapter_v1",
+    "family": "Llama",
+    "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+    "role": "cross-family replication",
+    "server_port": 8100
+  },
+  "model_key": "llama",
+  "oracle_selftest": {
+    "checks": 26,
+    "passed": 26
+  },
+  "population": {
+    "activated": 18,
+    "controls": 8,
+    "decisions": 26,
+    "repeats": 5,
+    "selection": "exact frozen P2b population"
+  },
+  "runtime": {
+    "agentdojo_version": "0.1.35",
+    "base_url": "http://localhost:8100/v1",
+    "benchmark_version": "v1",
+    "platform": "Linux-5.14.0-687.15.1.el9_8.x86_64-x86_64-with-glibc2.34",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "served_model_id": "meta-llama/Llama-3.1-70B-Instruct",
+    "temperature": 0.0,
+    "vllm_version": "0.26.0"
+  },
+  "schema": "P2B_XMODEL_FREEZE_V1",
+  "scientific_model_calls_before_freeze": 0,
+  "source_files": {
+    "agentdojo_init": {
+      "path": "/home/anon_/ratchet/phase0_pilot/.venv/lib/python3.11/site-packages/agentdojo/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "functions_runtime": {
+      "path": "/home/anon_/ratchet/phase0_pilot/.venv/lib/python3.11/site-packages/agentdojo/functions_runtime.py",
+      "sha256": "3c67f71eb8a7f15d2a15fe9595d84218c5e6868d95fd71d1cef679cd2192d0f7"
+    },
+    "load_suites": {
+      "path": "/home/anon_/ratchet/phase0_pilot/.venv/lib/python3.11/site-packages/agentdojo/task_suite/load_suites.py",
+      "sha256": "e9c97813ed8295f25526733df044e9adf8ba18567eaeec3455591c4fbc1caa12"
+    },
+    "openai_llm": {
+      "path": "/home/anon_/ratchet/phase0_pilot/.venv/lib/python3.11/site-packages/agentdojo/agent_pipeline/llms/openai_llm.py",
+      "sha256": "7f91178cb0bb354b89427650d7b8725d6aff8fe18d43fc85bf4b4fdc1ddf9574"
+    },
+    "task_suite_module": {
+      "path": "/home/anon_/ratchet/phase0_pilot/.venv/lib/python3.11/site-packages/agentdojo/task_suite/task_suite.py",
+      "sha256": "2e69da06f7e150dd6d238c53a74845b56eebeb224e07f694e1051a6e0c6a2bc1"
+    }
+  },
+  "stop_rule": "If baseline gate fails, do not run an intervention under this arm."
+}

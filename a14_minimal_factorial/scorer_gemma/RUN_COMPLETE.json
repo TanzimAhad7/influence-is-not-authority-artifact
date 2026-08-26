@@ -1,0 +1,8 @@
+{
+  "completed_at_utc": "2026-08-09T20:26:51.623080+00:00",
+  "condition_scores_sha256": "edbf606d112410e50ff260e63d7008470c5299ddabfd43188ed7d942c42ec0fa",
+  "model": "google/gemma-3-12b-it",
+  "n_conditions": 96,
+  "protocol_hash": "94bb3c7e0ca174aa8be69b8c0949e7d93a567d960a9ba06016ba4d08f8503ee1",
+  "scorer_label": "gemma"
+}

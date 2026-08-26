@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/anon_/ratchet/phase0_pilot/N6_ATTRIGUARD_N3_TECH_AMENDMENT_v1_1/N6_04_no_model_preflight_and_amend.py", line 225, in <module>
+    main()
+  File "/home/anon_/ratchet/phase0_pilot/N6_ATTRIGUARD_N3_TECH_AMENDMENT_v1_1/N6_04_no_model_preflight_and_amend.py", line 55, in main
+    built=build_messages(unit,base,item["candidate_order"])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anon_/ratchet/phase0_pilot/N6_ATTRIGUARD_N3_TECH_AMENDMENT_v1_1/N6_03_paired_adapter.py", line 150, in build_messages
+    resolver = FunctionCall(function=alias, args=resolver_args_for_base(base), id=rid)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anon_/ratchet/phase0_pilot/N6_ATTRIGUARD_N3_TECH_AMENDMENT_v1_1/N6_03_paired_adapter.py", line 108, in resolver_args_for_base
+    value = base["semantic"]["target_name"]
+            ~~~~^^^^^^^^^^^^
+KeyError: 'semantic'

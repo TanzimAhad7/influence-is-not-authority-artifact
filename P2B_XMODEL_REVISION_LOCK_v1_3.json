@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-08-11T16:23:17.220472+00:00",
+  "lock_sha256": "107dcbc33f07d038ebe011e9ddc10debd8cc3e0ead0608e9c77db0a2fadc3fa2",
+  "models": {
+    "gemma": {
+      "model_id": "google/gemma-3-12b-it",
+      "resolved_from": "main",
+      "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "tokenizer_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+    },
+    "llama": {
+      "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "resolved_from": "main",
+      "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "tokenizer_revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b"
+    },
+    "qwen_canonical": {
+      "model_id": "Qwen/Qwen2.5-72B-Instruct",
+      "resolved_from": "main",
+      "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "tokenizer_revision": "495f39366efef23836d0cfae4fbe635880d2be31"
+    }
+  },
+  "rule": "Immutable model/tokenizer revisions resolved once before any v1.2 scientific model outcome.",
+  "schema": "P2B_XMODEL_REVISION_LOCK_V1_3"
+}

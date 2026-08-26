@@ -1,0 +1,71 @@
+{
+  "attack_summary_pre_synthesis": {
+    "important_instructions": {
+      "n": 200,
+      "security_true": 1,
+      "utility_true": 47
+    },
+    "tool_knowledge": {
+      "n": 200,
+      "security_true": 0,
+      "utility_true": 56
+    }
+  },
+  "config_sha256": "64765c379bf40e3bbad3471c8e0518d171c7c4ec62f9a12977ae05f612b7820a",
+  "hard_boundaries": [
+    "P6 is synthesis/evaluation design, not a new universal scalar or fifth contribution.",
+    "A15a / AgentWatcher-natural / corrected P2b remain historical original-26 subset studies.",
+    "P2b has 390 generations but 78 model\u00d7decision cells; five repeats are stability repeats, not independent samples.",
+    "Selected-population masking analyses are post-hoc and composition-confounded; do not call them causal effects.",
+    "AttriGuard fuzzy-survival routes are not final false positives.",
+    "R2A benign threshold robustness does not establish retained attack sensitivity at alternative thresholds.",
+    "P0b-3 is SAME_EXTERNAL_REGIME with population/suite qualification, not an exact published reproduction."
+  ],
+  "manifest_rows": 422,
+  "manifest_sha256": "3999750de82ef4f7dd3dc79099f89985213fd64b061842d784ddb0e4d561596f",
+  "package_files": [
+    {
+      "bytes": 5884,
+      "path": "P6_00_preflight_and_freeze.py",
+      "sha256": "6168c1535303b4ac062fb452a8783850777eda3531aef3845760a694238dfad7"
+    },
+    {
+      "bytes": 25692,
+      "path": "P6_01_synthesize.py",
+      "sha256": "77035932057f6c197d392cf3c20bee5207563127637b5591c54517a13b911af3"
+    },
+    {
+      "bytes": 2385,
+      "path": "P6_02_verify_and_hash.py",
+      "sha256": "23b731c20a0051d9f6f3b847114c6d21b602693800d1dea6cfe88c1892329569"
+    },
+    {
+      "bytes": 6042,
+      "path": "P6_CONFIG.json",
+      "sha256": "64765c379bf40e3bbad3471c8e0518d171c7c4ec62f9a12977ae05f612b7820a"
+    },
+    {
+      "bytes": 1057,
+      "path": "README.md",
+      "sha256": "5f25d545be07a1461d98560e14c9bbaabc1c7009242002de4565641e22db50a2"
+    },
+    {
+      "bytes": 1531,
+      "path": "RUN_P6_CLEAN.sh",
+      "sha256": "fb55d602c4edd1a3096eb9ff63930fbce59150a83fe8e1bed7fc59befd25427a"
+    },
+    {
+      "bytes": 1220,
+      "path": "p6_common.py",
+      "sha256": "d71a9e56ce253459c430918953e98ae9b32f6cddbd585cc44441574c973bd30f"
+    }
+  ],
+  "population_lineage": {
+    "a13_c0_note": "Coverage-corrected A13 ecological census is 29 valid decisions; P6 does not retroactively expand completed original-26 downstream studies.",
+    "natural_downstream_scope": "Historical original-26 A13-valid subset for A15a / AgentWatcher-natural / corrected P2b; do not describe these rows as corrected-29 prevalence."
+  },
+  "project_root": "/home/anon_/ratchet/phase0_pilot",
+  "schema": "P6_CLEAN_INPUT_FREEZE_V1_2026-08-12",
+  "scientific_model_calls": 0,
+  "status": "PASS"
+}

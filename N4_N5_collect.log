@@ -1,0 +1,5 @@
+[N4/N5-00] INPUT VALIDATION PASS
+[N4/N5-00] closed evidence: A14 + R2A + N3 + B1 + A15a + AgentWatcher + AttriGuard + P2 + P0b-3 + P0b-3-ACT
+[N4/N5-00] no model/network calls; no new endpoint; no combined scalar
+[N4/N5-00] wrote N4_N5_RUN_v1/N4_N5_INPUT_MANIFEST.json
+[N4/N5-00] wrote N4_N5_RUN_v1/N4_N5_EVIDENCE_MATRIX.json

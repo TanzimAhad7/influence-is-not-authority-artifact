@@ -1,0 +1,165 @@
+{
+  "a13_excluding_all_version_changed_historical_tasks": {
+    "bootstrap_valid_draws": 19559,
+    "ci95": [
+      -0.09523809523809523,
+      1.0
+    ],
+    "delegated_mean": 0.06666666666666667,
+    "difference": 0.6,
+    "n_delegated_tasks": 5,
+    "n_specified_tasks": 3,
+    "n_unique_tasks": 8,
+    "specified_mean": 0.6666666666666666
+  },
+  "a13_original": {
+    "bootstrap_valid_draws": 19996,
+    "ci95": [
+      0.15873015873015872,
+      1.0
+    ],
+    "delegated_mean": 0.2222222222222222,
+    "difference": 0.6349206349206349,
+    "n_delegated_tasks": 6,
+    "n_specified_tasks": 7,
+    "n_unique_tasks": 13,
+    "specified_mean": 0.8571428571428571
+  },
+  "agentwatcher_attack_anchor_benchmark_version": "v1.2.2",
+  "agentwatcher_attack_anchor_pair_count": 200,
+  "changed_historical_task_keys": [
+    "slack/user_task_13",
+    "slack/user_task_2",
+    "slack/user_task_4",
+    "travel/user_task_3",
+    "workspace/user_task_12",
+    "workspace/user_task_13",
+    "workspace/user_task_15",
+    "workspace/user_task_21",
+    "workspace/user_task_4",
+    "workspace/user_task_6",
+    "workspace/user_task_9"
+  ],
+  "claim_boundary": "This audit does not modify frozen historical results; it only determines version-specific qualification or need for targeted revalidation.",
+  "gate_status": "HEADLINE_TASK_DIFFERENCE_BUT_EXISTING_DELETION_SENSITIVITY_PRESERVES_BROAD_DIRECTIONS",
+  "historical_impact_class_counts": {
+    "PROMPT_OR_GROUND_TRUTH_CHANGE": 32,
+    "UNKNOWN_REQUIRES_MANUAL_REVIEW": 12
+  },
+  "old_version": "v1",
+  "p2b_excluding_all_version_changed_historical_tasks": [
+    {
+      "excluding_all_version_changed_historical_tasks": {
+        "action_local_rate": 0.4,
+        "action_majority_cells": 6,
+        "downstream_majority_cells": 11,
+        "downstream_rate": 0.7333333333333333,
+        "n_decisions": 15
+      },
+      "model": "gemma",
+      "original": {
+        "action_local_rate": 0.2692307692307692,
+        "action_majority_cells": 7,
+        "downstream_majority_cells": 15,
+        "downstream_rate": 0.5769230769230769,
+        "n_decisions": 26
+      }
+    },
+    {
+      "excluding_all_version_changed_historical_tasks": {
+        "action_local_rate": 0.5333333333333333,
+        "action_majority_cells": 8,
+        "downstream_majority_cells": 12,
+        "downstream_rate": 0.8,
+        "n_decisions": 15
+      },
+      "model": "llama",
+      "original": {
+        "action_local_rate": 0.38461538461538464,
+        "action_majority_cells": 10,
+        "downstream_majority_cells": 17,
+        "downstream_rate": 0.6538461538461539,
+        "n_decisions": 26
+      }
+    },
+    {
+      "excluding_all_version_changed_historical_tasks": {
+        "action_local_rate": 0.5333333333333333,
+        "action_majority_cells": 8,
+        "downstream_majority_cells": 12,
+        "downstream_rate": 0.8,
+        "n_decisions": 15
+      },
+      "model": "qwen",
+      "original": {
+        "action_local_rate": 0.4230769230769231,
+        "action_majority_cells": 11,
+        "downstream_majority_cells": 19,
+        "downstream_rate": 0.7307692307692307,
+        "n_decisions": 26
+      }
+    }
+  ],
+  "schema": "P0BV_RESULT_V1",
+  "scientific_model_calls": 0,
+  "suite_summary": [
+    {
+      "changed_injection_tasks": 8,
+      "changed_user_tasks": 2,
+      "environment_changed": false,
+      "new_injection_tasks": 9,
+      "new_user_tasks": 16,
+      "new_version": "v1.2.2",
+      "old_injection_tasks": 9,
+      "old_user_tasks": 16,
+      "old_version": "v1",
+      "suite": "banking",
+      "tools_changed": false
+    },
+    {
+      "changed_injection_tasks": 0,
+      "changed_user_tasks": 8,
+      "environment_changed": false,
+      "new_injection_tasks": 5,
+      "new_user_tasks": 21,
+      "new_version": "v1.2.2",
+      "old_injection_tasks": 5,
+      "old_user_tasks": 21,
+      "old_version": "v1",
+      "suite": "slack",
+      "tools_changed": false
+    },
+    {
+      "changed_injection_tasks": 4,
+      "changed_user_tasks": 20,
+      "environment_changed": false,
+      "new_injection_tasks": 7,
+      "new_user_tasks": 20,
+      "new_version": "v1.2.2",
+      "old_injection_tasks": 7,
+      "old_user_tasks": 20,
+      "old_version": "v1",
+      "suite": "travel",
+      "tools_changed": false
+    },
+    {
+      "changed_injection_tasks": 13,
+      "changed_user_tasks": 23,
+      "environment_changed": false,
+      "new_injection_tasks": 14,
+      "new_user_tasks": 40,
+      "new_version": "v1.2.2",
+      "old_injection_tasks": 6,
+      "old_user_tasks": 40,
+      "old_version": "v1",
+      "suite": "workspace",
+      "tools_changed": false
+    }
+  ],
+  "target_version": "v1.2.2",
+  "task_class_counts": {
+    "IDENTICAL_FOR_OUR_ESTIMAND": 44,
+    "PROMPT_OR_GROUND_TRUTH_CHANGE": 41,
+    "UNKNOWN_REQUIRES_MANUAL_REVIEW": 12
+  }
+}

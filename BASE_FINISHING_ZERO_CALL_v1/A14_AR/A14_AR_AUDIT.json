@@ -1,0 +1,104 @@
+{
+  "claim_boundary": "This is a provenance-only zero-call audit. It does not alter condition_scores.jsonl, RUN_COMPLETE.json, or any frozen A14 scientific result.",
+  "created_at_utc": "2026-08-13T23:51:03.516612+00:00",
+  "project_root": "/home/anon_/ratchet/phase0_pilot",
+  "schema": "A14_RAW_RESPONSE_RECOVERY_AUDIT_V1",
+  "scientific_model_calls": 0,
+  "scorers": [
+    {
+      "ablation_counts": {
+        "DELETE__DESC": 48,
+        "DELETE__S_REL": 96,
+        "DELETE__U": 96,
+        "DELETE__U_LINEAGE_CLOSURE": 48,
+        "DELETE__U_PLUS_RELEVANT": 48,
+        "FULL": 96,
+        "REPLACE__DESC": 48,
+        "REPLACE__S_REL": 96,
+        "REPLACE__U": 96
+      },
+      "authoritative_condition_scores_ok": true,
+      "auxiliary_ledgers": {
+        "raw_requests.jsonl": {
+          "cache_keys": 672,
+          "present": true,
+          "rows": 672,
+          "sha256": "c3de9761191f7002ea76311e3556378d2fe70bca86606d22080c25ffb2d2eb8c"
+        },
+        "score_cache.jsonl": {
+          "cache_keys": 672,
+          "present": true,
+          "rows": 672,
+          "sha256": "3f4681dd1a4dac53a33c5cd3189f8525557d2b7076ce08eba964956fb5e4e3d1"
+        }
+      },
+      "condition_score_rows": 96,
+      "condition_scores_sha256": "1c2ee74880a4a74d2bbfad06a6fad4e0f8c09a0fd474d8a0a9a7e43f5fb91111",
+      "deep_checks": {
+        "cache_key_count": 672,
+        "key_sets_equal": true,
+        "raw_key_count": 672,
+        "raw_response_to_score_cache_exact_matches": 672,
+        "raw_response_to_score_cache_failures": [],
+        "request_key_count": 672
+      },
+      "deep_reconciliation_ok": true,
+      "directory": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/scorer_llama",
+      "label": "llama",
+      "raw_condition_count": 96,
+      "raw_conditions_match_96_scores": true,
+      "raw_response_rows": 672,
+      "raw_responses_bytes": 31837346,
+      "raw_responses_sha256": "4dcd7fcfba6d467165f600dbd30eb37ebfbff43521498f5c1f5f8308a553efc7",
+      "raw_unique_cache_keys": 672,
+      "run_complete_sha256": "e1b1d934d79d92674e2c24e2d55819e510c0c08d5f931489598885c0153dbf25",
+      "status": "COMPLETE_RECOVERED_RAW_LEDGER"
+    },
+    {
+      "ablation_counts": {
+        "DELETE__DESC": 48,
+        "DELETE__S_REL": 96,
+        "DELETE__U": 96,
+        "DELETE__U_LINEAGE_CLOSURE": 48,
+        "FULL": 96
+      },
+      "authoritative_condition_scores_ok": true,
+      "auxiliary_ledgers": {
+        "raw_requests.jsonl": {
+          "cache_keys": 384,
+          "present": true,
+          "rows": 384,
+          "sha256": "b2a956fa29d7d9a18b44589779f8566e5d6338d6a71b31edbd954a597a2f60c7"
+        },
+        "score_cache.jsonl": {
+          "cache_keys": 384,
+          "present": true,
+          "rows": 384,
+          "sha256": "ef92d4b90df294a90a401fd71784fd5f74d95d40107476bd67a4a8d5f933f4c4"
+        }
+      },
+      "condition_score_rows": 96,
+      "condition_scores_sha256": "edbf606d112410e50ff260e63d7008470c5299ddabfd43188ed7d942c42ec0fa",
+      "deep_checks": {
+        "cache_key_count": 384,
+        "key_sets_equal": true,
+        "raw_key_count": 384,
+        "raw_response_to_score_cache_exact_matches": 384,
+        "raw_response_to_score_cache_failures": [],
+        "request_key_count": 384
+      },
+      "deep_reconciliation_ok": true,
+      "directory": "/home/anon_/ratchet/phase0_pilot/a14_minimal_factorial/scorer_gemma",
+      "label": "gemma",
+      "raw_condition_count": 96,
+      "raw_conditions_match_96_scores": true,
+      "raw_response_rows": 384,
+      "raw_responses_bytes": 19461917,
+      "raw_responses_sha256": "fdffd1ba81329d04e82b72caf8ce0f053ca052777b9aa02b2bee51162a802c16",
+      "raw_unique_cache_keys": 384,
+      "run_complete_sha256": "8c6bd4b493ed8c9745e1413450616562bfc1fb6218ef96d04fb127476e4a4581",
+      "status": "COMPLETE_RECOVERED_RAW_LEDGER"
+    }
+  ],
+  "status": "A14_AR_COMPLETE"
+}

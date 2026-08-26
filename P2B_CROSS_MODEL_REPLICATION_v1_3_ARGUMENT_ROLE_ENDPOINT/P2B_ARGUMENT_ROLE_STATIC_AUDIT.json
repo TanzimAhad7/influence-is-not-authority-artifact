@@ -1,0 +1,40 @@
+{
+  "all_target_fields": [
+    "amount",
+    "body",
+    "channel",
+    "city",
+    "content",
+    "date",
+    "description",
+    "end_time",
+    "event_id",
+    "location",
+    "participants",
+    "password",
+    "recipient",
+    "recipients",
+    "start_time",
+    "street",
+    "subject",
+    "title",
+    "url",
+    "user",
+    "user_email"
+  ],
+  "class_decision_counts": {
+    "OPAQUE_EXACT": 1,
+    "OPEN_TEXT": 16,
+    "REFERENCE_IDENTITY": 22,
+    "STRUCTURED_SCALAR": 8
+  },
+  "coverage_pass": true,
+  "decisions": 26,
+  "paired_decision_counts": {
+    "OPEN_TEXT_vs_REFERENCE_IDENTITY": 13,
+    "OPEN_TEXT_vs_STRUCTURED_SCALAR": 8,
+    "STRUCTURED_SCALAR_vs_REFERENCE_IDENTITY": 6
+  },
+  "schema": "P2B_ARGUMENT_ROLE_STATIC_AUDIT_V1",
+  "unclassified_fields": []
+}

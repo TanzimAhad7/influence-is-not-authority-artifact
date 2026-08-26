@@ -1,0 +1,1902 @@
+{
+  "cases": [
+    {
+      "case_id": "stress_long_history_open_text",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 7,
+              "reference_id": "SYN-LONG-FINAL",
+              "text": "Line one.\nLine two: punctuation, commas, and unicode ✓."
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "long_history_12_prior_calls",
+        "multiple_prior_tool_calls",
+        "open_text",
+        "unicode"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context. Values are artificial and non-benchmark.",
+          "role": "system"
+        },
+        {
+          "content": "Begin synthetic workflow ALPHA.",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-00"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_0",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-0\", \"reference_id\": \"SYN-LONG-00\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c0"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-01"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_1",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-1\", \"reference_id\": \"SYN-LONG-01\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c1"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-02"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_2",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-2\", \"reference_id\": \"SYN-LONG-02\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c2"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-03"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_3",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-3\", \"reference_id\": \"SYN-LONG-03\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c3"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-04"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_4",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-4\", \"reference_id\": \"SYN-LONG-04\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c4"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-05"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_5",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-5\", \"reference_id\": \"SYN-LONG-05\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c5"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-06"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_6",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-6\", \"reference_id\": \"SYN-LONG-06\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c6"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-07"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_7",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-7\", \"reference_id\": \"SYN-LONG-07\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c7"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-08"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_8",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-8\", \"reference_id\": \"SYN-LONG-08\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c8"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-09"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_9",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-9\", \"reference_id\": \"SYN-LONG-09\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c9"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-10"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_10",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-10\", \"reference_id\": \"SYN-LONG-10\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c10"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-LONG-11"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_long_history_open_text_11",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"payload\": \"payload-11\", \"reference_id\": \"SYN-LONG-11\", \"status\": \"ok\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "c11"
+        },
+        {
+          "content": "Next action must call write_synthetic_note exactly once with reference_id=\"SYN-LONG-FINAL\", text=\"Line one.\nLine two: punctuation, commas, and unicode ✓.\", priority=7.",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_structured_datetime_and_participants",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "end_time": "2099-11-05 10:45",
+              "participants": [
+                "quasar@example.test",
+                "nebula@example.test"
+              ],
+              "start_time": "2099-11-05 09:30",
+              "title": "Synthetic Review"
+            },
+            "name": "schedule_synthetic_slot"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "structured_date_time_scalars",
+        "identity_reference_array"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "Prepare a synthetic scheduling operation.",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-CAL-REF"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_structured_datetime_and_participants_0",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"status\": \"ok\", \"timezone\": \"UTC\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "cal0"
+        },
+        {
+          "content": "Next action must call schedule_synthetic_slot exactly once with title=\"Synthetic Review\", start_time=\"2099-11-05 09:30\", end_time=\"2099-11-05 10:45\", participants=[\"quasar@example.test\",\"nebula@example.test\"].",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_branch_progression",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-BETA",
+              "note": "validate transition",
+              "step": 2
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "multi_step_branch_progression",
+        "historical_action_imitation_risk"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "Synthetic branch BETA begins.",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "branch_id": "SYN-BETA",
+                "note": "initialize",
+                "step": 1
+              },
+              "function": "advance_synthetic_branch",
+              "id": "stress_hist_stress_branch_progression_0",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"branch_id\": \"SYN-BETA\", \"step_completed\": 1}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "advance_synthetic_branch"
+          },
+          "tool_call_id": "b1"
+        },
+        {
+          "content": "Continue the branch. The NEXT action must advance step 2, not repeat step 1. Call advance_synthetic_branch with branch_id=\"SYN-BETA\", step=2, note=\"validate transition\".",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_reference_identity",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 3,
+              "reference_id": "SYN-ID-441",
+              "text": "Use the canonical synthetic reference exactly."
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "reference_identity",
+        "open_text"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "Resolve synthetic reference.",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-ID-441"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_reference_identity_0",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"canonical_reference_id\": \"SYN-ID-441\", \"display_name\": \"Synthetic Person\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "r1"
+        },
+        {
+          "content": "Next action must call write_synthetic_note with reference_id=\"SYN-ID-441\", text=\"Use the canonical synthetic reference exactly.\", priority=3.",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_same_role_normalization",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "reference_id": "SYN-ADJ-9"
+            },
+            "name": "lookup_synthetic_record"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "same_role_adjacency",
+        "text_history"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "First user block.",
+          "role": "user"
+        },
+        {
+          "content": "Second adjacent user block must be retained.",
+          "role": "user"
+        },
+        {
+          "content": "Acknowledged synthetic history.",
+          "role": "assistant",
+          "tool_calls": []
+        },
+        {
+          "content": "Second adjacent assistant block must be retained.",
+          "role": "assistant",
+          "tool_calls": []
+        },
+        {
+          "content": "Next action must call lookup_synthetic_record with reference_id=\"SYN-ADJ-9\".",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_mixed_multi_action_history",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 11,
+              "reference_id": "SYN-MIX-FINAL",
+              "text": "final synthetic note"
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "multiple_previous_tool_calls",
+        "long_history",
+        "different_tool_types"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "Inspect then branch.",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MIX-0"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_mixed_multi_action_history_0",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"value\": 0}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "m0"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MIX-1"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_mixed_multi_action_history_1",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"value\": 1}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "m1"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MIX-2"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_mixed_multi_action_history_2",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"value\": 2}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "m2"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MIX-3"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_mixed_multi_action_history_3",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"value\": 3}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "m3"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MIX-4"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_mixed_multi_action_history_4",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"value\": 4}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "m4"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "branch_id": "SYN-MIX-B",
+                "note": "prior",
+                "step": 4
+              },
+              "function": "advance_synthetic_branch",
+              "id": "stress_hist_stress_mixed_multi_action_history_5",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "advance_synthetic_branch"
+          },
+          "tool_call_id": "mb"
+        },
+        {
+          "content": "Next action must call write_synthetic_note with reference_id=\"SYN-MIX-FINAL\", text=\"final synthetic note\", priority=11.",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_explicit_text_no_action",
+      "expected": {
+        "action_type": "text",
+        "calls": [],
+        "content": "SYNTHETIC_NO_ACTION_OK"
+      },
+      "features": [
+        "genuine_no_action_branch"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "No tool is needed for this synthetic test. Return a text action saying exactly: SYNTHETIC_NO_ACTION_OK",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_tool_result_user_adjacency",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-EDGE-B",
+              "note": "after tool result",
+              "step": 9
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "tool_result_then_user",
+        "structured_scalar"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical context.",
+          "role": "system"
+        },
+        {
+          "content": "Fetch a synthetic record.",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-EDGE-1"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "stress_hist_stress_tool_result_user_adjacency_0",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "{\"reference_id\": \"SYN-EDGE-1\", \"value\": \"A:B,C\"}",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "function": "lookup_synthetic_record"
+          },
+          "tool_call_id": "edge1"
+        },
+        {
+          "content": "Immediately after the tool result, the next action must call advance_synthetic_branch with branch_id=\"SYN-EDGE-B\", step=9, note=\"after tool result\".",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_assistant_text_plus_tool_call",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 5,
+              "reference_id": "SYN-CONTENT-1",
+              "text": "historical assistant text preserved"
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "assistant_text_with_tool_call",
+        "lossless_historical_content",
+        "tool_result",
+        "reference_identity"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical interface test only.",
+          "role": "system"
+        },
+        {
+          "content": "First look up the synthetic record SYN-CONTENT-1.",
+          "role": "user"
+        },
+        {
+          "content": "I will look up the synthetic record before continuing.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-CONTENT-1"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "synthetic-content-call-1",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "Synthetic lookup result: record SYN-CONTENT-1 exists.",
+          "error": null,
+          "role": "tool",
+          "tool_call": {
+            "args": {
+              "reference_id": "SYN-CONTENT-1"
+            },
+            "function": "lookup_synthetic_record",
+            "id": "synthetic-content-call-1",
+            "placeholder_args": null
+          },
+          "tool_call_id": "synthetic-content-call-1"
+        },
+        {
+          "content": "Now call write_synthetic_note exactly once with reference_id=\"SYN-CONTENT-1\", text=\"historical assistant text preserved\", priority=5.",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    },
+    {
+      "case_id": "stress_adjacent_assistant_tool_envelopes",
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-MERGE-B",
+              "note": "merged assistant history preserved",
+              "step": 3
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "features": [
+        "same_role_assistant_adjacency",
+        "multiple_calls_in_merged_history",
+        "assistant_text_with_tool_call",
+        "lossless_historical_content"
+      ],
+      "history": [
+        {
+          "content": "Synthetic excluded technical interface test only.",
+          "role": "system"
+        },
+        {
+          "content": "Synthetic history contains two adjacent assistant actions for normalization testing.",
+          "role": "user"
+        },
+        {
+          "content": "First synthetic action.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MERGE-1"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "synthetic-merge-1",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "Second synthetic action.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "args": {
+                "reference_id": "SYN-MERGE-2"
+              },
+              "function": "lookup_synthetic_record",
+              "id": "synthetic-merge-2",
+              "placeholder_args": null
+            }
+          ]
+        },
+        {
+          "content": "Next action must call advance_synthetic_branch exactly once with branch_id=\"SYN-MERGE-B\", step=3, note=\"merged assistant history preserved\".",
+          "role": "user"
+        }
+      ],
+      "tools": [
+        {
+          "description": "Look up a synthetic record by exact reference.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "reference_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id"
+            ],
+            "type": "object"
+          },
+          "name": "lookup_synthetic_record"
+        },
+        {
+          "description": "Write a synthetic note.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "type": "integer"
+              },
+              "reference_id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference_id",
+              "text",
+              "priority"
+            ],
+            "type": "object"
+          },
+          "name": "write_synthetic_note"
+        },
+        {
+          "description": "Schedule a synthetic time slot.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "end_time": {
+                "type": "string"
+              },
+              "participants": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "start_time",
+              "end_time",
+              "participants"
+            ],
+            "type": "object"
+          },
+          "name": "schedule_synthetic_slot"
+        },
+        {
+          "description": "Advance a synthetic workflow branch.",
+          "input_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              },
+              "step": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "branch_id",
+              "step",
+              "note"
+            ],
+            "type": "object"
+          },
+          "name": "advance_synthetic_branch"
+        }
+      ]
+    }
+  ],
+  "rule": "These synthetic cases are excluded from every scientific endpoint and may be used only before the global science freeze to validate the common interface. Technical validation also requires lossless preservation of natural-language assistant content when a historical assistant turn contains tool calls.",
+  "schema": "P2B_XM_CI_EXCLUDED_STRESS_CONTEXTS_V1",
+  "scientific": false
+}

@@ -1,0 +1,313 @@
+{
+  "locks": [
+    {
+      "case_id": "CASE_001",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "d11975807065b89a09381b0f62330010c46f3badf584c7633f735f283bcf58e5"
+    },
+    {
+      "case_id": "CASE_001",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "injection_bill_text"
+      ],
+      "sha256": "b4a11121805297bda515843bd3c6f79039eef595b61af97437c7edca3ddef6dc"
+    },
+    {
+      "case_id": "CASE_001",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "injection_bill_text"
+      ],
+      "sha256": "d15227758213840c547b5d25b0756638c01ef1c4a40afe6355a5638c5d88b20c"
+    },
+    {
+      "case_id": "CASE_002",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "d11975807065b89a09381b0f62330010c46f3badf584c7633f735f283bcf58e5"
+    },
+    {
+      "case_id": "CASE_002",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "injection_incoming_transaction"
+      ],
+      "sha256": "3c6060e69babdf9d621da91b42babd19c52ad3c7d65b517d391a3a78c324665b"
+    },
+    {
+      "case_id": "CASE_002",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "injection_incoming_transaction"
+      ],
+      "sha256": "2145135b3b4a8b25047f141bdba1b5485b53fec4137724158fce8f1dde148b1b"
+    },
+    {
+      "case_id": "CASE_003",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "26c4b2d2b3306fc0a7b70d2e2db6334cc70b66f5788d39656a0a4df955c88db6"
+    },
+    {
+      "case_id": "CASE_003",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "injection_web_0"
+      ],
+      "sha256": "19f46c2d3a7f187d7564c90fede9271381b99cde0aa588895522ff683b28bf0a"
+    },
+    {
+      "case_id": "CASE_003",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "injection_web_0"
+      ],
+      "sha256": "e87faa6d5b6b2ee3caa6c2c45cab716a4f1807f39a4de87385fdcba6ad08076a"
+    },
+    {
+      "case_id": "CASE_004",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "26c4b2d2b3306fc0a7b70d2e2db6334cc70b66f5788d39656a0a4df955c88db6"
+    },
+    {
+      "case_id": "CASE_004",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "prompt_injection_channel"
+      ],
+      "sha256": "2c6e4cd1eab3bbcac6d8f10356494b14763d1a1350c895d1ade49f24e9db7ad9"
+    },
+    {
+      "case_id": "CASE_004",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "prompt_injection_channel"
+      ],
+      "sha256": "eec00e1fef7774b7b71e85f682de2fb56e0b00ed37e906849a63414218df51c0"
+    },
+    {
+      "case_id": "CASE_005",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "26c4b2d2b3306fc0a7b70d2e2db6334cc70b66f5788d39656a0a4df955c88db6"
+    },
+    {
+      "case_id": "CASE_005",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "injection_dora_0"
+      ],
+      "sha256": "5accdfd8188f718c1f3a7e1873c1864459949dac5a8c195daf40123c75e661aa"
+    },
+    {
+      "case_id": "CASE_005",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "injection_dora_0"
+      ],
+      "sha256": "40d266b020d719fde14d04729ba5d2d7e97ce42169266fb77a4d652e1f2b1f5a"
+    },
+    {
+      "case_id": "CASE_006",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "26c4b2d2b3306fc0a7b70d2e2db6334cc70b66f5788d39656a0a4df955c88db6"
+    },
+    {
+      "case_id": "CASE_006",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "injection_dora_0"
+      ],
+      "sha256": "5accdfd8188f718c1f3a7e1873c1864459949dac5a8c195daf40123c75e661aa"
+    },
+    {
+      "case_id": "CASE_006",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "injection_dora_0"
+      ],
+      "sha256": "40d266b020d719fde14d04729ba5d2d7e97ce42169266fb77a4d652e1f2b1f5a"
+    },
+    {
+      "case_id": "CASE_007",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "26c4b2d2b3306fc0a7b70d2e2db6334cc70b66f5788d39656a0a4df955c88db6"
+    },
+    {
+      "case_id": "CASE_007",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "prompt_injection_eve_blog"
+      ],
+      "sha256": "d0509296dd05085f9ea9c2fc119c54e477f0adde0490c3c15ca34ba9f53e4e94"
+    },
+    {
+      "case_id": "CASE_007",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "prompt_injection_eve_blog"
+      ],
+      "sha256": "cef0e7b1fcbfa0825550234f6ecf2df67c921537091461a99736d27de7eb1458"
+    },
+    {
+      "case_id": "CASE_008",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "721680f829b54b3cb694b10facb42a5ec0fd88aa1e13759bf77955b8aedc937c"
+    },
+    {
+      "case_id": "CASE_008",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "injection_hotels_0"
+      ],
+      "sha256": "61e3699f06d6d67ec7e92cf314ab29f0ed14e80af3921b32dcd8021efaac7a53"
+    },
+    {
+      "case_id": "CASE_008",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "injection_hotels_0"
+      ],
+      "sha256": "787ad27b817a13920c2468e3599eb6569b5d0d52ed6ed05ebf8fb0f43660ea1a"
+    },
+    {
+      "case_id": "CASE_009",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "1846a09e84dbeb1ffc8781b3592ad6ba9fffe62e61cb25d7bd0bb3107e026447"
+    },
+    {
+      "case_id": "CASE_009",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "calendar_project_kickoff_description"
+      ],
+      "sha256": "bb16313251c8bd235f15849b1958e4cdec30bfa0091e7e883b0191efc0bdec47"
+    },
+    {
+      "case_id": "CASE_009",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "calendar_project_kickoff_description"
+      ],
+      "sha256": "29d586dbfa74efb9a48b4686f5575b43db98e7d1d67afd6dee07bfb771c9ddb7"
+    },
+    {
+      "case_id": "CASE_010",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "1846a09e84dbeb1ffc8781b3592ad6ba9fffe62e61cb25d7bd0bb3107e026447"
+    },
+    {
+      "case_id": "CASE_010",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "email_events_injection"
+      ],
+      "sha256": "b1ddcce02cd70a97ef3afbd2415690cd6b3b639f236fe6e4fdd86efd7351d032"
+    },
+    {
+      "case_id": "CASE_010",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "email_events_injection"
+      ],
+      "sha256": "2e6cb7a6c1fe9b939f6b60a45b983e486d2b721e34cf7d836615901ac5e06329"
+    },
+    {
+      "case_id": "CASE_011",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "1846a09e84dbeb1ffc8781b3592ad6ba9fffe62e61cb25d7bd0bb3107e026447"
+    },
+    {
+      "case_id": "CASE_011",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "calendar_introductory_meeting_injection"
+      ],
+      "sha256": "deee4bab1699f66d61fe24a5508d6433ddea960639c8c178b3d9f0f820348e0d"
+    },
+    {
+      "case_id": "CASE_011",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "calendar_introductory_meeting_injection"
+      ],
+      "sha256": "1c4850a3cbf1f2bf43cb7df57438668ebdcb817f53b60582e486f3883d664ca0"
+    },
+    {
+      "case_id": "CASE_012",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "1846a09e84dbeb1ffc8781b3592ad6ba9fffe62e61cb25d7bd0bb3107e026447"
+    },
+    {
+      "case_id": "CASE_012",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "calendar_introductory_meeting_injection"
+      ],
+      "sha256": "dd34c38f0ddbb6b6ccb4b1764aa6bad59e2fab386df1b703ad99bf422207b7b5"
+    },
+    {
+      "case_id": "CASE_012",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "calendar_introductory_meeting_injection"
+      ],
+      "sha256": "041ff59fb06c6d1d632e988a15656aba88bdd2eacd0179704537fad1264d15c2"
+    },
+    {
+      "case_id": "CASE_013",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "1846a09e84dbeb1ffc8781b3592ad6ba9fffe62e61cb25d7bd0bb3107e026447"
+    },
+    {
+      "case_id": "CASE_013",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "calendar_project_kickoff_description"
+      ],
+      "sha256": "eb9f84b85d0975cfdafb5408a9935e197affb1c09f205bd9e4b08c6f6bb1a9b2"
+    },
+    {
+      "case_id": "CASE_013",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "calendar_project_kickoff_description"
+      ],
+      "sha256": "1f131e40cf53dab299a6512b85db5e98bd39f47c72206b023f8c8fdbcf865222"
+    },
+    {
+      "case_id": "CASE_014",
+      "context": "CLEAN",
+      "injection_keys": [],
+      "sha256": "1846a09e84dbeb1ffc8781b3592ad6ba9fffe62e61cb25d7bd0bb3107e026447"
+    },
+    {
+      "case_id": "CASE_014",
+      "context": "ALIGNED",
+      "injection_keys": [
+        "calendar_introductory_meeting_injection"
+      ],
+      "sha256": "a960fcca959186dfabda80ab3ada0a328297081698a5ba1a69143b1b748212b7"
+    },
+    {
+      "case_id": "CASE_014",
+      "context": "CONFLICT",
+      "injection_keys": [
+        "calendar_introductory_meeting_injection"
+      ],
+      "sha256": "97865b03d649e15433d54610eb2284f2a7661e43b80e6e1d44f6d7d658b22411"
+    }
+  ],
+  "schema": "E2E_PRE_ENVIRONMENT_LOCKS_V1"
+}

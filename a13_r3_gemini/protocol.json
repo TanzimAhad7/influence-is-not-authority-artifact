@@ -1,0 +1,147 @@
+{
+  "study": "A13-R3 Gemini-2.5-Flash agent + boundary-safe Llama scorer replication",
+  "scientific_status": "prospective proprietary-agent robustness replication frozen after A13/R1/R1B/R2 but before any R3 AgentDojo outcome",
+  "source_sha256": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719",
+  "agentdojo_version": "0.1.35",
+  "benchmark_version": "v1",
+  "suites": [
+    "workspace",
+    "slack",
+    "travel",
+    "banking"
+  ],
+  "agent_model": "google/gemini-2.5-flash",
+  "scorer_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "scorer_base_url": "http://localhost:8110/v1",
+  "agent_provider": "openrouter_openai_compatible",
+  "agent_base_url": "https://openrouter.ai/api/v1",
+  "agent_wrapper": "agentdojo.agent_pipeline.llms.openai_llm.OpenAILLM",
+  "agent_pipeline_name": "openrouter_google_gemini-2.5-flash",
+  "agent_temperature": 0.0,
+  "agent_api_key_env": "OPENROUTER_API_KEY",
+  "pre_outcome_technical_amendment": "Custom OpenAILLM instances have name=None in AgentDojo 0.1.35, which prevents TraceLogger/OutputLogger from writing benchmark logs. Set an explicit deterministic pipeline name only; no task population, mapper, endpoint, scorer, or inference changed.",
+  "provider_routing_policy": "OpenRouter default routing with frozen model ID/base URL; no explicit upstream-provider pin",
+  "no_injection": true,
+  "parent_chain": {
+    "a13_manifest_sha256": "971eb1ea932a2bc9687c288532b3b9e1b8ae608a492b068d1edf8eae33b0cf0b",
+    "a13_protocol_hash": "b4a140c7d8ef49149ac72e35e9e52405f614fa5361558c7b2ac0c56fe0063b80",
+    "a13_taxonomy_sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "a13_decisions_sha256": "af6a62c5689e7d26180f0091a121839b645e1dcb54e5aaf87427f6e75c19dca9",
+    "r1b_manifest_sha256": "1e6ce3d58ecf6b2bc80eee09754185bf59e09a325a422711d9c876fa5186d712",
+    "r1b_protocol_hash": "3f8591539a8036ce2dbcdd2781cfb3d3eb460533bf45255e44543b9e429322a1",
+    "r1b_decisions_sha256": "cd3b34082e6896e151c173ffd6f48a54e780682f34870f4649831c49dcb7f668",
+    "r2_manifest_sha256": "b71be918fa71970e531b79bf02919e7571daa3eaba07fa3ed8704d15fc21e403",
+    "r2_protocol_hash": "c857e8988cd1412c439116cb941a26a256227e97650778c82894b37068419b28",
+    "r2_taxonomy_sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "r2_decisions_sha256": "34cc6a49202ecb52b7a41fbc376cb38323dd6c3bf9ab19ead3a4ce8c4779fec5",
+    "r2_results_sha256": "0cc7f73e2a0148c5bb5ae41507e2e9c25ee632a3d2eecbd52ccb47f87cb6c1a7"
+  },
+  "taxonomy": {
+    "source": "exact frozen A13 taxonomy; no R3 relabeling",
+    "sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "untouched_label_counts": {
+      "SPECIFIED": 20,
+      "PARTIAL": 27,
+      "DELEGATED": 22,
+      "UNCLASSIFIABLE": 3
+    },
+    "specified_fraction_min": 0.8,
+    "delegated_fraction_max": 0.2,
+    "partial_descriptive_only": true,
+    "development_tasks": [
+      [
+        "slack",
+        "user_task_20"
+      ],
+      [
+        "travel",
+        "user_task_19"
+      ],
+      [
+        "workspace",
+        "user_task_19"
+      ]
+    ]
+  },
+  "mapping": {
+    "name": "monotonic_same_function_max_argument_overlap_v1",
+    "unit": "ground-truth privileged decision",
+    "candidate_rule": "unused same-function actual privileged calls strictly after the previous mapped actual call",
+    "selection_rule": "choose candidate with maximum normalized GT-vs-actual argument overlap; exact ties choose earliest actual call",
+    "overlap_definition": "fraction over union of argument keys with normalized_text(gt[k]) == normalized_text(actual[k]); empty union=1",
+    "minimum_overlap_required": null,
+    "a13_parent_remapping": "FORBIDDEN",
+    "r2_mapper_reuse": "EXACT; no R3 mapper change"
+  },
+  "span_eligibility": "prior role==\"tool\" message with non-empty stripped textual content; tiny nonempty included; empty excluded",
+  "ablation": {
+    "primary": "true deletion of U and every eligible tool message",
+    "secondary": "character-matched neutral substitution",
+    "partial_score_sets": "forbidden"
+  },
+  "boundary_safe_scoring": {
+    "prompt": "tokenize separately with add_special_tokens=True",
+    "completion": "tokenize separately with add_special_tokens=False",
+    "server_input": "explicit token IDs prompt_ids + completion_ids",
+    "server_add_special_tokens": false,
+    "invariant": "completion token count/hash must be identical across full, U deletion/substitution, and every S deletion/substitution"
+  },
+  "primary_hypothesis": "P(H_mean_del=1|SPECIFIED) > P(H_mean_del=1|DELEGATED)",
+  "primary_endpoint": "H_mean_del = I[dU_del > mean(dS_del)]",
+  "continuous_companion": "M_del = dU_del - mean(dS_del)",
+  "r_metric": "secondary/descriptive only",
+  "inference": {
+    "task_weighting": "equal weight per task within label",
+    "cluster_bootstrap_unit": "task",
+    "bootstrap_B": 5000,
+    "bootstrap_seed": 130013,
+    "minimum_tasks_per_label_for_ci": 3
+  },
+  "sensitivity_grid": [
+    {
+      "specified_min": 0.9,
+      "delegated_max": 0.1
+    },
+    {
+      "specified_min": 0.8,
+      "delegated_max": 0.2
+    },
+    {
+      "specified_min": 0.7,
+      "delegated_max": 0.3
+    }
+  ],
+  "population_reporting": {
+    "gemini_specific": "all R3 primary-valid decisions/tasks",
+    "qwen_gemini_common_support": "decision IDs primary-valid in R3 and present in fixed-valid R1B; Qwen trajectories use the same boundary-safe Llama scorer",
+    "llama_gemini_common_support": "decision IDs primary-valid in both R2 and R3 under the same boundary-safe Llama scorer",
+    "three_way_common_support": "decision IDs primary-valid in R3, fixed-valid R1B, and primary-valid R2",
+    "strict_action_matched_support": "descriptive subset requiring exact normalized final-action signature match"
+  },
+  "diagnostic_only_path_fields": {
+    "frozen_before_r3_outcomes": true,
+    "affect_primary_analysis": false,
+    "fields": [
+      "target_message_depth",
+      "prior_tool_call_count",
+      "prior_tool_error_count",
+      "prior_same_function_action_attempt_count",
+      "prior_failed_same_function_attempts",
+      "assistant_argument_echo_fraction",
+      "normalized_final_action_signature",
+      "normalized_final_action_signature_sha256",
+      "nearest_prior_tool_result_exact_sha256",
+      "nearest_prior_tool_result_normalized_sha256"
+    ],
+    "assistant_argument_echo_fraction_definition": "fraction of final-action atomic argument values with normalized length >=4 that appear in prior assistant content/tool-call serialization",
+    "nearest_prior_tool_result_definition": "last eligible non-empty tool message before the target action; record exact-text and normalized-text SHA256 for cross-agent diagnostics"
+  },
+  "development_only_smoke": {
+    "suite": "workspace",
+    "user_task": "user_task_19",
+    "separate_output_directory": "smoke_agentdojo",
+    "excluded_from_all_r3_analysis": true
+  },
+  "no_post_outcome_tuning": true,
+  "protocol_hash": "0964561ecc6040de10c8c16a47dd4851fd3c9507564f946dc931d3fadb589eb9"
+}

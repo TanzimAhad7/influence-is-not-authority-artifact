@@ -1,0 +1,32 @@
+{
+  "all_four_cells_prompt_token_matched_per_base": true,
+  "corpus_hashes": {
+    "audit_template": "59d0d6d40831c951f69360507c21a448fb4bf1dab49c3cc404437cb3d494ca7d",
+    "base_instances": "32d8d56e9ba07c6cbc0d58a640466078c531b658b2173292721829e176f21af7",
+    "conditions": "a8ededeeb2343792385eca69eb33fe7bfd379cc3176e9226f6bbe5be3a140d21",
+    "edges": "e4f7882418023e8589c09fa755675482f6fdb09a068a6f8978f786a1f3786050",
+    "gemma_plan": "1ae4e736d4ada6b4f28bfc7e2c155e12eb1b80cb36e04fd32a95e358121b025a",
+    "llama_plan": "abb277785d094809804b59d2473a9f225f83e773fc0fce8716b390cbc3562c66"
+  },
+  "gemma_scoring_plan_rows": 480,
+  "llama_scoring_plan_rows": 864,
+  "n_bases": 24,
+  "n_conditions": 96,
+  "n_factorial_edges": 96,
+  "n_human_audit_pairs": 16,
+  "no_scorer_requests": true,
+  "protocol_frozen": false,
+  "schema_version": "A14_MINIMAL_P1xP3_V1_2026-08-09",
+  "status": "PREFREEZE_DRAFT_READY",
+  "tokenizer": {
+    "bos_token_id": 128000,
+    "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+    "class": "TokenizersBackend",
+    "eos_token_id": 128009,
+    "is_fast": true,
+    "kind": "hf",
+    "model_name": "meta-llama/Llama-3.3-70B-Instruct",
+    "pad_token_id": 128004,
+    "vocab_size": 128256
+  }
+}

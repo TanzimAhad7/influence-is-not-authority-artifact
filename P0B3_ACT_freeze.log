@@ -1,0 +1,5 @@
+[P0B3-ACT-00] FREEZE PASS
+[P0B3-ACT-00] input_sha256=bc8c17c257b00a12295c54384c9ce7bc3490f8d6c1f1d3b89aee36641253746a
+[P0B3-ACT-00] denominators={'benign': 37, 'attack': 587} total=624
+[P0B3-ACT-00] freeze_sha256=38eb61789513c65039a72c266dcc432df4cee110e9bc260208f6c1c18e675360
+[P0B3-ACT-00] NO activation outcomes aggregated; ZERO model calls

@@ -1,0 +1,24 @@
+{
+  "attenuation_level": 2,
+  "attenuation_temperature": 0.2,
+  "attenuation_top_p": 0.9,
+  "cases": [
+    "DEV_BENIGN",
+    "DEV_CONTROL"
+  ],
+  "development_only": true,
+  "frozen_adapter_py_sha256": "fb613a6e427fa28bdc0ddf3774fbdd0abbbcc593733f41eca1d19449b758467a",
+  "judge_temperature": 0.2,
+  "judge_top_p": 0.9,
+  "main_temperature": 0.0,
+  "max_iters": 1,
+  "model": "openai/gpt-4.1-mini",
+  "parent_adapter_prefreeze_hash": "7895cd5c950ee5de1166fbb85841be85bdb039b8d49f7da9aca759f35b42ffa5",
+  "provider": "openrouter",
+  "purpose": "live plumbing only; not a scientific outcome and not a tuning signal",
+  "route": "openrouter-openai-compatible",
+  "schema": "ATTRIGUARD_A14_V2_SYNTHETIC_API_SMOKE_V1_2026-08-10",
+  "scientific_a14_cells_used": 0,
+  "smoke_protocol_hash": "cc3358567c837e86831e5d1c8620abd46429946b5c21f5f51f8f488d822cb297",
+  "survival_mode": "fuzzy"
+}

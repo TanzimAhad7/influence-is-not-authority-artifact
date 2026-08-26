@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/f1oDQIgjk2yKTKKWGcmPfzkwvs8</id>
+  <title>arXiv Query: search_query=( (all:"LLM agent" OR all:"LLM agents" OR all:"large language model agent" OR all:"large language model agents") AND (all:"task-relevant evidence" OR all:"authorized evidence" OR all:"untrusted evidence" OR all:"external evidence") AND (all:control OR all:authorization OR all:guardrail) ) AND submittedDate:"202201010000 TO 202608122359"&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-08-13T00:58:06Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=((all:%22LLM+agent%22+OR+(all:%22LLM+agents%22+OR+(all:%22large+language+model+agent%22+OR+all:%22large+language+model+agents%22)))+AND+((all:%22task-relevant+evidence%22+OR+(all:%22authorized+evidence%22+OR+(all:%22untrusted+evidence%22+OR+all:%22external+evidence%22)))+AND+(all:control+OR+(all:authorization+OR+all:guardrail))))+AND+submittedDate:%22202201010000+TO+202608122359%22&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.10487v1</id>
+    <title>Temporary Authority, Permanent Effects: Commit-Time Authorization for LLM Agents</title>
+    <updated>2026-07-11T21:48:53Z</updated>
+    <link href="https://arxiv.org/abs/2607.10487v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.10487v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents can commit durable effects from authority evidence that was valid earlier in execution: a DOM snapshot, approval epoch, version witness, branch token, or worker result. We study the commit boundary at which earlier authority evidence no longer authorizes a durable effect. We call this property commit-time authorization: a durable effect is authorized only if the witness that licensed its derived state remains fresh, causally prior, bound to the same effect, and eligible at commit time.
+  We build a controlled-invalidation suite spanning browser, tool/API, and multi-agent workflows. The suite preserves the user goal and payload shape while invalidating the authority relation before durability. In the primary 54-task matrix, endpoint success remains high: 262/270 runs reach the visible result. Only 55/270 are authorized completions; among the 216 invalidating rows, 207 commit after the authorizing path has failed. All 54 clean controls remain authorized, and a separate 54-run authority-preserving check produces no unauthorized commits.
+  We then evaluate mitigation families. Prompt caution and single-condition checks are insufficient because different hazards break different boundary conditions. Defenses work when they refresh, rebind, replan, or refuse at the durability boundary. CommitGuard, a fail-closed boundary monitor, blocks stale durable-effect attempts on protected commit surfaces when runtimes emit witness, dependency, binding, and eligibility signals.
+  The result is a reporting and runtime-design lesson: endpoint success is a utility metric; authorized commit is a security property.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-11T21:48:53Z</published>
+    <arxiv:comment>20 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Igor Santos-Grueiro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.20827v1</id>
+    <title>Auditing Provenance Sensitivity in LLM Agent Action Selection</title>
+    <updated>2026-07-23T01:28:18Z</updated>
+    <link href="https://arxiv.org/abs/2607.20827v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.20827v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents choose tools and arguments from context that mixes user requests, tool outputs, retrieved records, memory, and untrusted text. Evidence can be relevant without being authorized to determine a decision, so a correct action need not be grounded only in permitted evidence. We introduce a target-specific authorization audit that labels context factors separately for each tool and argument target. Its primary test holds the task, proposition, position, and policy fixed while changing only the proposition's source authority. We then test behavior when valid evidence is weakened and use context-subset interactions as a secondary localization diagnostic. Across 450 controlled next-action tasks and multiple open-weight LLM families, trusted and untrusted variants produce different actions in 5.4 percent of competing cases versus 1.7 percent of supporting cases. Under controlled degradation, unauthorized competition is retained in a full-correct, mixed-error, clean-correct pattern in 2.4 percent of comparisons, with a 95 percent confidence interval from 2.1 to 3.0 percent. These are controlled stress-set rates, not deployment prevalence. The models respond to textual source-authority cues, but this does not prevent untrusted evidence from influencing their actions.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-23T01:28:18Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Junchi Liao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.22724v1</id>
+    <title>AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification</title>
+    <updated>2026-02-26T07:59:10Z</updated>
+    <link href="https://arxiv.org/abs/2602.22724v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.22724v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents increasingly rely on external tools and retrieval systems to autonomously complete complex tasks. However, this design exposes agents to indirect prompt injection (IPI), where attacker-controlled context embedded in tool outputs or retrieved content silently steers agent actions away from user intent. Unlike prompt-based attacks, IPI unfolds over multi-turn trajectories, making malicious control difficult to disentangle from legitimate task execution. Existing inference-time defenses primarily rely on heuristic detection and conservative blocking of high-risk actions, which can prematurely terminate workflows or broadly suppress tool usage under ambiguous multi-turn scenarios. We propose AgentSentry, a novel inference-time detection and mitigation framework for tool-augmented LLM agents. To the best of our knowledge, AgentSentry is the first inference-time defense to model multi-turn IPI as a temporal causal takeover. It localizes takeover points via controlled counterfactual re-executions at tool-return boundaries and enables safe continuation through causally guided context purification that removes attack-induced deviations while preserving task-relevant evidence. We evaluate AgentSentry on the \textsc{AgentDojo} benchmark across four task suites, three IPI attack families, and multiple black-box LLMs. AgentSentry eliminates successful attacks and maintains strong utility under attack, achieving an average Utility Under Attack (UA) of 74.55 %, improving UA by 20.8 to 33.6 percentage points over the strongest baselines without degrading benign performance.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-26T07:59:10Z</published>
+    <arxiv:comment>23 pages, 8 figures. Under review</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Tian Zhang</name>
+    </author>
+    <author>
+      <name>Yiwei Xu</name>
+    </author>
+    <author>
+      <name>Juan Wang</name>
+    </author>
+    <author>
+      <name>Keyan Guo</name>
+    </author>
+    <author>
+      <name>Xiaoyang Xu</name>
+    </author>
+    <author>
+      <name>Bowen Xiao</name>
+    </author>
+    <author>
+      <name>Quanlong Guan</name>
+    </author>
+    <author>
+      <name>Jinlin Fan</name>
+    </author>
+    <author>
+      <name>Jiawei Liu</name>
+    </author>
+    <author>
+      <name>Zhiquan Liu</name>
+    </author>
+    <author>
+      <name>Hongxin Hu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.25045v1</id>
+    <title>CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification</title>
+    <updated>2026-07-27T20:09:05Z</updated>
+    <link href="https://arxiv.org/abs/2607.25045v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.25045v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Electroencephalography (EEG) analysis in cognitive studies requires specialized expertise and involves many defensible choices over contrasts, channels, time windows, and statistical tests. LLM agents can translate varied natural-language questions into analysis choices, offering a flexible interface for automation. Yet fluent reports alone cannot establish that an agent selected the requested analysis or evaluated a confirmatory claim independently of adaptive search. We present CogEEGAgent, a cognitive-EEG analysis agent grounded in MNE-Python. Its EEG-specific scientific harness separates semantic from scientific authority. The LLM interprets intent and proposes registered analyses, while deterministic components validate typed contracts, control confirmation access, and authorize evidence-bound release. On a prespecified routing benchmark, CogEEGAgent maps language to registered analyses more accurately than a matched deterministic router, while matched preflight makes both systems abstain whenever required. In an externally model-authored, outcome-blind campaign, the complete system releases supported analyses with participant-disjoint confirmation and blocks prespecified capability hazards and lifecycle-reuse requests. Policy stress testing shows that held-out confirmation curbs false positives from uncorrected adaptive search. Together, these studies establish bounded autonomy and an auditable automation framework for cognitive-EEG workflows. More broadly, they show how scientific agents can combine flexible language understanding with fail-closed control over inference and release.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-27T20:09:05Z</published>
+    <arxiv:comment>16 pages, 5 figures, and 16 tables. The supplementary material is included in the same PDF</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Dengzhe Hou</name>
+    </author>
+    <author>
+      <name>Lingyu Jiang</name>
+    </author>
+    <author>
+      <name>Fangzhou Lin</name>
+    </author>
+    <author>
+      <name>Kazunori D Yamada</name>
+    </author>
+  </entry>
+</feed>

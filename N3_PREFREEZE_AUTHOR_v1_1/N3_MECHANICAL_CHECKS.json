@@ -1,0 +1,296 @@
+{
+  "baseline_conditions": 96,
+  "bases": 24,
+  "pair_checks": [
+    {
+      "base_id": "A14M_F1_CALENDAR_00",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_00",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_01",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_01",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_02",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_02",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_03",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_03",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_04",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_04",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_05",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F1_CALENDAR_05",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_00",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_00",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_01",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_01",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_02",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_02",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_03",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_03",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_04",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_04",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_05",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F2_SLACK_05",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_00",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_00",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_01",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_01",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_02",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_02",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_03",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_03",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_04",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_04",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_05",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F3_BANKING_05",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_00",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_00",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_01",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_01",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_02",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_02",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_03",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_03",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_04",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_04",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_05",
+      "descendant": "SHAM",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    },
+    {
+      "base_id": "A14M_F4_EMAIL_05",
+      "descendant": "ECHO",
+      "only_component_difference": "S_REL",
+      "same_srel_char_length": true
+    }
+  ],
+  "positive_contexts": 96,
+  "positive_scoring_units": 192
+}

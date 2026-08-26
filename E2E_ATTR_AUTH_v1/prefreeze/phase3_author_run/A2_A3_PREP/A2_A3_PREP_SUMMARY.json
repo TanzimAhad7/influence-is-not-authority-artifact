@@ -1,0 +1,11 @@
+{
+  "NO_MODEL_CALLS": true,
+  "blinding_leaks": 0,
+  "blinding_seed": "20260820-A3-BLIND-V1",
+  "final_B": null,
+  "n_preliminary_cases": 14,
+  "next_gate": "independent blinded semantic/scope review",
+  "rater_packet_sha256": "4410bd41cb68ede9be74dc0be1f06203dd664900fe9545c55574fb906a411607",
+  "status": "A2_A3_PACKET_PREP_PASS",
+  "strict_single_call_cases": 11
+}

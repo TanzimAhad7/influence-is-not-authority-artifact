@@ -1,0 +1,8 @@
+{
+  "completed_at_utc": "2026-08-09T16:40:42.217968+00:00",
+  "condition_scores_sha256": "1c2ee74880a4a74d2bbfad06a6fad4e0f8c09a0fd474d8a0a9a7e43f5fb91111",
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "n_conditions": 96,
+  "protocol_hash": "94bb3c7e0ca174aa8be69b8c0949e7d93a567d960a9ba06016ba4d08f8503ee1",
+  "scorer_label": "llama"
+}

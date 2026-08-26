@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-08-21T01:57:56.216197+00:00",
+  "endpoint_changed": false,
+  "estimand_changed": false,
+  "factors_changed": false,
+  "fixes": [
+    "YAML transport escaping preserves exact frozen raw directive after AgentDojo v0.1.35 str.format + yaml.safe_load, proven on all 28 non-clean contexts",
+    "context non-delivery retained as ITT scientific outcome; never retried",
+    "retries restricted to explicit transient provider/server failures",
+    "actual AttriGuard audit-path dev preflight required",
+    "one scheduled user-task execution per row; no injection-task utility pre-run",
+    "context-specific pre-environment hashes frozen and checked",
+    "full pre/post environment snapshots preserved per run",
+    "exact directive hash and runtime metadata added to scientific row",
+    "retained AgentDojo-v1 source tree and EXTERNAL_OUTPUT_TOOLS declaration locked",
+    "analysis restricted to complete task six-cell blocks with integrity diagnostics",
+    "ON/OFF PAEF+Z repeat variance and route/inspection diagnostics separated"
+  ],
+  "population_changed": false,
+  "schedule_changed": false,
+  "schema": "E2E_PRESCIENCE_PATCH_RECONCILIATION_V2",
+  "scientific_outcomes_seen": false
+}

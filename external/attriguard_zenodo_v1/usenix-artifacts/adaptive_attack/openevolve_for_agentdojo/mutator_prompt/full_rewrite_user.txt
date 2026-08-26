@@ -1,0 +1,8 @@
+{{
+  "defense_description": {defense_description},
+  "identified_vulnerabilities": {identified_vulnerabilities},
+  "user_task": {user_task_goal},
+  "injection_task": {injection_task_goal},
+  "past_attempts": {evolution_history},
+  "num_candidates": 4
+}}

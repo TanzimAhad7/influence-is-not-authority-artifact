@@ -1,0 +1,114 @@
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "NOT_GIVEN",
+  "temperature": 0.2,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": 0.9,
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "NOT_GIVEN",
+  "temperature": 0.2,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": 0.9,
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "auto",
+  "temperature": 0.0,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": "NOT_GIVEN",
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "auto",
+  "temperature": 0.0,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": "NOT_GIVEN",
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[AAG-V2-SMOKE] DEV_BENIGN error=None target_result=True blocked=False
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "NOT_GIVEN",
+  "temperature": 0.2,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": 0.9,
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "NOT_GIVEN",
+  "temperature": 0.2,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": 0.9,
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "auto",
+  "temperature": 0.0,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": "NOT_GIVEN",
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[debug] chat_completion_request params:
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": "<omitted>",
+  "tools": "<omitted>",
+  "tool_choice": "auto",
+  "temperature": 0.0,
+  "reasoning_effort": "NOT_GIVEN",
+  "top_p": "NOT_GIVEN",
+  "seed": "NOT_GIVEN",
+  "logprobs": "NOT_GIVEN",
+  "top_logprobs": "NOT_GIVEN"
+}
+[AAG-V2-SMOKE] DEV_CONTROL error=None target_result=True blocked=True
+[AAG-V2-SMOKE] protocol_hash=cc3358567c837e86831e5d1c8620abd46429946b5c21f5f51f8f488d822cb297
+[AAG-V2-SMOKE] provider=openrouter route=openrouter-openai-compatible model=openai/gpt-4.1-mini
+[AAG-V2-SMOKE] scientific_a14_cells_used=0
+[AAG-V2-SMOKE] LIVE_PLUMBING_PASS=True
+[AAG-V2-SMOKE] NOTE: benign/control verdict direction is DEVELOPMENT DIAGNOSTIC ONLY
+[AAG-V2-SMOKE] SCIENTIFIC A14 OUTCOMES=0
+[AAG-V2-SMOKE] results=/home/anon_/ratchet/phase0_pilot/attriguard_a14_v2/synthetic_smoke_v1/SYNTHETIC_SMOKE_RESULTS.json
+[AAG-V2-SMOKE] results_sha256=d1652e80e23d715fb15d4e7fcd8ae24c69878fc4394c589d4a2cdaf358d57bc4

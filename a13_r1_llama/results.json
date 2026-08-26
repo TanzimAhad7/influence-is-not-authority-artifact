@@ -1,0 +1,215 @@
+{
+  "analysis_timestamp_utc": "2026-08-09T01:08:53.334123+00:00",
+  "replication_status_predeclared": "STRONG_REPLICATION",
+  "fixed_sample": {
+    "all_valid_decisions": 26,
+    "primary_extreme_label_decisions": 16,
+    "primary_tasks": 13
+  },
+  "llama_primary_H_mean_del": {
+    "specified_mean": 0.8571428571428571,
+    "delegated_mean": 0.16666666666666666,
+    "difference": 0.6904761904761905,
+    "ci95": [
+      0.22499999999999998,
+      1.0
+    ],
+    "n_specified_tasks": 7,
+    "n_delegated_tasks": 6,
+    "bootstrap_valid_draws": 5000
+  },
+  "llama_continuous_M_del": {
+    "specified_mean": 0.5364592271571151,
+    "delegated_mean": -0.06916900565161244,
+    "difference": 0.6056282328087276,
+    "ci95": [
+      -0.2096122132985791,
+      1.479308943727968
+    ],
+    "n_specified_tasks": 7,
+    "n_delegated_tasks": 6,
+    "bootstrap_valid_draws": 4998
+  },
+  "qwen_parent_recomputed_on_same_fixed_rows": {
+    "H_mean_del": {
+      "specified_mean": 0.8571428571428571,
+      "delegated_mean": 0.2222222222222222,
+      "difference": 0.6349206349206349,
+      "ci95": [
+        0.16666666666666669,
+        1.0
+      ],
+      "n_specified_tasks": 7,
+      "n_delegated_tasks": 6,
+      "bootstrap_valid_draws": 5000
+    },
+    "M_del": {
+      "specified_mean": 0.9802384916545293,
+      "delegated_mean": -0.034245172484635836,
+      "difference": 1.014483664139165,
+      "ci95": [
+        -0.06765461482159789,
+        2.314051936482853
+      ],
+      "n_specified_tasks": 7,
+      "n_delegated_tasks": 6,
+      "bootstrap_valid_draws": 4998
+    }
+  },
+  "cross_scorer": {
+    "all_valid_H_mean_agreement": {
+      "n": 26,
+      "agreement_rate": 0.8461538461538461,
+      "qwen_true_llama_false": 3,
+      "qwen_false_llama_true": 1
+    },
+    "primary_H_mean_agreement": {
+      "n": 16,
+      "agreement_rate": 0.9375,
+      "qwen_true_llama_false": 1,
+      "qwen_false_llama_true": 0
+    },
+    "all_valid_H_max_agreement": {
+      "n": 26,
+      "agreement_rate": 0.9615384615384616,
+      "qwen_true_llama_false": 0,
+      "qwen_false_llama_true": 1
+    },
+    "primary_H_max_agreement": {
+      "n": 16,
+      "agreement_rate": 1.0,
+      "qwen_true_llama_false": 0,
+      "qwen_false_llama_true": 0
+    },
+    "dU_del": {
+      "n": 26,
+      "pearson": 0.9768200988508436,
+      "spearman": 0.824957264957265
+    },
+    "mean_dS_del": {
+      "n": 26,
+      "pearson": 0.7715424228981378,
+      "spearman": 0.7463247863247863
+    },
+    "max_dS_del": {
+      "n": 26,
+      "pearson": 0.7489077114236893,
+      "spearman": 0.7066666666666667
+    },
+    "M_del": {
+      "n": 26,
+      "pearson": 0.9597408876678514,
+      "spearman": 0.9063247863247863
+    },
+    "primary_dU_del": {
+      "n": 16,
+      "pearson": 0.9785022225834217,
+      "spearman": 0.8176470588235294
+    },
+    "primary_mean_dS_del": {
+      "n": 16,
+      "pearson": 0.8008045948361283,
+      "spearman": 0.5882352941176471
+    },
+    "primary_M_del": {
+      "n": 16,
+      "pearson": 0.9824354032922723,
+      "spearman": 0.9705882352941176
+    }
+  },
+  "sensitivity_grid": [
+    {
+      "specified_min": 0.9,
+      "delegated_max": 0.1,
+      "primary_grid": false,
+      "llama_H_mean_del": {
+        "specified_mean": 0.8333333333333334,
+        "delegated_mean": 0.0,
+        "difference": 0.8333333333333334,
+        "ci95": [
+          0.5,
+          1.0
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4995
+      },
+      "llama_M_del": {
+        "specified_mean": 0.5283343830937088,
+        "delegated_mean": -0.3384017050095091,
+        "difference": 0.866736088103218,
+        "ci95": [
+          0.24945613033247968,
+          1.7765853254738266
+        ],
+        "n_specified_tasks": 6,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4991
+      }
+    },
+    {
+      "specified_min": 0.8,
+      "delegated_max": 0.2,
+      "primary_grid": true,
+      "llama_H_mean_del": {
+        "specified_mean": 0.8571428571428571,
+        "delegated_mean": 0.16666666666666666,
+        "difference": 0.6904761904761905,
+        "ci95": [
+          0.22499999999999998,
+          1.0
+        ],
+        "n_specified_tasks": 7,
+        "n_delegated_tasks": 6,
+        "bootstrap_valid_draws": 5000
+      },
+      "llama_M_del": {
+        "specified_mean": 0.5364592271571151,
+        "delegated_mean": -0.06916900565161244,
+        "difference": 0.6056282328087276,
+        "ci95": [
+          -0.2096122132985791,
+          1.479308943727968
+        ],
+        "n_specified_tasks": 7,
+        "n_delegated_tasks": 6,
+        "bootstrap_valid_draws": 4998
+      }
+    },
+    {
+      "specified_min": 0.7,
+      "delegated_max": 0.3,
+      "primary_grid": false,
+      "llama_H_mean_del": {
+        "specified_mean": 0.8571428571428571,
+        "delegated_mean": 0.16666666666666666,
+        "difference": 0.6904761904761905,
+        "ci95": [
+          0.22499999999999998,
+          1.0
+        ],
+        "n_specified_tasks": 7,
+        "n_delegated_tasks": 6,
+        "bootstrap_valid_draws": 5000
+      },
+      "llama_M_del": {
+        "specified_mean": 0.5364592271571151,
+        "delegated_mean": -0.06916900565161244,
+        "difference": 0.6056282328087276,
+        "ci95": [
+          -0.2096122132985791,
+          1.479308943727968
+        ],
+        "n_specified_tasks": 7,
+        "n_delegated_tasks": 6,
+        "bootstrap_valid_draws": 4998
+      }
+    }
+  ],
+  "guardrails": [
+    "R1 changes only scorer; it does not establish full cross-agent generalization.",
+    "R1 must not relabel, remap, or drop fixed A13 decisions based on Llama outcomes.",
+    "R1 does not replace A14 causal provenance x N manipulation.",
+    "A positive Llama contrast supports scorer-family robustness of the A13 association."
+  ]
+}

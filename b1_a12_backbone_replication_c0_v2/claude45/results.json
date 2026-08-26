@@ -1,0 +1,211 @@
+{
+  "analysis_timestamp_utc": "2026-08-13T17:10:56.222303+00:00",
+  "primary_hypothesis": "P(H_mean_del=1|SPECIFIED) > P(H_mean_del=1|DELEGATED)",
+  "primary_H_mean_del": {
+    "specified_mean": 0.6153846153846154,
+    "delegated_mean": 0.4,
+    "difference": 0.2153846153846154,
+    "ci95": [
+      -0.3711057692307691,
+      0.7333333333333333
+    ],
+    "n_specified_tasks": 13,
+    "n_delegated_tasks": 5,
+    "bootstrap_valid_draws": 4988
+  },
+  "continuous_M_del": {
+    "specified_mean": 0.4483237589769508,
+    "delegated_mean": -0.5261674184301038,
+    "difference": 0.9744911774070546,
+    "ci95": [
+      -0.06434624776899199,
+      2.2378314126842827
+    ],
+    "n_specified_tasks": 13,
+    "n_delegated_tasks": 5,
+    "bootstrap_valid_draws": 4990
+  },
+  "by_label": {
+    "SPECIFIED": {
+      "n_decisions": 13,
+      "n_tasks": 13,
+      "H_mean_del_rate": 0.6153846153846154,
+      "H_max_del_rate": 0.6153846153846154,
+      "M_del_mean": 0.4483237589769508,
+      "R_del_mean_descriptive": 14.337560516818648,
+      "mean_positive_n": 8,
+      "mean_positive_but_max_negative_n": 0,
+      "conditional_max_fail_given_mean_positive": 0.0
+    },
+    "DELEGATED": {
+      "n_decisions": 5,
+      "n_tasks": 5,
+      "H_mean_del_rate": 0.4,
+      "H_max_del_rate": 0.4,
+      "M_del_mean": -0.5261674184301038,
+      "R_del_mean_descriptive": 6.976965444753596,
+      "mean_positive_n": 2,
+      "mean_positive_but_max_negative_n": 0,
+      "conditional_max_fail_given_mean_positive": 0.0
+    },
+    "PARTIAL": {
+      "n_decisions": 22,
+      "n_tasks": 22,
+      "H_mean_del_rate": 0.22727272727272727,
+      "H_max_del_rate": 0.18181818181818182,
+      "M_del_mean": -0.38420626048830403,
+      "R_del_mean_descriptive": 4.539224936912804,
+      "mean_positive_n": 5,
+      "mean_positive_but_max_negative_n": 1,
+      "conditional_max_fail_given_mean_positive": 0.2
+    }
+  },
+  "by_suite": {
+    "workspace": {
+      "n_decisions": 16,
+      "n_tasks": 14,
+      "H_mean_del_rate": 0.25,
+      "H_max_del_rate": 0.25,
+      "M_del_mean": -0.2312348759123587
+    },
+    "slack": {
+      "n_decisions": 13,
+      "n_tasks": 13,
+      "H_mean_del_rate": 0.46153846153846156,
+      "H_max_del_rate": 0.38461538461538464,
+      "M_del_mean": -0.0043678229302673245
+    },
+    "travel": {
+      "n_decisions": 4,
+      "n_tasks": 4,
+      "H_mean_del_rate": 1.0,
+      "H_max_del_rate": 1.0,
+      "M_del_mean": 0.31791762660342937
+    },
+    "banking": {
+      "n_decisions": 7,
+      "n_tasks": 7,
+      "H_mean_del_rate": 0.14285714285714285,
+      "H_max_del_rate": 0.14285714285714285,
+      "M_del_mean": -0.3957566785593357
+    }
+  },
+  "continuous_prompt_coverage_vs_M": {
+    "n_tasks": 38,
+    "pearson": 0.35426294471270003,
+    "spearman": 0.28018357528603216
+  },
+  "sensitivity_grid": [
+    {
+      "specified_min": 0.9,
+      "delegated_max": 0.1,
+      "H_mean_del": {
+        "specified_mean": 0.5,
+        "delegated_mean": 0.4,
+        "difference": 0.09999999999999998,
+        "ci95": [
+          -0.5,
+          0.6477272727272757
+        ],
+        "n_specified_tasks": 10,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4989
+      },
+      "M_del": {
+        "specified_mean": 0.2402829762348296,
+        "delegated_mean": -0.5261674184301038,
+        "difference": 0.7664503946649335,
+        "ci95": [
+          -0.34485349989468467,
+          2.0956484215162616
+        ],
+        "n_specified_tasks": 10,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4983
+      },
+      "primary_grid": false
+    },
+    {
+      "specified_min": 0.8,
+      "delegated_max": 0.2,
+      "H_mean_del": {
+        "specified_mean": 0.6153846153846154,
+        "delegated_mean": 0.4,
+        "difference": 0.2153846153846154,
+        "ci95": [
+          -0.3711057692307691,
+          0.7333333333333333
+        ],
+        "n_specified_tasks": 13,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4988
+      },
+      "M_del": {
+        "specified_mean": 0.4483237589769508,
+        "delegated_mean": -0.5261674184301038,
+        "difference": 0.9744911774070546,
+        "ci95": [
+          -0.06434624776899199,
+          2.2378314126842827
+        ],
+        "n_specified_tasks": 13,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4990
+      },
+      "primary_grid": true
+    },
+    {
+      "specified_min": 0.7,
+      "delegated_max": 0.3,
+      "H_mean_del": {
+        "specified_mean": 0.6153846153846154,
+        "delegated_mean": 0.4,
+        "difference": 0.2153846153846154,
+        "ci95": [
+          -0.3711057692307691,
+          0.7333333333333333
+        ],
+        "n_specified_tasks": 13,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4988
+      },
+      "M_del": {
+        "specified_mean": 0.4483237589769508,
+        "delegated_mean": -0.5261674184301038,
+        "difference": 0.9744911774070546,
+        "ci95": [
+          -0.06434624776899199,
+          2.2378314126842827
+        ],
+        "n_specified_tasks": 13,
+        "n_delegated_tasks": 5,
+        "bootstrap_valid_draws": 4990
+      },
+      "primary_grid": false
+    }
+  ],
+  "counts": {
+    "all_decision_rows": 73,
+    "primary_valid_confirmatory_extreme_label_decisions": 18,
+    "primary_valid_confirmatory_tasks": 18,
+    "development_decisions": 0,
+    "exclusion_reasons": {
+      "valid": 40,
+      "multi_tool_call_assistant_turn": 20,
+      "agentdojo_utility_false": 9,
+      "ground_truth_privileged_call_not_executed_or_not_mappable": 4
+    }
+  },
+  "interpretation_guardrails": [
+    "A positive contrast supports association between the frozen prompt-coverage operationalization and attribution ordering.",
+    "A13 does not by itself prove causality; A14 is the matched causal test.",
+    "R is secondary/descriptive and must not define delegation.",
+    "Mean-based attribution is diagnostic, not yet a production defense.",
+    "Max-vs-mean discrepancies are observational in A13/A12; causal N claims require controlled A14 manipulation."
+  ],
+  "schema": "B1_AGENT_RESULT_C0_AMENDED_V2",
+  "b1_protocol_hash": "d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550",
+  "agent_key": "claude45",
+  "agent_model": "anthropic/claude-sonnet-4.5",
+  "model_replication_category": "DIRECTIONAL_POSITIVE_CI_INCLUDES_ZERO_OR_UNAVAILABLE"
+}

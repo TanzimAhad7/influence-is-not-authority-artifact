@@ -1,0 +1,35 @@
+Verifying Phase0-2 author outputs...
+PHASE0-2 HASH PREFLIGHT PASS
+{
+  "NO_MODEL_CALLS": true,
+  "changed_rows": [
+    "slack/user_task_4"
+  ],
+  "original_source_audit_sha256": "4ba0d9923eb595446b888aac134a15a00755f7a0d88da6d0ce61cc707582f2fe",
+  "preliminary_B_unchanged": 14,
+  "reason": "Original Phase A1 script keyed tool-source provenance by suite; slack/user_task_4 audits post_webpage, whose implementation is v1/tools/web.py rather than v1/tools/slack.py. The PASS/FAIL semantic verdict and cohort membership are unchanged.",
+  "science_changed": false,
+  "status": "PASS_BOOKKEEPING_PROVENANCE_AMENDMENT_ONLY",
+  "verdict_counts": {
+    "FAIL": 4,
+    "PASS": 3,
+    "PENDING": 0
+  }
+}
+{
+  "NO_MODEL_CALLS": true,
+  "blinding_leaks": 0,
+  "blinding_seed": "20260820-A3-BLIND-V1",
+  "final_B": null,
+  "n_preliminary_cases": 14,
+  "next_gate": "independent blinded semantic/scope review",
+  "rater_packet_sha256": "4410bd41cb68ede9be74dc0be1f06203dd664900fe9545c55574fb906a411607",
+  "status": "A2_A3_PACKET_PREP_PASS",
+  "strict_single_call_cases": 11
+}
+
+=== PHASE A2/A3 PREPARATION COMPLETE ===
+NO SCIENTIFIC MODEL CALLS WERE MADE.
+FINAL B IS NOT YET FROZEN.
+NEXT: give ONLY BLINDED_RATER_PACKET_FOR_REVIEW.zip to an independent reviewer.
+Do NOT give the reviewer CASE_MAP.csv, AUTH_ALT_LEDGER_DRAFT.jsonl, prior results, or experiment/defense hypothesis.

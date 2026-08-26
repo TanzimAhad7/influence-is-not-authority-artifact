@@ -1,0 +1,18 @@
+{
+  "attribution_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "attribution_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "attribution_snapshot_path": "/home/anon_/.cache/huggingface/hub/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659",
+  "completed_at_utc": "2026-08-19T23:27:21.314699+00:00",
+  "freeze_sha256": "ec637652d3821df7721c81f04b8175ab116f84cd033f3c4016761c48ab458bfb",
+  "monitor_base_url": "http://127.0.0.1:8120/v1",
+  "monitor_model": "SecureLLMSys/AgentWatcher-Qwen3-4B-Instruct-2507",
+  "monitor_parser_ok": true,
+  "monitor_synthetic_output_sha256": "610e52b4325726dd2fa07d6fbebf1ecbb4f30a678ebc505fcac00ccc5e0c9299",
+  "no_scientific_inputs_used": true,
+  "no_scientific_outcomes_generated": true,
+  "schema": "AWN3_PREFLIGHT_V1_2026-08-19",
+  "served_model_ids": [
+    "Qwen/Qwen3-4B-Instruct-2507",
+    "SecureLLMSys/AgentWatcher-Qwen3-4B-Instruct-2507"
+  ]
+}

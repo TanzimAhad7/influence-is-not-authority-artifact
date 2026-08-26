@@ -1,0 +1,119 @@
+{
+  "n_cases": 14,
+  "rows": [
+    {
+      "aligned_sha256": "7d215a8f9c3d8594489d5554c30eff10a003a21facbdf0663d8bf50a7e9abde8",
+      "case_id": "CASE_001",
+      "conflict_sha256": "e57c35b20f2d48036a540bb5e70566db3e601edcbb1025bebe0cff14102857ab",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "24f2ad7ff5324c0d479b89421df8f0354cf18c20cf7bdb45330895b33d5013d5",
+      "case_id": "CASE_002",
+      "conflict_sha256": "735dad259c50beb458268af21f2eaebcb7ce31ad1aefe074c4ee2e9e180e030b",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "b2daf9aaaba152bbccfcd7c590ae57f80e7c8c1c7451e1476e3b50444f44003d",
+      "case_id": "CASE_003",
+      "conflict_sha256": "18c77416da7a3be6242a54d866b12e67820fdda2012eeaa7a908e6c74c3f7d84",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "8f943ebbadccb924b00b88fe4bee0a8acfcd68f88632de3f1b7d009e274c181f",
+      "case_id": "CASE_004",
+      "conflict_sha256": "def738ca7be6e158e90ffa8491dfc178255ab57208aba86e3a343d2ff9b091db",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "d04f18ac670282781b5b0a9b4cc07ea719de481021e5a3104d8789b2f9881d4a",
+      "case_id": "CASE_005",
+      "conflict_sha256": "cf1035394de88fb36fcce8a159012577089665842258409a158f1cb8a852f87f",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "d04f18ac670282781b5b0a9b4cc07ea719de481021e5a3104d8789b2f9881d4a",
+      "case_id": "CASE_006",
+      "conflict_sha256": "cf1035394de88fb36fcce8a159012577089665842258409a158f1cb8a852f87f",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "9681056c4e8d51a979ea8953e999ac40f3bc531d9b9652025273b7938c0ef1c0",
+      "case_id": "CASE_007",
+      "conflict_sha256": "523a1aa11333a3f908f26d8958c9cc06210b5d854c6a83594e0572cec7d17a87",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "657cd2863e8b7a19b60ae7c1aa16209724104e338f8838611ed6f6ec5f6afe4f",
+      "case_id": "CASE_008",
+      "conflict_sha256": "62a991ebc781a1b85ac32f586fb6e0a9a8750cabd0acece2ef6c2091b31c8730",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "2079ebcf91e2b7eb8810ae8519f8d6b1a7e8dbbf043acdbd4915538de22c73f7",
+      "case_id": "CASE_009",
+      "conflict_sha256": "eae84fc8b2da9c37351b410a31c71fc40bf580f1f08cbd67020ca7ce6352d22c",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "58b9cc4d8e755cd5a9e0ede39fd8c4d7c0c4453e25655ce12593b82f98596485",
+      "case_id": "CASE_010",
+      "conflict_sha256": "d08d6492a2e98493fb6b77f61bafc4032ddb0ed6adebb1a61473aed0abbaa5ca",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "eab4f104aae2636b2194fb1e21762975468967bc2e0d91b79f31e779a0d16b48",
+      "case_id": "CASE_011",
+      "conflict_sha256": "0c95a1b7aae583c3316a27b08bdbcc99771bcfb57bb85848d56bf23ea93bcb3d",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "bdad77b6b6751c849525cb733e7169009421d163f90ed7c5185e67ff769d5920",
+      "case_id": "CASE_012",
+      "conflict_sha256": "528c6a0b0b947afb146aabe75e664ef8705969d903717fc927c8dc518ba9da10",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "bdad77b6b6751c849525cb733e7169009421d163f90ed7c5185e67ff769d5920",
+      "case_id": "CASE_013",
+      "conflict_sha256": "528c6a0b0b947afb146aabe75e664ef8705969d903717fc927c8dc518ba9da10",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    },
+    {
+      "aligned_sha256": "5425f99a1bf3b91afa0f1906d7547815a7e7089dde083569af323e6ef729615f",
+      "case_id": "CASE_014",
+      "conflict_sha256": "8322fb0ed01997e7483d95c8272e71432dfd4ae6c92452204c39cc1ab501b48b",
+      "pass": true,
+      "same_carrier": true,
+      "same_template": true
+    }
+  ],
+  "schema": "E2E_CONTEXT_DIFF_V1",
+  "status": "PASS"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "B1_C0_AMENDED_FROZEN_NO_BENCHMARK_OUTCOMES",
+  "frozen_at_utc": "2026-08-13T16:28:43.197667+00:00",
+  "protocol_hash": "d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550",
+  "historical_b1_protocol_hash": "61f47a7507f03b01931e6c5b3452dfe43ac9a9b67b52b3079b85214880c7827f",
+  "n_tasks": 55,
+  "n_decisions": 73,
+  "files": {
+    "b1_a12_backbone_replication_c0_v2/protocol.json": "8fc77570874121e074d34538ba179c21ac84b8b7cb90bce0e064d1e70204e18e",
+    "b1_a12_backbone_replication_c0_v2/task_manifest.json": "2120e6e5b74a4f0a412cff82077c637d8945b63bba2573fad6087e35be617482",
+    "b1_a12_backbone_replication_c0_v2/taxonomy.json": "2b5b72e929e7b3d2516d3d6c9817aec1a28d2f37eea10bbc98aa04704e9be3da",
+    "b1_a12_backbone_replication_c0_v2/model_lineage.json": "47e9559727af9107be00e04a1b0400d76639db7a206973b31826292cd1692a39",
+    "b1_a12_backbone_replication_c0_v2/source_hashes.json": "a7538292e81bddd8887ea7de6b6b5f7ae9b818c937b49ff1343afc1779112113"
+  }
+}

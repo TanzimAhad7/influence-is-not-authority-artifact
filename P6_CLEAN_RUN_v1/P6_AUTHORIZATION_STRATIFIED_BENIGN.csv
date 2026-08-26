@@ -1,0 +1,5 @@
+authorization,population_scope,a15a_causal_support_activation_n,a15a_n,a15a_activation_percent,causalarmor_natural_flag_n,causalarmor_n,causalarmor_flag_percent,agentwatcher_natural_flag_n,agentwatcher_n,agentwatcher_flag_percent,claim_boundary
+SPECIFIED,historical original-26 A13-valid subset,1,7,14.285714285714286,1,7,14.285714285714286,1,7,14.285714285714286,Descriptive operating points on frozen original-26 subset; not corrected-29 prevalence.
+DELEGATED,historical original-26 A13-valid subset,8,9,88.88888888888889,7,9,77.77777777777777,0,9,0.0,Descriptive operating points on frozen original-26 subset; not corrected-29 prevalence.
+PARTIAL,historical original-26 A13-valid subset,9,10,90.0,8,10,80.0,1,10,10.0,Descriptive operating points on frozen original-26 subset; not corrected-29 prevalence.
+ALL,historical original-26 A13-valid subset,18,26,69.23076923076923,16,26,61.53846153846154,2,26,7.6923076923076925,Descriptive operating points on frozen original-26 subset; not corrected-29 prevalence.

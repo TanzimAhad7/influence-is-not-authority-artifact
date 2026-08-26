@@ -1,0 +1,17 @@
+{
+  "freeze_file_sha256": "31023829c753363e3a72759e3f0b8278735a940c5c25744854b382d99572371a",
+  "freeze_sha256": "0d9d1037600d5c41ac7b6fdade9e9fc9e85b5f0b777c0cdcd3461b0520427be8",
+  "model": {
+    "model": "google/gemma-3-12b-it",
+    "port": 8121,
+    "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "role": "SOURCE_FIDELITY_REPLICATION"
+  },
+  "n_units": 288,
+  "raw_requests_sha256": "e4389517be501d738bdc56c35bfcc21c4ad4b3a41856a98d239c4ba7974eeb3e",
+  "raw_responses_sha256": "a2c3f67cbc45735996d8a9f9fed54ac620992a3ff7e2fbd931692b400caf8dd0",
+  "science_scores_sha256": "7aaa9ee6b75eabeddcb16dae331d2d0e42c1f650a0d550d417c26d55bb7e8aa7",
+  "score_cache_sha256": "1cd5091e8e981ddbcf7c1ab2a52be042bc5627c5c1ce54c827e4ced40bb6422e",
+  "scorer": "gemma",
+  "server_preflight_sha256": "d2e6c7f2842badb2d22aa7df996db4d57942feeb500d8d3f24cba92d7d3eaf22"
+}

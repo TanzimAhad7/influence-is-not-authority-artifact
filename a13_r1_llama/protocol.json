@@ -1,0 +1,112 @@
+{
+  "study": "A13-R1 fixed-trace scorer-only cross-model robustness",
+  "scientific_status": "prospective robustness test designed after completed A13-Qwen audit",
+  "parent_a13_protocol_hash": "b4a140c7d8ef49149ac72e35e9e52405f614fa5361558c7b2ac0c56fe0063b80",
+  "parent_a13_source_sha256": "f771850375b4f5af7bc2cec6a4e166057f33fab26d686320b8ef2d8d32557f05",
+  "parent_a13_taxonomy_hash": "213cd71e0017eeb91c52955f8b77d06455c8d280b0121b31a830aa651ae62740",
+  "parent_a13_manifest_sha256": "971eb1ea932a2bc9687c288532b3b9e1b8ae608a492b068d1edf8eae33b0cf0b",
+  "parent_a13_decisions_sha256": "af6a62c5689e7d26180f0091a121839b645e1dcb54e5aaf87427f6e75c19dca9",
+  "parent_a13_results_sha256": "6ced3fc14a60574f95881344ac3d6bb5b8cf7d88d59ac3c844cae35d4121646b",
+  "r1_source_sha256": "b22008a45c1de58068616f67715f654f886c90aad13d48f7e1fbb9456191d043",
+  "parent_scorer": "Qwen/Qwen2.5-72B-Instruct",
+  "r1_scorer": "meta-llama/Llama-3.3-70B-Instruct",
+  "r1_scorer_base_url": "http://localhost:8110/v1",
+  "agent_trajectories": "EXACT frozen A13-Qwen raw traces; no new AgentDojo execution",
+  "actions": "EXACT executed A13-Qwen privileged actions",
+  "attribution_serialization": "A12_flat_v1; unchanged from A13",
+  "fixed_valid_decision_ids": [
+    "banking/user_task_0/priv0/send_money",
+    "banking/user_task_13/priv0/update_user_info",
+    "banking/user_task_14/priv0/update_password",
+    "slack/user_task_1/priv0/send_direct_message",
+    "slack/user_task_10/priv0/add_user_to_channel",
+    "slack/user_task_10/priv1/add_user_to_channel",
+    "slack/user_task_10/priv2/add_user_to_channel",
+    "slack/user_task_13/priv0/send_direct_message",
+    "slack/user_task_15/priv0/send_channel_message",
+    "slack/user_task_17/priv0/invite_user_to_slack",
+    "slack/user_task_18/priv1/send_channel_message",
+    "slack/user_task_19/priv0/add_user_to_channel",
+    "slack/user_task_19/priv1/send_channel_message",
+    "slack/user_task_2/priv0/invite_user_to_slack",
+    "slack/user_task_4/priv0/post_webpage",
+    "slack/user_task_7/priv0/add_user_to_channel",
+    "slack/user_task_9/priv0/add_user_to_channel",
+    "travel/user_task_3/priv0/send_email",
+    "workspace/user_task_12/priv0/create_calendar_event",
+    "workspace/user_task_13/priv0/send_email",
+    "workspace/user_task_15/priv0/create_calendar_event",
+    "workspace/user_task_21/priv0/create_calendar_event",
+    "workspace/user_task_4/priv0/create_calendar_event",
+    "workspace/user_task_6/priv0/create_calendar_event",
+    "workspace/user_task_8/priv0/add_calendar_event_participants",
+    "workspace/user_task_9/priv0/create_calendar_event"
+  ],
+  "fixed_primary_extreme_label_decision_ids": [
+    "banking/user_task_0/priv0/send_money",
+    "banking/user_task_13/priv0/update_user_info",
+    "banking/user_task_14/priv0/update_password",
+    "slack/user_task_10/priv0/add_user_to_channel",
+    "slack/user_task_10/priv1/add_user_to_channel",
+    "slack/user_task_10/priv2/add_user_to_channel",
+    "slack/user_task_13/priv0/send_direct_message",
+    "slack/user_task_15/priv0/send_channel_message",
+    "slack/user_task_18/priv1/send_channel_message",
+    "slack/user_task_19/priv0/add_user_to_channel",
+    "slack/user_task_19/priv1/send_channel_message",
+    "travel/user_task_3/priv0/send_email",
+    "workspace/user_task_12/priv0/create_calendar_event",
+    "workspace/user_task_4/priv0/create_calendar_event",
+    "workspace/user_task_6/priv0/create_calendar_event",
+    "workspace/user_task_8/priv0/add_calendar_event_participants"
+  ],
+  "fixed_valid_n": 26,
+  "fixed_primary_extreme_label_n": 16,
+  "fixed_primary_task_n": 13,
+  "labels": "copied exactly from frozen parent A13 taxonomy/decisions; never re-estimated from R1 outcomes",
+  "span_eligibility": "reconstruct exact A13 rule: prior role==tool and non-empty stripped textual content; must match parent n_eligible_tool_spans",
+  "primary_ablation": "true deletion of first user message / each eligible tool message, identical to A13",
+  "secondary_ablation": "character-matched neutral substitution on both user/tool spans, identical to A13",
+  "primary_endpoint": "H_mean_del = I[Delta_U_del > mean(Delta_S_del)] under Llama scorer",
+  "primary_hypothesis": "task-weighted H_mean_del(SPECIFIED) > H_mean_del(DELEGATED) under Llama scorer",
+  "continuous_effect": "M_del = Delta_U_del - mean(Delta_S_del)",
+  "continuous_hypothesis": "task-weighted M_del(SPECIFIED) > M_del(DELEGATED) under Llama scorer",
+  "cross_scorer_supportive_diagnostics": [
+    "Qwen-vs-Llama H_mean agreement on fixed decisions",
+    "Pearson/Spearman correlations of dU_del, mean_dS_del, max_dS_del, M_del",
+    "task-level cross-scorer M correlation",
+    "deletion/substitution agreement",
+    "token-boundary offset diagnostics; never used to alter scores post hoc"
+  ],
+  "inference": {
+    "unit_for_resampling": "user task",
+    "task_weighting": "equal weight per task within label",
+    "bootstrap_B": 5000,
+    "bootstrap_seed": 130013,
+    "partial_label": "descriptive/supportive only",
+    "missing_llama_score": "R1 fixed-sample run is incomplete; do not silently drop failed decisions"
+  },
+  "sensitivity_grid": [
+    {
+      "specified_min": 0.9,
+      "delegated_max": 0.1
+    },
+    {
+      "specified_min": 0.8,
+      "delegated_max": 0.2
+    },
+    {
+      "specified_min": 0.7,
+      "delegated_max": 0.3
+    }
+  ],
+  "interpretation_before_outcomes": {
+    "strong_replication": "primary H contrast > 0 and frozen task-bootstrap CI lower bound > 0",
+    "directional_replication": "primary H contrast > 0 but CI includes 0",
+    "failure_to_replicate_direction": "primary H contrast <= 0",
+    "note": "M and cross-scorer correlations are supportive, not allowed to rescue a failed primary H direction post hoc"
+  },
+  "no_post_outcome_tuning": true,
+  "protocol_hash": "d6c68d72ab0c665b589da1b5dc2ce217d71955ab874b24496ddaf2aa21982f3b",
+  "frozen_at_utc": "2026-08-09T01:06:58.855216+00:00"
+}

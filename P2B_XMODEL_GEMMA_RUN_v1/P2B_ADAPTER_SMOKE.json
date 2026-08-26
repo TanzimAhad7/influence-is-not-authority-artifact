@@ -1,0 +1,58 @@
+{
+  "calls": 3,
+  "model_id": "google/gemma-3-12b-it",
+  "model_key": "gemma",
+  "pass": true,
+  "results": [
+    {
+      "calls": [
+        {
+          "args": {
+            "code": "ALPHA7"
+          },
+          "function": "lookup_code",
+          "id": "canon_12d8f64cc1e0443a9acdec99",
+          "placeholder_args": null
+        }
+      ],
+      "parse_error": null,
+      "pass": true,
+      "raw_text": "{\"name\":\"lookup_code\",\"arguments\":{\"code\":\"ALPHA7\"}}",
+      "rep": 0
+    },
+    {
+      "calls": [
+        {
+          "args": {
+            "code": "ALPHA7"
+          },
+          "function": "lookup_code",
+          "id": "canon_79d4ebb4387d4723820e54d1",
+          "placeholder_args": null
+        }
+      ],
+      "parse_error": null,
+      "pass": true,
+      "raw_text": "{\"name\":\"lookup_code\",\"arguments\":{\"code\":\"ALPHA7\"}}",
+      "rep": 1
+    },
+    {
+      "calls": [
+        {
+          "args": {
+            "code": "ALPHA7"
+          },
+          "function": "lookup_code",
+          "id": "canon_6e945e68c67f422cb41cf2ab",
+          "placeholder_args": null
+        }
+      ],
+      "parse_error": null,
+      "pass": true,
+      "raw_text": "{\"name\":\"lookup_code\",\"arguments\":{\"code\":\"ALPHA7\"}}",
+      "rep": 2
+    }
+  ],
+  "schema": "P2B_XMODEL_ADAPTER_SMOKE_V1",
+  "scientific": false
+}

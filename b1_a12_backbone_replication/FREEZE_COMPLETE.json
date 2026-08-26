@@ -1,0 +1,12 @@
+{
+  "status": "B1_FROZEN_NO_BENCHMARK_OUTCOMES",
+  "frozen_at_utc": "2026-08-09T21:16:22.240395+00:00",
+  "protocol_hash": "61f47a7507f03b01931e6c5b3452dfe43ac9a9b67b52b3079b85214880c7827f",
+  "files": {
+    "b1_a12_backbone_replication/protocol.json": "e7c74b3499446d053155e5a3140367fa2013c16ef18b08bfd952986b7e785434",
+    "b1_a12_backbone_replication/task_manifest.json": "f5305527f168ca227432f515395a7cea545aadffa7606f87f86caef99d5ad667",
+    "b1_a12_backbone_replication/taxonomy.json": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "b1_a12_backbone_replication/model_lineage.json": "47e9559727af9107be00e04a1b0400d76639db7a206973b31826292cd1692a39",
+    "b1_a12_backbone_replication/source_hashes.json": "40de8d6a9629753a70d01b5510f275967f445b537aa99d40dee592792a3978f4"
+  }
+}

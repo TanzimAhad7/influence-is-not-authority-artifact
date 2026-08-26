@@ -1,0 +1,19 @@
+{
+  "census": {
+    "bases": 24,
+    "execution": 96,
+    "inputs": 192,
+    "mapped": 192,
+    "science": 96
+  },
+  "errors": [],
+  "freeze_sha256": "ec637652d3821df7721c81f04b8175ab116f84cd033f3c4016761c48ab458bfb",
+  "independent_primary_rederivation": true,
+  "manifest_sha256": "7b61853d3004f81de26c7836117042a437ee35581030c275184021ee9d7f4d87",
+  "parse_ok": 96,
+  "results_sha256": "37a4c8d561aeb3d1f43c8ec3b1582a280f482a2acbc3d121affb5029b0678f41",
+  "schema": "AWN3_VERIFY_REPORT_V1_2026-08-19",
+  "science_output_sha256": "311a1f4a67ad20ca98c35657306699ce8b2dba814f1684856d56ef80dac253c3",
+  "status": "INTEGRITY_PASS",
+  "verified_at_utc": "2026-08-19T23:34:18.928660+00:00"
+}

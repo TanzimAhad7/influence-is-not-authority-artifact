@@ -1,0 +1,23 @@
+{
+  "author_completed_freeze_archive": "P0B3_CAUSALARMOR_CALIBRATION_FREEZE_COMPLETE_v1.zip",
+  "author_completed_freeze_archive_sha256": "0ad06fefbbc09d79eadf1e0186570d6181b4b5b22812889cbfed5476ecb0f82c",
+  "embedded_frozen_input_sha256": {
+    "FINAL_ARTIFACT_SHA256.txt": "0ee0d02a007e31b9ed53276820f27640212830539d98503ff32ffa2ae9b97d00",
+    "P0B3_BENIGN_97_TASKS.csv": "b131b25bae25526cbc413f78a31cbbf3ad0f0b5ee6206da09b5e1cf98dad12a9",
+    "P0B3_ENV_POP_PREFLIGHT.json": "a93b279c3ffb80fde2bd5550cef07c81050e4b858f905d8b5f3f667227a58e9d",
+    "P0B3_LEGACY_629_PAIRS.csv": "d1c904aeddc96a37da8cbf1cc332ee22a63dccb8f3aeb1a11c77dc26b161fb0d",
+    "P0B3_PRIMARY_949_PAIRS.csv": "66774830500e362f503ce60389c62dace455e6fa4ab1498b48b1d5935522fd91",
+    "P0B3_PROTOCOL_FREEZE.json": "a105c459aa4e74de5e59e281ed66f441db80ec101ccbfbb13d7b4bb614c2b7c4",
+    "P0B3_SUITE_COUNTS.csv": "fff7040502f29d8e420eaf301fe5831e733cb66531791047e7b76186fca92b0e"
+  },
+  "live_implementation_note": "No scientific benchmark outcome existed when this package was constructed. Technical preflight is excluded and must not execute any frozen AgentDojo user/injection task.",
+  "original_zero_call_freeze_package_sha256": "138f8f20498393a89be92cd9fa28542a493c79867e080dfa2a08fe9a6135fbba",
+  "protocol_freeze_sha256": "611e26250e55da6d04f6d93976752078cb957c20b7dd630b225129d528f8ef27",
+  "protocol_status": "FROZEN_BEFORE_ANY_SCIENTIFIC_OUTCOME",
+  "schema": "P0B3_LIVE_FREEZE_BINDING_V1",
+  "science_population": {
+    "benign": 97,
+    "legacy_nested": 629,
+    "primary_attack": 949
+  }
+}

@@ -1,0 +1,9 @@
+[AWN3-FREEZE] project_root=/home/anon_/ratchet/phase0_pilot
+[AWN3-FREEZE] run_dir=AW_N3_AUTHOR_v1
+[AWN3-FREEZE] no scientific model outcomes
+[AWN3-01] FREEZE PASS
+[AWN3-01] freeze_sha256=ec637652d3821df7721c81f04b8175ab116f84cd033f3c4016761c48ab458bfb
+[AWN3-01] freeze_file_sha256=55fc8577131677e8f59ace954f58e86b1a6ff3a683611914862d13903feff2e7
+[AWN3-01] full 2x2 action-control extension is frozen BEFORE outcomes
+[AWN3-01] NO scientific AgentWatcher outcomes generated
+[AWN3-FREEZE] COMPLETE

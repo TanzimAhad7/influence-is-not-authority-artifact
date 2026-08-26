@@ -1,0 +1,22 @@
+piarena_defense_adapter.py SHA-256: c2cb0897764c80a4d23a7571151eb6a003df5ce91422c51a802b4fbc4977dc5f
+
+PATH 3 -- first-call gap
+  pipeline order: ToolsExecutionLoop([ToolsExecutor, llm, defense_element])
+  trace: EXECUTE:send_money -> LLM -> DEFENSE_INVOKED -> EXECUTE:send_money -> LLM -> DEFENSE_INVOKED
+  first privileged execution at index : 0
+  first defense invocation at index   : 2
+
+Traceback (most recent call last):
+  File "/home/anon_/ratchet/phase0_pilot/verification/poc_bypass_agentwatcher.py", line 274, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/anon_/ratchet/phase0_pilot/verification/poc_bypass_agentwatcher.py", line 243, in main
+    p4 = run_path4(args.adapter)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anon_/ratchet/phase0_pilot/verification/poc_bypass_agentwatcher.py", line 189, in run_path4
+    spec.loader.exec_module(mod)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/anon_/ratchet/phase0_pilot/archive/external/AgentWatcher_armc_runtime_v1/A15B0_RECON_V2_BACKUP_20260809T191510/agents/agentdojo/src/agentdojo/agent_pipeline/piarena_defense_adapter.py", line 47, in <module>
+    from agentdojo.agent_pipeline.inference_utils import parse
+ModuleNotFoundError: No module named 'agentdojo.agent_pipeline.inference_utils'

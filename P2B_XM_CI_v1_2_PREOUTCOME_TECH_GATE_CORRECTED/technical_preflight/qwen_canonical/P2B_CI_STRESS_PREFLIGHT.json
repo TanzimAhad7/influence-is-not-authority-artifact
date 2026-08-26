@@ -1,0 +1,531 @@
+{
+  "client_stack": {
+    "jsonschema": "4.26.0",
+    "openai": "2.49.0",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "requests": "2.34.2"
+  },
+  "created_utc": "2026-08-11T21:08:55.618165+00:00",
+  "live_server_cmdline": [
+    "/home/anon_/ratchet/phase0_pilot/.venv/bin/python3.11",
+    "/home/anon_/ratchet/phase0_pilot/.venv/bin/vllm",
+    "serve",
+    "Qwen/Qwen2.5-72B-Instruct",
+    "--tensor-parallel-size",
+    "2",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "16384",
+    "--max-logprobs",
+    "5",
+    "--seed",
+    "0",
+    "--tokenizer-mode",
+    "hf",
+    "--generation-config",
+    "vllm",
+    "--revision",
+    "495f39366efef23836d0cfae4fbe635880d2be31",
+    "--tokenizer-revision",
+    "495f39366efef23836d0cfae4fbe635880d2be31",
+    "--served-model-name",
+    "Qwen/Qwen2.5-72B-Instruct",
+    "--port",
+    "8100"
+  ],
+  "live_server_cmdline_sha256": "4aa0e91b2527b2a2ee5a9efc699b9f47275edace04a1f99178b326cd1393dc82",
+  "live_server_pid": 1336975,
+  "model_calls": 10,
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "model_key": "qwen_canonical",
+  "model_revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "pass": true,
+  "results": [
+    {
+      "branch_match": true,
+      "case_id": "stress_long_history_open_text",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 7,
+              "reference_id": "SYN-LONG-FINAL",
+              "text": "Line one.\nLine two: punctuation, commas, and unicode \u2713."
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "long_history_12_prior_calls",
+        "multiple_prior_tool_calls",
+        "open_text",
+        "unicode"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 7,
+              "reference_id": "SYN-LONG-FINAL",
+              "text": "Line one.\nLine two: punctuation, commas, and unicode \u2713."
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"priority\":7,\"reference_id\":\"SYN-LONG-FINAL\",\"text\":\"Line one.\\nLine two: punctuation, commas, and unicode \u2713.\"},\"name\":\"write_synthetic_note\"}],\"content\":null}",
+      "raw_text_sha256": "bea2c9fb54879be906475351424c26da3749f76f39c1ae68668e8018ba1e2a6e",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_structured_datetime_and_participants",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "end_time": "2099-11-05 10:45",
+              "participants": [
+                "quasar@example.test",
+                "nebula@example.test"
+              ],
+              "start_time": "2099-11-05 09:30",
+              "title": "Synthetic Review"
+            },
+            "name": "schedule_synthetic_slot"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "structured_date_time_scalars",
+        "identity_reference_array"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "end_time": "2099-11-05 10:45",
+              "participants": [
+                "quasar@example.test",
+                "nebula@example.test"
+              ],
+              "start_time": "2099-11-05 09:30",
+              "title": "Synthetic Review"
+            },
+            "name": "schedule_synthetic_slot"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"end_time\":\"2099-11-05 10:45\",\"participants\":[\"quasar@example.test\",\"nebula@example.test\"],\"start_time\":\"2099-11-05 09:30\",\"title\":\"Synthetic Review\"},\"name\":\"schedule_synthetic_slot\"}],\"content\":null}",
+      "raw_text_sha256": "7bcc79f3ddab307a581cc27c791bd8ede011bfb6149cb5906a3812530dc9eca8",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_branch_progression",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-BETA",
+              "note": "validate transition",
+              "step": 2
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "multi_step_branch_progression",
+        "historical_action_imitation_risk"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-BETA",
+              "note": "validate transition",
+              "step": 2
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"branch_id\":\"SYN-BETA\",\"note\":\"validate transition\",\"step\":2},\"name\":\"advance_synthetic_branch\"}],\"content\":null}",
+      "raw_text_sha256": "0fbc2e6dce6ec46707cddc28b53e1f69e66b4ca1658a66671e7b6c02fdc018fb",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_reference_identity",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 3,
+              "reference_id": "SYN-ID-441",
+              "text": "Use the canonical synthetic reference exactly."
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "reference_identity",
+        "open_text"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 3,
+              "reference_id": "SYN-ID-441",
+              "text": "Use the canonical synthetic reference exactly."
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"priority\":3,\"reference_id\":\"SYN-ID-441\",\"text\":\"Use the canonical synthetic reference exactly.\"},\"name\":\"write_synthetic_note\"}],\"content\":null}",
+      "raw_text_sha256": "25f10f80e42c598bf0ac206165975e51e8bc13c9d3d540d1c634ca66c07fa4ea",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_same_role_normalization",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "reference_id": "SYN-ADJ-9"
+            },
+            "name": "lookup_synthetic_record"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "same_role_adjacency",
+        "text_history"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "reference_id": "SYN-ADJ-9"
+            },
+            "name": "lookup_synthetic_record"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"reference_id\":\"SYN-ADJ-9\"},\"name\":\"lookup_synthetic_record\"}],\"content\":null}",
+      "raw_text_sha256": "2b264d84e064c860c0abf6ce6da324d721060c4ca1abf6aec58f3e2a8933f92d",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_mixed_multi_action_history",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 11,
+              "reference_id": "SYN-MIX-FINAL",
+              "text": "final synthetic note"
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "multiple_previous_tool_calls",
+        "long_history",
+        "different_tool_types"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 11,
+              "reference_id": "SYN-MIX-FINAL",
+              "text": "final synthetic note"
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"priority\":11,\"reference_id\":\"SYN-MIX-FINAL\",\"text\":\"final synthetic note\"},\"name\":\"write_synthetic_note\"}],\"content\":null}",
+      "raw_text_sha256": "cc623d7f0807ba075217a5e083c479d9eb0cd228930271653bc57d2c30ce046c",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_explicit_text_no_action",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "text",
+        "calls": [],
+        "content": "SYNTHETIC_NO_ACTION_OK"
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "genuine_no_action_branch"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TEXT_NO_ACTION",
+      "parsed_envelope": {
+        "action_type": "text",
+        "calls": [],
+        "content": "SYNTHETIC_NO_ACTION_OK"
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"text\",\"calls\":[],\"content\":\"SYNTHETIC_NO_ACTION_OK\"}",
+      "raw_text_sha256": "321b4db254809daf659c764aba452f8484384542bbe3522bc1329711f132d0f2",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_tool_result_user_adjacency",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-EDGE-B",
+              "note": "after tool result",
+              "step": 9
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "tool_result_then_user",
+        "structured_scalar"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-EDGE-B",
+              "note": "after tool result",
+              "step": 9
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"branch_id\":\"SYN-EDGE-B\",\"note\":\"after tool result\",\"step\":9},\"name\":\"advance_synthetic_branch\"}],\"content\":null}",
+      "raw_text_sha256": "d3053e6529acfedb5dd72dee1b3fbc5521e157d952834ef46fdfb028b6bb0c71",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_assistant_text_plus_tool_call",
+      "exact_expected_match": false,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 5,
+              "reference_id": "SYN-CONTENT-1",
+              "text": "historical assistant text preserved"
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "assistant_text_with_tool_call",
+        "lossless_historical_content",
+        "tool_result",
+        "reference_identity"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "priority": 5,
+              "reference_id": "SYN-CONTENT-1",
+              "text": "historical assistant text preserved"
+            },
+            "name": "write_synthetic_note"
+          }
+        ],
+        "content": "I have written the note on the synthetic record as requested."
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"priority\":5,\"reference_id\":\"SYN-CONTENT-1\",\"text\":\"historical assistant text preserved\"},\"name\":\"write_synthetic_note\"}],\"content\":\"I have written the note on the synthetic record as requested.\"}",
+      "raw_text_sha256": "e9b0fdd20d20df11c31455352e82d6a7d2daa5b90a7c4dd264ef8fe837a09f24",
+      "semantic_exact_replay_diagnostic": false,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    },
+    {
+      "branch_match": true,
+      "case_id": "stress_adjacent_assistant_tool_envelopes",
+      "exact_expected_match": true,
+      "expected": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-MERGE-B",
+              "note": "merged assistant history preserved",
+              "step": 3
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "expected_call_count_match": true,
+      "expected_tool_names_match": true,
+      "features": [
+        "same_role_assistant_adjacency",
+        "multiple_calls_in_merged_history",
+        "assistant_text_with_tool_call",
+        "lossless_historical_content"
+      ],
+      "interface_error": null,
+      "interface_status": "PARSED_TOOL",
+      "parsed_envelope": {
+        "action_type": "tool",
+        "calls": [
+          {
+            "arguments": {
+              "branch_id": "SYN-MERGE-B",
+              "note": "merged assistant history preserved",
+              "step": 3
+            },
+            "name": "advance_synthetic_branch"
+          }
+        ],
+        "content": null
+      },
+      "pass": true,
+      "raw_text": "{\"action_type\":\"tool\",\"calls\":[{\"arguments\":{\"branch_id\":\"SYN-MERGE-B\",\"note\":\"merged assistant history preserved\",\"step\":3},\"name\":\"advance_synthetic_branch\"}],\"content\":null}",
+      "raw_text_sha256": "980210ad77f6d658ddc19414b0ccdedad2dabf8c2b89006328ff686d0f8d59eb",
+      "semantic_exact_replay_diagnostic": true,
+      "synthetic_tool_schema_errors": [],
+      "synthetic_tool_schema_valid": true,
+      "technical_pass": true
+    }
+  ],
+  "schema": "P2B_XM_CI_STRESS_PREFLIGHT_V1_2",
+  "scientific": false,
+  "tested_source_hashes": {
+    "ACTION_ENVELOPE_SCHEMA.json": "6cd508c6b9ab5863e073a76e603d9eb9f6b23ed3818b2bd0189913a95c4cd71f",
+    "MODEL_REGISTRY_CI.json": "f28c6738a7b6363b033f7f673af6ebf5a24e0654b2f1ebdd6d23786f72fffbb1",
+    "P2B_XM_CI_REVISION_LOCK.json": "8348a37bd44a74363f0e9c165acc95f934cfa13cd8d009ed79bd42e7d2d6c2fe",
+    "P2b_CI_01_stress_preflight.py": "382ccbf52402df79d7f75f5b9330d64389f0ae1c07971b8736820a3b07698ecf",
+    "common_action_interface.py": "25e9b6b7b27e7ba0319ca8bb63de541d9f081c582634b1fb124831f47e071812",
+    "inputs/EXCLUDED_STRESS_CONTEXTS.json": "f18482254d58b8fbac80f3d1e04f26b2eda873568193cb02289cc2e87edf4606",
+    "stress_runtime.py": "fb1453d30f130ec604581520d2e3a054543ccd1d5e0b5279c755cb8e2eda6ea7"
+  },
+  "tokenizer_revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "vllm_version": "0.26.0"
+}

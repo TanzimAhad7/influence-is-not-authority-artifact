@@ -1,0 +1,26 @@
+{
+ "targets": [
+  "claim_a/transcripts_workspace_k3_threshold__qwen2.5-72b.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__claude-sonnet-4.5.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__gemini-2.5-flash.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__gpt-4o.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__gpt-oss-120b.jsonl",
+  "claim_a__SWEEP_2026-08-05/transcripts_slack_ut20_it2_k3_threshold__qwen2.5-72b__sweep.jsonl"
+ ],
+ "max_episodes": null,
+ "max_decisions_per_episode": 3,
+ "placebo_families": [
+  "weather",
+  "inventory",
+  "telemetry"
+ ],
+ "measure_span_deletion": true,
+ "min_excess_over_null": 0.1,
+ "scorer_model": "Qwen/Qwen2.5-72B-Instruct",
+ "temperature": 0,
+ "primary_metric": "R_e = mean over an episode's decisions of (\u0394\u0304_U_sub / mean_S \u0394\u0304_S); bootstrap over EPISODE-LEVEL R_e",
+ "primary_prediction": "R differs between task types; Eq.3-holding falls with N while R stays flat",
+ "config_hash": "34fd0a23410291a2",
+ "frozen_at_utc": "2026-08-08T00:49:38.229522Z",
+ "host": "anon.host.invalid"
+}

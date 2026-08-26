@@ -1,0 +1,13 @@
+{
+  "freeze_sha256": "93b952cabd01fdbbebce616045aa1c7d6fa9c179005f1fa66906b4510a6978c0",
+  "frontier_sha256": {
+    "gemma": "c8daf9a8fcbb8152a8331965ae5dbd7d87cd49f0b9f6d2fec4b212922fff13ee",
+    "llama": "aee885ed9a001b0f368a954aeaf657c2b1fb9e288cdda633bc4d54d817149fc2"
+  },
+  "manifest_sha256": "25c24f76ec5f14a089838feca742d11d4ce5850c97a12ccb76d677a314c6f908",
+  "no_model_provider_calls": true,
+  "report_sha256": "57e48207d360a810794022dc72a968a121a4eaaa647326a115295cf669376fca",
+  "results_sha256": "ee5becff3cdf1397a088d82f1487ce0af4eea3c202f7cc78eb3c3a6c38f5991f",
+  "schema": "R2B_JTF_V1_2026-08-19",
+  "status": "R2B_JTF_RUN_COMPLETE"
+}

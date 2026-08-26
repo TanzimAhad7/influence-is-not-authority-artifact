@@ -1,0 +1,4 @@
+P6 CLEAN PREFLIGHT / INPUT FREEZE PASS
+manifest_rows= 422
+manifest_sha256= 3999750de82ef4f7dd3dc79099f89985213fd64b061842d784ddb0e4d561596f
+attack_summary= {"important_instructions": {"n": 200, "security_true": 1, "utility_true": 47}, "tool_knowledge": {"n": 200, "security_true": 0, "utility_true": 56}}

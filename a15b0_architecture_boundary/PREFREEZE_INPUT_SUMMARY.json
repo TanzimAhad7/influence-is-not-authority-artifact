@@ -1,0 +1,458 @@
+{
+  "artifact_hashes": {
+    "controlled_96_inputs.jsonl": "a579fe9cb1f43d8621898a86bdabe51fd720e830a53f0f8e3d5c484fa87dcea4",
+    "controlled_execution_inputs.jsonl": "011c18ae7042cab919d713cd46e9d87e830079029870f59ff3e352661f41c49e",
+    "natural_26_inputs.jsonl": "4a1af1f195ec86c3688d00315dc4eb99c7c63a7737fcaaa15cfbae84b335c6db"
+  },
+  "b1": {
+    "protocol_file_sha256": "e7c74b3499446d053155e5a3140367fa2013c16ef18b08bfd952986b7e785434",
+    "protocol_hash": "61f47a7507f03b01931e6c5b3452dfe43ac9a9b67b52b3079b85214880c7827f"
+  },
+  "controlled": {
+    "dedup_rule": "ALL_48_SHAM_ECHO_WITHIN_PROVENANCE_PAIRS_IDENTICAL; execute unique static inputs once",
+    "execution_rows_n": 48,
+    "n_bases": 24,
+    "n_conditions": 96,
+    "n_sham_echo_pairs": 48,
+    "n_static_identical_sham_echo_pairs": 48,
+    "n_unique_agentwatcher_static_inputs": 48,
+    "pair_audit": [
+      {
+        "base_id": "A14M_F1_CALENDAR_00",
+        "echo_condition_id": "A14M_F1_CALENDAR_00__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_00__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "d561e87bfdeb00bc1bd4023cbcabe2ac5b7c9309220fd1e5bf5c14d5b9f34ef1"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_00",
+        "echo_condition_id": "A14M_F1_CALENDAR_00__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_00__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "394607a4657a4d384267926232271c00b6ca6170924ed8da450a51a7c4f7be66"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_01",
+        "echo_condition_id": "A14M_F1_CALENDAR_01__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_01__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "90640ca42732d5b1429bf1f38d3391656db6b80c23b64a216fc1ba58e032c1c6"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_01",
+        "echo_condition_id": "A14M_F1_CALENDAR_01__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_01__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "31c92284068ffde361a24f9b30b3f3d66c7c61717b1b321e661cab228771cdf0"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_02",
+        "echo_condition_id": "A14M_F1_CALENDAR_02__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_02__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "393c89b01a2b185b7468fb60dbc9a69d96b5f1bd83c3cfb60606ae20afc7b045"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_02",
+        "echo_condition_id": "A14M_F1_CALENDAR_02__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_02__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "962098dd6c9cf246361d5a35e5b265fe5724fb65468dbfa94e5ab42c43a7312e"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_03",
+        "echo_condition_id": "A14M_F1_CALENDAR_03__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_03__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "fdb2b69e0f91b8c16c6a17f807949d154feea159cd6f6f5ee442ffcd47bb935f"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_03",
+        "echo_condition_id": "A14M_F1_CALENDAR_03__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_03__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "f3d6db9e3fdc40116001687aaa35edce0c5d9b5f51b19642e9e61bcc14a78c6d"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_04",
+        "echo_condition_id": "A14M_F1_CALENDAR_04__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_04__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "d20f9aa8e1871674fea4bb380585ab2eae42e64482a447ff9d2f170df4201583"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_04",
+        "echo_condition_id": "A14M_F1_CALENDAR_04__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_04__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "c008e0202bf1fc86bc1bbe78d264838b55db1c55eb2130522c0b72c0239f8f13"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_05",
+        "echo_condition_id": "A14M_F1_CALENDAR_05__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_05__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "6b02a7f08fe124360c80a44170a0fcf55caabae85393d71c0f88d0ad753627d4"
+      },
+      {
+        "base_id": "A14M_F1_CALENDAR_05",
+        "echo_condition_id": "A14M_F1_CALENDAR_05__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F1_CALENDAR_05__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "7b3e742b29b39269bae3b7555153aeecef2d52dbb35295746d4332a50b001edb"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_00",
+        "echo_condition_id": "A14M_F2_SLACK_00__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F2_SLACK_00__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "3b285b7a9a735df3624e8407c4d4c43f07480fcb19624e545cc8d0814b785d0a"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_00",
+        "echo_condition_id": "A14M_F2_SLACK_00__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F2_SLACK_00__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "ee3d5f0997b7dd738391ed43f680a5a76ad714ca7aa48f5ce10100072aa1641d"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_01",
+        "echo_condition_id": "A14M_F2_SLACK_01__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F2_SLACK_01__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "be558728348245d0bbd0113b10f7d76e4c734cc19d1bc431ab2465a79356e14f"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_01",
+        "echo_condition_id": "A14M_F2_SLACK_01__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F2_SLACK_01__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "69ec02ec44e4c4f6603960d9cbda71a804d4aa791854454ef32cbc5bc12f6fb0"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_02",
+        "echo_condition_id": "A14M_F2_SLACK_02__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F2_SLACK_02__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "fdcb8c4e708bc0256f2911f485fc3723aa9c9db5cf9431f182de332dbc59f8dd"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_02",
+        "echo_condition_id": "A14M_F2_SLACK_02__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F2_SLACK_02__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "41c6fcae7595c7f0c4a437f8e4535e9d322b2c43786768b9e7ea61a7557bab5d"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_03",
+        "echo_condition_id": "A14M_F2_SLACK_03__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F2_SLACK_03__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "87b691d238c201ac708e51075becabb88ee644706f1cb11f78e6d4e6795ff491"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_03",
+        "echo_condition_id": "A14M_F2_SLACK_03__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F2_SLACK_03__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "35eca5e6cdf82246bd1f487c8859399bcc9c4d20f818cea9086828faaaea59ca"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_04",
+        "echo_condition_id": "A14M_F2_SLACK_04__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F2_SLACK_04__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "63e3018a41479c40b9a1958d4d39f1889af12cd5b148d15c1f71e9a30ca50d53"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_04",
+        "echo_condition_id": "A14M_F2_SLACK_04__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F2_SLACK_04__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "c28e3e2a2a1fbb89abfdf18c75fa0eb8f3bc23a5957fe8a1e7f75d470b37da3f"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_05",
+        "echo_condition_id": "A14M_F2_SLACK_05__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F2_SLACK_05__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "7a020af3dfe8a4ee58e8d485b138bf287be2943d38c60f5279624615d87f8c7d"
+      },
+      {
+        "base_id": "A14M_F2_SLACK_05",
+        "echo_condition_id": "A14M_F2_SLACK_05__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F2_SLACK_05__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "247648e9307855617c61afbc7ccfef81c55e8679679aa1845179408db964d6c6"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_00",
+        "echo_condition_id": "A14M_F3_BANKING_00__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F3_BANKING_00__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "857a765d1af5807a9bacf5d0c9e40347312d61ff7edc6356e420fdceaa214ef8"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_00",
+        "echo_condition_id": "A14M_F3_BANKING_00__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F3_BANKING_00__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "d75ae4790f8913f6dc294c8e86697d0726014b70d64fc5fcce919265acda56d8"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_01",
+        "echo_condition_id": "A14M_F3_BANKING_01__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F3_BANKING_01__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "a3f30f121eb2e88d58b52f4365e75caaf47bba3de96dfb4740968987966e77cc"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_01",
+        "echo_condition_id": "A14M_F3_BANKING_01__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F3_BANKING_01__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "fe3f5ad78541db56329aad4cd2fe4ed309579d4e688d182eb7ed51c51d13f490"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_02",
+        "echo_condition_id": "A14M_F3_BANKING_02__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F3_BANKING_02__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "c2d53e709ec5c158f3844e3ea859a1acebe47177d9673eadde31ccdfffc91f51"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_02",
+        "echo_condition_id": "A14M_F3_BANKING_02__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F3_BANKING_02__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "8ae2447a024f25d34c641309cdbec3e2faddc534c9e9bb048883e619d49122dd"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_03",
+        "echo_condition_id": "A14M_F3_BANKING_03__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F3_BANKING_03__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "e4924486da423780adb05b66800e462da5d8ef1a1b1588aa790cc898f70305b6"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_03",
+        "echo_condition_id": "A14M_F3_BANKING_03__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F3_BANKING_03__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "590b07d3981c65845c1fe25c961b0d00d15d26bda998e38f88351269ac7f28b1"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_04",
+        "echo_condition_id": "A14M_F3_BANKING_04__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F3_BANKING_04__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "a20e8a7978df88fc9f4bdfd471ba7bd0929d8cae29ad4d2c44998116a6b474b9"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_04",
+        "echo_condition_id": "A14M_F3_BANKING_04__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F3_BANKING_04__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "00ff703b152f3c92bfba206c1bf59e4441942663e4066eb6e9a124e1921ab234"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_05",
+        "echo_condition_id": "A14M_F3_BANKING_05__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F3_BANKING_05__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "77e3f134c2a61ab57f564ff9e82169b4826e37194b35404d7f2460c52ad040cc"
+      },
+      {
+        "base_id": "A14M_F3_BANKING_05",
+        "echo_condition_id": "A14M_F3_BANKING_05__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F3_BANKING_05__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "93b0a040f0b1ed38f60c108c4154b25aa818df8b5d182b40152e4aa2d99941d2"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_00",
+        "echo_condition_id": "A14M_F4_EMAIL_00__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_00__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "d99634c3f7d6d4e01a0e141ddff5dff3584ff51539ddb919bf2ff71dee90cb91"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_00",
+        "echo_condition_id": "A14M_F4_EMAIL_00__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_00__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "c348bc45524999b12a2208b52c4217e1e718ce605458a611e4f06fad2f3b5bae"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_01",
+        "echo_condition_id": "A14M_F4_EMAIL_01__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_01__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "6a16032ac14f544659df00cf06f0684c1ec16e1fdd5f6ed09b9944471f768866"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_01",
+        "echo_condition_id": "A14M_F4_EMAIL_01__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_01__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "c7491f2afc548ca0b326fa728909deb66f3508fef2d18df7c05ad5d8f1a7f685"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_02",
+        "echo_condition_id": "A14M_F4_EMAIL_02__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_02__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "e68cc7abb64ee2ece0c18160f0d82c1c62e475b40e955c22af26fc49b3c62d2c"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_02",
+        "echo_condition_id": "A14M_F4_EMAIL_02__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_02__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "078769417856321c28e479191cda422be9e90a26bb7134f82d9bb2124bce0d9f"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_03",
+        "echo_condition_id": "A14M_F4_EMAIL_03__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_03__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "afce7ccda91048b3c4826ccff65f509b02daffaddab46b70583825333b2a2bd6"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_03",
+        "echo_condition_id": "A14M_F4_EMAIL_03__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_03__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "fe6642d221264adc3f6fb0ee79bbc9d3734bf68f5793b657dbe6d00fe95c30e1"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_04",
+        "echo_condition_id": "A14M_F4_EMAIL_04__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_04__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "b9eb3af250f80b37a5f6804dcdf7a02fc91be01d28f5b10abd16c42612171e6b"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_04",
+        "echo_condition_id": "A14M_F4_EMAIL_04__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_04__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "5e88a5e7b99fee07442e0796000cb7b3e797c0072bfb30538b0b65c7d31dd532"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_05",
+        "echo_condition_id": "A14M_F4_EMAIL_05__TOOL_ID__ECHO",
+        "factor_provenance": "TOOL_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_05__TOOL_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "4ecf1f418ce6653dd09a7faedfcecafb9723320d8b1880d3dd28c902b9269727"
+      },
+      {
+        "base_id": "A14M_F4_EMAIL_05",
+        "echo_condition_id": "A14M_F4_EMAIL_05__USER_ID__ECHO",
+        "factor_provenance": "USER_ID",
+        "sham_condition_id": "A14M_F4_EMAIL_05__USER_ID__SHAM",
+        "static_input_identical": true,
+        "static_input_sha256": "be557fdca3a5095188552acc5cbd462d5e51f15043736b02be562a7638c7233c"
+      }
+    ]
+  },
+  "created_at_utc": "2026-08-09T21:40:13.421190+00:00",
+  "natural": {
+    "by_label": {
+      "DELEGATED": {
+        "cluster_sizes": {
+          "banking/user_task_0": 1,
+          "banking/user_task_13": 1,
+          "slack/user_task_10": 3,
+          "slack/user_task_18": 1,
+          "slack/user_task_19": 2,
+          "travel/user_task_3": 1
+        },
+        "n_decisions": 9,
+        "n_unique_clusters": 6
+      },
+      "PARTIAL": {
+        "cluster_sizes": {
+          "slack/user_task_1": 1,
+          "slack/user_task_17": 1,
+          "slack/user_task_2": 1,
+          "slack/user_task_4": 1,
+          "slack/user_task_7": 1,
+          "slack/user_task_9": 1,
+          "workspace/user_task_13": 1,
+          "workspace/user_task_15": 1,
+          "workspace/user_task_21": 1,
+          "workspace/user_task_9": 1
+        },
+        "n_decisions": 10,
+        "n_unique_clusters": 10
+      },
+      "SPECIFIED": {
+        "cluster_sizes": {
+          "banking/user_task_14": 1,
+          "slack/user_task_13": 1,
+          "slack/user_task_15": 1,
+          "workspace/user_task_12": 1,
+          "workspace/user_task_4": 1,
+          "workspace/user_task_6": 1,
+          "workspace/user_task_8": 1
+        },
+        "n_decisions": 7,
+        "n_unique_clusters": 7
+      }
+    },
+    "n_decisions": 26,
+    "n_unique_clusters": 23
+  },
+  "no_agentwatcher_outcomes_generated": true,
+  "no_model_or_api_calls": true,
+  "prepare_hash": "675c23d7580f0ec4f6a860a04c15ca21794435a9f0f412be296aff9cb7ea6ee0",
+  "schema_version": "A15B0_PREPARE_SUMMARY_V1"
+}

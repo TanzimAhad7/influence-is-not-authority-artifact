@@ -1,0 +1,175 @@
+{
+  "action_structure_counts": {
+    "MULTIPLE_TARGET_FUNCTION_CALLS": 5,
+    "NO_TOOL_CALL": 10,
+    "TARGET_FUNCTION_ABSENT": 20,
+    "UNIQUE_TARGET_ONLY": 95
+  },
+  "arm_freeze_sha256": "a3960ccd24653f13cb7b76c506f1102737ea04f09fc52c42a699be11ac7b2a24",
+  "class_summary": {
+    "OPAQUE_EXACT": {
+      "ci95": [
+        null,
+        null
+      ],
+      "mean": null,
+      "n": 0
+    },
+    "OPEN_TEXT": {
+      "ci95": [
+        0.3333333333333333,
+        0.8030303030303029
+      ],
+      "mean": 0.5757575757575758,
+      "n": 11
+    },
+    "REFERENCE_IDENTITY": {
+      "ci95": [
+        0.8125,
+        1.0
+      ],
+      "mean": 0.9375,
+      "n": 16
+    },
+    "STRUCTURED_SCALAR": {
+      "ci95": [
+        0.0,
+        0.8
+      ],
+      "mean": 0.4,
+      "n": 5
+    }
+  },
+  "conditioning": "exactly one candidate call matches target function; unchanged from v1.3 H-SLOT",
+  "confirmatory_status": "ELIGIBLE",
+  "decision_scores": {
+    "banking/user_task_13/priv0/update_user_info": {
+      "OPEN_TEXT": 0.5
+    },
+    "slack/user_task_1/priv0/send_direct_message": {
+      "OPEN_TEXT": 0.0,
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_10/priv1/add_user_to_channel": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_10/priv2/add_user_to_channel": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_15/priv0/send_channel_message": {
+      "OPEN_TEXT": 0.0,
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_17/priv0/invite_user_to_slack": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_18/priv1/send_channel_message": {
+      "OPEN_TEXT": 1.0,
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_19/priv0/add_user_to_channel": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_2/priv0/invite_user_to_slack": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_4/priv0/post_webpage": {
+      "OPEN_TEXT": 0.0,
+      "STRUCTURED_SCALAR": 1.0
+    },
+    "slack/user_task_7/priv0/add_user_to_channel": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "slack/user_task_9/priv0/add_user_to_channel": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "travel/user_task_3/priv0/send_email": {
+      "OPEN_TEXT": 1.0,
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "workspace/user_task_12/priv0/create_calendar_event": {
+      "OPEN_TEXT": 1.0,
+      "STRUCTURED_SCALAR": 0.0
+    },
+    "workspace/user_task_13/priv0/send_email": {
+      "OPEN_TEXT": 0.5,
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "workspace/user_task_15/priv0/create_calendar_event": {
+      "OPEN_TEXT": 0.6666666666666666,
+      "REFERENCE_IDENTITY": 0.0,
+      "STRUCTURED_SCALAR": 1.0
+    },
+    "workspace/user_task_21/priv0/create_calendar_event": {
+      "OPEN_TEXT": 1.0,
+      "REFERENCE_IDENTITY": 1.0,
+      "STRUCTURED_SCALAR": 0.0
+    },
+    "workspace/user_task_8/priv0/add_calendar_event_participants": {
+      "REFERENCE_IDENTITY": 1.0
+    },
+    "workspace/user_task_9/priv0/create_calendar_event": {
+      "OPEN_TEXT": 0.6666666666666666,
+      "REFERENCE_IDENTITY": 1.0,
+      "STRUCTURED_SCALAR": 0.0
+    }
+  },
+  "global_freeze_sha256": "d1bb9ec67f10f392e8a85f05955d109747d9bb105da4b0fb3b8da26e50403345",
+  "inference_unit": "decision",
+  "instrument_valid_for_confirmatory_hslot": true,
+  "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+  "model_key": "llama",
+  "paired_contrasts": {
+    "OPEN_TEXT_minus_REFERENCE_IDENTITY": {
+      "ci95": [
+        -0.625,
+        0.10416666666666664
+      ],
+      "contrast": "OPEN_TEXT_minus_REFERENCE_IDENTITY",
+      "decision_ids": [
+        "slack/user_task_1/priv0/send_direct_message",
+        "slack/user_task_15/priv0/send_channel_message",
+        "slack/user_task_18/priv1/send_channel_message",
+        "travel/user_task_3/priv0/send_email",
+        "workspace/user_task_13/priv0/send_email",
+        "workspace/user_task_15/priv0/create_calendar_event",
+        "workspace/user_task_21/priv0/create_calendar_event",
+        "workspace/user_task_9/priv0/create_calendar_event"
+      ],
+      "mean": -0.27083333333333337,
+      "n": 8
+    },
+    "OPEN_TEXT_minus_STRUCTURED_SCALAR": {
+      "ci95": [
+        -0.4666666666666667,
+        0.9333333333333332
+      ],
+      "contrast": "OPEN_TEXT_minus_STRUCTURED_SCALAR",
+      "decision_ids": [
+        "slack/user_task_4/priv0/post_webpage",
+        "workspace/user_task_12/priv0/create_calendar_event",
+        "workspace/user_task_15/priv0/create_calendar_event",
+        "workspace/user_task_21/priv0/create_calendar_event",
+        "workspace/user_task_9/priv0/create_calendar_event"
+      ],
+      "mean": 0.26666666666666666,
+      "n": 5
+    },
+    "STRUCTURED_SCALAR_minus_REFERENCE_IDENTITY": {
+      "ci95": [
+        -1.0,
+        1.0
+      ],
+      "contrast": "STRUCTURED_SCALAR_minus_REFERENCE_IDENTITY",
+      "decision_ids": [
+        "workspace/user_task_15/priv0/create_calendar_event",
+        "workspace/user_task_21/priv0/create_calendar_event",
+        "workspace/user_task_9/priv0/create_calendar_event"
+      ],
+      "mean": -0.3333333333333333,
+      "n": 3
+    }
+  },
+  "rows": 130,
+  "schema": "P2B_XM_CI_ARGUMENT_VOLATILITY_V1"
+}

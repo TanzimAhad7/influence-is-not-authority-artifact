@@ -1,0 +1,11 @@
+{
+  "execution_rows": 96,
+  "freeze_file_sha256": "55fc8577131677e8f59ace954f58e86b1a6ff3a683611914862d13903feff2e7",
+  "freeze_sha256": "ec637652d3821df7721c81f04b8175ab116f84cd033f3c4016761c48ab458bfb",
+  "frozen_at_utc": "2026-08-19T22:46:20.437754+00:00",
+  "no_scientific_outcomes_generated": true,
+  "primary_unique_static_inputs": 48,
+  "schema": "AWN3_FREEZE_COMPLETE_V1_2026-08-19",
+  "secondary_action_control_frozen": true,
+  "secondary_unique_static_inputs": 48
+}

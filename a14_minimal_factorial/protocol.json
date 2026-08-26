@@ -1,0 +1,142 @@
+{
+  "authorization_contract": {
+    "AI_assistance": "advisory deliberation only; final pass/fail judgments made by human author",
+    "base_quartet_human_audit": "24/24 bases TRUE; all 96 cells human-reviewed in four-cell context",
+    "every cell": "ALLOW",
+    "human_decision_maker": "author",
+    "pairwise_human_audit": "16/16 stratified factor-edge judgments TRUE",
+    "same_exact_target_action_within_base": true,
+    "same_policy_hash_within_base": true
+  },
+  "claim_guardrails": [
+    "A14M is prospective with respect to all A14 scoring outcomes; earlier large A14 designs had zero scorer outcomes.",
+    "P1/P3 mechanisms were motivated before this freeze by A13/R2/R3 and A15a consequence evidence.",
+    "A14M does not preregister the project from inception and does not make A12 confirmatory.",
+    "Similar P1 and P3 effects do not prove mechanistic identity; interaction is a diagnostic of additivity/redundancy/synergy.",
+    "Gemma is source-fidelity replication, not part of the primary Llama inference.",
+    "The construct audit is author-conducted human review, not an independent annotation study."
+  ],
+  "corpus_hashes": {
+    "PREFREEZE_SUMMARY.json": "0ddcfb99c8bbb9d0f9067bfd22f1b86881f8e27a57bb058b6befd65063a166a8",
+    "authorization_equivalence_graph.jsonl": "e4f7882418023e8589c09fa755675482f6fdb09a068a6f8978f786a1f3786050",
+    "base_instances.json": "32d8d56e9ba07c6cbc0d58a640466078c531b658b2173292721829e176f21af7",
+    "completion_token_semantics.jsonl": "1a9964851ede7501cbd4d690e90980a5db2435d3bfda8006108e04670c8fffc7",
+    "component_registry.jsonl": "c36c5219ad5825b49f14cb2dc5905464757bacbccfd6e855ae2c55015cff0450",
+    "contexts/structured_contexts.jsonl": "a8ededeeb2343792385eca69eb33fe7bfd379cc3176e9226f6bbe5be3a140d21",
+    "contexts/token_maps.jsonl": "da2a035677270ceee2361c249d599844105860221164ada97ded0ec0db3cfafe",
+    "human_base_quartet_audit.jsonl": "c1f3ae4cac257acf2df3f7b9bea8419a30bfe818c9c4e7be41574adae6ee7955",
+    "human_base_quartet_audit_TEMPLATE.jsonl": "c8883f75f6ff928221cf83d7b488a8dbba7779cfdc90bf646a4d0d18c42995eb",
+    "human_equivalence_audit.jsonl": "db3925d05eb5a2171a717097e34f64dabe2423d0fe511c8ae38c5523d1af2b91",
+    "human_equivalence_audit_TEMPLATE.jsonl": "59d0d6d40831c951f69360507c21a448fb4bf1dab49c3cc404437cb3d494ca7d",
+    "lineage_graph.jsonl": "e2c60ab1517ddba8becb8cd22a04ac76fc8d87ca91af617851ce1a8bbf832d64",
+    "mechanical_checks.jsonl": "94c8c1d2ca329dad4cbba55e6fdc67dd5677c50d7b50a008afc9f7010d0860f7",
+    "neutral_replacements.jsonl": "f4253769dc6dfc0ec4e607557d9d686c3d6c760907d4d93e0497de46fb346825",
+    "prediction_ledger.json": "af6bb2aa27d1271d97bb5c3b4e6d6e63372fc37fe66983ecdc0db0dba508d356",
+    "scoring_plan_gemma.jsonl": "1ae4e736d4ada6b4f28bfc7e2c155e12eb1b80cb36e04fd32a95e358121b025a",
+    "scoring_plan_llama.jsonl": "abb277785d094809804b59d2473a9f225f83e773fc0fce8716b390cbc3562c66"
+  },
+  "design": "2x2 within-base factorial",
+  "factors": {
+    "descendant": [
+      "SHAM",
+      "ECHO"
+    ],
+    "provenance": [
+      "USER_ID",
+      "TOOL_ID"
+    ]
+  },
+  "frozen_at_utc": "2026-08-09T16:25:09.935882+00:00",
+  "inference": {
+    "B": 20000,
+    "bootstrap": "paired whole-base bootstrap",
+    "ci": 0.95,
+    "family_balance": "6 bases per each of 4 families",
+    "n_bases": 24,
+    "seed": 14031431,
+    "unit": "base instance"
+  },
+  "intervention": {
+    "primary": "true component deletion",
+    "robustness": "Llama-token-count-matched neutral replacement"
+  },
+  "n_bases": 24,
+  "n_conditions": 96,
+  "paper_target": "USENIX Security main conference",
+  "prefreeze_amendments": [
+    "Added exhaustive 24-base four-cell construct audit after reviewer-defensibility review, before final freeze and before any A14 scorer outcome. No scientific condition, estimand, scorer plan, or prediction was changed."
+  ],
+  "primary_estimands": [
+    {
+      "definition": "mean_b 0.5*((T_SHAM-U_SHAM)+(T_ECHO-U_ECHO))",
+      "direction": "NEGATIVE",
+      "id": "P1_PROVENANCE_MAIN",
+      "interpretation": "moving execution fact USER->trusted TOOL lowers user-vs-span guardrail margin under unchanged authorization/action",
+      "metric": "CA_MARGIN"
+    },
+    {
+      "definition": "mean_b 0.5*((U_ECHO-U_SHAM)+(T_ECHO-T_SHAM))",
+      "direction": "NEGATIVE",
+      "id": "P3_DESCENDANT_MAIN",
+      "interpretation": "user-derived descendant redundancy lowers guardrail margin under unchanged authorization/action",
+      "metric": "CA_MARGIN"
+    }
+  ],
+  "primary_scorer": "meta-llama/Llama-3.3-70B-Instruct",
+  "primary_tokenizer": {
+    "bos_token_id": 128000,
+    "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+    "class": "TokenizersBackend",
+    "eos_token_id": 128009,
+    "is_fast": true,
+    "kind": "hf",
+    "model_name": "meta-llama/Llama-3.3-70B-Instruct",
+    "pad_token_id": 128004,
+    "vocab_size": 128256
+  },
+  "protocol_hash": "94bb3c7e0ca174aa8be69b8c0949e7d93a567d960a9ba06016ba4d08f8503ee1",
+  "schema_version": "A14_MINIMAL_P1xP3_V1_2026-08-09",
+  "scoring_plan_rows": {
+    "gemma": 480,
+    "llama": 864
+  },
+  "secondary_mechanistic_estimands": [
+    {
+      "definition": "mean_b ((T_ECHO-T_SHAM)-(U_ECHO-U_SHAM))",
+      "direction": "OPEN",
+      "id": "P1xP3_INTERACTION",
+      "metric": "CA_MARGIN"
+    },
+    {
+      "definition": "mean_b 0.5*((U_ECHO-U_SHAM)+(T_ECHO-T_SHAM)) on closure_gap",
+      "direction": "POSITIVE_EXPECTED",
+      "id": "P3_CLOSURE_GAP",
+      "metric": "closure_gap"
+    },
+    {
+      "definition": "same P1/P3 estimands under token-matched neutral replacement",
+      "direction": "SAME_QUALITATIVE_DIRECTION",
+      "id": "OPERATOR_ROBUSTNESS",
+      "metric": "CA_MARGIN_REPLACE"
+    },
+    {
+      "direction": "DESCRIPTIVE_MECHANISM",
+      "id": "ACTION_TOKEN_FACTORIZATION",
+      "metric": "groupwise CA_MARGIN contribution"
+    }
+  ],
+  "source_fidelity_scorer": "google/gemma-3-12b-it",
+  "source_hashes": {
+    "A14M_00_prepare_draft.py": "ff68e9f8972bea47f08de274d23d6185a0b3e150cbe1d23aa01c4d7315c163bc",
+    "A14M_01_human_audit_cli.py": "e6222776e4ed0854761e0fc87570ec39f955a3940273184a1019e1ebfa32f2c0",
+    "A14M_01b_base_quartet_audit_cli.py": "38e2e0449c3cccb19786b4eea0af64429b28285614dcc527e75a885721248c7c",
+    "A14M_02_freeze_protocol.py": "2e0349ac40f77dc888e19f441735cc7c22d1370716d3a7239499df1163d0e9fe",
+    "A14M_03_score.py": "586124d2bc2325c6f0d67bbd8c20f4e618db0b6e9868e498849bc3c12881117f",
+    "A14M_04_analyze.py": "073a3c24e12c640910911e94ffd3a0aa4aff819710e8d1af7f1c8143e7c0e9f3",
+    "A14M_PROTOCOL_SPEC.md": "1c268cf63f080ba5f71ee53956cd259b5417311b634b90ba09d10dd1efb5276a",
+    "PREFREEZE_AMENDMENT_01_BASE_QUARTET_AUDIT.md": "73c29b16c084fb39dec2d60b8848f23c29946d84a4fbb47951301c887c29cf7c",
+    "a14m_common.py": "40dd74a2df7ceaba638ebc0e3669ab893427b0d2ed20156a540dad7e7fcfee29"
+  },
+  "status": "FROZEN_PRE_OUTCOME",
+  "study": "A14 minimal authorization-invariance factorial: P1 provenance x P3 descendant redundancy"
+}

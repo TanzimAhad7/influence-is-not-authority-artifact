@@ -1,0 +1,12 @@
+[R2B-FREEZE] project_root=/home/anon_/ratchet/phase0_pilot
+[R2B-FREEZE] run_dir=R2B_JTF_AUTHOR_v1
+[R2B-FREEZE] no model/provider calls; no threshold outcomes
+[R2B-00] FREEZE PASS
+[R2B-00] project_root=/home/anon_/ratchet/phase0_pilot
+[R2B-00] validated A14=96 benign cells / 24 bases per scorer
+[R2B-00] validated N3=288 rows / 24 bases per scorer; relevant arms=48 AUTH + 48 ALT
+[R2B-00] NO threshold/frontier outcomes generated
+[R2B-00] freeze=/home/anon_/ratchet/phase0_pilot/R2B_JTF_AUTHOR_v1/R2B_JTF_FREEZE.json
+[R2B-00] freeze_sha256=93b952cabd01fdbbebce616045aa1c7d6fa9c179005f1fa66906b4510a6978c0
+[R2B-00] freeze_file_sha256=29e5214c733b1bfcf2bfc7b4adb0c165d36343f310b34a0fa2630947d4f67d45
+[R2B-FREEZE] COMPLETE — STOP HERE BEFORE ANALYSIS

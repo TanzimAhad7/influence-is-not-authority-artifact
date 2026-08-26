@@ -1,0 +1,9 @@
+[parent] exact A13 + R1B + R2 verified: A13 26 valid / 16 primary; R1B 26 fixed boundary-safe decisions; R2 13 primary-valid extreme-label decisions
+[scorer] boundary-safe fixed-token self-test PASS (17 completion tokens; sha256=4af8d1e5c3901be7...)
+[B1/anthropic/claude-sonnet-4.5] workspace: 19 frozen untouched tasks; no injection
+[B1/anthropic/claude-sonnet-4.5] slack: 18 frozen untouched tasks; no injection
+[B1/anthropic/claude-sonnet-4.5] travel: 6 frozen untouched tasks; no injection
+[B1/anthropic/claude-sonnet-4.5] banking: 12 frozen untouched tasks; no injection
+[B1-01] COMPLETE agent=claude45 model=anthropic/claude-sonnet-4.5
+[B1-01] primary={'specified_mean': 0.6153846153846154, 'delegated_mean': 0.4, 'difference': 0.2153846153846154, 'ci95': [-0.3711057692307691, 0.7333333333333333], 'n_specified_tasks': 13, 'n_delegated_tasks': 5, 'bootstrap_valid_draws': 4988}
+[B1-01] category=DIRECTIONAL_POSITIVE_CI_INCLUDES_ZERO_OR_UNAVAILABLE

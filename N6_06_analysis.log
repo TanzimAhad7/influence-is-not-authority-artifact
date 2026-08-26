@@ -1,0 +1,5 @@
+[N6-06] ANALYSIS COMPLETE
+[N6-06] AUTH block 113/240=0.4708
+[N6-06] ALT block 87/240=0.3625
+[N6-06] mean_G_b=-0.108333 CI95=[-0.362500,+0.145833]
+[N6-06] base_signs={'positive': 8, 'zero': 4, 'negative': 12}

@@ -1,0 +1,111 @@
+{
+  "config": {
+    "bootstrap_repetitions": 20000,
+    "bootstrap_seed": 2718281,
+    "cell_majority_threshold": 0.6,
+    "claim_boundaries": [
+      "This is an existing-data post-hoc falsification/sensitivity analysis, not a new prospective confirmatory endpoint.",
+      "Do not infer that A15a activation causally creates replay divergence or estimand masking.",
+      "Do not reinterpret or replace any frozen P2b gate.",
+      "Do not treat 390 generations as 390 independent statistical units; primary P2b sensitivity uses model-by-decision cells and decision clustering.",
+      "Do not claim a class-wide replay-defense error floor from this analysis.",
+      "No P2b intervention is authorized by this analysis."
+    ],
+    "original_qwen_majority_weak_decisions": [
+      "slack/user_task_19/priv0/add_user_to_channel",
+      "slack/user_task_4/priv0/post_webpage",
+      "workspace/user_task_4/priv0/create_calendar_event",
+      "workspace/user_task_6/priv0/create_calendar_event"
+    ],
+    "schema": "P3_ZERO_CALL_HARDENING_CONFIG_V1",
+    "scientific_model_calls": 0,
+    "status": "POSTHOC_FALSIFICATION_AND_SENSITIVITY_ANALYSIS"
+  },
+  "created_utc": "2026-08-12T01:08:54.650232+00:00",
+  "input_files": {
+    "a13_decisions": {
+      "bytes": 129364,
+      "path": "/home/anon_/ratchet/phase0_pilot/a13/decisions.jsonl",
+      "sha256": "af6a62c5689e7d26180f0091a121839b645e1dcb54e5aaf87427f6e75c19dca9"
+    },
+    "a13_results": {
+      "bytes": 24340,
+      "path": "/home/anon_/ratchet/phase0_pilot/a13/results.json",
+      "sha256": "6ced3fc14a60574f95881344ac3d6bb5b8cf7d88d59ac3c844cae35d4121646b"
+    },
+    "a15a_inventory": {
+      "bytes": 27383,
+      "path": "/home/anon_/ratchet/phase0_pilot/a15a_selectivity_consequence/decision_inventory.jsonl",
+      "sha256": "180a3767588932c160ca4de6fb18c6cd1e0331568814525d31663d416e3d5883"
+    },
+    "a15a_results": {
+      "bytes": 2527,
+      "path": "/home/anon_/ratchet/phase0_pilot/a15a_selectivity_consequence/results.json",
+      "sha256": "37ceca159e85c2bc3f8401f78e77ccde588373f8064a97f67b6bd19b54e303d2"
+    },
+    "analysis_script": {
+      "bytes": 26405,
+      "path": "/home/anon_/ratchet/phase0_pilot/P3_ZERO_CALL_HARDENING_v1/P3_01_run_hardening.py",
+      "sha256": "75120489d3fad48dd7f103572efb2f08c7bf9a30df7d92d48bc288993d718fed"
+    },
+    "config": {
+      "bytes": 1096,
+      "path": "/home/anon_/ratchet/phase0_pilot/P3_ZERO_CALL_HARDENING_v1/P3_CONFIG.json",
+      "sha256": "2cf0361d6987e8bdf119b5864881338cc9b960e3d6cfa43dff4a9f2bbad024cf"
+    },
+    "gemma_raw": {
+      "bytes": 368215,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_GEMMA_RUN_v1_2/P2B_CI_BASELINE_RAW.jsonl",
+      "sha256": "172c43d3f7fc73a29f5d9b742eb506fab6051c00f5cbbe3e28fd180873f8375a"
+    },
+    "gemma_slots": {
+      "bytes": 70846,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_GEMMA_RUN_v1_2/P2B_CI_ARGUMENT_SLOT_ROWS.csv",
+      "sha256": "028b4da4a4e75aa1140298505f3d78ea16b62a1d6847a1d52ccb1e85c0a7200f"
+    },
+    "llama_raw": {
+      "bytes": 349307,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_LLAMA_RUN_v1_2/P2B_CI_BASELINE_RAW.jsonl",
+      "sha256": "d0bd22bc6fdf5adaab3cfcbdbaf95702d48cd1c8a52b28373113e772d6b66b79"
+    },
+    "llama_slots": {
+      "bytes": 60663,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_LLAMA_RUN_v1_2/P2B_CI_ARGUMENT_SLOT_ROWS.csv",
+      "sha256": "41d98f552eb0b524f19c97d99fe5c6df3c85356388807b26d99ff8cb54078928"
+    },
+    "qwen_raw": {
+      "bytes": 407931,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_QWEN_RUN_v1_2/P2B_CI_BASELINE_RAW.jsonl",
+      "sha256": "2024e9b370e78897a577fe5025a346ea9be074b262a2b3c6c05c02ae3e4095e2"
+    },
+    "qwen_slots": {
+      "bytes": 82372,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_QWEN_RUN_v1_2/P2B_CI_ARGUMENT_SLOT_ROWS.csv",
+      "sha256": "f27d753abf2d3fedeb7fd08743a1dac692791ed7bb75b3e619d4e2a97b108905"
+    },
+    "replay_inventory": {
+      "bytes": 49179,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_v1_2_PREOUTCOME_TECH_GATE_CORRECTED/inputs/P2B_REPLAY_INVENTORY.jsonl",
+      "sha256": "9fc33a564480335aac2a91a87794a7aea737315ebd3d1c2b9facd07cd7afdded"
+    },
+    "taxonomy": {
+      "bytes": 8549,
+      "path": "/home/anon_/ratchet/phase0_pilot/P2B_XM_CI_v1_2_PREOUTCOME_TECH_GATE_CORRECTED/P2B_ARGUMENT_ROLE_TAXONOMY.json",
+      "sha256": "66a1705d422a0a8e0b7630f099c806df646f9354f996648d659dbb4a2f519b90"
+    }
+  },
+  "out_dir": "/home/anon_/ratchet/phase0_pilot/P3_HARDENING_RUN_v1",
+  "package_dir": "/home/anon_/ratchet/phase0_pilot/P3_ZERO_CALL_HARDENING_v1",
+  "project_root": "/home/anon_/ratchet/phase0_pilot",
+  "row_counts": {
+    "a13_decisions": 69,
+    "a15a_inventory": 26,
+    "gemma_raw": 130,
+    "llama_raw": 130,
+    "qwen_raw": 130,
+    "replay_inventory": 26
+  },
+  "schema": "P3_ZERO_CALL_ANALYSIS_FREEZE_V1",
+  "scientific_model_calls": 0,
+  "status": "POSTHOC_FALSIFICATION_AND_SENSITIVITY_ANALYSIS_FROZEN_FOR_EXECUTION"
+}

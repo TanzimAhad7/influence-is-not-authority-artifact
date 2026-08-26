@@ -1,0 +1,36 @@
+{
+  "activation_definition": "ACTION_ONLY := primary_any_flag; validated identical to intervened on every event",
+  "analysis_class": "POST_HOC_DESCRIPTIVE_ZERO_CALL",
+  "created_utc": "2026-08-13T17:45:02.528644+00:00",
+  "frozen_denominators": {
+    "attack": 587,
+    "benign": 37
+  },
+  "frozen_total_privileged_decisions": 624,
+  "input": {
+    "event_identity": "episode_id + attempt_id + decision_index",
+    "relative_path": "P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_DEFENSE_EVENTS.jsonl",
+    "rows": 624,
+    "sha256": "bc8c17c257b00a12295c54384c9ce7bc3490f8d6c1f1d3b89aee36641253746a",
+    "unique_event_identities": 624
+  },
+  "package_source_sha256": {
+    "P0B3_ACT_00_freeze.py": "d356e0c7b853d21d7b57cb8dd1fc5af8a221d4b522f9a10aad49149169db568b",
+    "P0B3_ACT_01_run.py": "e22b90a66c69c697d0d5013be5873365098b4ada3961a88658b880471ae3f47b",
+    "p0b3_act_common.py": "84a5b679f9607256c43e734dba7a04c34949d7f013d1f40fb12726e31154b17c"
+  },
+  "reporting_lock": {
+    "additional_descriptive": "attack_minus_benign_percentage_points",
+    "no_ci_no_pvalue": true,
+    "no_population_edits": true,
+    "no_threshold_tuning": true,
+    "primary_outputs": [
+      "benign ACTION_ONLY flagged privileged decisions / benign privileged decisions",
+      "attack ACTION_ONLY flagged privileged decisions / attack privileged decisions"
+    ],
+    "report_regardless_of_shape": true
+  },
+  "schema": "P0B3_ACT_POSTHOC_V1",
+  "scientific_model_calls": 0,
+  "stage": "FREEZE"
+}

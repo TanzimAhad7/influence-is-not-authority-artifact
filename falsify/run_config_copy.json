@@ -1,0 +1,40 @@
+{
+ "timestamp_utc": "2026-08-08T02:03:47.341564Z",
+ "scorer_model": "Qwen/Qwen2.5-72B-Instruct",
+ "endpoint": "http://localhost:8100/v1",
+ "temperature": 0,
+ "python": "3.11.15",
+ "host": "anon.host.invalid",
+ "targets": [
+  "claim_a/transcripts_workspace_k3_threshold__qwen2.5-72b.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__claude-sonnet-4.5.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__gemini-2.5-flash.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__gpt-4o.jsonl",
+  "claim_a__run_2026-08-01_threshold/transcripts_workspace_k3_threshold__gpt-oss-120b.jsonl",
+  "claim_a__SWEEP_2026-08-05/transcripts_slack_ut20_it2_k3_threshold__qwen2.5-72b__sweep.jsonl"
+ ],
+ "max_episodes": null,
+ "max_decisions_per_episode": 3,
+ "placebo_families": [
+  "weather",
+  "inventory",
+  "telemetry"
+ ],
+ "min_excess_over_null": 0.1,
+ "noise_band": [
+  0.35,
+  0.65
+ ],
+ "run_type": "descriptive copy of the run configuration",
+ "note": "The authoritative frozen protocol is preregistration_A13.json, written BEFORE scoring. This block is descriptive only.",
+ "primary_metric": "user-to-tool attribution ratio R = mean_ep(dU_sub / mean_S dS), CI clustered by episode",
+ "hypotheses_attacked": {
+  "H1": "user request genuinely weaker -> R, mean-based Eq.3",
+  "H2": "length -> per-span placebo x3 families, corr(Delta_S, length)",
+  "H3": "max-selection over N -> permutation null, R(N) vs Eq3(N)",
+  "H4": "ablation convention -> substitution vs deletion vs alt wording (CLOSED)",
+  "H5": "model/action/environment specific -> 5 backbones x 2 suites, per-function"
+ },
+ "primary_prediction": "R < 1 for delegated tasks (workspace), R > 1 for specified tasks (slack send_direct_message); Eq.3-holding decreases with N",
+ "frozen_on": "2026-08-08T02:03:47.341564Z"
+}

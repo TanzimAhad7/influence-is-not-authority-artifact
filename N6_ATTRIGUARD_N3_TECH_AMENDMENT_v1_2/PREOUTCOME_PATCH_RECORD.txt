@@ -1,0 +1,18 @@
+N6 v1.2 PRE-OUTCOME TECHNICAL PATCH
+
+The first author-side v1.2 zero-model-call preflight completed the substantive
+adapter/runtime checks but aborted during final package-hash bookkeeping because
+N6_04_no_model_preflight_and_amend.py retained one stale filename:
+
+  N6_TECHNICAL_AMENDMENT_SPEC_v1_1.md
+
+The actual v1.2 file is:
+
+  N6_TECHNICAL_AMENDMENT_SPEC_v1_2.md
+
+The local pre-outcome patch changes only that filename reference.
+No population, context, candidate, endpoint, model configuration, AttriGuard
+logic, runtime adapter semantics, analysis rule, or interpretation is changed.
+
+The failed run made zero network/model calls and produced zero N6 scientific
+outcomes.

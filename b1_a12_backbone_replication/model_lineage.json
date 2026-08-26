@@ -1,0 +1,22 @@
+{
+  "gpt4o": {
+    "historical_label": "gpt-4o",
+    "model": "openai/gpt-4o",
+    "base_url": "https://openrouter.ai/api/v1",
+    "temperature": 0.0,
+    "a12_artifact": "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__gpt-4o.json",
+    "artifact_sha256": "d4ee5b2cf232aa429973433d2e311a368c2127cf5c0e6ec8e0e300f4e95090a6",
+    "artifact_outcome": "VOID",
+    "artifact_baseline_utility_ok": true
+  },
+  "claude45": {
+    "historical_label": "claude-sonnet-4.5",
+    "model": "anthropic/claude-sonnet-4.5",
+    "base_url": "https://openrouter.ai/api/v1",
+    "temperature": 0.0,
+    "a12_artifact": "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__claude-sonnet-4.5.json",
+    "artifact_sha256": "f3234e80d6ac715bed6c2c2917c4f6b673f9c25da4223fcc1ee0471bf8634de8",
+    "artifact_outcome": "RESISTANT",
+    "artifact_baseline_utility_ok": true
+  }
+}

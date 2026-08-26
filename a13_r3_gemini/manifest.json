@@ -1,0 +1,239 @@
+{
+  "created_at_utc": "2026-08-09T04:12:44.327943+00:00",
+  "protocol_hash": "0964561ecc6040de10c8c16a47dd4851fd3c9507564f946dc931d3fadb589eb9",
+  "source_sha256": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719",
+  "files": {
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/protocol.json": {
+      "sha256": "fbb67aa3aca5b58877dcdef988b1b51bdef5e14b104b7f0f88adf841d16e6f01",
+      "bytes": 7057
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/taxonomy.json": {
+      "sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+      "bytes": 223966
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/decisions.jsonl": {
+      "sha256": "197007b7afedff768e1488fc59d55f59f07222533e0cd27643cce023607195e3",
+      "bytes": 134196
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/results.json": {
+      "sha256": "8e5fe79f389e78e36e6d7da54be784a5a030784795d2ef6db9c8e6f98b5dc0e8",
+      "bytes": 18864
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/REPORT.md": {
+      "sha256": "11033371b7011cdaea4abb710d190f177b9edac7dbe4205c20da1e31d1092f17",
+      "bytes": 6257
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_0/none/none.json": {
+      "sha256": "a890f4c7f9c3c13d243e1d568c567098ebefc0d5f5d39de8cc0e7c27bc58bb38",
+      "bytes": 1773
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_11/none/none.json": {
+      "sha256": "1f7cee3ac5b7825c01c69d494d0e07940eebe8f262fc9b9943fbfe51b14f6079",
+      "bytes": 1874
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_12/none/none.json": {
+      "sha256": "00ca7b41098eaf6fd8d08575505ccc8cefb15cb226e8dc31f1f45e46f3a5ac68",
+      "bytes": 3071
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_13/none/none.json": {
+      "sha256": "8f5b28ee159569c8cc44f08c7f9127a7976fc711675d5c8a4ca2baf5310a1554",
+      "bytes": 4126
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_14/none/none.json": {
+      "sha256": "65b68378ed685c03855bd27b7c3fdd496338da6a25ca3375519daf62fda8ca6d",
+      "bytes": 1862
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_15/none/none.json": {
+      "sha256": "085e3d0dae43c5afe76c25630644782d4f08042f446c8fde65d8b545f05426f2",
+      "bytes": 2112
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_2/none/none.json": {
+      "sha256": "67b7749ffa1be9dc7b7fa4fdc8b822d0ebe0bbecc312c55c24e8cc451c3e0811",
+      "bytes": 1860
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_3/none/none.json": {
+      "sha256": "9e58c8296918c700750d4b4af770d86e77640902c49f469744df8c952cb44bbe",
+      "bytes": 3098
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_4/none/none.json": {
+      "sha256": "18c4a0f33d608342e380cdaad58d3336bbf1e685d23f375e63b44b60d7ac741b",
+      "bytes": 1770
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_5/none/none.json": {
+      "sha256": "f1667df2e88f61af608a6fdd66a9fda8b431010cd19754321884ad0e7916434a",
+      "bytes": 1863
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_6/none/none.json": {
+      "sha256": "7433504208e0e549a280ea72d518985ee2e7a23b7dfb532e44c7c61b77036fc9",
+      "bytes": 5071
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/banking/user_task_9/none/none.json": {
+      "sha256": "f417ba54a8073313e0bfe7b1d20fbc1547d7125bd55fd12ebfce023ebe07bd69",
+      "bytes": 1728
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_1/none/none.json": {
+      "sha256": "a92840c17521ed30f18c97b2926d386c49bcdf47fc96a019db3ad8abed3b92dc",
+      "bytes": 5606
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_10/none/none.json": {
+      "sha256": "534e95526bcd7bbcde0832a651c5ace5f11b183a718a6fd9b24fe6a82f13f183",
+      "bytes": 2680
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_11/none/none.json": {
+      "sha256": "6e638bf226bad9c19942d41f119105a594a9271580c940bdc84165a60dea12dc",
+      "bytes": 3013
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_12/none/none.json": {
+      "sha256": "677e2badd91475a4b8aa0daf4b409c09429b1ce767307ad143e931cfff4d07de",
+      "bytes": 3717
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_13/none/none.json": {
+      "sha256": "3bbb9c36e9190f4701bee02cc4d9c1d43501e3021e743bb50c753686fba09a5a",
+      "bytes": 8218
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_14/none/none.json": {
+      "sha256": "91bde8624fc4a589df362d04f05e20910fb4213538b338fbca671e673dfd34c0",
+      "bytes": 1933
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_15/none/none.json": {
+      "sha256": "b3d49b7c06e4aa926fdf8b797b9fda5463ccbd934b9c55c476b0daf89cca0bdd",
+      "bytes": 7995
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_16/none/none.json": {
+      "sha256": "1e0a6bf5a36920c1163d249e60a5369c1420907eb7af863b575e1f87a4491459",
+      "bytes": 8296
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_17/none/none.json": {
+      "sha256": "a52fdd75a379646269194d081062baf3e238b609146970c439c323752c01bf27",
+      "bytes": 5110
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_18/none/none.json": {
+      "sha256": "b722aed4439e9f60ba153633806f25b8a03223bb60a9f27431b614e786c78cf8",
+      "bytes": 1715
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_19/none/none.json": {
+      "sha256": "e1ad53caf3ee15f666a8fc9720eae89d7f3638516210c54b7f9589e47053daf3",
+      "bytes": 1774
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_2/none/none.json": {
+      "sha256": "d0783004719f0983d4e79eaad3f19e91aa0398e9c68b05491f7d7c73d1d90b85",
+      "bytes": 3847
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_3/none/none.json": {
+      "sha256": "4e98835a3389a7ee16e34c771c1af056ac80ab8d0be7060c664386960cf4d69e",
+      "bytes": 1679
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_4/none/none.json": {
+      "sha256": "0235ce6079bf8408da9de2068abe5fce4790c0caacb22be476f2a62a44f7e491",
+      "bytes": 5272
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_5/none/none.json": {
+      "sha256": "e4ef9a079b0e455e865680ba87a978e06686b2676f0b0e87270736f5dd882b42",
+      "bytes": 7808
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_7/none/none.json": {
+      "sha256": "57576bca0e16324df1c07496d67af79cd06f23bc8d17e70bb79e9d906bd37989",
+      "bytes": 2645
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_8/none/none.json": {
+      "sha256": "0963d34eb29d93f0e9fa529e5a64dbfa028a92fddfddc3ed9e67a08123848e28",
+      "bytes": 8038
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/slack/user_task_9/none/none.json": {
+      "sha256": "011e8bea9cb7a6a8cdc651a87a0a952274ebb9cf143d0244a33f26ae64a4430b",
+      "bytes": 7994
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/travel/user_task_0/none/none.json": {
+      "sha256": "2d88d365549e8362d4bb95a354167d1cc195acac422bdecc0537c9e1710534a8",
+      "bytes": 4756
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/travel/user_task_1/none/none.json": {
+      "sha256": "2a2db556b07dfb4113ac25ca69ea2767bc129b78b103e52edfc7118350e090a9",
+      "bytes": 7705
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/travel/user_task_3/none/none.json": {
+      "sha256": "b7f556a2677db6c2ddde230ff8ce36ea4d71e0eabdb418985abecfb91d822923",
+      "bytes": 10365
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/travel/user_task_4/none/none.json": {
+      "sha256": "02f0324a25630a944436340e2aa11bc7c57dcae2b19150942fbf75ad72d78d98",
+      "bytes": 10815
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/travel/user_task_7/none/none.json": {
+      "sha256": "4b8bff860a5649aba0d90dbf380d59a740197e3c44c777bbfb3a0284904d3647",
+      "bytes": 8126
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/travel/user_task_8/none/none.json": {
+      "sha256": "e66a9bd7d102d6ef87928cb2a33009ab6e4bd2acf25e0cd678d4b55775634b64",
+      "bytes": 11707
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_12/none/none.json": {
+      "sha256": "e85ca1f01069d8ee9bb1691d7cbd381ff2b71e7ec3ee587436193f42d716deda",
+      "bytes": 5290
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_13/none/none.json": {
+      "sha256": "f3250cdb3a11a95e88a345b7992e06f1d076564e0c5926a97788cfa2ecb0e794",
+      "bytes": 4111
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_15/none/none.json": {
+      "sha256": "5f4c795e0bb9d699db5b28cfecbc241d7c54dab7c1354e28ef8733e0915851b2",
+      "bytes": 7706
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_18/none/none.json": {
+      "sha256": "0d9f13361588ff1aa78838ad3a5037dbc9849eacbab5887cd9a447cf9b9a7596",
+      "bytes": 6460
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_20/none/none.json": {
+      "sha256": "d3e568063a8b14cc98e4bac67f31f04dad8c99b44d0d0c436e5372fd72be1394",
+      "bytes": 8946
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_21/none/none.json": {
+      "sha256": "4b0ec2ac37b2e71a7e28ab9a10b2caf55ba561159ebbe0977bcb90e60995e5b7",
+      "bytes": 7587
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_25/none/none.json": {
+      "sha256": "11eefe4c0f0bacfe57f1df7833605b104f3624e3c340d3c04abb4d5c4ea706d9",
+      "bytes": 3001
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_31/none/none.json": {
+      "sha256": "cb352b14d8147603b8a6a145eeacf667c07ce0a5789164ae590112214e7b3f0a",
+      "bytes": 3035
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_32/none/none.json": {
+      "sha256": "a32f6573d45c248749956cc27ee3203b0f5719084cbc692771044cb225d4fe5b",
+      "bytes": 2943
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_33/none/none.json": {
+      "sha256": "2c58d95aaff6ad77ecc8359fc2b94d7ff28ac0e3992c36ba3ebdb6905b07576e",
+      "bytes": 1896
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_36/none/none.json": {
+      "sha256": "cbfeb5fac9987b98f5010f7ea8258caa43d59b4c3179bb9f68c8325cd3bfde5b",
+      "bytes": 3054
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_37/none/none.json": {
+      "sha256": "5e2e00c0a5a8bd3cfd920a32b4218776b7cff87fecbb66bb813740145b39ef55",
+      "bytes": 3135
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_4/none/none.json": {
+      "sha256": "e2314172508e069064ec681182566bee93585534aaa507975af18cd3642f8ec7",
+      "bytes": 8666
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_6/none/none.json": {
+      "sha256": "a3dbc0814777691dbb70cf60a47b4a89c29618db80e834593f6e14c40ee62f4f",
+      "bytes": 5874
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_8/none/none.json": {
+      "sha256": "82184fdb47fc08cb008f04a07129fd69188eea3b69a51511b80bbe392d1c0b7c",
+      "bytes": 5256
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/agentdojo_runs/openrouter_google_gemini-2.5-flash/workspace/user_task_9/none/none.json": {
+      "sha256": "2753137a8444cc8845bce35401108bcfa95d08ee0016f652dc56e8d0c050cea2",
+      "bytes": 5748
+    },
+    "/home/anon_/ratchet/phase0_pilot/a13_r3_gemini/smoke_agentdojo/openrouter_google_gemini-2.5-flash/workspace/user_task_19/none/none.json": {
+      "sha256": "18426fd9fe96b7350af4b643142b3fb5b9e90e813f780f7d2d0f928570222c21",
+      "bytes": 20117
+    }
+  }
+}

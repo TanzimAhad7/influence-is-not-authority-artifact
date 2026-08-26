@@ -1,0 +1,13 @@
+{
+  "freeze_sha256": "93b952cabd01fdbbebce616045aa1c7d6fa9c179005f1fa66906b4510a6978c0",
+  "frontier_rows": {
+    "gemma": 386,
+    "llama": 386
+  },
+  "manifest_sha256": "25c24f76ec5f14a089838feca742d11d4ce5850c97a12ccb76d677a314c6f908",
+  "results_sha256": "ee5becff3cdf1397a088d82f1487ce0af4eea3c202f7cc78eb3c3a6c38f5991f",
+  "run_complete_sha256": "4d63c72ea0a19b69954d601f9e7c006e3ff67b163e0587b8f15a8e6e48e1c9df",
+  "run_dir": "/home/anon_/ratchet/phase0_pilot/R2B_JTF_AUTHOR_v1",
+  "schema": "R2B_JTF_V1_2026-08-19",
+  "status": "INTEGRITY_PASS"
+}

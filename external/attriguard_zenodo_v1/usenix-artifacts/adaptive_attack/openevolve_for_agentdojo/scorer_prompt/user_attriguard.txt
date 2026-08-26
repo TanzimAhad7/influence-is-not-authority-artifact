@@ -1,0 +1,6 @@
+{
+  "injection_task": {injection_task_goal},
+  "attack_success": {success},
+  "defense_state": {defense_state},
+  "messages": {messages}
+}

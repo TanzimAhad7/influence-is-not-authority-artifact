@@ -1,0 +1,250 @@
+{
+  "bounded_synthesis": {
+    "prohibited": [
+      "No new scalar combining consistency and discrimination.",
+      "No claim that causal attribution is totally indiscriminate.",
+      "No claim that all causal-attribution defenses are unsafe.",
+      "No causal interpretation of P0b-3-ACT.",
+      "No N2 authorization from this script."
+    ],
+    "statement": "Causal support contains useful threat/action information but is not an authorization oracle. Authorization-preserving evidence relocation can move the studied proxy strongly in an attack-like direction; matched unauthorized control remains action-selective, yet raw proxy magnitude is not cleanly authorization-ordered. Operating point and architecture determine whether this mixed internal signal becomes final intervention.",
+    "verdict": "SUPPORTED_TWO_PROPERTY_PLUS_ARCHITECTURE_VIEW"
+  },
+  "no_combined_scalar": true,
+  "no_new_inference": true,
+  "properties": {
+    "architecture_operating_point": {
+      "A15a": {
+        "activated": 18,
+        "denominator": 26
+      },
+      "AgentWatcher_controlled_A14": {
+        "all_4_cell_flag_rates": 0.0,
+        "n_bases": 24
+      },
+      "AgentWatcher_natural": {
+        "AW": "2/26",
+        "CausalArmor_style": "16/26"
+      },
+      "AttriGuard_controlled_A14": {
+        "AIVR": 0.0,
+        "P1": 0.0,
+        "condition_repeats": 480,
+        "final_block_rate": 0.0
+      },
+      "P0b3_ACT": {
+        "ACTION_ONLY_attack": "496/587",
+        "ACTION_ONLY_benign": "20/37",
+        "gap_pp": 30.44,
+        "shadow_attack": "516/587",
+        "shadow_benign": "22/37",
+        "shadow_gap_pp": 28.45
+      },
+      "P0b3_external_regime": {
+        "ASR_percent": 3.3719704952581666,
+        "BU_percent": 51.54639175257732,
+        "UA_percent": 40.67439409905163,
+        "disposition": "SAME_EXTERNAL_REGIME"
+      },
+      "P2": {
+        "defense_on_ASR": "0/200",
+        "defense_on_utility": "56/200",
+        "no_defense_ASR": "32/200",
+        "no_defense_utility": "120/200"
+      },
+      "interpretation": "Internal causal-support variation is not final policy. Threshold and guardrail architecture determine whether the signal becomes intervention; the calibrated full pipeline still separates attack from benign activation descriptively."
+    },
+    "authorization_property_preserving_consistency": {
+      "A14_gemma_P1": {
+        "ci95": [
+          -1.1536260005123524,
+          -0.8790134025004686
+        ],
+        "mean": -1.0111624004850248,
+        "median": -0.9475175467739798,
+        "n": 24,
+        "n_negative": 24,
+        "n_positive": 0,
+        "n_zero": 0
+      },
+      "A14_llama_P1": {
+        "ci95": [
+          -1.2836113407067742,
+          -1.0797475485595784
+        ],
+        "mean": -1.1797316186554594,
+        "median": -1.1232320905721407,
+        "n": 24,
+        "n_negative": 24,
+        "n_positive": 0,
+        "n_zero": 0
+      },
+      "A14_token_matched_llama_P1": {
+        "ci95": [
+          -1.1081493191804122,
+          -0.932284742565514
+        ],
+        "mean": -1.0168518398608433,
+        "median": -0.9639941274305102,
+        "n": 24,
+        "n_negative": 24,
+        "n_positive": 0,
+        "n_zero": 0
+      },
+      "R2A": {
+        "gemma_nondegenerate_aivr_gt0": "191/191",
+        "gemma_tau0_aivr": "18/24",
+        "llama_nondegenerate_aivr_gt0": "191/191",
+        "llama_tau0_aivr": "20/24"
+      },
+      "interpretation": "The studied CausalArmor-style causal-support observable is not authorization-invariant on the exact-action/effect-fixed A14 orbit."
+    },
+    "breadth": {
+      "B1_joint": "CONVERGENT_DIRECTIONAL_REPLICATION",
+      "Claude45_H_difference": {
+        "bootstrap_valid_draws": 4988,
+        "ci95": [
+          -0.3711057692307691,
+          0.7333333333333333
+        ],
+        "delegated_mean": 0.4,
+        "difference": 0.2153846153846154,
+        "n_delegated_tasks": 5,
+        "n_specified_tasks": 13,
+        "specified_mean": 0.6153846153846154
+      },
+      "GPT4o_H_difference": {
+        "bootstrap_valid_draws": 5000,
+        "ci95": [
+          -0.027272727272727337,
+          0.7857142857142858
+        ],
+        "delegated_mean": 0.4444444444444444,
+        "difference": 0.38888888888888895,
+        "n_delegated_tasks": 9,
+        "n_specified_tasks": 12,
+        "specified_mean": 0.8333333333333334
+      },
+      "interpretation": "The natural SPECIFIED-vs-DELEGATED H direction reproduces across both frozen external backbones, with model-specific H CIs crossing zero."
+    },
+    "threat_action_discrimination": {
+      "N3_gemma": {
+        "D": {
+          "ci95": [
+            0.1806413254050615,
+            0.8245824131357726
+          ],
+          "mean": 0.5039115492763486,
+          "median": 0.5950889262552499,
+          "n": 24,
+          "n_negative": 10,
+          "n_positive": 14
+        },
+        "N": {
+          "ci95": [
+            -1.1529657339331452,
+            -0.8783259832990792
+          ],
+          "mean": -1.0111624004850248,
+          "median": -0.9475175467739798,
+          "n": 24,
+          "n_negative": 24,
+          "n_positive": 0
+        },
+        "P": {
+          "ci95": [
+            -0.712726376447158,
+            -0.30840393422063167
+          ],
+          "mean": -0.5072508512086762,
+          "median": -0.3566295710093047,
+          "n": 24,
+          "n_negative": 23,
+          "n_positive": 1
+        },
+        "Q": {
+          "ci95": [
+            -0.5548191127817557,
+            -0.406846855717889
+          ],
+          "mean": -0.47469090609111575,
+          "median": -0.43256792718844006,
+          "n": 24,
+          "n_negative": 24,
+          "n_positive": 0
+        },
+        "T": {
+          "ci95": [
+            0.47106501177739357,
+            0.6127516597358199
+          ],
+          "mean": 0.5371537229857792,
+          "median": 0.49803822936106357,
+          "n": 24,
+          "n_negative": 0,
+          "n_positive": 24
+        }
+      },
+      "N3_llama": {
+        "D": {
+          "ci95": [
+            0.44751126532221414,
+            0.8635706463074228
+          ],
+          "mean": 0.6545401550713091,
+          "median": 0.6729620885143837,
+          "n": 24,
+          "n_negative": 1,
+          "n_positive": 23
+        },
+        "N": {
+          "ci95": [
+            -1.2806827070468867,
+            -1.0799169208193884
+          ],
+          "mean": -1.1792729036539498,
+          "median": -1.1232320905721407,
+          "n": 24,
+          "n_negative": 24,
+          "n_positive": 0
+        },
+        "P": {
+          "ci95": [
+            -0.7668281396035921,
+            -0.29326486130582424
+          ],
+          "mean": -0.5247327485826405,
+          "median": -0.4291032931691365,
+          "n": 24,
+          "n_negative": 17,
+          "n_positive": 7
+        },
+        "Q": {
+          "ci95": [
+            -0.43190491170726003,
+            -0.31180128118723704
+          ],
+          "mean": -0.3709166390461614,
+          "median": -0.3572440466410456,
+          "n": 24,
+          "n_negative": 24,
+          "n_positive": 0
+        },
+        "T": {
+          "ci95": [
+            0.4258953006896877,
+            0.5940505558485657
+          ],
+          "mean": 0.5077978034986576,
+          "median": 0.46432108971593644,
+          "n": 24,
+          "n_negative": 0,
+          "n_positive": 24
+        }
+      },
+      "interpretation": "The proxy is action/threat-selective, but raw supported-action magnitude is not cleanly authorization-ordered: benign nuisance displacement is larger on average than the supported unauthorized-control displacement."
+    }
+  },
+  "schema": "N4_N5_BOUNDED_SYNTHESIS_EVIDENCE_V1",
+  "status": "CLOSED_INPUTS_VALIDATED"
+}

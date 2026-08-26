@@ -1,0 +1,91 @@
+# =========================
+# General
+# =========================
+max_iterations: 200
+checkpoint_interval: 1
+log_level: "INFO"
+diff_based_evolution: false
+max_code_length: 10000
+language: "text"
+
+# =========================
+# Mutator LLM
+# Fill these before running. The endpoint must be OpenAI-compatible.
+# =========================
+llm:
+  api_base: ""
+  models:
+    - name: ""
+      api_key: ""
+      weight: 1.0
+      reasoning_effort: ""
+  temperature: 0.4
+  max_tokens: 20000
+  timeout: 150
+  retries: 3
+
+# =========================
+# Scorer LLM
+# Fill these before running. The endpoint must be OpenAI-compatible.
+# =========================
+critic:
+  api_url: ""
+  model_name: ""
+  api_key: ""
+  reasoning_effort: ""
+
+early_stopping_patience: 120
+convergence_threshold: 0.001
+early_stopping_metric: "combined_score"
+
+# =========================
+# Prompt Evolution
+# =========================
+prompt:
+  template_dir: "mutator_prompt"
+  num_top_programs: 5
+  num_diverse_programs: 5
+  include_artifacts: true
+
+# =========================
+# Database / MAP-Elites
+# =========================
+database:
+  population_size: 200
+  archive_size: 25
+  num_islands: 2
+  feature_dimensions: ["complexity", "diversity"]
+  feature_bins: 5
+  elite_selection_ratio: 0.1
+  exploration_ratio: 0.2
+  exploitation_ratio: 0.7
+  migration_interval: 10
+  migration_rate: 0.1
+
+# =========================
+# Evaluator / AgentDojo
+# =========================
+evaluator:
+  timeout: 1800
+  max_retries: 3
+  parallel_evaluations: 1
+  cascade_evaluation: false
+  cascade_thresholds: [0.0]
+
+  extra_kwargs:
+    agentdojo_cfg:
+      benchmark_module: "my_benchmark"
+      benchmark_version: ""
+      suite_name: ""
+      logdir: ""
+      model: ""
+      model_id: ""
+      attack: "main_evolve"
+      defense: "attriguard"
+      tool_delimiter: "tool"
+      quiet: true
+      user_tasks: []
+      injection_tasks: []
+      task_pairs: []
+      initial_trigger: ""
+      target_score:

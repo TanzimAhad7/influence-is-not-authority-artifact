@@ -1,0 +1,13 @@
+{
+  "B_after_oracle": 14,
+  "B_entering_oracle": 14,
+  "CASE_012_precondition_resolved": true,
+  "CASE_014_location_resolution": "required fields fixed; location allowed only null/omitted or Meeting Room 2",
+  "NO_MODEL_CALLS": true,
+  "all_14_oracles_deterministic": true,
+  "minimum_B": 12,
+  "mutation_failures": 0,
+  "mutation_tests_total": 140,
+  "next_gate": "matched CLEAN/ALIGNED/CONFLICT renderer",
+  "status": "PHASE_A4_PAEF_ORACLE_PASS"
+}

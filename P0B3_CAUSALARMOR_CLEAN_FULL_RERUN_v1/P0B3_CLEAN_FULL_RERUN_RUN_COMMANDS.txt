@@ -1,0 +1,71 @@
+# P0b-3 CLEAN FULL RERUN — exact command sequence
+# Assumption: the exact 32K Gemma vLLM server is ALREADY running on port 8100.
+
+cd /home/anon_/ratchet/phase0_pilot
+source .venv/bin/activate
+
+# A. Verify the package you downloaded.
+sha256sum P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_v1.zip
+unzip -o P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_v1.zip
+cd P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_v1
+sha256sum -c PACKAGE_SHA256.txt
+cd ..
+
+# B. Confirm the already-running proxy is reachable.
+curl -s http://127.0.0.1:8100/v1/models | python -m json.tool
+
+# C. Archive Attempt 0 and FREE the canonical run path.
+#    This does NOT delete Attempt 0.
+bash P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_v1/P0B3_00_ARCHIVE_ATTEMPT0.sh \
+  /home/anon_/ratchet/phase0_pilot
+
+# D. Optional sanity check: there must now be no current live-run directory.
+test ! -e P0B3_CAUSALARMOR_LIVE_RUN_v1 && echo "Clean output path ready"
+
+# E. Start Attempt 1 from 0/1046 in the background.
+#    Log is outside the run directory so shell redirection works before the runner creates it.
+mkdir -p logs
+
+nohup bash P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_v1/P0B3_RUN_CLEAN_FULL_RERUN.sh \
+  /home/anon_/ratchet/phase0_pilot \
+  > logs/P0B3_CLEAN_FULL_RERUN_CONSOLE.log 2>&1 < /dev/null &
+
+echo $! | tee logs/P0B3_CLEAN_FULL_RERUN.pid
+
+# F. Watch. Ctrl+C stops only tail.
+tail -n 100 -f logs/P0B3_CLEAN_FULL_RERUN_CONSOLE.log
+
+# Required before science begins:
+# P0b-3 CLEAN FULL RERUN LOCAL VERIFY PASS
+# P0b-3 LIVE TECHNICAL PREFLIGHT PASS
+# AgentDojo benchmark episodes executed: 0
+# P0b-3 CLEAN RERUN CAPACITY FINALIZATION PASS
+# AgentDojo benchmark episodes executed before finalization: 0
+# BEGINNING ATTEMPT-1 SCIENCE FROM 0/1046
+# [P0b-3] frozen science population=1046; already_done=0; remaining=1046
+
+# G. Process status.
+ps -fp "$(cat logs/P0B3_CLEAN_FULL_RERUN.pid)"
+
+# H. On successful completion expect:
+# P0b-3 SCIENCE EXECUTION COMPLETE: 1046/1046
+# P0b-3 ANALYSIS COMPLETE
+# P0b-3 CLEAN FULL RERUN EXECUTION COMPLETE: 1046/1046
+# Attempt 1 status: COMPLETE_PENDING_INDEPENDENT_ADJUDICATION
+# P6: BLOCKED UNTIL INDEPENDENT ADJUDICATION
+
+# I. Inspect the final report only AFTER the full run/analysis has completed.
+cat P0B3_CAUSALARMOR_LIVE_RUN_v1/P0B3_REPORT.md
+
+# J. Archive Attempt 1 + exact code + frozen inputs + Attempt-0 provenance.
+zip -r P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_COMPLETE_v1.zip \
+  P0B3_CAUSALARMOR_LIVE_v1 \
+  P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_v1 \
+  P0B3_CAUSALARMOR_LIVE_RUN_v1 \
+  P0B3_AUTHOR_RUN_HISTORY
+
+sha256sum P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_COMPLETE_v1.zip \
+  | tee P0B3_CAUSALARMOR_CLEAN_FULL_RERUN_COMPLETE_v1.zip.sha256
+
+# Upload the complete ZIP + SHA to ChatGPT.
+# DO NOT RUN P6 until independent adjudication.

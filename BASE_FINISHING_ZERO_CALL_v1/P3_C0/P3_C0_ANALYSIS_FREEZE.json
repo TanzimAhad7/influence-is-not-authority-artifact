@@ -1,0 +1,81 @@
+{
+  "config": {
+    "bootstrap_repetitions": 20000,
+    "bootstrap_seed": 2718281,
+    "claim_boundaries": [
+      "This refresh makes the final figure match the corrected A13-C0 census; it does not replace the frozen C0 primary result.",
+      "Leave-one-suite/task analyses are post-hoc sensitivity/influence diagnostics, not new confirmatory endpoints.",
+      "No model, scorer, vLLM, OpenRouter, or Hugging Face call is permitted or required.",
+      "The historical P3 archive remains immutable and scientifically valid for the historical original-26 subset."
+    ],
+    "expected_inputs": {
+      "combined_73_ledger": {
+        "relative_path": "A13_C0_EXTENSION_SCIENCE_v1/A13_C0_COMBINED_73_DECISIONS_DERIVED_v1.jsonl",
+        "sha256": "f24b89d53ad504cf16dce3820e9b028f1d752bcc829ecf43ed3e0997feb764f5"
+      },
+      "extension_result": {
+        "relative_path": "A13_C0_EXTENSION_SCIENCE_v1/A13_C0_EXTENSION_RESULT_v1.json",
+        "sha256": "eba1b611f12ca49c476599fdd1a7fa736e5f499bfd0b14cd3bcaa7fda073addc"
+      }
+    },
+    "expected_population": {
+      "decision_rows": 73,
+      "labels": {
+        "DELEGATED": 11,
+        "PARTIAL": 10,
+        "SPECIFIED": 8
+      },
+      "primary_valid_decisions": 29,
+      "primary_valid_tasks": 25
+    },
+    "frozen_headline_H": {
+      "ci95": [
+        0.15551282051282053,
+        0.9393939393939394
+      ],
+      "delegated_mean": 0.16666666666666666,
+      "difference": 0.5833333333333334,
+      "specified_mean": 0.75
+    },
+    "leave_one_task_bootstrap_repetitions": 5000,
+    "schema": "P3_C0_CORRECTED29_REFRESH_CONFIG_V1",
+    "scientific_model_calls": 0,
+    "status": "POSTHOC_PRESENTATION_AND_INFLUENCE_REFRESH"
+  },
+  "created_at_utc": "2026-08-13T23:50:38.824569+00:00",
+  "freeze_payload_sha256": "b6d591b402f2200f7af78f8021ba7e7bb406cf1e93ca390bfecb7b6b9609b8d8",
+  "input_files": {
+    "combined_73_ledger": {
+      "bytes": 181978,
+      "path": "/home/anon_/ratchet/phase0_pilot/A13_C0_EXTENSION_SCIENCE_v1/A13_C0_COMBINED_73_DECISIONS_DERIVED_v1.jsonl",
+      "sha256": "f24b89d53ad504cf16dce3820e9b028f1d752bcc829ecf43ed3e0997feb764f5"
+    },
+    "extension_result": {
+      "bytes": 16693,
+      "path": "/home/anon_/ratchet/phase0_pilot/A13_C0_EXTENSION_SCIENCE_v1/A13_C0_EXTENSION_RESULT_v1.json",
+      "sha256": "eba1b611f12ca49c476599fdd1a7fa736e5f499bfd0b14cd3bcaa7fda073addc"
+    }
+  },
+  "note": "Post-hoc zero-call presentation/influence freeze. It does not alter the frozen A13-C0 primary estimand or result.",
+  "package_files": {
+    "P3_C0_00_freeze.py": {
+      "bytes": 2514,
+      "sha256": "102e2b6d75b81027246ba458627aba6a16446f0f2e80cf657af2272755b766c2"
+    },
+    "P3_C0_01_refresh.py": {
+      "bytes": 14248,
+      "sha256": "ce7cb76b455bb2ddb88a19732c30f39bf2d87913dce79ab555d5e80ecc670388"
+    },
+    "P3_C0_02_hash_outputs.py": {
+      "bytes": 922,
+      "sha256": "8064f23c780da024b5598775cc644348b970427530063583ff7afcf8f52868ee"
+    },
+    "P3_C0_CONFIG.json": {
+      "bytes": 1558,
+      "sha256": "753d0f89702a9c594cba1be06e57a70005c73ffa69679779258d4241951c7239"
+    }
+  },
+  "schema": "P3_C0_CORRECTED29_REFRESH_FREEZE_V1",
+  "scientific_model_calls": 0,
+  "status": "POSTHOC_PRESENTATION_AND_INFLUENCE_REFRESH"
+}

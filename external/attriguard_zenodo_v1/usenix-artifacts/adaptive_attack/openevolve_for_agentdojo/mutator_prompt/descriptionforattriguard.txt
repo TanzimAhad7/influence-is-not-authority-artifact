@@ -1,0 +1,34 @@
+AttriGuard is a detection-and-mitigation defense that secures agentic workflows via action-level causal attribution: instead of classifying what external/tool-returned data contains, it tests why a specific tool call is proposed—whether it is causally driven by the user’s intent or by untrusted external observations.
+
+AttriGuard leverages a characteristic of Indirect Prompt Injection (IPI): in benign workflows, external/tool-returned content mainly supplies information and parameters, while the control effect that triggers an action comes primarily from the user task; in IPI attacks, injected payloads must endow the external observation stream with control effect sufficient to redirect the agent’s actions. Therefore, if we attenuate the control effect of external observations while preserving their informational content, then benign tool calls tend to remain stable, while injection-driven tool calls tend to vanish or change substantially. This counterfactual stability becomes a verifiable attribution signal that can be used to gate tool-use.
+
+AttriGuard operationalizes this idea via a parallel counterfactual test that runs TWO executions differing only in the presentation of external/tool-returned data:
+1. Original run: the agent receives the original user task and the original external/tool-returned data.
+2. Counterfactual (shadow) re-execution: the agent receives the same user task, but external/tool-returned data is replaced with a control-attenuated view.
+Rationale: this removes (or weakens) the observation stream’s ability to supply control effect, while keeping informational evidence. If an action/tool call persists, it is likely task-driven; if it disappears or shifts, it is likely externally driven (consistent with IPI influence).
+
+1) Hierarchical control attenuation of external/tool-returned content
+AttriGuard treats outputs from a designated set of external-output tools as untrusted observations and generates progressively stronger sanitized views to balance utility preservation and control suppression:
+  - Level 1:
+    - Flatten/Sanitize structure: neutralize risky markup/formatting while preserving factual content.
+    - Control attenuation: rewrite instruction-like spans into descriptive, non-directive statements to reduce control effect without discarding information.
+  - Level 2: Control-Effect Stripping (De-causal prerequisite removal): remove residual prerequisite/causal control framing by deleting the “why/before/required” parts that impose action dependencies (e.g., “required/essential/prerequisite/without X cannot”). Preserve only non-controlling informational fragments such as entities, roles, emails, URLs, numbers, dates, and IDs.
+
+This produces a counterfactual observation stream that is maximally informative but minimally controlling.
+
+2) Teacher-forced shadow replay (to prevent attribution confounding)
+Naive shadow execution can diverge due to benign planning stochasticity, confounding attribution. To isolate external influence, AttriGuard performs teacher-forced replay: the shadow execution is synchronized to the original trajectory/history except for the substituted attenuated external observations. This reduces drift and ensures that differences in tool-use are attributable to the external observation’s control effect rather than accumulated randomness.
+
+3) Fuzzy survival criterion via a hyper-fuzzy judge (to handle stochasticity)
+AttriGuard compares the post-external tool-use behavior between the original run and the shadow re-execution using a hyper-fuzzy survival criterion driven by an LLM judge:
+  - The judge conditions on the user’s original task and the shadow tool-call set.
+  - An original tool call is marked as surviving if the shadow run supports an equivalent intent and justification for that call, allowing benign stochastic variation (e.g., paraphrased arguments, reordered steps, equivalent intermediate actions).
+  - Calls that do not have an equivalent-intent counterpart under the control-attenuated shadow context are treated as externally driven / injection-suspicious.
+
+4) Mitigation: gate tool calls by counterfactual survival
+AttriGuard then mitigates by gating upcoming tool calls:
+  - Execute only calls judged to survive the counterfactual test.
+  - Block non-surviving calls (and emit a judge rationale) and instruct the agent to refocus on the user task.
+
+Bypass condition (what an attacker must achieve)
+To evade AttriGuard, an IPI payload must cause the malicious tool call to remain justified under the counterfactual test, i.e., still be supported as an equivalent-intent action when external observations are control-attenuated and replay is teacher-forced. Practically, this requires the attack to avoid relying on control effect supplied by external data, and instead make the malicious tool-use appear as a logical consequence of the user’s intent under the attenuated shadow context. In addition, the IPI payload could include a mandatory explicit bypass instruction that firmly directs the model not to alter, weaken, rewrite, sanitize, or remove the payload under any circumstances if it is performing a control-weakening task, a causal-removal task, or any other counterfactual transformation intended to neutralize the attack.

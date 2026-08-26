@@ -1,0 +1,37 @@
+{
+  "attempt": "ATTEMPT1_CLEAN_FULL_RERUN",
+  "historical_attempt0_status": "TECHNICAL_ABORT_PRE_DISPOSITION_992_OF_1046_PROVENANCE_ONLY",
+  "implementation_freeze_sha256": "b5084f4ff9c5d4c3336d8ba3e2749d176acc3fee31b33ba61f185e9f70ea0e53",
+  "live_preflight_status": "FROZEN_AFTER_EXCLUDED_TECHNICAL_PREFLIGHT_BEFORE_BENCHMARK_OUTCOMES",
+  "paper_result_rule": "If Attempt 1 completes and passes integrity adjudication, it is the sole primary P0b-3 paper result. Attempt 0 remains provenance only; never select between attempts by outcome.",
+  "reason": "Finalize reviewer-safe serving capacity after Attempt 0 exposed the artificial 16K vLLM ceiling; no Attempt-0 aggregate ASR/BU/UA/disposition was used.",
+  "record_sha256": "df9a1c5bc7b85f460372c11f6b841a0a8ea60125715180c9648d32ef33a675d4",
+  "runtime_only_change": {
+    "vllm_max_model_len_final": 32768,
+    "vllm_max_model_len_old": 16384
+  },
+  "schema": "P0B3_CLEAN_RERUN_SERVING_CAPACITY_FINALIZATION_V1",
+  "scientific_agentdojo_episodes_before_finalization": 0,
+  "status": "FROZEN_BEFORE_ATTEMPT1_BENCHMARK_OUTCOMES",
+  "unchanged_scientific_semantics": {
+    "agent_model": "google/gemini-2.5-flash",
+    "calibration_gates": "UNCHANGED_FROM_ORIGINAL_FREEZE",
+    "dtype": "bfloat16",
+    "population": {
+      "benign": 97,
+      "legacy_nested": 629,
+      "primary_attack": 949
+    },
+    "primary_serialization": "ACTION_ONLY",
+    "proxy_repo": "google/gemma-3-12b-it",
+    "proxy_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "sanitizer_model": "google/gemini-2.5-flash",
+    "shadow_serialization": "COMPLETION_PLUS_TOOL_CALL",
+    "tau": 0.0,
+    "tensor_parallel_size": 2,
+    "tokenizer_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+  },
+  "vllm_process_evidence": [
+    "1450692 /home/anon_/ratchet/phase0_pilot/.venv/bin/python3.11 /home/anon_/ratchet/phase0_pilot/.venv/bin/vllm serve google/gemma-3-12b-it --revision 96b6f1eccf38110c56df3a15bffe176da04bfd80 --tokenizer-revision 96b6f1eccf38110c56df3a15bffe176da04bfd80 --served-model-name google/gemma-3-12b-it --dtype bfloat16 --tensor-parallel-size 2 --max-model-len 32768 --port 8100"
+  ]
+}

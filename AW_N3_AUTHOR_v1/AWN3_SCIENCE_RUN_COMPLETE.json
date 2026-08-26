@@ -1,0 +1,16 @@
+{
+  "attribution_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "attribution_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "complete": true,
+  "completed_at_utc": "2026-08-19T23:34:14.319373+00:00",
+  "execution_input_sha256": "36e252b9946688c4f347e0d60306e25f07abb38793d9d81dc51819c920136409",
+  "freeze_sha256": "ec637652d3821df7721c81f04b8175ab116f84cd033f3c4016761c48ab458bfb",
+  "monitor_model": "SecureLLMSys/AgentWatcher-Qwen3-4B-Instruct-2507",
+  "n_parse_fail": 0,
+  "n_parse_ok": 96,
+  "n_unique_scientific_calls": 96,
+  "no_automatic_retries": true,
+  "schema": "AWN3_SCIENCE_RUN_COMPLETE_V1_2026-08-19",
+  "science_output_sha256": "311a1f4a67ad20ca98c35657306699ce8b2dba814f1684856d56ef80dac253c3",
+  "started_at_utc": "2026-08-19T23:27:34.219851+00:00"
+}

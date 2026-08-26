@@ -1,0 +1,520 @@
+{
+  "created_utc": "2026-08-11T23:29:59.518642+00:00",
+  "decisions": 26,
+  "global_freeze_sha256": "d1bb9ec67f10f392e8a85f05955d109747d9bb105da4b0fb3b8da26e50403345",
+  "model_id": "Qwen/Qwen2.5-72B-Instruct",
+  "model_key": "qwen_canonical",
+  "pass": true,
+  "passed": 26,
+  "purpose": "Post-global-freeze ABORT-only chat-template compatibility check on the 26 frozen prefixes. It may not be used to tune this freeze.",
+  "results": [
+    {
+      "canonical_request_sha256": "f1d94439046daa6cfc3b804e487a4bf068e241aa8f1f7c77fe20be5a319e8cf1",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "banking/user_task_0/priv0/send_money",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "f126a519f69a54e1ff691a6ca25fb369e22d7db4c025a5f93fbde7a89390d456",
+      "render_response_bytes": 8974,
+      "render_response_sha256": "659b356cbd50c47100dcb8bfa53c2d16c880bb5646167badfdaf00b169d6f2fc"
+    },
+    {
+      "canonical_request_sha256": "d315756711614325faf889667bc0c3fba2fc71ea41170a55710996ec41c54fe8",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "banking/user_task_13/priv0/update_user_info",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "985b97528a50067eb4fe0031e29d983bc4a007cdbbd9b07a0a0593c7b09c7605",
+      "render_response_bytes": 7778,
+      "render_response_sha256": "b21f104bb8dd8365cefe0dd0d9c4e1fbb681c7b7380499044331a2dc47322889"
+    },
+    {
+      "canonical_request_sha256": "33eb45e7f4484adf11a63454a81be31cb7881d2934a1ed01c897e07c58b86ead",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "banking/user_task_14/priv0/update_password",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "a384483a1eb4ce69a45d5b5ef03b5376a375250e715f779f06b2b507c306d9ab",
+      "render_response_bytes": 9044,
+      "render_response_sha256": "500239413c394a454f22fae2b04d1cda9e7cc5524981511857bf6452a8beea4e"
+    },
+    {
+      "canonical_request_sha256": "138901205349ea1f43dfb356220bd17d11d6769b1c1810d36f111ad5a672f33b",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_1/priv0/send_direct_message",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "e076b8b569bf59d45cf4ba31a844d288c07b8f90ee3413160c185b9cdd14db30",
+      "render_response_bytes": 7720,
+      "render_response_sha256": "a019a2ec5dfaf26649b75334fb9a8e6c86b84d65b636717f2dc4877068daba2d"
+    },
+    {
+      "canonical_request_sha256": "ad05d6c9720b77d5344c76906dfdb3a50ddeab4b5daea5b30747520cb43eaee4",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_10/priv0/add_user_to_channel",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "1c5805bd53d2444a8339e097bdfef1d53a86f9e2f89f20e28139f8ac811945cf",
+      "render_response_bytes": 12420,
+      "render_response_sha256": "460855b5fcb5a0bba483b5ab3ef4ba0cb8de39c732adf008f053c233f91551a2"
+    },
+    {
+      "canonical_request_sha256": "5918713c121eeaef4c5a1f30168e89da8e74640249a4ebfee792af0684af309c",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_10/priv1/add_user_to_channel",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "1c5805bd53d2444a8339e097bdfef1d53a86f9e2f89f20e28139f8ac811945cf",
+      "render_response_bytes": 13357,
+      "render_response_sha256": "45397f99559422bf0847cbd3fec71717ba2eb49b5234644ad25f3e6ee73888bc"
+    },
+    {
+      "canonical_request_sha256": "30a5dfe0c4391ca570f2934891d727b1fd1b785ca16c1c79e48e98b2c0671f5e",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_10/priv2/add_user_to_channel",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "1c5805bd53d2444a8339e097bdfef1d53a86f9e2f89f20e28139f8ac811945cf",
+      "render_response_bytes": 13818,
+      "render_response_sha256": "59ba597e12ec17e167b74bdf176d65f633b6ba3020d0601d823995cd4cc56a53"
+    },
+    {
+      "canonical_request_sha256": "60ec6193f5dc482f265576e4bf22a2dd98e814e83a2abe87eade3611b24928a0",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_13/priv0/send_direct_message",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "e7741d40162e676b2ee63e7d6c232039d99cea9135e959a2f571e22a4014dab9",
+      "render_response_bytes": 9105,
+      "render_response_sha256": "22818b2e2aa8d7a07a878805d09251229dcda99d7255f231fbfa4a4df4a3be54"
+    },
+    {
+      "canonical_request_sha256": "1525f02dc8dd2b379bf0efcf018b522d1fba4dd5552d989bdea603c755da0618",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_15/priv0/send_channel_message",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "ce6d358615ce4f0578eea6331b95fbe3a9677ab4dbc35d1310710076fd50784c",
+      "render_response_bytes": 8293,
+      "render_response_sha256": "40a608cfa97a4c1a7f5ee580b8bcf5c5dcf384221c0164ef12a3170283f26a5d"
+    },
+    {
+      "canonical_request_sha256": "8691b8ed9a79a8570f83f5d031da524cb78af621851c9c5eb3629d0ced0eab2d",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_17/priv0/invite_user_to_slack",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "1f32e19a50391502293f93915f656919b62c006669c5b53a85c72702df463ce3",
+      "render_response_bytes": 7157,
+      "render_response_sha256": "9813207f49025f2e22e9c2ce898abcf971df804219236b645271695720696c9d"
+    },
+    {
+      "canonical_request_sha256": "be3924655fed09634322a70554f464995010eab1939f592ba3917608da9ad8e3",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_18/priv1/send_channel_message",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "a5de6e15de00f1c0b456e95168ecd849b63652c37b47cd995bd3c8f1ca9a56c6",
+      "render_response_bytes": 10550,
+      "render_response_sha256": "59edbcbafc0d1102c8e1fbaa3f48eebafaafbe777c3c68539f9b0e3e6aa498e7"
+    },
+    {
+      "canonical_request_sha256": "d9445cbc18fc50205a625ad024a3d7cd7807e64e6cd55749da23390ca304d11b",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_19/priv0/add_user_to_channel",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "e9c9f429283e4dc5241a01d0a3140b8e24bfc36133658fd508695445cd54aa61",
+      "render_response_bytes": 9055,
+      "render_response_sha256": "2bbe6289e901bf9b971ce6dace0dbd6bb1f9102bc88544ca91d3489fce82ea00"
+    },
+    {
+      "canonical_request_sha256": "4d53adb977701f46f97c82242f9ecff4edf209b678a1712c0913f93d028569af",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_19/priv1/send_channel_message",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "e9c9f429283e4dc5241a01d0a3140b8e24bfc36133658fd508695445cd54aa61",
+      "render_response_bytes": 9502,
+      "render_response_sha256": "d895fb46465c2ef2f7b9099215b6fdfb771a36fcef4428e47715fa4ccabc068b"
+    },
+    {
+      "canonical_request_sha256": "5ab78a9a52ccf62dc0346ec2a71eb2c87f234603975b8efd30cc3e2d7f29f5e6",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_2/priv0/invite_user_to_slack",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "c8302c2bb3d35803b88c5161776091ff995577d0c1dd2783f9fa958bdad3957f",
+      "render_response_bytes": 6701,
+      "render_response_sha256": "61c296e03491ca4d23c7f3ab925bd0f266c0d8f806ba6a9cb5892cf1cc4e3798"
+    },
+    {
+      "canonical_request_sha256": "5631dafe2bd32a17ddfa5514247b381b1c62d8dbab296d85fa5b6c6e5e2b5f44",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_4/priv0/post_webpage",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "e03ad7dc7c7c46dbe6737f22effd25163d98a27913e25f0fd0db8be314b05c1c",
+      "render_response_bytes": 8172,
+      "render_response_sha256": "837a13be21a2abc90493784934d5406aedee0f7cf8b6a8bfade873f5bd05621c"
+    },
+    {
+      "canonical_request_sha256": "1805576ca33d969df0130567723e8f1259edc85da377b2198f309da21022aae5",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_7/priv0/add_user_to_channel",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "d1cb5ca91000a197b53833b5870818c9622b5de2ad45783725aea8e027d60f87",
+      "render_response_bytes": 6710,
+      "render_response_sha256": "28ef28e7a7dc9e6ba8c2d1b0e2c6aa264c619a35d50375ae981279dda077d511"
+    },
+    {
+      "canonical_request_sha256": "4d70d8793a7c330b0177c26695d8e209272e8c83e7dc3d82f51f9842993d0e79",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "slack/user_task_9/priv0/add_user_to_channel",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "39103be2ea26ca4c6fc7abf5d786624fe997ca5ac3acadb5f29c22388068d3c9",
+      "render_response_bytes": 9173,
+      "render_response_sha256": "a7db9ee45a4b230998dab33574748ce6b25aeb8071b6fb4c8755ddbb14278203"
+    },
+    {
+      "canonical_request_sha256": "b0b6da15266132ea11bfa0966b6826f14952fe1ea1af6fd452354aaa27ae5950",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "travel/user_task_3/priv0/send_email",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "6f88a5523a8cee02ef7268ec04fc7b14688986d2c076dbf20245787e8a331c9a",
+      "render_response_bytes": 21178,
+      "render_response_sha256": "5b8441773c1815fe595525031c1a3e67ffb004fd9c3d1447f76fd1a3196c8e48"
+    },
+    {
+      "canonical_request_sha256": "af421162705a22e3a498b4afd67babcf55e56014950767843a15c41e88707d66",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_12/priv0/create_calendar_event",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "dbb15b5a0d049596604824640dc90c70c44b73695568e9c63b404ef1abeba339",
+      "render_response_bytes": 16883,
+      "render_response_sha256": "62af223f0608a07d90b7b014b5cf45002dce94f0c5133314b7c47ce3c7527611"
+    },
+    {
+      "canonical_request_sha256": "da3e3de2719c55e9f829130781fa75ac5cb6320acd75145eec37630d8c472e98",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_13/priv0/send_email",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "bbdec872e3afbaea390bd970dca75a2813235b741f188d984d6963a4b70424f2",
+      "render_response_bytes": 29199,
+      "render_response_sha256": "26ec0d8ca14038acba30f14551bd86ee1a13bac363c8e9fbd36d5893a6c3133c"
+    },
+    {
+      "canonical_request_sha256": "e3fd10f156c909029e916f6824107146c496b08fc3c70528091a0117fd057c1e",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_15/priv0/create_calendar_event",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "38d4ec0009d2899ee0818546bb08e86628c6e7d9ac8fc80230010a0b8e7922f5",
+      "render_response_bytes": 19395,
+      "render_response_sha256": "d576b8e8339d881b9828e5778714c96fe6454e2a363aa59a98905a95bb3e8b4b"
+    },
+    {
+      "canonical_request_sha256": "a9d5f7f0ee89dbb68337c05ee13ae8185877bfb05b7fba497aa9e319b4ffb1b5",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_21/priv0/create_calendar_event",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "04657aac2f1c4a7063e380f19dd3318efe049e766fd6c67c0ad6dc51aba89a60",
+      "render_response_bytes": 17913,
+      "render_response_sha256": "2357df90a8b813d73017d13530aa578c9144a079ee7f26fb931c67484f9552b6"
+    },
+    {
+      "canonical_request_sha256": "9d1da9b2bb845383e61dc042c02cff09d3268e9e27fca3632882d8a09fabe700",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_4/priv0/create_calendar_event",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "806bbfa007fc4e64fe0127325e4d219ae1cd83885d89e4dfc7e2d738f87dfd0b",
+      "render_response_bytes": 17956,
+      "render_response_sha256": "f286067dd59834bd1d0242560f3be611e62308a7841319e84ad72c5d45aa68b5"
+    },
+    {
+      "canonical_request_sha256": "0feea3c749bbca04b9c0cab449704ef44ce8afb11e10c28bf51e943283eed1ac",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_6/priv0/create_calendar_event",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "7ceeeff1834c79c004fdfc2ed3bad13906f01d1118e16ce3d648dece08451221",
+      "render_response_bytes": 16905,
+      "render_response_sha256": "c733af158cd0f468a8517f90f2ea8a2fe1b273e345d268e4819ecca1eff22804"
+    },
+    {
+      "canonical_request_sha256": "fd2cfb59a9c88d1fa529354e922d5b24b7296dd6e787d66836fcec81dc5835cc",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_8/priv0/add_calendar_event_participants",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "131ceb49d84c619efa0fd3ca6af31407c5a5629b790694518b160d59066113f8",
+      "render_response_bytes": 16463,
+      "render_response_sha256": "752ecbe4c334c984de28286b2362555226812d1f6b9194506f085977dd059d28"
+    },
+    {
+      "canonical_request_sha256": "1f9277d1ef99a947db4a99a3a5161eed7049c3096fbf2617d5369cc78457ff46",
+      "canonical_roles": [
+        "system",
+        "user",
+        "assistant",
+        "user"
+      ],
+      "decision_id": "workspace/user_task_9/priv0/create_calendar_event",
+      "http_status": 200,
+      "pass": true,
+      "raw_log_sha256": "530a3f7b7d7fcb4e382ba34d29c6e794c17e35f4fceb47bd5d347c1647735d64",
+      "render_response_bytes": 16385,
+      "render_response_sha256": "6a01217378146ba58fb725ce684d6ff4eb3f03418587259320654f8da54389f6"
+    }
+  ],
+  "schema": "P2B_XM_CI_POSTFREEZE_RENDER_PREFLIGHT_V1",
+  "scientific_model_generations": 0
+}

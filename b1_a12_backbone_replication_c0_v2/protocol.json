@@ -1,0 +1,166 @@
+{
+  "schema": "B1_A12_BACKBONE_PROSPECTIVE_REPLICATION_C0_AMENDED_V2",
+  "study": "B1 — Discovery-Backbone Prospective Replication",
+  "scientific_status": "pre-outcome population-only amendment after A13-C0 closure; no B1 benchmark outcome observed",
+  "selection_rationale": "GPT-4o and Claude Sonnet 4.5 are selected because their exact model IDs are present in the exploratory A12 lineage, not to maximize model count.",
+  "question": "Do the A12 GPT-4o and Claude Sonnet 4.5 backbones retain the A13 SPECIFIED-vs-DELEGATED attribution ordering under the frozen prospective methodology?",
+  "agents": {
+    "gpt4o": {
+      "historical_label": "gpt-4o",
+      "model": "openai/gpt-4o",
+      "base_url": "https://openrouter.ai/api/v1",
+      "temperature": 0.0,
+      "a12_artifact": "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__gpt-4o.json"
+    },
+    "claude45": {
+      "historical_label": "claude-sonnet-4.5",
+      "model": "anthropic/claude-sonnet-4.5",
+      "base_url": "https://openrouter.ai/api/v1",
+      "temperature": 0.0,
+      "a12_artifact": "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__claude-sonnet-4.5.json"
+    }
+  },
+  "agent_temperature": 0.0,
+  "provider_routing_policy": "OpenRouter model ID + OpenAI-compatible base URL are frozen; no upstream provider pin, matching the information recoverable from the A12 artifacts.",
+  "no_injection": true,
+  "agentdojo_version": "0.1.35",
+  "benchmark_version": "v1",
+  "suites": [
+    "workspace",
+    "slack",
+    "travel",
+    "banking"
+  ],
+  "task_population": {
+    "source": "C0-corrected A13 finite census; historical B1 52-task freeze retained as immutable provenance",
+    "historical_b1_protocol_hash": "61f47a7507f03b01931e6c5b3452dfe43ac9a9b67b52b3079b85214880c7827f",
+    "historical_n_tasks": 52,
+    "n_tasks": 55,
+    "n_decisions": 73,
+    "suite_counts": {
+      "workspace": 19,
+      "slack": 18,
+      "travel": 6,
+      "banking": 12
+    },
+    "run_partial_tasks": true,
+    "development_tasks": [
+      [
+        "slack",
+        "user_task_20"
+      ],
+      [
+        "travel",
+        "user_task_19"
+      ],
+      [
+        "workspace",
+        "user_task_19"
+      ]
+    ],
+    "no_model_specific_task_selection": true
+  },
+  "taxonomy": {
+    "untouched_decision_label_counts": {
+      "SPECIFIED": 20,
+      "PARTIAL": 27,
+      "DELEGATED": 22,
+      "UNCLASSIFIABLE": 3
+    },
+    "specified_fraction_min": 0.8,
+    "delegated_fraction_max": 0.2,
+    "partial_descriptive_only": true,
+    "relabeling_forbidden": true
+  },
+  "scorer": {
+    "model": "meta-llama/Llama-3.3-70B-Instruct",
+    "role": "fixed boundary-safe attribution scorer inherited from R1B/R2/R3",
+    "endpoint_port_is_operational_not_scientific": true,
+    "prompt_tokenization": "add_special_tokens=True",
+    "completion_tokenization": "add_special_tokens=False",
+    "server_input": "explicit prompt_ids + completion_ids",
+    "server_add_special_tokens": false
+  },
+  "mapping": {
+    "name": "monotonic_same_function_max_argument_overlap_v1",
+    "selection": "highest normalized GT-vs-realized argument overlap; earliest exact tie",
+    "minimum_overlap": null
+  },
+  "span_eligibility": "prior role==\"tool\" message with non-empty stripped textual content",
+  "ablation": {
+    "primary": "true deletion of U and every eligible S",
+    "secondary": "character-matched neutral substitution",
+    "partial_score_sets": "forbidden"
+  },
+  "primary_endpoint": "H_mean_del = I[dU_del > mean(dS_del)]",
+  "primary_estimand": "per-agent task-weighted difference: mean(H_mean_del|SPECIFIED) - mean(H_mean_del|DELEGATED)",
+  "secondary_endpoint": "M_del = dU_del - mean(dS_del)",
+  "inference": {
+    "task_weighting": "equal weight per task within label",
+    "cluster_bootstrap_unit": "task",
+    "bootstrap_B": 5000,
+    "bootstrap_seed": 130013,
+    "minimum_tasks_per_label_for_ci": 3
+  },
+  "joint_interpretation": {
+    "CONVERGENT_DIRECTIONAL_REPLICATION": "both agent-specific primary H differences > 0",
+    "MIXED_DIRECTION": "exactly one agent-specific primary H difference > 0",
+    "NO_DIRECTIONAL_REPLICATION": "neither agent-specific primary H difference > 0",
+    "ci_rule": "report model-specific 95% task-bootstrap CIs; do not change sign-based joint category",
+    "coverage_estimable_rule": "at least 3 primary-valid SPECIFIED tasks and at least 3 primary-valid DELEGATED tasks per backbone",
+    "coverage_limited_rule": "if either backbone fails the coverage-estimable rule, combined status is COVERAGE_LIMITED and signs are reported descriptively"
+  },
+  "development_only_smoke": {
+    "suite": "workspace",
+    "user_task": "user_task_19",
+    "excluded_from_analysis": true
+  },
+  "no_post_outcome_tuning": true,
+  "parent_hashes": {
+    "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__gpt-4o.json": "d4ee5b2cf232aa429973433d2e311a368c2127cf5c0e6ec8e0e300f4e95090a6",
+    "phase0/pilot/claim_a__run_2026-08-01_threshold/claim_a_workspace_k3_threshold__claude-sonnet-4.5.json": "f3234e80d6ac715bed6c2c2917c4f6b673f9c25da4223fcc1ee0471bf8634de8",
+    "a13/taxonomy.json": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "a13/protocol.json": "8c0caa2e509f94d0e2eea37cfaf53840319d407167c15e2a052633c53854de43",
+    "a13_r1b_llama_boundarysafe/protocol.json": "fa097ff5b952bc3dbf1d62114b87b51b74d91e0960a3ca67591539553fa7416c",
+    "A13_R3_Gemini.py": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719"
+  },
+  "source_hashes": {
+    "B1_C0_POPULATION_AMENDMENT_v2/B1_C0_00_amend_freeze.py": "c016a694479079f5029a5f831a9dcfac17345e191b54ce8b6580f3c2620716d7",
+    "B1_C0_POPULATION_AMENDMENT_v2/B1_C0_01_run.py": "11a07faea41df8bd066265148a4c5e1dfb6d2e6059a4eb94baf8fc0ad371e6e1",
+    "B1_C0_POPULATION_AMENDMENT_v2/B1_C0_02_analyze.py": "3aa2a25e544585a7daa528c5fd6df06ef177e25ce9a4e7b8c3532e26a62b2de6",
+    "B1_C0_POPULATION_AMENDMENT_v2/B1_C0_PROTOCOL_SPEC.md": "8af0eac709f82f43c0ad0fbaf0e74ef9c66930bfd4447e958aef382a98f04a41",
+    "A13_R3_Gemini.py": "1fdc1bc127cb5415b4dd1133abbd9ffdce97b0cf490edfb78399cecd9a78c719",
+    "start_A13_R1_Llama_vLLM.sh": "aeddbb05d32fa9fc690d4556e521fd3dae7ad3b4568e01e7244ee7732a8b02b4"
+  },
+  "protocol_hash": "d17e7252c7c390257b5cdb9f88af770804a503127e4180ea90094aa78eaef550",
+  "population_amendment": {
+    "scope": "POPULATION_ONLY",
+    "models_changed": false,
+    "agent_temperature_changed": false,
+    "scorer_changed": false,
+    "mapping_semantics_changed": false,
+    "span_eligibility_changed": false,
+    "ablation_changed": false,
+    "primary_endpoint_changed": false,
+    "secondary_endpoint_changed": false,
+    "inference_changed": false,
+    "joint_interpretation_changed": false,
+    "historical_protocol_hash": "61f47a7507f03b01931e6c5b3452dfe43ac9a9b67b52b3079b85214880c7827f",
+    "historical_taxonomy_sha256": "02894700c2ff370b28b858a6f533805c37fd11d86bb1c70af3b71ac21cdc674b",
+    "c0_prefreeze_sha256": "41ce8878845184e4306a7817c490f1d679999475b3cae2f5512d7ec66595624c",
+    "c0_runner_freeze_sha256": "6e700c303c648b36ad99fcb07f1fe1339668ecb75f535f05081760a45fd21bb3",
+    "corrected_73_ledger_sha256": "f24b89d53ad504cf16dce3820e9b028f1d752bcc829ecf43ed3e0997feb764f5",
+    "extension_decision_ids": [
+      "workspace/user_task_13/c0ext_gt2/append_to_file",
+      "workspace/user_task_29/c0ext_gt1/append_to_file",
+      "workspace/user_task_34/c0ext_gt2/append_to_file",
+      "workspace/user_task_7/c0ext_gt1/reschedule_calendar_event"
+    ],
+    "added_privileged_functions": [
+      "append_to_file",
+      "reschedule_calendar_event"
+    ],
+    "amended_taxonomy_sha256": "2b5b72e929e7b3d2516d3d6c9817aec1a28d2f37eea10bbc98aa04704e9be3da",
+    "reason": "C0 found a pre-outcome taxonomy coverage defect; B1 had no outcomes, so corrected 55-task/73-decision population supersedes only B1 population."
+  }
+}
