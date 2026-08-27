@@ -1,0 +1,4 @@
+default:
+  - client_class: openai.OpenAI
+    model_name: gpt-4o-mini
+    base_url: https://openrouter.ai/api/v1
