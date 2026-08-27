@@ -56,6 +56,6 @@ run_logged "${STAGE}_on_200" env CUDA_VISIBLE_DEVICES="$GPU0" python3 "$RUNTIME/
   --model gpt-4o-mini --attack tool_knowledge --defense agentwatcher \
   --monitor_llm "$ADAPTER" --sample_size 200 --name A15B0_ARMC_SCI_TOOL_KNOWLEDGE_200 \
   --w_s 10 --w_l 150 --w_r 50 --K 3 --attribution_model "$ATTR"
-run_logged "${STAGE}_on_summary" python3 "$ARTIFACT_ROOT/reproduction/analyze_agentwatcher_on.py" --result-dir "$WORK_ROOT/$ONREL" --out "$RESULTS_ROOT/$STAGE/AGENTWATCHER_ON_SUMMARY.json"
+run_logged "${STAGE}_on_summary" python3 "$ARTIFACT_ROOT/scripts/reproduction/analyze_agentwatcher_on.py" --result-dir "$WORK_ROOT/$ONREL" --out "$RESULTS_ROOT/$STAGE/AGENTWATCHER_ON_SUMMARY.json"
 capture_path "$STAGE" "$ONREL"
 say "$STAGE complete"

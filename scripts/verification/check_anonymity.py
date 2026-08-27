@@ -2,7 +2,7 @@
 from pathlib import Path
 import io, re, sys, tarfile, zipfile
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 TEXT_EXT = {
     '.txt','.md','.json','.jsonl','.csv','.tsv','.py','.sh','.yml','.yaml',
     '.tex','.toml','.ini','.cfg','.log','.xml','.html','.htm','.rst','.env'

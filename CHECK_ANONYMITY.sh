@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-exec python3 "$ROOT/artifact_tools/check_anonymity.py"
+exec python3 "$ROOT/scripts/verification/check_anonymity.py"

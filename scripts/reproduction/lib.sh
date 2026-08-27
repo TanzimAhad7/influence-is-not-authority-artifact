@@ -24,7 +24,7 @@ run_logged(){
 
 clear_path(){ rm -rf "$WORK_ROOT/$1"; }
 resolve_ref(){
-  python3 "$ARTIFACT_ROOT/reproduction/resolve_legacy_path.py" "$ARTIFACT_ROOT" "$1"
+  python3 "$ARTIFACT_ROOT/scripts/reproduction/resolve_legacy_path.py" "$ARTIFACT_ROOT" "$1"
 }
 restore_path(){
   local rel="$1" src

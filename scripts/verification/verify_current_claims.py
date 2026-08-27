@@ -18,7 +18,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 OUTDIR = ROOT / "artifact_outputs" / "verification"
 OUTDIR.mkdir(parents=True, exist_ok=True)
 CLAIMS: list[dict[str, Any]] = []
@@ -175,7 +175,7 @@ def tool_batches(messages: list[dict[str, Any]]) -> list[tuple[int, int, list[di
 
 
 def load_paef_oracle():
-    p = ROOT / "artifact_support/paef_oracle.py"
+    p = ROOT / "implementation_evidence/paef_oracle.py"
     spec = importlib.util.spec_from_file_location("artifact_paef_oracle", p)
     mod = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
@@ -507,7 +507,7 @@ def verify_e2e() -> None:
 
 
 def verify_isolation_result() -> None:
-    rel = "artifact_support/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json"
+    rel = "implementation_evidence/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json"
     x = jload(rel)
     arms = x["arms"]
     a = arms["A_prior_call_allowed"]
@@ -551,15 +551,15 @@ def verify_replay() -> None:
 
 
 def verify_source_and_hygiene() -> None:
-    attr_src = "artifact_support/ATTRIGUARD_SOURCE_SHA256.txt"
+    attr_src = "implementation_evidence/ATTRIGUARD_SOURCE_SHA256.txt"
     recorded = (ROOT / attr_src).read_text(encoding="utf-8").split()[0]
-    isolation = jload("artifact_support/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json")
+    isolation = jload("implementation_evidence/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json")
     add("SOURCE.ATTRIGUARD_SHA", "Frozen AttriGuard source identity is consistent across provenance and deterministic isolation evidence.",
         {"provenance":"6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8",
          "isolation":"6d28e2208efbd521bf3f2e90c553e57b11c786e65564eababacb8cdf4f8050d8"},
         {"provenance":recorded,"isolation":isolation["attriguard_sha256"]},
-        attr_src+" + artifact_support/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json","source_identity_check",
-        note="Source identity is bound to the tested AttriGuard snapshot; redistribution scope is documented in THIRD_PARTY.md.")
+        attr_src+" + implementation_evidence/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json","source_identity_check",
+        note="Source identity is bound to the tested AttriGuard snapshot; redistribution scope is documented in docs/ARTIFACT_STRUCTURE_AND_POLICIES.md.")
     add("SOURCE.AGENTWATCHER_SHA", "Frozen AgentWatcher integration adapter hash.",
         "0afc2131bc7dd3a8ab8e498cecf44743801500210609cd995a6721e3987473ac",
         sha256("external/AgentWatcher_armc_runtime_v1/agents/agentdojo/src/agentdojo/agent_pipeline/piarena_defense_adapter.py"), "external/AgentWatcher_armc_runtime_v1/agents/agentdojo/src/agentdojo/agent_pipeline/piarena_defense_adapter.py","source_hash")
@@ -620,7 +620,7 @@ def verify_source_and_hygiene() -> None:
         if any(pat.search(text) for pat in secret_pats) and not any(rel.endswith(x) for x in synthetic_key_suffixes):
             secret_hits.append(rel)
         parts=Path(rel).parts
-        public_surface=(len(parts)==1 or (parts and parts[0] in {"artifact_tools","artifact_support","paper_figures"}))
+        public_surface=(len(parts)==1 or (parts and parts[0] in {"scripts","implementation_evidence","paper_figures","docs"}))
         if public_surface and tracking_pat.search(text):
             tracking_hits.append(rel)
 

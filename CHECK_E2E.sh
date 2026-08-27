@@ -14,12 +14,16 @@ print('python=',sys.version.split()[0])
 if sys.version_info < (3,10): raise SystemExit('Python >=3.10 required')
 PY
 # All scientific entrypoints that the master runner invokes must be present.
-resolve_rel(){ python3 "$ROOT/reproduction/resolve_legacy_path.py" "$ROOT" "$1"; }
-while IFS= read -r rel; do
-  resolved="$(resolve_rel "$rel")"
-  [[ -e "$resolved" ]] || fail "missing entrypoint/input: $rel (resolved to $resolved)"
-done <<'LIST'
-A13.py
+# Resolve the legacy map once rather than starting a new Python interpreter per path.
+python3 - "$ROOT" <<'PY_CHECK_PATHS'
+import csv, sys
+from pathlib import Path
+root = Path(sys.argv[1])
+mp = {}
+with (root / 'LEGACY_PATH_MAP.tsv').open(newline='', encoding='utf-8') as f:
+    for row in csv.DictReader(f, delimiter='\t'):
+        mp[row['legacy_top_level']] = row['new_path']
+rels = """A13.py
 A13_C0_EXTENSION_RUNNER_v1.py
 A13_C0_V2_1_AUTHOR_RUN_COMPLETE.tar.gz
 A13_C0_EXTENSION_PREFREEZE_v1_AUTHOR_COMPLETE.tar.gz
@@ -38,8 +42,18 @@ figures/Figure2.py
 figures/Figure3.py
 figures/Figure4.py
 figures/Figure5.py
-figures/Figure6.py
-LIST
+figures/Figure6.py""".splitlines()
+missing=[]
+for rel in rels:
+    parts=Path(rel).parts
+    resolved=(root / mp[parts[0]] / Path(*parts[1:])) if parts and parts[0] in mp else (root / rel)
+    if not resolved.exists():
+        missing.append((rel, resolved))
+if missing:
+    for rel, resolved in missing:
+        print(f'E2E_PREFLIGHT=FAIL: missing entrypoint/input: {rel} (resolved to {resolved})', file=sys.stderr)
+    raise SystemExit(2)
+PY_CHECK_PATHS
 if [[ $STRUCT -eq 1 ]]; then
   echo 'E2E_PREFLIGHT=STRUCTURAL_PASS'
   exit 0

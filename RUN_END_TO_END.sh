@@ -64,7 +64,7 @@ if (( DRY )); then
   echo "DRY_RUN=1"
   for s in "${STAGES[@]}"; do
     choose "$s" || continue
-    f="$ARTIFACT_ROOT/reproduction/stages/$s.sh"
+    f="$ARTIFACT_ROOT/scripts/reproduction/stages/$s.sh"
     [[ -f "$f" ]] || { echo "FATAL: missing stage script: $f" >&2; exit 2; }
     bash -n "$f"
     echo "WOULD_RUN=$s"
@@ -91,7 +91,7 @@ mkdir -p "$WORK_ROOT"
 ( cd "$ARTIFACT_ROOT" && tar --exclude='./.venv-e2e' --exclude='./artifact_outputs' --exclude='./reproduction_runs' -cf - . ) | ( cd "$WORK_ROOT" && tar -xf - )
 # Historical experiment scripts retain their frozen top-level identifiers.
 # Recreate that layout only inside this disposable worktree.
-python3 "$ARTIFACT_ROOT/reproduction/materialize_legacy_worktree.py" --work-root "$WORK_ROOT"
+python3 "$ARTIFACT_ROOT/scripts/reproduction/materialize_legacy_worktree.py" --work-root "$WORK_ROOT"
 export ARTIFACT_ROOT WORK_ROOT RUN_ROOT
 export PYTHONUNBUFFERED=1
 export TOKENIZERS_PARALLELISM=false
@@ -111,7 +111,7 @@ for s in "${STAGES[@]}"; do
  echo "================================================================"
  echo "STAGE $s"
  echo "================================================================"
- if bash "$ARTIFACT_ROOT/reproduction/stages/$s.sh"; then
+ if bash "$ARTIFACT_ROOT/scripts/reproduction/stages/$s.sh"; then
    touch "$RUN_ROOT/results/${s}.DONE"
  else
    echo "STAGE_FAILED=$s" | tee -a "$RUN_ROOT/RUN_METADATA.txt" >&2

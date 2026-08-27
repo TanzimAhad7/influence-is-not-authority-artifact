@@ -33,7 +33,7 @@ cp "$d/figures/figure5.pdf" "$OUT/figure5.pdf"
 # The supplied Figure6.py retains pre-anonymization hash locks.  The artifact adapter lives
 # outside figures/ and validates the anonymized frozen evidence while preserving the final plot.
 d="$TMP/f6"; mkdir -p "$d"
-FIGURE_OUT="$d" python3 "$ARTIFACT_ROOT/artifact_tools/render_figure6.py" 2>&1 | tee "$RESULTS_ROOT/logs/${STAGE}_figure6.log"
+FIGURE_OUT="$d" python3 "$ARTIFACT_ROOT/scripts/verification/render_figure6.py" 2>&1 | tee "$RESULTS_ROOT/logs/${STAGE}_figure6.log"
 cp "$d/figure6.pdf" "$OUT/figure6.pdf"
 
 for n in 1 2 3 4 5 6; do [[ -s "$OUT/figure${n}.pdf" ]] || fail "figure $n was not generated/copied"; done

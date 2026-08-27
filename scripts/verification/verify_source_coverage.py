@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import csv,hashlib,sys,collections
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 TSV=ROOT/'supporting_material/provenance/SOURCE_ARTIFACT_COVERAGE.tsv'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 counts=collections.Counter(); missing=[]; bad=[]; total=0

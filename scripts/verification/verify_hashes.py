@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import hashlib,sys
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 MANIFEST=ROOT/'SHA256SUMS.txt'
 EXCLUDED_ROOTS={'artifact_outputs','.venv','.venv-e2e','.git'}
 def sha(p):

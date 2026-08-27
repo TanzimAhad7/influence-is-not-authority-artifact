@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(os.environ.get('FIGURE_OUT', ROOT/'artifact_outputs'/'figures'))
 OUT.mkdir(parents=True,exist_ok=True)
 PDF_OUT=OUT/'figure6.pdf'; PNG_OUT=OUT/'figure6.png'
@@ -16,7 +16,7 @@ conf_on=[r for r in rows if r['context']=='CONFLICT' and r['defense']=='ON']
 assert (len(conf_off),len(conf_on))==(70,70)
 assert (sum(int(r['Z']) for r in conf_off),sum(int(r['Z']) for r in conf_on))==(17,2)
 assert (sum(int(r['PAEF']) for r in conf_off),sum(int(r['PAEF']) for r in conf_on))==(38,47)
-isol=json.loads((ROOT/'artifact_support/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json').read_text())
+isol=json.loads((ROOT/'implementation_evidence/source_bound_isolation/ATTRIGUARD_AUDIT_TRANSITION_RESULT.json').read_text())
 assert isol.get('all_passed') is True
 src=(ROOT/'third_party/integrations/attriguard_zenodo_v1/usenix-artifacts/main/pipeline/AttriGuard.py').read_text()
 assert 'skip_next_audit' in src and 'skip_empty_tool_results_audit' in src
